@@ -1,3 +1,13 @@
-body{
-    background-color: #7CFC00;
+@font-face {
+    font-family: 'NICE';
+    src: url(../../articles/marie-lys/images/Acidic.TTF);
 }
+
+
+
+body{ font-family: 'NICE';
+    background-color: #99b9ffab;
+
+    .title{
+        font-size: 80px;
+    }
