@@ -1,3 +1,4 @@
+# oiseaux tous nus
 J’ai vue le court métrage : Um réalisé par Nieto et Daïchi Mori qui reprend l’oeuvre : le faux prophète réalisé par ces deux même artistes. 
 
 En  quelques mots c’est un joyeux bordel. 
