@@ -1,3 +1,9 @@
 body{
     background-color: #b4475c;
- 
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: large;
+}
+
+ img.thumb{
+    width: 100px;
+ }
