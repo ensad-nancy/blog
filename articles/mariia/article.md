@@ -14,8 +14,11 @@
 
     Pour beaucoup, comme pour moi, c’était la première fois que je découvrais l’histoire de Dahmer — et c’est justement ce qui pose problème. Si la première impression de crimes réels vient d’une fiction déformée par des inventions, le spectateur ne reçoit pas une vérité, mais un choc émotionnel et une réalité faussée.
     Il est difficile de percevoir cela comme quelque chose qui s’est réellement passé. À cause de nombreux détails ajoutés — qui, évidemment, ne peuvent pas être connus —, le tout ressemble moins à une reconstitution qu’à une interprétation, une tentative de justification.
+    
     L’éthique n’a clairement pas sa place dans ce projet. Alors je me demande : quel est le but, quel est le message de cette série, à part gagner de l’argent sur un sujet populaire et un acteur apprécié dans le genre de l’horreur ? Quand une histoire fondée sur une vraie douleur devient un spectacle commercial, сela fait se demander où se trouve la limite entre l’art et l’exploitation.
 
     Pendant le visionnage, on ne ressent pas que c’est une histoire sur les victimes — c’est plutôt une histoire sur Jeffrey Dahmer lui-même, et sur une société qui continue à observer le mal avec curiosité plutôt qu’avec empathie.
+    
     La série ne pousse pas à réfléchir, ni à être plus prudent ; elle fait seulement ressentir l’horreur, comme dans une attraction.
+    
     Mais en aucun cas elle ne rend hommage aux victimes. Et c’est sans doute pour cela qu’après l’avoir vue, il ne reste pas une compréhension, mais un goût amer.
