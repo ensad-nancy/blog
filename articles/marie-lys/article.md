@@ -1,3 +1,9 @@
+---
+title: Comment j’ai appris à ne plus m’inquiéter et à aimer la police
+date: 2025-11-12-
+tags: police, S.W.A.T., Ilovepolice
+preview: images/swataffiche.png
+---
 # « Comment j’ai appris à ne plus m’inquiéter et à aimer la police »
 
 cher.es lecteur.rices
@@ -10,7 +16,7 @@ Dans *Immunity* (saison 1, épisode 21), la mission s’élargit au plan interna
 
 Les civils ne sont jamais en reste, surtout lorsqu’ils se mettent en danger. Dans *School* (saison 2, épisode 5), un adolescent s’introduit dans son lycée avec une arme. Heureusement, Hondo et ses collègues interviennent immédiatement. Tout est rétabli, sans bavure, et personne n’a besoin de réfléchir aux causes sociales ou culturelles de ce drame. Quelle efficacité ! Quelle leçon de clarté et de discipline !
 
-Les ennemis, eux, sont fascinants dans leur simplicité : gangs **latinos**, hackers **russes**, **ex-militaires** frustrés… Tous sont systématiquement neutralisés par la logique implacable du S.W.A.T. Dans *Gunpowder Treason* (saison 3, épisode 7), même un groupe organisé contre le gouvernement est vaincu sans effort apparent. Quelle merveille de voir l’ordre s’imposer ainsi, et la morale triompher à chaque mission !
+Les ennemis, eux, sont fascinants dans leur simplicité : gangs **latinos**, hackers **russes**, **ex-militaires** frustrés… Tous sont systématiquement neutralisés par la logique implacable du *S.W.A.T*. Dans *Gunpowder Treason* (saison 3, épisode 7), même un groupe organisé contre le gouvernement est vaincu sans effort apparent. Quelle merveille de voir l’ordre s’imposer ainsi, et la morale triompher à chaque mission !
 
 Et puis, la violence est… presque poétique. Les fusillades sont chorégraphiées comme des ballets, les explosions deviennent manifestations de courage, et le suspense transforme la peur en admiration. On finit par croire que le monde entier est un endroit dangereux, mais heureusement, il existe des hommes et des femmes pour le protéger.
 
