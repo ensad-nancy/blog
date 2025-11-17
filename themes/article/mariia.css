@@ -1,3 +1,12 @@
+
 body{
-    background-color: #00FF7F;
+    background-color: #ffc337;
+    
+}
+
+
+
+.title {
+    font-size: 60px;
+    font-style: italic;
 }

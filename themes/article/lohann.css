@@ -1,3 +1,17 @@
 body{
-    background-color: #FFB6C1;
+    background-color: blue;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color:rgb(252, 15, 133);
+}
+header{
+    color:rgb(252, 15, 133);
+}
+
+article{
+    padding-right: 40%;
+    border-left:10%;
+    background-image:url(../../articles/lohann/images/nappe-vectorielle-motif-sans-couture.webp)
 }
