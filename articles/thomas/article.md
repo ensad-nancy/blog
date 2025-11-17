@@ -1,3 +1,11 @@
+---
+title: A-ton le gendre qu'on mérite ?
+date: 2025-11-12
+tags: cinema
+preview: images/ce_que_cette_nature_te_dit.jpg
+---
+
+
 ## A-t-on le gendre qu’on mérite ?
 
 Un homme dans la trentaine, poète, raccompagne sa petite amie au domicile familiale. Ils discutent de la création de la maison, des environs, elle l’invite à visiter puisqu’il ne connaît pas les lieux. Ils s’approchent et, par hasard, rencontrent le père dont le gendre n’avait pas encore fait la connaissance. Et puis la grande sœur est aussi dans la maison et la mère va bientôt rentrer, il faut donc organiser quelque chose, et ainsi commence l’histoire.
