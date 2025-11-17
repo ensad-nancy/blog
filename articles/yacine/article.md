@@ -2,7 +2,7 @@
 title: Desintegrations
 date: 2025-11-17
 tags: Bouillant, captivant
-preview: 
+preview: 👍
 ---
 
 
