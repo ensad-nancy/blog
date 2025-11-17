@@ -4,6 +4,7 @@ date: 2025-11-12
 tags: cinema
 ---
 
+<link rel="stylesheet" href="/themes/article/thomas.css">
 
 ## A-t-on le gendre qu’on mérite ?
 
