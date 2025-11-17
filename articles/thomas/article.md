@@ -2,7 +2,6 @@
 title: A-ton le gendre qu'on mérite ?
 date: 2025-11-12
 tags: cinema
-preview: images/ce_que_cette_nature_te_dit.jpg
 ---
 
 
