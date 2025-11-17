@@ -1,5 +1,5 @@
 ---
-title: oiseau tout nue
+title: oiseau tous nu
 date: 2025-11-17
 tags: tag1, tag2
 preview: image/
