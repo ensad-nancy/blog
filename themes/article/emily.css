@@ -1,3 +1,23 @@
 body{
-    background-color: #FFD700;
+    background-color: #000000;
+    text-align: center;
+    color: azure;
+    margin: 5%;
+
+    
+}
+
+.title{
+    font-size: 15px;
+}
+
+
+img[alt=fenetre1]{
+    width: 400px; 
+    align-items: center;
+}
+
+img[alt=fenetre]{
+    width: 600px; 
+    align-items: center;
 }

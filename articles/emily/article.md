@@ -2,7 +2,11 @@
 title: Une conversation intéressante
 date: 2025-11-12
 tags: Weekend, Famille
+preview: Images\fenetre.jpg
+preview: Images\fenetre1.jpg
 ---
+
+![fenetre](images/fenetre1.jpg)
 
 Lors d’un weekend chez la famille de mon copain, j’ai pu parler à son grand-père qui est très intéressé par le graphisme et l’art en général. 
 On était dans le salon à table pour le goûter, avec un petit thé et la fameuse boîte à biscuits que tous les grand parents ont chez eux, celui-ci en particulier été une boîte tintin. Chez les grands-parents, Tintin est un sujet très récurrent avec un mur remplis de bds sur une des faces du salon, dont toute la collection des bds Tintin.
@@ -37,3 +41,5 @@ Concrètement, la conversation que j’ai eu avec le grand-père de mon copain a
 J’espère que vous aurez appris quelque chose,
 
 Mim.
+
+![fenetre1](images/fenetre.jpg)

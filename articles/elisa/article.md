@@ -2,12 +2,9 @@
 title: titre
 date: 2025-11_17
 tags: rien, rien, rien
-preview: images/image.png
+preview:
 ---
+je n'ai pas mon texte bien fait
 
-#H1
-##H2
-###H3
 
-*italique*
-**gras**
+
