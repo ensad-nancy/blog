@@ -1,11 +1,12 @@
+
 body{
     background-color: #ffc337;
     
 }
-.preview {
-    height: 50%;
-}
+
+
 
 .title {
-    size: 150px;
+    font-size: 60px;
+    font-style: italic;
 }
