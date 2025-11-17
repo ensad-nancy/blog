@@ -2,7 +2,7 @@
 title: titre
 date: 2025-11_17
 tags: rien, rien, rien
-preview: images/image.png
+preview:
 ---
 
 #H1
@@ -11,3 +11,5 @@ preview: images/image.png
 
 *italique*
 **gras**
+
+
