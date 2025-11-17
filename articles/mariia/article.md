@@ -1,4 +1,8 @@
-# Se divertir sur les tragédies des gens et «glorifier» le “Monster”, Jeffrey Dahmer
+---
+title: Se divertir sur les tragédies des gens et «glorifier» le “Monster”, Jeffrey Dahmer
+date: 12-11-2025
+image: p22931799_b_v13_aa-2.jpg
+---
     Bien que la série soit vraiment bien réalisée — avec une atmosphère soignée, un excellent jeu d’acteurs et une mise en scène maîtrisée — elle reste très difficile à regarder. Par moments, on se demande même s’il est juste de raconter une telle histoire sous forme de fiction dramatique plutôt que de documentaire.
     Quand il s’agit de vraies victimes, de personnes réelles, montrer des scènes de violence, de démembrement ou d’agression sexuelle semble trop cruel. Ce n’est pas simplement un « film d’horreur » — c’est la reconstitution d’une douleur qui a vraiment existé pour certaines familles.        C’est pourquoi la série paraît parfois moins comme une tentative de réflexion sur le mal que comme une utilisation de la tragédie à des fins dramatiques.
 
