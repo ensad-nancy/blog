@@ -6,8 +6,6 @@ preview: images/nomdelimage.png
 ---
 
 
-
-
 # Un titre plutôt évocateur
 
 Si vous faites parti de l’école, ou que vous vous êtes baladé sur le campus Artem vous savez surement que le campus dispose d’un parc, d’espaces végétaux et de plusieurs étendus d’eau. Si vous êtes attentif, vous pourrez peut être apercevoir……..le héron, « Le héron de l’ensad ». Il vient se poser proche de la marre, plonger son bec dans l’eau, puis s’envole lorsqu’on s’approche un peu trop près. 
