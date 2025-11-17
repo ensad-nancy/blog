@@ -1,12 +1,24 @@
+@font-face {
+  font-family: 'VCR';
+  src: url('../../articles/mariia/images/VCR_OSD_MONO_1.001.ttf');
+}
+@font-face {
+  font-family: 'HAIR';
+  src: url('../../articles/mariia/images/HAIROFTH.TTF');
+}
+@font-face {
+  font-family: 'Mom';
+  src: url(../../articles/mariia/images/MomЃt___.ttf);
+}
 
 body{
+      font-family: 'Mom';
+
     background-color: #ffc337;
     
 }
-
-
-
 .title {
     font-size: 60px;
     font-style: italic;
+     font-family: 'HAIR';
 }
