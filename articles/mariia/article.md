@@ -3,7 +3,7 @@ title: Se divertir sur les tragédies des gens et «glorifier» le “Monster”
 date: 12-11-2025
 tag: something
 preview: images/p22931799_b_v13_aa-2.jpg
-image-markdown: images/p22931799_b_v13_aa-2.jpg
+img-markdown: images/p22931799_b_v13_aa-2.jpg
 ---
     Bien que la série soit vraiment bien réalisée — avec une atmosphère soignée, un excellent jeu d’acteurs et une mise en scène maîtrisée — elle reste très difficile à regarder. Par moments, on se demande même s’il est juste de raconter une telle histoire sous forme de fiction dramatique plutôt que de documentair.
     e.
