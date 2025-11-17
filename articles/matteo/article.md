@@ -2,7 +2,7 @@
 title: Un titre plutôt évocateur 
 date: 2025-11-17
 tags: tag1, tag2
-preview: images/nomdelimage.png
+preview: images/IMG_8239.png
 ---
 
 
