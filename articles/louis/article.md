@@ -1,7 +1,7 @@
 ---
 title: First Visit
 date: 2025-11-13
-tags: tag1, tag2
+tags: culture
 preview: images/ballet.jpg
 ---
 
