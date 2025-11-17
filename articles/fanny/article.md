@@ -2,7 +2,7 @@
 title: Une découverte visuelle réelle
 date: 2025-11-13
 tags: Visite de cette magnifique Villa Marjorelle
-
+preview:images/IMG_20251029_141627.jpg
 ---
 
 #Une découverte visuelle réelle
