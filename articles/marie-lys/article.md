@@ -2,7 +2,7 @@
 title: Comment j’ai appris à ne plus m’inquiéter et à aimer la police
 date: 2025-11-12-
 tags: police, S.W.A.T., Ilovepolice
-preview: images/SWAT Affiche .png  
+preview: images/swataffiche.png  
 ---
 # « Comment j’ai appris à ne plus m’inquiéter et à aimer la police »
 
