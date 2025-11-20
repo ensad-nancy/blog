@@ -27,6 +27,10 @@ Au final, *S.W.A.T.* n’est pas seulement divertissante : elle est une leçon d
 — Dona Quichotte
 
 
+title: Ce monde que nous ne partgeons pas 
+date: 2025-11-20-
+tags: vidaloca, introspection, soirée
+
 **Ce monde que nous ne partageons pas**
 
 
