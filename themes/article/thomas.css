@@ -22,6 +22,12 @@
   src: url("/articles/thomas/fonts/ErbarW01-Medium.woff") format("woff");
 }
 
+@font-face {
+  font-family: "FuturaStdMedium";
+  src: url("/articles/thomas/fonts/FuturaStdMedium.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
 
 
 
@@ -30,7 +36,7 @@ h2 {
 }
 
 article p, .article p, p {
-  font-family: "CaslonOldFaceBT-Roman", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "FuturaStdMedium", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.2;
   font-size: 18px;
 }
