@@ -3,7 +3,7 @@
 title: Spiderman No way Home: le fan service qui fanne
 date: 2025-11-13
 tags: 
-preview: mage/Spider-Man-Free-Download-PNG.png
+preview: image/calvaire typo.png
 ---
 
 # Spiderman No way home: le fan service qui fanne

@@ -1,3 +1,25 @@
 body{
-    background-color: #87CEFA;
+    background-color: #f99c63;
+}
+
+.date{
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    
+
+    }
+
+h1{
+    font-family:Arial, Helvetica, sans-serif
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
