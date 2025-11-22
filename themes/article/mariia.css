@@ -13,7 +13,6 @@
 
 body{
       font-family: 'Mom';
-
     background-color: #ffc337;
     
 }
@@ -21,4 +20,8 @@ body{
     font-size: 60px;
     font-style: italic;
      font-family: 'HAIR';
+}
+
+.woman {
+    height: 50%;
 }
