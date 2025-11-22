@@ -2,8 +2,8 @@
 
 title: Spiderman No way Home: le fan service qui fanne
 date: 2025-11-13
-tags: 
-preview: image/calvaire typo.png
+tags: oeuvre
+preview: 
 ---
 
 # Spiderman No way home: le fan service qui fanne
