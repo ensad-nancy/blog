@@ -1,0 +1,23 @@
+body{
+    background: #002fff;
+    background: linear-gradient(90deg, rgba(0, 47, 255, 0.62) 10%, rgba(0, 255, 132, 1) 90%);   
+    font-family: Arial, Helvetica, sans-serif;     
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+        text-decoration: none;
+}
+a:hover{
+    color: #daffb6;
+    transition: 0.3s;
+}
+
+.thumb{
+    display: none;
+}
