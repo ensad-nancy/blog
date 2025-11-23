@@ -7,18 +7,18 @@
   src: url('../../articles/mariia/images/HAIROFTH.TTF');
 }
 @font-face {
-  font-family: 'Mom';
+  font-family: 'mom';
   src: url(../../articles/mariia/images/MomЃt___.ttf);
 }
 
 body{
-    font-family: 'VCR';
+    font-family: 'mom';
     background-color: #988d83;
     
 }
 .title {
     font-size: 60px;
-    font-family: 'VCR';
+    font-family: 'mom';
     color: aliceblue;
 }
 
