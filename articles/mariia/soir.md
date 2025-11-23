@@ -6,7 +6,7 @@ preview: images/
 
 ---
 
- Un soir d’été, chaud.
+Un soir d’été, chaud.
 Très loin, on entend le bruit des voitures. Dans la rue, les enfants du voisinage courent et jouent. Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.
 Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.
