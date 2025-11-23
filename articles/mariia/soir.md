@@ -7,12 +7,13 @@ preview: images/
 ---
 
 **Un soir d’été, chaud.**
-Très loin, on entend le bruit des voitures. Dans la rue, les enfants du voisinage courent et jouent. Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.
+
+    Très loin, on entend le bruit des voitures. Dans la rue, les enfants du voisinage courent et jouent. Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.
 Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.
 Sur la terrasse extérieure, seuls les moustiques et les hérissons qui se promènent autour dérangent.
 Mon chat se cache quelque part dans le potager, sûrement en train de chasser des souris.
-**Alerte aérienne.**
+    **Alerte aérienne.**
  Un Shahed* depuis la région de Poltava en direction de la région de Kyiv.
  Un son dans la région — le passage d’un “Kinzhal”**.
  Menace de drones d’attaque.
