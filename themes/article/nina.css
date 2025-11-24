@@ -1,13 +1,12 @@
 body{
    
-    background-color: #c3b5dc;
     background: linear-gradient(#e66465, #9198e5)
-
+}
     @font-face {
-  font-family: "baskerville";
+  font-family: "baskervville";
   src:
-    local("baskerville"),
-    url("baskerville.otf") format("opentype")
+    local("baskervville"),
+    url("Baskervville-Regular.otf") format("opentype")
 
      color: black;
 }
