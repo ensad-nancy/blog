@@ -5,7 +5,7 @@ tags: Un texte sur un objet culturel vu, entendu, visité, feuilleté la semaine
 preview: images/p22931799_b_v13_aa-2.jpg
 
 ---
-
+ <img src="../../articles/mariia/images/10578806copy.png" class="orn">
 
  Bien que la série soit vraiment bien réalisée — avec une atmosphère soignée, un excellent jeu d’acteurs et une mise en scène maîtrisée — elle reste très difficile à regarder. Par moments, on se demande même s’il est juste de raconter une telle histoire sous forme de fiction dramatique plutôt que de documentaire.
 Quand il s’agit de vraies victimes, de personnes réelles, montrer des scènes de violence, de démembrement ou d’agression sexuelle semble trop cruel. Ce n’est pas simplement un « film d’horreur » — c’est la reconstitution d’une douleur qui a vraiment existé pour certaines familles.        
@@ -33,3 +33,5 @@ Pendant le visionnage, on ne ressent pas que c’est une histoire sur les victim
 La série ne pousse pas à réfléchir, ni à être plus prudent ; elle fait seulement ressentir l’horreur, comme dans une attraction.
     
  Mais en aucun cas elle ne rend hommage aux victimes. Et c’est sans doute pour cela qu’après l’avoir vue, il ne reste pas une compréhension, mais un goût amer.
+
+ <img src="../../articles/mariia/images/10578806.png" class="orn">

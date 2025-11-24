@@ -28,4 +28,4 @@ Nous sommes arrivées au alentour de 7h, Quai Sainte Catherine à Nancy, à l'au
 Mais cette fin de soirée un peu cata me plaît avec le temps, Mathilde et moi sommes devenues coloc depuis, et ça c'est un beau souvenir de merde.
 
 
-*1 [Un artiste qui encadrait ses fins de repas](https://lepetitjournal.com/varsovie/comprendre-pologne/qui-sont-les-rois-presents-sur-les-billets-de-banque-polonais-282939)
+*1 [le zloty ?](https://lepetitjournal.com/varsovie/comprendre-pologne/qui-sont-les-rois-presents-sur-les-billets-de-banque-polonais-282939)

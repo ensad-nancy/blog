@@ -24,7 +24,7 @@ body{
 
 .woman {
     filter: grayscale(100%);
-    
+
 }
 
 .tags {
@@ -34,3 +34,9 @@ body{
 .date {
     text-align: right;
 }
+.orn {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
