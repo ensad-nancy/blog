@@ -1,3 +1,35 @@
-body{
-    background-color: #FF8C00;
+body {
+    margin: 10px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(103, 156, 216), rgb(163, 5, 18));
+    font-family: "Baskerville";
+    display: block;
+}
+fieldset{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight:bold;
+    display: block;
+    background-color: rgb(163, 5, 18);
+    color:aliceblue;
+}
+legend{
+    color: rgb(163, 5, 18);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+    font-weight:bold;
+}
+
+img{
+    max-width: 60%;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: rgb(163, 5, 18);
+    font-weight: bolder;
+    text-align: center;
 }
