@@ -1,6 +1,11 @@
 body{
     background-color: #c3b5dc;
 
-     font-family: baskerville, 'Times New Romain', serif;
+    @font-face {
+  font-family: "baskerville";
+  src:
+    local("baskerville"),
+    url("baskerville.otf") format("opentype")
+
      color: black;
 }

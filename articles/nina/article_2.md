@@ -1,7 +1,7 @@
 ---
 title: Sorry (⁠~⁠_⁠~⁠;⁠)
 date: 2025-11-20
-tags: 
+tags: "soirée"
 preview: 
 ---
 

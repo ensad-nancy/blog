@@ -1,7 +1,7 @@
 ---
 title: Colis piégé
 date: 2025-11-13
-tags: 
+tags: "objet culturel"
 preview: 
 ---
 
