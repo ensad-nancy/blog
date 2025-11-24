@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'MedievalSharp-Regular';
+  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Aladin';
+  src: url('../../articles/emily/Aladin-Regular.ttf');
+}
+
+
 body{
-    background-color: #FFD700;
+    background-color: #5b6c06;
+    color: rgb(255, 229, 150);
+    text-align: center;
+    font-family: 'Aladin';
+
+}
+
+img {
+    max-width: 40%;
+  border-radius: 5%;
+}
+
+a {
+  color: rgb(255, 229, 150);
+  background-color: transparent;
+  font-weight: bold;
+  font-family: 'MedievalSharp-Regular';
+  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+}
+
+fieldset {
+  text-align: left;
+}
+
+legend {
+  text-align: left;
 }
