@@ -1,7 +1,27 @@
+head{
+ background-image:url(../../articles/lohann/images/20251124_102241.jpg) ;
+}
+
 body{
     background-color: blue;
     font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
+
+#themes{
+ display: flex;
+ width: 100%;
+ overflow-x: auto;
+ background-color: aqua;
+}
+
+#legend{
+    background-color: aqua;
+}
+
+#themes div{
+ flex-shrink: 0;
+}
+
 
 a{
     color:rgb(252, 15, 133);
@@ -14,4 +34,10 @@ article{
     padding-right: 35%;
     border-left:10%;
     background-image:url(../../articles/lohann/images/nappe-vectorielle-motif-sans-couture.webp)
+}
+
+article2{
+    padding-right: 35%;
+    border-left:10%;
+    background-image:url()
 }
