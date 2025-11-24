@@ -4,7 +4,6 @@ date: 12-11-2025
 tags: Un texte sur un objet culturel vu, entendu, visité, feuilleté la semaine dernière 
 preview: images/p22931799_b_v13_aa-2.jpg
 
-
 ---
 
 
