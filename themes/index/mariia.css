@@ -1,9 +1,20 @@
 
+@font-face {
+  font-family: 'ATA';
+  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
+}
 
 body{
-    background-color: #aeab9f;
+    background-color: #ffffff;
+    font-family: 'ATA';
+    color: #1d1d1d;
 }
 
 .preview {
    height: 5px;
+}
+
+.title {
+    font-size: 100px;
+    color: #ccff00;
 }
