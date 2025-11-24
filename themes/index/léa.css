@@ -39,7 +39,7 @@ fieldset div:nth-child(4)::after{
 
 #filtres {
   position: absolute;
-  left: 36%;
+  left: 30%;
   width: 30%;
   box-sizing: border-box;
   top: 20%;
@@ -51,7 +51,7 @@ fieldset div:nth-child(4)::after{
 main {
   position: absolute;
   left: 2%;
-  width: 33%;
+  width: 26%;
   box-sizing: border-box;
   top: 20%;
   height: 100%;
