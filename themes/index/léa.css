@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "Adelphe_Trouble";
+    src: url("../../articles/léa/images/fontes/Adelphe-Trouble-GerminalSemiBoldItalic\ copie.otf") format("opentype");
+}
+
+
+
+
+
 body{
-    background-color: #FF69B4;
+    background-color: #ffffff;
 }
 
 fieldset{
