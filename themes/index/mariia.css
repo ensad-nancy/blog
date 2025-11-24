@@ -24,3 +24,8 @@ img {
     display: block;
    margin: 0 auto;
 }
+
+.text {
+  padding: 20%;    /* відступи з боків */
+  text-align: center;   /* вирівнювання тексту всередині блоку */
+}

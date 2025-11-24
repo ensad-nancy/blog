@@ -1,31 +1,99 @@
+*{
+    position: relative;
+}
+
 body{
-    background-color: #f99c63;
+    background-color: #b6b6b6;
 }
 
 .date{
     font-weight: 300;
-    font-family: 
     color: #ffffff;
     
 
     }
 
 h1{
-    font-family: 'MeniletroitCondensed', serif;
+        font-family: 'MenilEtroit', serif;
     color: #000000;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
+    font-size: 850%;
+    text-align: center;
+    margin-top: -0.5%;
 }
 @font-face {
-  font-family: "MenilEtroitCondensed";
-  src: url("fonts/Menil-Etroit-Condensed.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MenilEtroit';
+    src: local('Menil Etroit'), local('MenilEtroit'),
+             url('../../articles/romain/images/Menil-Etroit.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+@font-face {
+    font-family: 'Ptolemy Great Primer';
+    src: local('Ptolemy GreatPrimer18'), local('PtolemyGreatPrimer18'),
+             url('../../articles/romain/images/Ptolemy-GreatPrimer18.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    
+}
+
+
+
+body > p{
+    font-family: 'Ptolemy Great Primer', serif;
+    color: #000000;
+    font-weight: normal;
+    border-style:dotted;
+    max-width: 50%;
+    text-align: center;
+    border-color: aliceblue;
+    background-color: rgb(162, 187, 2);
+    margin-top: -7%;
+    margin-left: 10%;
+    z-index: 10;
+    
+
 }
 
 h2{
-    font-family:Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    font-family: 'Ptolemy Great Primer', serif;
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+    margin-left: 5%;
+    border-color: rgb(0, 0, 0);
+    border-style: dotted;
+    border-width: 10%;
 }
+
+fieldset{
+    margin-top: -2.5%;
+    margin-left: -1%;
+    z-index: 1;
+    background-color: #000000;
+    border-radius: 40px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 300px;
+    align-items: center;
+}
+
+#themes div{
+    color: #ffffff;
+}
+
+#themes legend{
+    color: #ffffff;
+    display: none;
+}
+
+.thumb{
+    display: none;
+}
+
