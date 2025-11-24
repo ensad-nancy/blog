@@ -1,3 +1,24 @@
 body{
-    background-color: #BA55D3;
+    background-color: #ab448c;
+}
+
+h1, h2, h3, h4, h5, h6, legend{
+    color: #60e500;
+}
+
+p, li, span, div{
+    color: #fff898;
+}
+
+.thumb{
+    display: none;
+}
+
+#filtres {
+  display: none;
+}
+
+fieldset div {
+    display: inline-block;
+    font-size: 15px;
 }
