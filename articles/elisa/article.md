@@ -4,7 +4,7 @@ date: 2025-11_17
 tags: Narnia, Fantastique, Jésus
 preview:
 ---
-# « Narnia ou le retour divin du Christ »
+# « **Narnia ou le retour divin du Christ** »
 
 **« Le lion, l’armoire magique et la sorcière blanche »** deuxième livre de sa série et un film qui a enchanté beaucoup de gosses. Un monde magique, des rois et reines, de la magie! Ce film qui encore aujourd’hui fascine et que j’avoue je regarde encore. 
 
