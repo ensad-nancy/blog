@@ -1,3 +1,21 @@
 body{
-    background-color: #EE82EE;
+    font-family:"Insolente";
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../articles/yacine/images/sad-emoji.png);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+@font-face{
+    font-family: "Insolente";
+    src: url(../../articles/yacine/images/Insolente-Regular.otf);
 }

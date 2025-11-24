@@ -1,24 +1,27 @@
 @font-face {
   font-family: 'VCR';
-  src: url('../../articles/mariia/images/VCR_OSD_MONO_1.001.ttf');
+  src: url('../../articles/mariia/images/PepperXCupa-Regular.ttf');
 }
 @font-face {
   font-family: 'HAIR';
   src: url('../../articles/mariia/images/HAIROFTH.TTF');
 }
 @font-face {
-  font-family: 'Mom';
-  src: url(../../articles/mariia/images/MomЃt___.ttf);
+  font-family: 'ATA';
+  src: url(../../articles/mariia/images/Atavyros.otf);
 }
 
 body{
-      font-family: 'Mom';
-
-    background-color: #ffc337;
+    font-family: 'ATA';
+    background-color: #988d83;
     
 }
 .title {
     font-size: 60px;
-    font-style: italic;
-     font-family: 'HAIR';
+    font-family: 'VCR';
+    color: aliceblue;
+}
+
+.woman {
+    height: 50%;
 }
