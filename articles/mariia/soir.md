@@ -1,7 +1,7 @@
 ---
 title: Un soir d’été, chaud.
 date: 20-11-2025
-tag: Une soirée dans mon vie
+tags: Une soirée dans mon vie
 preview: images/
 
 ---

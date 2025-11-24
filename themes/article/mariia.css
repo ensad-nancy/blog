@@ -7,12 +7,12 @@
   src: url('../../articles/mariia/images/HAIROFTH.TTF');
 }
 @font-face {
-  font-family: 'pepper';
-  src: url(../../articles/mariia/images/PepperXCupa-Regular.ttf);
+  font-family: 'ATA';
+  src: url(../../articles/mariia/images/Atavyros.otf);
 }
 
 body{
-    font-family: 'VCR';
+    font-family: 'ATA';
     background-color: #988d83;
     
 }
