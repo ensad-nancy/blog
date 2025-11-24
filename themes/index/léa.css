@@ -7,7 +7,7 @@ fieldset{
   left: 66%;
   width: 33%;
   box-sizing: border-box;
-  top: 0;
+  top: 20%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -19,7 +19,7 @@ fieldset legend{
 
 fieldset div{
     font-size: 32pt;
-    border: 1px solid blue;
+    border: 3px solid blue;
     border-radius: 50%;
     margin-bottom: 20px;
     display: flex;
@@ -35,7 +35,7 @@ fieldset div:nth-child(4)::after{
   left: 36%;
   width: 30%;
   box-sizing: border-box;
-  top: 0;
+  top: 20%;
   height: 100%;
   border: 0;
   overflow-y: auto;
