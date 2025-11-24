@@ -4,11 +4,21 @@ body{
 }
     @font-face {
   font-family: "baskervville" ;
-  src: url("Baskervville-Regular.otf") format("opentype");
+  src: 
+   local("Trickster"),
+   url("Baskervville-Regular.otf") format("opentype");
 
      color: black;
 }
 h1 {
  background-image: url("/articles/nina/images/nuage.jpg");
+}
+
+a{
+
+}
+
+title{
+
 }
 
