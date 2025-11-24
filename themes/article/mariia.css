@@ -7,18 +7,18 @@
   src: url('../../articles/mariia/images/HAIROFTH.TTF');
 }
 @font-face {
-  font-family: 'mom';
+  font-family: 'pepper';
   src: url(../../articles/mariia/images/PepperXCupa-Regular.ttf);
 }
 
 body{
-    font-family: 'mom';
+    font-family: 'pepper';
     background-color: #988d83;
     
 }
 .title {
     font-size: 60px;
-    font-family: 'mom';
+    font-family: 'pepper';
     color: aliceblue;
 }
 
