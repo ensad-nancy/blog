@@ -1,13 +1,13 @@
 ---
 title: Colis piégé
 date: 2025-11-13
-tags: tag1, tag2
+tags: 
 preview: 
 ---
 
 
 
-# colis piégé
+# Colis piégé
 Un livre d'images, un magazine de sensibilité, du papier imprimé, j'ai créé une obsession autour. Ça trouvaille, j'y associe un doux souvenir et surtout un coup de foudre : il m'a regardé, je l'ai vu et voulu.
 Il est revenu avec moi en train.
 Depuis j'y trouve du sens, comme si il avait mis les mots sur ce que je pouvait pas voir.
