@@ -8,11 +8,11 @@
 }
 @font-face {
   font-family: 'pepper';
-  src: url(../../articles/mariia/images/PepperXCupa-Regular.ttf);
+  src: url(../../articles/mariia/images/Atavyros.otf);
 }
 
 body{
-    font-family: 'VCR';
+    font-family: 'pepper';
     background-color: #988d83;
     
 }
