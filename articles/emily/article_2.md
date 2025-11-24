@@ -1,45 +1,23 @@
 ---
-title: Une conversation intéressante 
-date: 2025-11-12
-tags: Weekend, Famille
-preview: Images\fenetre.jpg
-preview: Images\fenetre1.jpg
+title: La fin pour un début
+date: 2025-11-17
+tags: Weekend, Soir
+preview: Images\tea.png
 ---
 
-![fenetre](images/fenetre1.jpg)
 
-Lors d’un weekend chez la famille de mon copain, j’ai pu parler à son grand-père qui est très intéressé par le graphisme et l’art en général. 
-On était dans le salon à table pour le goûter, avec un petit thé et la fameuse boîte à biscuits que tous les grand parents ont chez eux, celui-ci en particulier été une boîte tintin. Chez les grands-parents, Tintin est un sujet très récurrent avec un mur remplis de bds sur une des faces du salon, dont toute la collection des bds Tintin.
-Assis à table tous les deux thé en main, la grand-mère de mon copain allait et venait en parlant de choses variées dont le prochain chef-d’œuvre qu'elle allait cuisiner ce soir.
-Quand elle est repartie dans la cuisine suivie de mon copain, le grand-père de mon copain a commencé une conversation très intéressante.
-Je vais donc vous raconter ce qu’il m'a raconté par rapport a un voyage qu'il a fait en Auvergne et notamment de la Basilique Saint-Julien qui se situe à Brioude.
+Hier soir, je revenais d’un week-end avec des amis, nous avons été en Bourgogne pour la fête des vins. Nous étions 5 sur cette expédition, mais maintenant, c’était fini. On s'est séparé en 2 groupes, un qui prenait le bus et l’autre qui marchait. Avec mon ami, nous avons donc décidé de marcher. Il faisait bien froid et bien noir dehors, le vent glacial annonçant le début de l’hiver. Il n’y avait pas grand monde qui marchait à cet horaire, la plupart des personnes étant dans leurs voitures bien chaudes, au confort du vent et du froid. Avec mon ami, nous marchons jusqu’à ma rue, qui devait être à dix minutes d’où l’amie qui nous avait conduites nous a laissées. En arrivant en bas de ma rue, entre amis nous parlons un peu, discutant des devoirs que nous avions à faire pour demain et comment nous avions trouvé le week-end. Puis, lui continuant à rentrer et moi, je me mets à monter ma rue, jusque chez moi.
+Je suis rentrée chez moi vers 20h30, en arrivant, je me suis fait un thé bien chaud. Je me suis dit que ça me réchaufferait et réchaufferais la pièce où j’habite avec la bouilloire. Mon logement n’est pas très grand donc cela réchauffe très vite. J’étais extrêmement fatiguée du week-end, donc je me suis juré de ne pas me coucher trop tard.
+Dans la voiture de retour avec mes amis, j’étais déjà décidée à faire quelque petites bidouilles sur mon ordinateur. Donc, en rentrant, j’ai ouvert mon ordi et j’ai commencé à tester des choses que je pouvais faire avec, vu que je l’ai acheté la semaine dernière, je suis encore en découverte de cette bête. J’ai donc mis un peu de musique et j’ai bidouillé avec jusqu’à ce que je trouve une idée de quoi faire. Je vais raconter ma semaine !
+Satisfaite de ne plus flotter sur différents idées, je me mets à écrire ce que j’ai fait sur l’appli pré installé de blocnotes. Mon cerveau rempli d’idées de quoi écrire par rapport à la semaine dernière, j’éclabousse tout sur le papier. Mon thé devenant peu à peu froid pendant que je me concentre sur quoi écrire. 
 
-En entrant dans la basilique, Il y avait des formes abstraites colorées sur les tout murs, il fait un mouvement avec ses mains montrant la grandeur de ce qu’il as vu. Le contraste entre les couleurs et les sculptures détaillées en pierre donne un côté presque magique à l’endroit.
-Il prend une gorgée de thé avant de reprendre. Les couleurs sont du aux vitraux, ces vitres colorées ou il n’y a pas de formes précises reflétées. Leurs formes ressemblent à des jets d’encre sur une feuille, comme une sorte de calligraphie.
+Vers 23h30 je me décide enfin à boire ce thé qui est depuis longtemps froid et je me mets dans mon lit. Je me dis que regarder un peu YouTube pour se détendre pourrais être une idée sympa, c’était une vidéo pour me motiver à me réveiller tôt, j’ai voulu me motiver à me réveiller demain de bonne heure, puisque vu le week-end que je venais de passer, j’étais pas prête à commencer une nouvelle semaine sans avoir bien dormi. En attendant que mon sommeil me vienne la vidéo était très intéressante, elle expliquait les différentes façons dont le cerveau se remettait en place le matin et quoi faire pour le piéger à faire ce qu’on veut de lui pour le restant de la journée.
+Je regarde donc un peu près trois quarts de la vidéo avant de commencer a fermer mes yeux. Mon envie de sommeil arrivant, je n'ai même pas le temps de finir la vidéo que je sens ma conscience m’échapper. À la fin de la vidéo, je m’endors, pour me réveiller tôt le matin et commencer une nouvelle semaine. Une semaine que j’espère être plaisante.
 
-Cela me donne la curiosité de rechercher à qui ressemble ces fameux vitraux sur mon téléphone. Quand je les vois je suis très vite intéressé par ce sujet.
-Je lui demande donc comment est ce que l’artiste aurait pu faire pour créer ces formes dans du verre. C’est très curieux quand-même normalement on soude du verre ensemble pour créer des images distinctes dans les bâtiments religieux. On ne voit pas souvent de l’abstraction dans ces endroits, mais comment es ce qu’on fait pour ajouter des couleurs sans souder?
-Le grand-père de mon copain m’écoute attentivement, je le vois chercher le meilleur moyen de m’expliquer, il me dit au bout de quelques gorgées de thé que l’artiste peint probablement avec un pinceau gorgé d’eau, peignant au-dessus du verre. Après chaque couleur, il dois mettre le verre dans le four pour que le pigment fonde avec.
-Ah oui! Je hoche la tête en prenant un biscuit de la boîte tintin, mais dans ce cas la couleur blanche est aussi du pigment, non? Il secoue la tête en poussant la boîte plus vers moi, c’est probablement un film que il place par dessus sinon tout les couleurs se mélangerais mais pour moi, il dit, sans ce blanc, on aurait pas du tout l’impression de rentrer dans un autre monde puisque cela aider a la diffusion de la lumière et nous couper des vues extérieurs.
+Ma soirée était d’une banalité absolue. Il n’y avait pas de grand événement, ça aurait pu.. Y aurait pu avoir un feu dans le bâtiment, il aurait pu y avoir, un contrôle du propriétaire. Non, rien.. C’était juste
+une soirée normale.
 
-Mais ces vitraux, tu penses que ça signifie quoi, il me demande. Je regarde l’image sur le téléphone en mangeant mon biscuit. J’avale avant de dire, je pense c’est des saints, les vitraux sont abstraits, mais si’ils sont dans un bâtiment comme celui-ci je pense que l’artiste à dû considérer le bâtiment de départ avant de fabriquer les vitraux quand même. Après, je continue, vu que c’est de l’art abstrait, je pense que nous pouvons trouver chacun sa signification.
+Bonne soirée à toi, cher.e lecteur,
 
-Plus on parle de cette basilique, plus on avait une curiosité pointu, nous n’étions sur de rien mais cette conversation nous devenait de plus en plus intéressante.
-Nous cliquons sur l’image que j’ai pu trouver, cela nous mène à un site qui nous explique plus sur le sujet.
-
-Je le lis à voix haute pour pas que le grand-père à mon copain aie à chercher ses lunettes, je récite donc certaines parties de texte. Il me regarde en écoutant attentivement.
-
-“En 2009 un artiste et prêtre nommé Kim En Joong à participer à un concours avec 50 autres artistes, dans le but de remplacer tous les anciens vitraux de cette Basilique par des nouveaux à leur style. Kim En Joong à été très vite retenu et à pu se mettre à créer ces vitraux.
-
-Il travaille en collaboration avec les ateliers Loire, qui ont découpé les morceaux de verre aux proportions de leurs cadres désignés.
-
-L’artiste Kim En Joong , âgée de 85 ans , n’as pas seulement fait les vitraux de cette basilique. vu son parcours de prêtre et de peintre il à créé d’autres vitraux dont: les vitraux de la Cathédrale d'Evry, ceux de la Chapelle Bénodet en Bretagne, de l'église de Saint-Pierre-Aumaître d'Angoulême et, enfin, de la chapelle des Dominicaines de Dax.”
-
-Après avoir fini, il s'exclame 85 ans! Je devrais commencer a faire ca moi aussi, peut-être que dans 11 ans j’aurais le même niveau. Il rigole et finit son thé. Mon copain et moi devions rentrer avant qu’il ne fasse nuit.
-
-Concrètement, la conversation que j’ai eu avec le grand-père de mon copain a été très intéressante et j’ai voulu donc partager cette œuvre comme lui à fait avec moi.
-J’espère que vous aurez appris quelque chose,
-
-Mim.
-
-![fenetre1](images/fenetre.jpg)
+La buveuse de thé.
+![tea](images/tea.png)
