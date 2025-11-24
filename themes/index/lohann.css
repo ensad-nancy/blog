@@ -1,3 +1,47 @@
 body{
-    background-color: #FFB6C1;
+    background-image:url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp) ;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue;
+}
+
+body >p{
+    font-style: italic;
+    font-size: medium;
+}
+
+#themes{
+ display: flex;
+ width: 100%;
+ border-width: 20%;
+ background-color: aqua;
+}
+
+#themes legend{
+    background-color: aqua;
+}
+
+#themes div{
+ flex-shrink: 0;
+}
+
+main{
+ background-color: rgba(242, 213, 22, 0.46);
+ image-rendering: pixelated;
+ border-image-width: 20%;
+}
+
+main a h3{
+ font-size: 80px;
+ font-family:;
+}
+
+.thumb {
+    display: none;
+}
+
+.a link{
+    color: brown;
+    text-decoration: none;
 }
