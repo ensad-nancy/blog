@@ -4,9 +4,6 @@
 }
 
 
-
-
-
 body{
     background-color: #ffffff;
 }
@@ -20,6 +17,7 @@ fieldset{
   height: 100%;
   border: 0;
   overflow-y: auto;
+  font-family:"Adelphe_Trouble";
 }
 
 fieldset legend{
