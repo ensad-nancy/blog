@@ -2,7 +2,9 @@
 title: Sorry (⁠~⁠_⁠~⁠;⁠)
 date: 2025-11-20
 tags: "soirée"
-preview: 
+preview: <img
+  class="livregif"
+  src="/articles/nina/images/sorry.gif">
 ---
 
 
