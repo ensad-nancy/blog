@@ -12,7 +12,7 @@ J’étais dans mon lit entrain de me préparer à veiller tard car pour une foi
 Problème, mon chargeur était en bas, sur la table de l’entrée, sûrement encore branché sur la prise
 Défi je devais m’y rendre sans me faire prendre par mes parents, ce qui voulait dire descendre les escaliers, passer le couloir, aller dans la cuisine puis dans l’entrée alors qu’ils étaient surement pas loin.
 
-Doucement, je descendit l’escalier, les vieilles marches craquaient *-du bois de chêne-* je bougeais lentement, sans un bruit, le coeur battant à la chamade, à l’affut du moindre bruit. J’entendais les voix de mes parents, elles n’étaient pas très loin, elles semblaient bizarre. 
+Doucement, je descendis l’escalier, les vieilles marches craquaient *-du bois de chêne-* je bougeais lentement, sans un bruit, le coeur battant à la chamade, à l’affut du moindre bruit. J’entendais les voix de mes parents, elles n’étaient pas très loin, elles semblaient bizarre. 
 
 Enfin, j’arrivais, en bas, j’étais maintenant sur du carrelage *-froid mais moins bruyant-* les voix s’intensifiaient, semblant désespérées , mais je ne m’en préoccupais pas, il suffisait que je sois discrète et je serai bientôt de retour dans mon lit avec mon chargeur. 
 
@@ -22,6 +22,7 @@ Ma mère une valise rouge à la main pleurant recroquevillée contre le mur.
 Mon père, des larmes coulant le long de son visage, debout devant elle, essayant de lui expliquer que c’était lui qui partirait de la maison pas elle car c’était lui qui la quittait.
 
 Je laissai échappé un bruit étouffé dans ma surprise et mon désespoir, ils s’arrêtaient de parler.  Deux paires d’yeux se tournaient lentement vers moi…
+
 Mon téléphone ne serait pas rechargé cette nuit. 
 
 **Signé E.**
