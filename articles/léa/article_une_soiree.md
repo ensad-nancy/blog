@@ -1,7 +1,7 @@
 ---
-title: une oeuvre qui nous as touché
-date: 2025-11-13
-tags: oeuvre
+title: Des pâtes et des copains
+date: 2025-11-20
+tags:
 ---
 
 
