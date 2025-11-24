@@ -1,19 +1,25 @@
+@font-face {
+  font-family: 'MedievalSharp-Regular';
+  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+}
+
 body{
+    background-image: url(images/fenetre1.jpg);
     background-color: #000000;
     text-align: center;
+    font-family: 'MedievalSharp-Regular';
     color: azure;
-    margin: 5%;
-
-    
+    margin: 5%;    
 }
 
 .title{
-    font-size: 15px;
+    font-size: 30px;
 }
 
 
+
 img[alt=fenetre1]{
-    width: 400px; 
+    width: 300px; 
     align-items: center;
 }
 
