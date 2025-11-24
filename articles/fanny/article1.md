@@ -1,6 +1,8 @@
 ---
 title: Une découverte visuelle réelle
 date: 2025-11-13
+tags: Musée, Visite, Art nouveau
+preview: images/IMG_20251029_141627.jpg
 ---
 
 # Une découverte visuelle réelle
@@ -23,3 +25,5 @@ FMLD
 ![](images/IMG_20251029_141638.jpg)
 ![](images/IMG_20251029_141802.jpg)
 ![](images/IMG_20251029_142335.jpg)
+
+
