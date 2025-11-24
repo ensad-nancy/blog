@@ -18,10 +18,11 @@
 
 body{
     background: #f7f7f7;  
-    margin-top: 0;   
+    margin-top: 0;  
+    margin: 0; 
 }
 
-h1{
+/* h1{
     font-family: "bianzhidai-Stitches";
     font-size: 90pt;
     font-weight: normal;
@@ -30,11 +31,40 @@ h1{
     overflow-x: auto;
     width: 100vw;
     white-space: nowrap;
+} */
+
+
+h1{
+    font-family: "bianzhidai-Stitches";
+    font-size: 90pt;
+    font-weight: normal;
+    color: #00ff00;
+    width: 100vw;
+    white-space: nowrap; 
+    display: block;
+    animation: scroll-left 20s linear infinite;
+    /* background: #485cb8; */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-350%); 
+  }
 }
 
 body > p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Baskervville-Regular";
+    font-size: 16pt;
     font-weight:lighter;
+    width: 20em;
+    background-color: white;
+    margin-top: 4em;
+    margin-left: 3em;
+    padding: 2%;
+    margin-bottom: 6em;
 }
 
 /*-----THEMES-----*/
@@ -45,7 +75,10 @@ body > p{
     gap: 20px;
     width: 100%;
     overflow-x: auto;
-
+    border-style: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+    padding: 1em;
 }
 
 #themes div{
@@ -63,10 +96,8 @@ body > p{
 }
 
 #themes input{
-    color: #222245;
-    padding: 8px 12px;
-    background-color: #fff;
-    border: 1px solid #222245;
+    color: #66ff00;
+
 }
 
 #themes legend{
@@ -79,6 +110,7 @@ body > p{
     padding-bottom: 0.5%;
     padding-top: 0.5%;
     display: flex;
+    left: 0;
 }
 /* 
 input [type="radio"],[type="checkbox"]{
@@ -87,8 +119,6 @@ input [type="radio"],[type="checkbox"]{
   background-color: #fff;
   border: 1px solid #222245;
 } */
-
-
 
 
 
@@ -101,6 +131,7 @@ input [type="radio"],[type="checkbox"]{
     gap: 20px;
     width: 100%;
     overflow-x: auto;
+    padding: 1em;
 }
 
 #filtres h2{
