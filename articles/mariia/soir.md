@@ -6,7 +6,7 @@ preview: images/
 
 ---
  <img src="../../articles/mariia/images/10578806copy.png" class="orn">
-**Un soir d’été, chaud.**<br>
+** Un soir d’été, chaud. **<br>
 Très loin, on entend le bruit des voitures. Dans la rue, les enfants du voisinage courent et jouent. Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.<br>
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.<br>
 Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.<br>
