@@ -1,6 +1,4 @@
-head{
- background-image:url(../../articles/lohann/images/20251124_102241.jpg) ;
-}
+
 
 body{
     background-color: blue;
@@ -28,6 +26,7 @@ a{
 }
 header{
     color:rgb(252, 15, 133);
+   background-image:url(../../articles/lohann/images/20251124_102241.jpg) ;
 }
 
 article{
