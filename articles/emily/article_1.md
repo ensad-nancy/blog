@@ -1,6 +1,6 @@
 ---
-title: Une conversation intéressante
-date: 2025-11-12
+title: Une conversation intéressante 
+date: 2025-11-10
 tags: Weekend, Famille
 preview: Images\fenetre.jpg
 preview: Images\fenetre1.jpg
@@ -40,6 +40,6 @@ Après avoir fini, il s'exclame 85 ans! Je devrais commencer a faire ca moi auss
 Concrètement, la conversation que j’ai eu avec le grand-père de mon copain a été très intéressante et j’ai voulu donc partager cette œuvre comme lui à fait avec moi.
 J’espère que vous aurez appris quelque chose,
 
-Mim.
+La buveuse de thé.
 
 ![fenetre1](images/fenetre.jpg)
