@@ -18,3 +18,9 @@ body{
     font-size: 100px;
     color: #ccff00;
 }
+
+img {
+   max-width: 40%;
+    display: block;
+   margin: 0 auto;
+}
