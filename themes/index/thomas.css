@@ -22,3 +22,30 @@ fieldset div {
     display: inline-block;
     font-size: 15px;
 }
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 1%;
+}
+
+main > * {
+    flex: 0 0 calc(25% - 15px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  main > * { flex: 0 0 calc(33.333% - 13.333px); }
+}
+@media (max-width: 800px) {
+  main > * { flex: 0 0 calc(50% - 10px); }
+}
+@media (max-width: 480px) {
+  main > * { flex: 0 0 100%; }
+}
+
+
+
+
