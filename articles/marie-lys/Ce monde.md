@@ -1,14 +1,12 @@
 ---
-title: Ce monde que nous ne partgeons pas 
+title: Ce monde que nous ne partageons pas 
 date: 2025-11-20-
 tags: vidaloca, introspection, soirée
 
 ---
 
-**Ce monde que nous ne partageons pas**
-
-
 *J’avais pendant longtemps cru que tout le monde ressentait comme moi. Je pensais que les autres vivaient leurs journées avec la même intensité intérieure, la même obsession du détail invisible. Puis j’ai compris que ce n’était pas si simple, que le quotidien n’était pas un langage partagé. Depuis, j’essaie parfois d’imaginer ce que le monde donne vu depuis d’autres corps que le mien.*
+
 
 Hier soir, dans la rue, il faisait froid. Je suis passé près d’une jeune femme assise à même le sol. Pas un trottoir confortable : juste des pavés glacés, bruts. Moi, j’avais froid aux mains. Elle, je me surprenais à imaginer l’engourdissement du dos, des jambes, la peau qui finit par ne plus sentir.
 
