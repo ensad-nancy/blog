@@ -1,12 +1,12 @@
 ---
-title: Un soir d’été, chaud.
+title: Un soir d’été, chaud 
 date: 20-11-2025
 tags: Une soirée dans mon vie
 preview: images/
 
 ---
-
-**Un soir d’été, chaud.**
+ <img src="../../articles/mariia/images/10578806copy.png" class="orn">
+**Un soir d’été, chaud.**<br>
 Très loin, on entend le bruit des voitures. Dans la rue, les enfants du voisinage courent et jouent. Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.<br>
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.<br>
 Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.<br>
@@ -27,3 +27,4 @@ Demain matin, il y aura de terribles nouvelles.<br>
 
 * Shahed — drone kamikaze
 * Kinzhal — missile hypersonique russe
+

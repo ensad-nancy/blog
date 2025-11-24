@@ -4,7 +4,6 @@ date: 2025-11-12-
 tags: police, S.W.A.T., Ilovepolice
 preview: images/swataffiche.png
 ---
-# « Comment j’ai appris à ne plus m’inquiéter et à aimer la police »
 
 cher.es lecteur.rices
 
