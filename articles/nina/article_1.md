@@ -2,8 +2,9 @@
 title: Colis piégé
 date: 2025-11-13
 tags: "objet culturel"
-preview: 
----
+preview: <img
+  class="livregif"
+  src="/articles/nina/images/livre.gif">
 
 
 
