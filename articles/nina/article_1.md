@@ -6,7 +6,7 @@ preview: <img
   class="livregif"
   src="/articles/nina/images/livre.gif">
 
-
+---
 
 # Colis piégé
 Un livre d'images, un magazine de sensibilité, du papier imprimé, j'ai créé une obsession autour. Ça trouvaille, j'y associe un doux souvenir et surtout un coup de foudre : il m'a regardé, je l'ai vu et voulu.
