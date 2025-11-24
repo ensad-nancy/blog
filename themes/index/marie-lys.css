@@ -1,3 +1,50 @@
-body{
-    background-color: #7CFC00;
+
+@font-face {
+    font-family: 'NICE';
+    src: url('../../articles/marie-lys/Images/OceansideTr.ttf'); 
+}
+
+html, body {
+    min-height: 100%;
+    margin: 10;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f5b 0%, #4979b0 50%, #c0d5ff 100%);
+    background-attachment: fixed; 
+    color: white;
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1:first-of-type {
+    font-family: 'NICE', sans-serif;
+    font-size: 55px;         
+    font-weight: bold;
+    color: rgb(6, 12, 45);
+
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(255, 255, 255, 0.1),
+        0 0 25px rgba(255, 255, 255, 0.05);
+}
+
+
+h1:not(:first-of-type), h2, h3, h4, h5, h6 {
+    font-family: 'NICE', sans-serif;
+    font-size: 28px;           
+    font-weight: normal;
+    color: rgb(6, 12, 45);
+}
+
+p, span, div {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 18px; 
+    color: rgb(243, 244, 255);
+}
+
+img {
+    max-width: 40%;
+    border-radius: 5%;
 }

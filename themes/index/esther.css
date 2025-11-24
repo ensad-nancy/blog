@@ -1,3 +1,38 @@
+ @font-face {
+   font-family:"HENTZAU 2";
+   src: url("../../articles/esther/images/HENTZAU-2.TTF") format("opentype");
+} 
+@font-face {
+   font-family:"Rot-ProtoRoman102R 2";
+   src: local("Rot-ProtoRoman102R 2"), url("../../articles/esther/images/Rot-ProtoRoman102R\ 2.otf") format("opentype");
+} 
+
+
 body{
-    background-color: #a293ff;
+    background-color: #fff6f6;
+ font-family: "Rot-ProtoRoman102R 2", serif;
+ font-size: large;
 }
+h1{
+   font-family: "Rot-ProtoRoman102R 2", serif;
+   font-size: 45px;
+   text-align: center;
+   }
+h1::first-letter {
+  font-family: "HENTZAU 2";
+ font-size:55px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+body > p{ 
+    font-family: "Rot-ProtoRoman102R 2", serif;
+   font-size: medium;
+   text-align: center;
+   color: brown;
+}
+
+.thumb{
+   display: none;
+}
+
