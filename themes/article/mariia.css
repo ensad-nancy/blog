@@ -4,24 +4,39 @@
 }
 @font-face {
   font-family: 'HAIR';
-  src: url('../../articles/mariia/images/HAIROFTH.TTF');
+  src: url('../../articles/mariia/images/La\ Machine\ Company.ttf');
 }
 @font-face {
   font-family: 'ATA';
-  src: url(../../articles/mariia/images/Atavyros.otf);
+  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
 }
 
 body{
     font-family: 'ATA';
-    background-color: #988d83;
+    background-color: #ffffff;
     
 }
 .title {
     font-size: 60px;
     font-family: 'HAIR';
-    color: #ea882c;
+    color: #1d1d1d;
 }
 
 .woman {
-    height: 50%;
+    filter: grayscale(100%);
+
 }
+
+.tags {
+    text-align: right;
+}
+
+.date {
+    text-align: right;
+}
+.orn {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
