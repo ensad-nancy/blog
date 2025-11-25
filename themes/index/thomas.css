@@ -6,9 +6,39 @@ h1, h2, h3, h4, h5, h6, legend{
     color: #60e500;
 }
 
+h1 {
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 body > p{
     color: #fff898;
+    font-family: arial, sans-serif;
+    font-size: 16px;
 }
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff898;    /* yellow border for unchecked */
+  background: #ab448c;          /* yellow fill for unchecked */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background: #2ecc40;          /* green when selected */
+}
+
 
 .thumb{
     display: none;
@@ -20,10 +50,11 @@ body > p{
 
 fieldset div {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 main {
+    margin-top: 2%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -35,6 +66,17 @@ main > * {
     flex: 0 0 calc(25% - 15px);
     box-sizing: border-box;
 }
+
+main a, 
+main a h1, main a h2, main a h3, main a h4 {
+  display: block;            /* ensure width constraint applies */
+  width: 100%;               /* fill the flex item */
+  white-space: nowrap;       /* keep to one line */
+  overflow: hidden;          /* hide overflow */
+  text-overflow: ellipsis;   /* show "..." */
+  box-sizing: border-box;
+}
+
 
 @media (max-width: 1100px) {
   main > * { flex: 0 0 calc(33.333% - 13.333px); }
