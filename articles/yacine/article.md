@@ -1,5 +1,5 @@
 ---
-title: VELVET STRIKE
+title: VELVET STRIKE C'EST COOL QUAND MEME
 date: 2025-11-17
 tags: VELVET, STRIKE, 
 preview: 
