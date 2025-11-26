@@ -1,3 +1,70 @@
+@font-face {
+    font-family: "Adelphe_Trouble";
+    src: url("../../articles/léa/images/fontes/Adelphe-Trouble-GerminalSemiBoldItalic\ copie.otf") format("opentype");
+}
+
+
 body{
-    background-color: #FF69B4;
+    background-color: #ffffff;
+}
+
+fieldset{
+  position: absolute;
+  left: 75%;
+  width: 20%;
+  box-sizing: border-box;
+  top: 20%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+  font-family: "Adelphe_Trouble";
+}
+
+fieldset legend{
+    display: none;
+}
+
+fieldset div{
+    font-size: 32pt;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset div:nth-child(4)::after{
+    content: "//";
+}
+
+#filtres {
+  position: absolute;
+  left: 30%;
+  width: 30%;
+  box-sizing: border-box;
+  top: 20%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+}
+
+main {
+  position: absolute;
+  left: 2%;
+  width: 26%;
+  box-sizing: border-box;
+  top: 20%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+}
+
+h1 {
+  justify-content: center;
+  display: flex;
+}
+
+p {
+  display: flex;
+  justify-content: center;
 }

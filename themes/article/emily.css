@@ -1,3 +1,51 @@
-body{
-    background-color: #FFD700;
+@font-face {
+  font-family: 'MedievalSharp-Regular';
+  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
 }
+
+a {
+  color: rgb(255, 229, 150);
+  background-color: transparent;
+  font-weight: bold;
+  font-family: 'MedievalSharp-Regular';
+  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+}
+
+body{
+    background-image: url(images/fenetre1.jpg);
+    background-color: #000000;
+    text-align: left;
+    font-family: 'MedievalSharp-Regular';
+    color: azure;
+    margin: 5%;    
+}
+
+fieldset{
+    text-align: left;
+}
+
+article{ text-align: center;}
+
+.title{
+    font-size: 30px;
+}
+
+
+
+img[alt=fenetre1]{
+    width: 300px; 
+    align-items: center;
+}
+
+img[alt=fenetre]{
+    width: 600px; 
+    align-items: center;
+}
+
+img[alt=tea]{
+    max-width: 20px;
+    color:white;
+    align-items: center;
+}
+
+

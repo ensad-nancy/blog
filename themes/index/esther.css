@@ -1,3 +1,52 @@
-body{
-    background-color: #a293ff;
+ @font-face {
+   font-family:"HENTZAU 2";
+   src: url("../../articles/esther/images/HENTZAU-2.TTF") format("opentype");
+} 
+@font-face {
+   font-family:"Rot-ProtoRoman102R 2";
+   src: local("Rot-ProtoRoman102R 2"), url("../../articles/esther/images/Rot-ProtoRoman102R\ 2.otf") format("opentype");
+} 
+@font-face {
+   font-family:"sinistreregular";
+   src: local("sinistreragular"), url("../../articles/esther/images/SINISTRE/sinistreregular.otf") format("opentype");
+} 
+
+.thumb{
+   display: none;
 }
+
+
+body{
+    background-color: #fff9f9;
+ font-family:"Rot-ProtoRoman102R 2", serif;
+ font-size: large;
+}
+h1{
+   font-family:"sinistreregular";
+   font-size: 45px;
+   text-align: center;
+   margin: 5%;
+   }
+h1::first-letter {
+  font-family: "HENTZAU 2";
+ font-size:65px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+body > p{ 
+    font-family: "Rot-ProtoRoman102R 2", serif;
+   font-size: medium;
+   text-align: center;
+   font: size 70px;
+   color: brown;
+   margin: 2%;
+}
+
+fieldset{
+   border-radius:70%;
+   border-width: 10%;
+   text-align: center;
+
+}
+

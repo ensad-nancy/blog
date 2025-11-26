@@ -1,3 +1,36 @@
-body{
-    background-color: #7CFC00;
+@font-face {
+    font-family: 'NICE';
+    src: url('../../articles/marie-lys/images/Fluox___.ttf');
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f5b 0%, #0057b8 50%, #ff7a00 100%);
+    background-attachment: fixed; 
+    color: white;
+   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+    font-family: 'NICE', sans-serif;
+    color: white;
+}
+
+.title {
+    font-size: 55px;
+    font-family: 'NICE';
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 28px;
+}
+
+p, span, div {
+    font-family: Georgia, 'Times New Roman', serif; 
+    font-size: 18px; 
+    color: white;
 }

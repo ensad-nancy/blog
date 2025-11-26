@@ -8,10 +8,21 @@ preview: images/IMG_8239.png
 
 # Un titre plutôt évocateur
 
-Si vous faites parti de l’école, ou que vous vous êtes baladé sur le campus Artem vous savez surement que le campus dispose d’un parc, d’espaces végétaux et de plusieurs étendus d’eau. Si vous êtes attentif, vous pourrez peut être apercevoir……..le héron, « Le héron de l’ensad ». Il vient se poser proche de la marre, plonger son bec dans l’eau, puis s’envole lorsqu’on s’approche un peu trop près. 
+Avant de commencer je tiens à préciser que je vais révéler la fin du film. Alors que ceux qui compte le voir et qui ne l’ont pas déjà vu, je vous déconseille de lire ce qui suit.
 
-Ce héron, on l’a photographié et dessiné de nombreuses fois, jusqu’à en faire une obsession. On a ensuite repris ces dessins d’observation et ces photographies, à la peinture, sur des feuilles format A3, pour créer une unité, une cohérence graphique dans tous nos éléments. Pour les autres éléments, qui viennent composer notre photographie, on a choisi de peindre différents lettrages, également sur des feuilles A3, qui une fois mises bout à bout, forment les informations de l’affiche (date, lieu, horaire,…). 
-On a voulu réaliser les éléments qui composent notre photographie à la peinture, pour avoir une liberté dans la création des lettrages une approche plus singulière et personnel. On a choisi trois lettrages pour une diversité visuelle et une hiérarchisation des informations: un lettrage manuscrit, un avec contraste inversé et un corps très gras, et un lettrage plus fin reprenant la baskervville de l’anrt, choisi dans le but de mettre en avant les créations des étudiants de la section typographie de l’ensad. 
+Les évadés, un titre plutôt évocateur. Pourtant, une fois le film lancé, pas une seule fois m’est venu à l’esprit qu’Andy allait s’évader.
 
-On a choisi ce dispositif de feuilles posés au sol, pour la fragilité que cela induit. Un courant d’air, ou le passage d’une personne à coté peut faire s’envoler les feuilles, comme le héron s’envol lorsqu’on s’approche trop de lui. Notre affiche n’est pas une image unique et fixe, mais plusieurs images qui se déploie dans l’espace. On vous propose donc plusieurs déclinaisons, partant d’une composition initiale à d’autres où les éléments typographique et les dessins du héron s’envolent, et sont capturé par la photographie.
-Le dispositif permet également de composer les éléments à notre guise, de rajouter des éléments, ou bien d’en enlever.
+Pour ceux qui ne connaissent pas ce film et qui ont ignoré mon commentaire ci-dessus…C’est pas cool. Mais bon… Pour faire très très court, le film raconte la vie en prison dans les années 40/50, mais aussi d’émouvantes relations amicales, et également une super révélation finale (à laquelle je ne m’y attendais pas).
+Peut-être est-ce dû à mon esprit naïf ? Peut-être que je n’ai juste pas été attentif ? En fait, pour tout vous dire, lorsque j’ai lancé le film, je me souvenais déjà plus du titre de celui-ci. Et puis d’autres questionnement sont rapidement venu prendre le dessus dans mon esprit. 
+
+Andy Dufresne est condamné à 20 ans de prison pour le meurtre de sa femme et de son amant. Sauf qu’il clame son innocence auprès du juge, puis également en prison. Quand on lui demande « pourquoi t’as fait ça ?, il répond « je ne l’ai pas fait si tu veux le savoir ». Mais dès le début du film on voit Andy, seul, dans sa voiture, garé devant la maison de l’amant. Andy est soûl, et on le voit chargé son arme. Alors qui croire ? Les images ou la parole d’Andy ? Après tout, on ne le voit pas passer à l’action. Mais tout de même, c’est étrange… Andy est il vraiment innocent ? Ça, c’est une bonne question. 
+Et Andy joue avec cette ambiguïté. Il va reprendre à plusieurs reprise les mots de Red et d’un de ses amis: Ami de Red-« j’ai rien fait, c’est l’avocat qui m’a baisé », Red-« tout le monde est innocent, tu le sais ça ? »,tout deux dit sur un ton ironique. Andy reprend ces phrases phase à Red, ou encore plus tard face à Tommy-« je suis innocent Red, comme tous les gens qui sont ici », « un avocat m’a baisé », « tout le monde est innocent, tu ne le savais pas? ». 
+
+D’ailleurs, autre chose m’as rapidement fait oublier le titre du film. Andy Dufresne, c’est un nom que je connais me dis-je. En effet, je regarde ce film plus de 30 ans après sa sortie, et avant ça, j’écoutais « les portes du pénitencier » du groupe Shtar Ac, de 2014. Et l’ouverture de la musique se fait avec un semple du film: « Andy Dufresne nous avez tous fait rêver avec son coup d’éclat musical, mais il avait passé deux semaines au trou pour ça ». 
+C’est le premier groupe de rap produit dans une prison française, et plusieurs initiatives ont découlé suites à leurs demandes, comme la création d’un studio d’enregistrement ou encore des événements musicaux.
+Le choix de ce semple est plutôt interessant sur cette notion d’espoir et de persévérance que le film transmet. Dans le film, Andy demande des subventions pour agrandir la bibliothèque de la prison de shawshank et fini par les obtenir, en plus d’une donation de livre.
+
+Et puis en fait, je n’ai pas vraiment à me justifier sur le fait que je ne me doutais pas d’une évasion. Le film est avant tout un film d’émotion, et de documentation sur la vie en prison. L’évasion n’est qu’une cerise sur le gâteau.  
+
+
+@FOCUSONNOTHING
