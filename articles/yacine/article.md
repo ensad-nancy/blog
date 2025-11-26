@@ -1,12 +1,8 @@
 ---
-title: Desintegrations
+title: VELVET STRIKE
 date: 2025-11-17
-tags: Bouillant, captivant
-preview: 👍
+tags: VELVET, STRIKE, 
+preview: 
 ---
 
-
-
-
-<div class="tenor-gif-embed" data-postid="25164834" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/emoji-funny-gif-25164834">Emoji Funny GIF</a>from <a href="https://tenor.com/search/emoji-gifs">Emoji GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
+Bon, j’crois j’ai pas trop la tete a lire en ce moment, enfin du moins des choses physique, beaucoup plus sur web finalement. Forcement dans la vie faut faire des recherches sur des truc ou du moins s’en intéresser. Dans un grand échec de mon précédemment sujet qui parlais de la fake news j’ai eu souvenir d’un onglet qui traînait dans ma barre des favoris : « Velvet strike » un projet documenter sur le site NET ART ANTHOLOGY, un super article résumant et documentant de manière assez détailler le processus et les pensée des créateurs. J’ai machinalement cliquer et je me suis naturellement replonger dedans, ça réunissait deux choses que j’aime énormément, le graffiti et counter strike. En lisant la citation : “I WAS EXCITED AT THAT TIME WITH THE POSSIBILITY OF PUBLIC SPACE BEING EXTENDED INTO THE VIRTUAL AND USING GAME SPACE AS A PLACE TO GET A PUBLIC MESSAGE OUT.” De Anne-Marie Schleiner j’ai tout de suite eu envie de l’utiliser pour mon sujet, j’ai quand meme hésité par souvenir de cette phrase que l’on ma dit durant mon bilan de deuxième année « c’est vrai que si on ne te connaissais pas on pourrait penser que tu est un school shooter », j’y ai repenser puis je me suis dis que bon mettre une AK47 dans les mains d’un arabe ne faisait pas forcement de lui un terroriste, moi a la base j’aime juste Counter-Strike, Bref finit de parler de moi je vais vous parler un peu de ce super projet ! Le mod est développé juste après le 11 septembre, dans le contexte de la « Guerre contre le terrorisme » menée par les États-Unis. L’idée est d’insérer un message anti-militaire/anti-guerre dans un espace numérique qui valorise la violence, la machinerie de guerre, et l’opposition binaire « terroristes vs antiterroriste ». Plutôt que de modifier le jeu dans son ensemble, les auteurs exploitent la fonction « graffiti » (spray) du jeu Counter-Strike : les joueurs peuvent uploader des images/graffitis qui apparaissent dans les cartes du jeu.Velvet-Strike fournit des « sprays » (tags/graffitis) à connotation anti-guerre ou questionnant l’idéologie militaire. Par exemple des ours en peluche roses, ou des soldats s’embrassant, des visuels décalés par rapport à l’univers du jeu. Les artistes ont aussi encouragé les joueurs à créer leurs propres « sprays » via le site web du projet. Le projet s’est attaqué à l’espace « virtuel » des jeux vidéo pour injecter une dimension politique : il pose la question de la frontière entre le réel et le virtuel en affirmant que les jeux contiennent des idéologies militaires et patriarcales. Franchement je vous dirais juste d’aller check ce site c’est vraiment la frappe n’hesitez pas.
