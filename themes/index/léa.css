@@ -21,6 +21,7 @@ fieldset{
   border: 0;
   overflow-y: auto;
   font-family: "Adelphe_Trouble";
+  color:blue
 }
 
 fieldset legend{
@@ -141,6 +142,7 @@ h1 {
   text-align: justify;
   font-family: "Adelphe_Trouble";
   font-size: 35pt;
+  color:blue;
 }
 
 p {
