@@ -35,7 +35,18 @@ fieldset div{
     display: flex;
     justify-content: center;
 }
-
+fieldset div:nth-child(1)::before{
+    content: "{";
+}
+fieldset div:nth-child(1)::after{
+       content: "}";
+}
+fieldset div:nth-child(2)::before{
+    content: "#";
+}
+fieldset div:nth-child(3)::before{
+    content: "⁑";
+}
 fieldset div:nth-child(4)::after{
     content: "//";
 }fieldset div:nth-child(4)::before{
@@ -65,8 +76,37 @@ fieldset div:nth-child(9)::before{
 fieldset div:nth-child(9)::after{
        content: "//";
 }
-
-
+fieldset div:nth-child(10)::before{
+    content: "{";
+}
+fieldset div:nth-child(10)::after{
+       content: "}";
+}fieldset div:nth-child(11)::before{
+    content: "#";
+}
+fieldset div:nth-child(12)::before{
+    content: "⁑";
+}fieldset div:nth-child(13)::before{
+    content: "*";
+}fieldset div:nth-child(14)::before{
+    content: "//";
+}
+fieldset div:nth-child(14)::after{
+       content: "//";
+}
+fieldset div:nth-child(15)::before{
+    content: "{";
+}
+fieldset div:nth-child(15)::after{
+       content: "}";
+}fieldset div:nth-child(16)::before{
+    content: "#";
+}
+fieldset div:nth-child(17)::before{
+    content: "⁑";
+}fieldset div:nth-child(18)::before{
+    content: "*";
+}
 
 
 #filtres {
