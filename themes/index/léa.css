@@ -40,7 +40,7 @@ fieldset div:nth-child(4)::after{
 #filtres {
   position: absolute;
   left: 30%;
-  width: 30%;
+  width: 40%;
   box-sizing: border-box;
   top: 20%;
   height: 100%;
@@ -62,6 +62,17 @@ main {
 h1 {
   justify-content: center;
   display: flex;
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  box-sizing: border-box;
+  top: 2%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+  font-family: "Adelphe_Trouble";
+  width: 350px;
+  text-align: justify;
 }
 
 p {
