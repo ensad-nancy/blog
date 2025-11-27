@@ -38,6 +38,8 @@ fieldset div{
 
 fieldset div:nth-child(4)::after{
     content: "//";
+}fieldset div:nth-child(4)::before{
+    content: "//";
 }
 
 #filtres {
