@@ -16,7 +16,7 @@ fieldset{
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 20%;
+  top: 10%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -58,7 +58,7 @@ main {
   left: 2%;
   width: 26%;
   box-sizing: border-box;
-  top: 20%;
+  top: 10%;
   height: 100%;
   border: 0;
   overflow-y: auto;
