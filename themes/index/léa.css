@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: "Adelphe_Trouble_Regular";
-    src: url("../../articles/léa/images/Nouveau\ dossier\ contenant\ des\ éléments/Adelphe_Trouble_Regular") format("opentype");
+    src: url("../../articles/léa/images/fontes/Adelphe-Trouble-GerminalRegular\ copie.otf") format("opentype");
 }
 
 body{
@@ -45,7 +45,7 @@ fieldset div:nth-child(4)::after{
   left: 30%;
   width: 40%;
   box-sizing: border-box;
-  top: 20%;
+  top: 90%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -63,19 +63,15 @@ main {
 }
 
 h1 {
-  justify-content: center;
+  width: 40%;
   display: flex;
+  justify-content: center;
   position: absolute;
-  left: 40%;
-  width: 20%;
-  box-sizing: border-box;
-  top: 2%;
-  height: 100%;
-  border: 0;
-  overflow-y: auto;
-  font-family: "Adelphe_Trouble";
-  width: 350px;
+  left: 30%;
+  top: 5%;
   text-align: justify;
+  font-family: "Adelphe_Trouble";
+  font-size: 35pt;
 }
 
 p {
