@@ -41,6 +41,12 @@ fieldset div:nth-child(4)::after{
 }fieldset div:nth-child(4)::before{
     content: "//";
 }
+fieldset div:nth-child(5)::before{
+    content: "{";
+}
+fieldset div:nth-child(5)::after{
+       content: "}";
+}
 
 #filtres {
   position: absolute;
@@ -91,5 +97,5 @@ p {
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;display: flex;
-  font-size: 15pt;
+  font-size: 20pt;
 }
