@@ -134,16 +134,16 @@ main {
 }
 
 h1 {
-  width: 40%;
+ width: 30%;
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 30%;
+  left: 34%;
   top: 5%;
   text-align: justify;
   font-family: "Adelphe_Trouble";
-  font-size: 35pt;
-  color:blue;
+  font-size: 30pt;
+  color: blue;
 }
 
 p {
