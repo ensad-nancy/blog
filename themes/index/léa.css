@@ -145,12 +145,6 @@ h1 {
   font-size: 30pt;
   color: blue;
 }
-h1::after {
-  content: "ensad";
-  text-transform: uppercase;
-  position: absolute;
-
-}
 
 p {
   display: flex;
