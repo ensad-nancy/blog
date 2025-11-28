@@ -162,3 +162,14 @@ p {
   color: blue;display: flex;
   font-size: 20pt;
 }
+
+#date {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  box-sizing: border-box;
+  top: 9%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+}
