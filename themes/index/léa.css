@@ -115,10 +115,11 @@ fieldset div:nth-child(17)::before{
   left: 30%;
   width: 40%;
   box-sizing: border-box;
-  top: 90%;
+  top: 60%;
   height: 100%;
   border: 0;
   overflow-y: auto;
+  justify-content: center;
 }
 
 main {
