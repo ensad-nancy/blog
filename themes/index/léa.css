@@ -145,9 +145,9 @@ h1 {
   font-size: 30pt;
   color: blue;
   background-image: url("../../articles/léa/images/parenthèses_titre.svg");
-  background-repeat: no-repeat;
-  background-position: right 115% center; 
+  background-repeat: no-repeat; 
   background-size: 150px 200px; 
+  background-position: 80% center;
   padding-right: 50px; 
 }
 
