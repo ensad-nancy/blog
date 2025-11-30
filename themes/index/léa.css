@@ -144,11 +144,6 @@ h1 {
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
   color: blue;
-  background-image: url("../../articles/léa/images/parenthèses_titre.svg");
-  background-repeat: no-repeat; 
-  background-size: 150px 200px; 
-  background-position: 80% center;
-  padding-right: 50px; 
 }
 
 p {
