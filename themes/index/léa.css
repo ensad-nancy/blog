@@ -130,16 +130,13 @@ main {
   top: 10%;
   height: 100%;
   border: 0;
-  display: block;               /* chaque cercle va à la ligne */
-  width: fit-content;           /* le cercle s'adapte au texte */
-  margin: 20px auto;            /* espace + centrage */
-  padding: 10px 20px;           /* espace interne du cercle */
-  border: 2px solid blue;       /* cercle bleu */
-  border-radius: 50px;  
+  display: block;
+  padding: 10px 20px;
+  border-radius: 50px;
   overflow-y: auto;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
-  color: blue; 
+  color: blue;
 }
 
 main p {
