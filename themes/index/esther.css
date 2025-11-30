@@ -11,9 +11,13 @@
    src: local("sinistreragular"), url("../../articles/esther/images/SINISTRE/sinistreregular.otf") format("opentype");
 } 
 
+.thumb{
+   display: none;
+}
+
 
 body{
-    background-color: #ffffff;
+    background-color: #fff9f9;
  font-family:"Rot-ProtoRoman102R 2", serif;
  font-size: large;
 }
@@ -25,7 +29,7 @@ h1{
    }
 h1::first-letter {
   font-family: "HENTZAU 2";
- font-size:55px;
+ font-size:65px;
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
@@ -34,12 +38,15 @@ body > p{
     font-family: "Rot-ProtoRoman102R 2", serif;
    font-size: medium;
    text-align: center;
+   font: size 70px;
    color: brown;
    margin: 2%;
 }
 
-.thumb{
-   display: none;
-}
+fieldset{
+   border-radius:70%;
+   border-width: 10%;
+   text-align: center;
 
+}
 
