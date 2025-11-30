@@ -30,7 +30,6 @@ body{
 }
 
 img {
- 
     display: block;
    margin: 0 auto;
     filter: grayscale(100%);
@@ -164,12 +163,12 @@ main a div {
     padding: 1rem;
     background: #efece3;
     display: flex;
-    flex-direction: column; /* вертикальне розміщення */
+    flex-direction: column; 
     gap: 1rem;
 }
 
 main a div img.thumb {
-    width: 100%; /* або max-width: 100% */
+    width: 100%; 
     height: auto;
     object-fit: cover;
     border-radius: 6px;
@@ -207,16 +206,16 @@ main a div img.thumb {
 
 #filtres h2 {
     
-    font-size: 30px;        /* розмір */
-    color: #0259db;         /* колір */
+    font-size: 30px;        
+    color: #0259db;         
     text-align: left;     
     margin-right: 35px;   
     letter-spacing: 1px;   
 }
 
 main a {
-    text-decoration: none;  /* прибирає підкреслення */
-    color: inherit;         /* колір тексту залишаємо як у батьків */
+    text-decoration: none;  
+    color: inherit;         
 }
 
 
@@ -225,15 +224,15 @@ main a div {
     position: relative;
 }
 
-/* Hidden star initially */
+
 main a div::after {
     content: "";
     position: absolute;
     top: 10px;          
-    left: 45%;             /* center horizontally */
+    left: 45%;            
     transform: translateX(-50%) scale(0.6) rotate(-15deg);
     
-    width: 28px;           /* bigger star */
+    width: 28px;           
     height: 28px;
     background: #0259db;
     opacity: 0;
