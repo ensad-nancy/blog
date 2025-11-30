@@ -134,6 +134,11 @@ main {
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
+   display: inline-block;      /* Permet de dimensionner le cercle autour du texte */
+  padding: 10px 20px;         /* Espace interne pour aérer le cercle */
+  border: 2px solid blue;     /* Bord bleu */
+  border-radius: 50px;        /* Forme ovale / arrondie */
+  color: blue;  
 
 }
 
