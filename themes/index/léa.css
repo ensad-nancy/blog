@@ -136,6 +136,20 @@ main {
   color: blue; 
 }
 
+.main p:not(.exclu) {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 30%;
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  box-sizing: border-box;
+  top: -18%;
+  height: 100%;
+  border: 0;
+}
 a{
 display: inline-block;      /* Permet de dimensionner le cercle autour du texte */
   padding: 10px 20px;         /* Espace interne pour aérer le cercle */
