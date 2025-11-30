@@ -140,19 +140,12 @@ main a{
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-family: "Adelphe_Trouble_Regular";
+    font-family: "Adelphe_Trouble";
+    font-size: 32pt;
 }
 
 main p {
     visibility: hidden;
-}
-
-a{
-display: inline-block;      /* Permet de dimensionner le cercle autour du texte */
-  padding: 10px 20px;         /* Espace interne pour aérer le cercle */
-  border: 2px solid blue;     /* Bord bleu */
-  border-radius: 50px;        /* Forme ovale / arrondie */
-  color: blue; 
 }
 
 h1 {
