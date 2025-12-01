@@ -4,7 +4,8 @@ date: 2025-11-24
 # tags: tag&
 # preview: image
 ---
-
+<img src="Blog/articles/lohann/images/20251124_102241.jpg" alt="lowcost3000" width="300"/>
+   
 # Le sombre trottoir de la biennale
 ##
 De ce que je me souviens, nous étions à Lyon ce week-end là pour la biennale -et entre autre pour l'anniversaire de Maëli- qui avait lieu en novembre 2024.
