@@ -1,5 +1,5 @@
 html, body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /*-----FONTS-----*/
@@ -75,7 +75,8 @@ body > p{
     margin-bottom: 1em;
     padding: 1em;
     align-items: baseline;
-
+    padding: 1em 0em 1em 1em;
+    margin: 1em 0em 0em 0em;
 }
 
 #themes div{
@@ -128,7 +129,7 @@ body > p{
     gap: 20px;
     width: 100%;
     overflow-x: auto;
-    padding: 1em;
+    padding: 0em 0em 0em 1em;
     align-items: baseline;
 }
 
@@ -146,31 +147,6 @@ body > p{
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-}
-
-input[type="range"] {
-    appearance: none;
-    /* background: transparent; */
-    width: 15rem;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.5);
-    height: 0.5rem;
-    border-radius: 10px;
-    margin: -27px 30px -17px 90px;
-    display: flex;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-    background: rgba(255, 255, 255, 0.7);
-    width: 2rem;
-    height: 1rem;
-    border-radius: 10px;
-}
-
-input label{
-    appearance: none;
-    color: white;
 }
 
 #filtres #auteurices p{
@@ -202,6 +178,45 @@ input label{
 
 }
 
+
+
+/*-----INPUT RANGE-----*/
+
+input[type="range"] {
+    appearance: none;
+    /* background: transparent; */
+    width: 15rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    height: 0.5rem;
+    border-radius: 10px;
+    margin: -27px 30px -17px 90px;
+    display: flex;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.7);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+#date label{
+    appearance: none;
+    color: white;
+    display: flex;
+    margin: 2px 20px 0px 350px;
+}
+
+select{
+    display: flex;
+    margin: -57px 30px -17px 150px;
+    border-color: white;
+    border-radius: 50px;
+}
+
+/*-----MAIN-----*/
 
 main{
     display: grid;

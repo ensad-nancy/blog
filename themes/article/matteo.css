@@ -119,9 +119,8 @@ article h1{
     border-style: none;
     margin-left: 0;
     margin-bottom: 1em;
-    margin-top: 3em;
-    padding: 1em;
     align-items: baseline;
+    padding: 1em 0em 1em 1em;
 }
 
 #themes div{
@@ -142,7 +141,13 @@ article h1{
     padding-top: 10px;
 }
 
-
+#themes input{
+    color: rgb(0, 255, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
 #themes legend{
     color: white;
@@ -155,9 +160,8 @@ article h1{
     padding-top: 10px;
     display: flex;
     left: 0;
-    
+    position: absolute;   
 }
-
 /*-----MAIN-----*/
 
 main{
