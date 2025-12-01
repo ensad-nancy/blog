@@ -21,9 +21,9 @@ html, body {
 /*-----BODY-----*/
 
 body{
-    background: #f7f7f7;  
-    margin-top: 0;  
-    margin: 0; 
+    background: #f7f7f7;
+    margin-top: 0;
+    margin: 0;
 }
 
 
@@ -34,7 +34,7 @@ h1{
     font-weight: normal;
     color: rgb(0, 255, 0);
     width: 100%;
-    white-space: nowrap; 
+    white-space: nowrap;
     display: block;
     animation: scroll-left 20s linear infinite;
     /* background: #485cb8; */
@@ -42,10 +42,10 @@ h1{
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-350%); 
+    transform: translateX(-350%);
   }
 }
 
@@ -71,12 +71,10 @@ body > p{
     width: 100%;
     overflow-x: auto;
     border-style: none;
-    margin-left: 0;
-    margin-bottom: 1em;
     padding: 1em;
     align-items: baseline;
     padding: 1em 0em 1em 1em;
-    margin: 1em 0em 0em 0em;
+    margin: 0em 0em 1em 0em;
 }
 
 #themes div{
@@ -116,7 +114,7 @@ body > p{
     padding-top: 10px;
     display: flex;
     left: 0;
-    position: absolute;   
+    position: absolute;
 }
 
 

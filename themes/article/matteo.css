@@ -39,6 +39,7 @@ body > a:any-link{
     position: fixed;
     border: 1.5px solid;
     border-color: rgb(0, 0, 136);
+    z-index: 10;
 
 }
 
@@ -53,15 +54,6 @@ body > a:hover{
 
 /*-----HEADER-----*/
 
-/* header{
-    background-color: white;
-    padding: 2%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    margin-left: 4%;
-    width: 50em;
-    font-size: 16pt;
-} */
 
 header .title{
     background-color: white;
@@ -82,6 +74,19 @@ header .date{
     width: 40em;
     font-size: 16pt;
 }
+
+header .tags{
+    background-color: white;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: 4%;
+    width: 40em;
+    font-size: 16pt;
+}
+
+
+
 /*-----ARTICLE-----*/
 
 article{
@@ -103,7 +108,7 @@ article p a{
 
 article h1{
     font-size: 40pt;
-    font-weight: normal;
+    font-weight: lighter;
     margin-top: 1%;
 }
 
@@ -117,10 +122,9 @@ article h1{
     width: 100%;
     overflow-x: auto;
     border-style: none;
-    margin-left: 0;
-    margin-bottom: 1em;
     align-items: baseline;
     padding: 1em 0em 1em 1em;
+    margin: 3em 0em 0em 0em;
 }
 
 #themes div{
