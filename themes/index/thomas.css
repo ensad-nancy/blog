@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, legend{
     color: #60e500;
 }
 
+
 h1 {
     font-family: sans-serif;
     font-size: 35px;
@@ -14,7 +15,12 @@ h1 {
 h3 {
     font-family: arial, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
+}
+
+footer {
+    font-family: arial, sans-serif;
+    font-size: 14px;
 }
 
 body > p{
@@ -29,14 +35,14 @@ input[type="radio"] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #fff898;    /* yellow border for unchecked */
-  background: #ab448c;          /* yellow fill for unchecked */
+  border: 2px solid #fff898;    
+  background: #ab448c;        
   box-sizing: border-box;
   cursor: pointer;
 }
 
 input[type="radio"]:checked {
-  background: #2ecc40;          /* green when selected */
+  background: #2ecc40;          
 }
 
 
@@ -69,11 +75,11 @@ main > * {
 
 main a, 
 main a h1, main a h2, main a h3, main a h4 {
-  display: block;            /* ensure width constraint applies */
-  width: 100%;               /* fill the flex item */
-  white-space: nowrap;       /* keep to one line */
-  overflow: hidden;          /* hide overflow */
-  text-overflow: ellipsis;   /* show "..." */
+  display: block;           
+  width: 100%;             
+  white-space: nowrap;     
+  overflow: hidden;         
+  text-overflow: ellipsis;  
   box-sizing: border-box;
 }
 

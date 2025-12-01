@@ -1,5 +1,5 @@
 html, body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /*-----FONTS-----*/
@@ -75,6 +75,7 @@ body > p{
     margin-bottom: 1em;
     padding: 1em;
     align-items: baseline;
+
 }
 
 #themes div{
@@ -114,7 +115,7 @@ body > p{
     padding-top: 10px;
     display: flex;
     left: 0;
-    
+    position: absolute;   
 }
 
 
@@ -145,7 +146,31 @@ body > p{
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
+}
 
+input[type="range"] {
+    appearance: none;
+    /* background: transparent; */
+    width: 15rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    height: 0.5rem;
+    border-radius: 10px;
+    margin: -27px 30px -17px 90px;
+    display: flex;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.7);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+input label{
+    appearance: none;
+    color: white;
 }
 
 #filtres #auteurices p{
@@ -176,28 +201,6 @@ body > p{
     padding-top: 10px;
 
 }
-
-/* #filtres #date{
-    color: white;
-    background-color: rgb(99, 213, 65);
-    border-radius: 90px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-
-}
-
-#filtres #auteurices{
-    color: white;
-    background-color: rgb(99, 213, 65);
-    border-radius: 90px;
-    flex-shrink: 0;
-    align-items: center;
-    display: flex;
-
-} */
-
-
 
 
 main{
