@@ -2,10 +2,13 @@
     font-family: "Adelphe_Trouble";
     src: url("../../articles/léa/images/fontes/Adelphe-Trouble-GerminalSemiBoldItalic\ copie.otf") format("opentype");
 }
-
+@font-face {
+    font-family: "Adelphe_Trouble_Regular";
+    src: url("../../articles/léa/images/fontes/Adelphe-Trouble-GerminalRegular\ copie.otf") format("opentype");
+}
 
 body{
-    background-color: #ffffff;
+    background-color: #edededee;
 }
 
 fieldset{
@@ -13,11 +16,12 @@ fieldset{
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 20%;
+  top: 10%;
   height: 100%;
   border: 0;
   overflow-y: auto;
   font-family: "Adelphe_Trouble";
+  color:blue
 }
 
 fieldset legend{
@@ -32,20 +36,90 @@ fieldset div{
     display: flex;
     justify-content: center;
 }
-
+fieldset div:nth-child(1)::before{
+    content: "{";
+}
+fieldset div:nth-child(1)::after{
+       content: "}";
+}
+fieldset div:nth-child(2)::before{
+    content: "#";
+}
+fieldset div:nth-child(3)::before{
+    content: "⁑";
+}
 fieldset div:nth-child(4)::after{
     content: "//";
+}fieldset div:nth-child(4)::before{
+    content: "//";
 }
+fieldset div:nth-child(5)::before{
+    content: "{";
+}
+fieldset div:nth-child(5)::after{
+       content: "}";
+}
+fieldset div:nth-child(6)::before{
+    content: "#";
+}
+fieldset div:nth-child(7)::before{
+    content: "⁑";
+}
+fieldset div:nth-child(8)::before{
+    content: "*";
+}
+fieldset div:nth-child(8)::after{
+       content: "*";
+}
+fieldset div:nth-child(9)::before{
+    content: "//";
+}
+fieldset div:nth-child(9)::after{
+       content: "//";
+}
+fieldset div:nth-child(10)::before{
+    content: "{";
+}
+fieldset div:nth-child(10)::after{
+       content: "}";
+}fieldset div:nth-child(11)::before{
+    content: "#";
+}
+fieldset div:nth-child(12)::before{
+    content: "⁑";
+}fieldset div:nth-child(13)::before{
+    content: "*";
+}fieldset div:nth-child(14)::before{
+    content: "//";
+}
+fieldset div:nth-child(14)::after{
+       content: "//";
+}
+fieldset div:nth-child(15)::before{
+    content: "{";
+}
+fieldset div:nth-child(15)::after{
+       content: "}";
+}fieldset div:nth-child(16)::before{
+    content: "#";
+}
+fieldset div:nth-child(17)::before{
+    content: "⁑";
+}fieldset div:nth-child(18)::before{
+    content: "*";
+}
+
 
 #filtres {
   position: absolute;
   left: 30%;
-  width: 30%;
+  width: 40%;
   box-sizing: border-box;
-  top: 20%;
+  top: 60%;
   height: 100%;
   border: 0;
   overflow-y: auto;
+  justify-content: center;
 }
 
 main {
@@ -53,18 +127,68 @@ main {
   left: 2%;
   width: 26%;
   box-sizing: border-box;
-  top: 20%;
+  top: 10%;
   height: 100%;
   border: 0;
   overflow-y: auto;
 }
 
-h1 {
-  justify-content: center;
+main a{  
+    padding: 10px 20px;
+    border: 2px solid blue;
+  border-radius: 100%;
+  margin-bottom: 15px;
   display: flex;
+  justify-content: center;
+  font-family: "Adelphe_Trouble";
+  font-size: 22pt;
+  text-align: center;
+}
+
+main p {
+    visibility: hidden;
+}
+
+h1 {
+ width: 30%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 34%;
+  top: 5%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble_Regular";
+  font-size: 30pt;
+  color: blue;
+
 }
 
 p {
   display: flex;
   justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 30%;
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  box-sizing: border-box;
+  top: -18%;
+  height: 100%;
+  border: 0;
+  font-family: "Adelphe_Trouble_Regular";
+  color: blue;
+  display: flex;
+  font-size: 20pt;
+}
+
+#date {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  box-sizing: border-box;
+  top: 9%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
 }
