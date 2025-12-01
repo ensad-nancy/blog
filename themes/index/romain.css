@@ -6,19 +6,13 @@ body{
     background-color: #b6b6b6;
 }
 
-.date{
-    font-weight: 300;
-    color: #ffffff;
-    
-
-    }
 
 h1{
         font-family: 'MenilEtroit', serif;
     color: #000000;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 840%;
+    font-size: 9vw;
     text-align: center;
     margin-top: -0.5%;
 }
@@ -66,12 +60,15 @@ h2{
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 5%;
-    border-color: rgb(0, 0, 0);
+    margin-top: 1%;
+    border-color: rgb(255, 255, 255);
     border-style: dotted;
     border-width: 10%;
     text-align: center;
     padding: 1%;
     width: 9%;
+    background-color: rgb(162, 187, 2);
+
 }
 
 fieldset{
@@ -80,6 +77,8 @@ fieldset{
     z-index: 1;
     background-color: #000000;
     border-radius: 40px;
+    border-style: dotted;
+    border-width: 4px;
     width:100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -88,7 +87,16 @@ fieldset{
 }
 
 #themes div{
-    color: #ffffff;
+    color: #000000;
+    background-color: rgb(162, 187, 2);
+    width: 68%;
+    height: 44%;
+    border-radius: 7px;
+    border-color: #ffffff;
+    border: 10px;
+    font-family: 'MenilEtroit';
+    font-size: 193%;
+    font-stretch: 10%;
 }
 
 #themes legend{
@@ -98,5 +106,112 @@ fieldset{
 
 .thumb{
     display: none;
+}
+
+#themes input{
+   color: rgb(0, 0, 0);
+}
+
+#filtres #date {
+    margin-left: 19%;
+    width: 9%;
+    display: block;
+    margin-top: -6%;
+}
+
+/* Range appearance variables (change these to customize colors) */
+#filtres{
+    --range-thumb-color:  rgb(134,202,56); /* default thumb color */
+    --range-thumb-border: #ffffff; /* thumb border */
+    --range-track-color: #e6e6e6; /* fallback track color */
+}
+
+input[type="range"]{
+  width: 500%;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, #000000 50%, rgb(0, 0, 0) 100%);
+  height: 0.5rem;
+  border-radius: 3px;
+  margin-left: 54%;
+  margin-top: -20%;
+  display: flex;
+  
+}
+
+/* Thumb styles - cross-browser */
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    appearance:none;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background: var(--range-thumb-color, rgb(134,202,56));
+    border: 2px solid var(--range-thumb-border, #fff);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    margin-top: -4px; /* centers thumb visually on the track height */
+}
+
+input[type="range"]::-moz-range-thumb{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background: var(--range-thumb-color, rgb(134,202,56));
+    border: 2px solid var(--range-thumb-border, #fff);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* IE/Edge */
+input[type="range"]::-ms-thumb{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background: var(--range-thumb-color, rgb(134,202,56));
+    border: 2px solid var(--range-thumb-border, #fff);
+}
+
+#filtres #date label{
+    font-family: 'Ptolemy Great Primer';
+    font-size: 135%;
+    color: rgb(134,202,56);
+    -webkit-text-stroke: #ffffff 2px;
+}
+
+#filtres #date p{
+    font-family: 'Ptolemy Great Primer';
+    font-size: 135%;
+    text-decoration: underline;
+}
+
+#filtres #auteurices p{
+    font-family: 'Ptolemy Great Primer';
+    font-size: 135%;
+     text-decoration: underline;
+}
+
+
+/* Lower the author select area visually without changing layout flow.
+   Using transform keeps the original space so other elements aren't pushed.
+   Added horizontal control so you can move #auteurices left/right too.
+   Change values in `#filtres { --auteur-offset: ...; --auteur-x-offset: ... }`
+   or inline: <div id="filtres" style="--auteur-x-offset: 30px; --auteur-offset: 12px"> */
+#filtres{
+        --auteur-offset: -110%;
+    --auteur-x-offset: 76%;   /* horizontal offset (rightwards). Use negative to go left */
+}
+
+#filtres #auteurices{
+    /* translate(x, y) so the element moves visually without affecting layout
+       - x uses --auteur-x-offset, y uses --auteur-offset */
+    transform: translate(var(--auteur-x-offset), var(--auteur-offset));
+    transition: transform 180ms ease;
+    /* pointer-events and layout remain unaffected by this transform */
+}
+
+/* On small screens where filters stack, reset the offset */
+@media (max-width: 600px){
+    /* On narrow screens reset both translations so stacked layout remains clean */
+    #filtres #auteurices{ transform: none; }
 }
 
