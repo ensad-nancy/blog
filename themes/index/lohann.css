@@ -50,6 +50,7 @@ body > p {
 #themes legend {
     background-color: aqua;
     padding: 5px;
+    block-size: 20%;
 }
 
 #themes div {
