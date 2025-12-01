@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, legend{
     color: #60e500;
 }
 
+
 h1 {
     font-family: sans-serif;
     font-size: 35px;
@@ -14,7 +15,12 @@ h1 {
 h3 {
     font-family: arial, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
+}
+
+footer {
+    font-family: arial, sans-serif;
+    font-size: 14px;
 }
 
 body > p{
