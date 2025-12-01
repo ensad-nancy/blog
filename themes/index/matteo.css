@@ -1,8 +1,225 @@
-body{
-    background: #002fff;
-    background: linear-gradient(90deg, rgba(0, 47, 255, 0.62) 10%, rgba(0, 255, 132, 1) 90%);   
-    font-family: Arial, Helvetica, sans-serif;     
+html, body {
+    overflow-x: hidden;
 }
+
+/*-----FONTS-----*/
+
+@font-face {
+    font-family: 'bianzhidai-Stitches';
+    src: url('/articles/matteo/images/bianzhidai-Stitches.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baskervville-Regular';
+    src: url('/articles/matteo/images/Baskervville-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-----BODY-----*/
+
+body{
+    background: #f7f7f7;  
+    margin-top: 0;  
+    margin: 0; 
+}
+
+
+
+h1{
+    font-family: "bianzhidai-Stitches";
+    font-size: 90pt;
+    font-weight: normal;
+    color: rgb(0, 255, 0);
+    width: 100%;
+    white-space: nowrap; 
+    display: block;
+    animation: scroll-left 20s linear infinite;
+    /* background: #485cb8; */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-350%); 
+  }
+}
+
+body > p{
+    font-family: "Baskervville-Regular";
+    font-size: 16pt;
+    font-weight:lighter;
+    width: 20em;
+    background-color: white;
+    margin-top: 4em;
+    margin-left: 3em;
+    padding: 2%;
+    margin-bottom: 6em;
+}
+
+/*-----THEMES-----*/
+#themes{
+    font-family: "Baskervville-Regular";
+    font-size: 18pt;
+    display: flex;
+    background-color: rgb(0, 0, 136);
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    border-style: none;
+    margin-left: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    align-items: baseline;
+}
+
+#themes div{
+    background-color: rgb(89, 89, 178);
+    border-radius: 90px;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#themes label{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#themes input{
+    color: rgb(0, 255, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#themes legend{
+    color: white;
+    background-color: rgb(89, 89, 178);
+    border-radius: 90px;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    left: 0;
+    
+}
+
+
+/*-----FILTRES-----*/
+
+#filtres{
+    font-family: "Baskervville-Regular";
+    display: flex;
+    background-color: rgb(0, 255, 0);
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 1em;
+    align-items: baseline;
+}
+
+#filtres #date p{
+    margin: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    color: white;
+    background-color: rgb(99, 213, 65);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    font-size: 18pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#filtres #auteurices p{
+    color: white;
+    background-color: rgb(99, 213, 65);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    font-size: 18pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#filtres h2{
+    color: white;
+    background-color: rgb(99, 213, 65);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    font-size: 18pt;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+/* #filtres #date{
+    color: white;
+    background-color: rgb(99, 213, 65);
+    border-radius: 90px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+#filtres #auteurices{
+    color: white;
+    background-color: rgb(99, 213, 65);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+
+} */
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main a{
+    width: 80%;
+    background-color: white;
+    margin: 5%;
+    padding: 5%;
+    text-align: left;
+}
+
+main a h3{
+    font-size: 40pt;
+    font-family: "Baskervville-Regular";
+    font-weight: normal;
+}
+
+/*------LINKS-----*/
 
 a:link{
     color: black;
@@ -11,13 +228,16 @@ a:link{
 
 a:visited{
     color: black;
-        text-decoration: none;
+    text-decoration: none;
 }
 a:hover{
-    color: #daffb6;
+    color: #00ff00;
     transition: 0.3s;
 }
+
+/*-----IMAGES-----*/
 
 .thumb{
     display: none;
 }
+

@@ -4,7 +4,8 @@ date: 2025-11-24
 # tags: tag&
 # preview: image
 ---
-
+<img src="Blog/articles/lohann/images/20251124_102241.jpg" alt="lowcost3000" width="300"/>
+   
 # Le sombre trottoir de la biennale
 ##
 De ce que je me souviens, nous étions à Lyon ce week-end là pour la biennale -et entre autre pour l'anniversaire de Maëli- qui avait lieu en novembre 2024.
@@ -28,4 +29,4 @@ Nous sommes arrivées au alentour de 7h, Quai Sainte Catherine à Nancy, à l'au
 Mais cette fin de soirée un peu cata me plaît avec le temps, Mathilde et moi sommes devenues coloc depuis, et ça c'est un beau souvenir de merde.
 
 
-*1 [Un artiste qui encadrait ses fins de repas](https://lepetitjournal.com/varsovie/comprendre-pologne/qui-sont-les-rois-presents-sur-les-billets-de-banque-polonais-282939)
+*1 [le zloty ?](https://lepetitjournal.com/varsovie/comprendre-pologne/qui-sont-les-rois-presents-sur-les-billets-de-banque-polonais-282939)

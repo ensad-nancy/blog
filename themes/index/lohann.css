@@ -1,3 +1,53 @@
+@font-face {
+    font-family: "KG Primary";
+    src: url(../../articles/lohann/images/KGPrimaryPenmanshipAlt.ttf);
+}
+
 body{
-    background-color: #FFB6C1;
+    background-image:url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp) ;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    size: 70%;
+    color: blue;
+}
+
+body >p{
+    font-style: italic;
+    font-size: medium;
+}
+
+#themes{
+ display: flex;
+ width: 100%;
+ border-width: 20%;
+ background-color: aqua;
+}
+
+#themes legend{
+    background-color: aqua;
+}
+
+#themes div{
+ flex-shrink: 0;
+}
+
+main a h3{
+ font-size: 60px;
+ font-family: "KG Primary";
+ margin: none;
+}
+
+.thumb {
+    display: none;
+}
+
+a{
+    color: rgb(247, 32, 172);
+    text-decoration: none;
+  
+}
+
+footer{
 }
