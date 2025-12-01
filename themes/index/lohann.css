@@ -15,17 +15,6 @@ body {
     min-height: 100vh;
 }
 
-main {
-    width: 75%;
-    padding: 20px;
-    position: absolute;
-    width: 26%;
-    box-sizing: border-box;
-    top: 10%;
-    height: 100%;
-    overflow-y: auto;
-}
-
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
@@ -39,10 +28,15 @@ body > p {
 
 #themes {
     display: flex;
-    flex-direction: left column;
     gap: 10px;
-    background-color: aqua;
-    padding: 10px;
+    color:aqua;
+    padding: 20px;
+    position: absolute;
+    width: 26%;
+    box-sizing: border-box;
+    top: 10%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 #themes legend {
@@ -55,6 +49,17 @@ body > p {
     flex-shrink: 0;
 }
 
+main {
+    width: 75%;
+    padding: 20px;
+    position: absolute;
+    width: 26%;
+    box-sizing: border-box;
+    top: 10%;
+    height: 100%;
+    overflow-y: auto;
+}
+
 main a h3 {
     font-size: 60px;
     font-family: "KG Primary";
@@ -63,12 +68,13 @@ main a h3 {
 }
 
 main a{  
-  padding: 10px 20px;
+  padding: 10px;
   border: 2px solid blue;
+  background-color: rgba(0, 0, 255, 0.337);
   display: flex;
   justify-content: center;
   text-align: center;
-  block-size: 20%;
+  block-size: 40%;
 }
 
 main p {
