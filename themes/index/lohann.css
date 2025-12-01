@@ -41,7 +41,7 @@ body > p {
 
 #themes {
     display: flex;
-    flex-direction: column;
+    flex-direction: left column;
     gap: 10px;
     background-color: aqua;
     padding: 10px;
