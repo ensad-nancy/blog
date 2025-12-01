@@ -1,3 +1,7 @@
+title: Section Worldwide d’Anti-Problèmes Traumatisants
+date: 2025-11-27-
+tags: lol, génant, en réponse, admiration
+
 **Dona Quichotte,**
 Permets-moi d’être très franc : lire ton texte comme un panégyrique de S.W.A.T. m’a laissé pantois. Tu parles d’un « bijou du cinéma américain » ; je ne crois pas que tu sois malhonnête, simplement que tu regardes la série sans mesurer le cadre dans lequel elle a été fabriquée. Alors laisse-moi remonter quelques facts et poser les bonnes questions.
 
@@ -15,7 +19,7 @@ Bref : si tu dis sérieusement que S.W.A.T. est un « bijou », je n’insiste p
 
 --
 
-**Section Worldwide d’Anti-Problèmes Complexes**
+**Section Worldwide d’Anti-Problèmes Traumatisants**
 
 Certaines personnes ont commenté mon dernier texte en pensant, très sincèrement, que je plaisantais. Comme si mon enthousiasme pour S.W.A.T. n’était qu’une blague, une provocation, une posture ironique. Je les remercie de leur imagination, mais je vais devoir les décevoir : je suis parfaitement sérieuse. S.W.A.T. est, selon moi, un véritable bijou du cinéma américain. Et je continuerai de le dire, de l’assumer et de le regarder, même si cela semble surprendre.
 
