@@ -16,11 +16,10 @@ body {
 }
 
 #sidebar {
-    width: 25%;        /* changeable : 20–30% */
+    width: 25%;
     min-width: 220px;
     background-color: rgba(255, 255, 255, 0.4); 
     padding: 10px;
-    box-sizing: border-box;
 }
 
 main {
@@ -46,7 +45,6 @@ body > p {
     gap: 10px;
     background-color: aqua;
     padding: 10px;
-    border-radius: 10px;
 }
 
 #themes legend {
