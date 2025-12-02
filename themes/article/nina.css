@@ -1,3 +1,24 @@
 body{
-    background-color: #1E90FF;
+   
+    background: linear-gradient(#e66465, #9198e5)
 }
+    @font-face {
+  font-family: "" ;
+  src: 
+   local("Trickster"),
+   url("") format("opentype");
+
+     color: black;
+}
+h1 {
+ background-image: url("/articles/nina/images/nuage.jpg");
+}
+
+a{
+
+}
+
+title{
+
+}
+

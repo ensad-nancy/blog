@@ -1,3 +1,211 @@
-body{
-    background-color: #0040ff;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background: white;
+}
+
+/* ---------------------------------------------------
+   HEADER
+---------------------------------------------------*/
+h1 {
+    font-size: 60px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; /* needed for pseudo-element */
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: -500px;          /* start from left edge of h1 */
+    bottom: -5px;     /* slightly below text */
+    width: 200%;      /* line longer than text width */
+    height: 4px;
+    background-color: black;
+}
+
+body > p {
+    width: 800px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+body > p::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    bottom: -5px;
+    width: 150%;
+    height: 4px;
+    background-color: black;
+}
+
+
+/* ---------------------------------------------------
+   COLONNE GAUCHE — THEMES
+---------------------------------------------------*/
+#themes {
+    position: fixed;
+    top: 140px;
+    left: 0;
+    width: 180px;
+    padding: 15px;
+    border-right: 4px solid black;
+    background: white;
+}
+
+#themes legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#themes div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#themes label {
+    background: #ff30ff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------
+   COLONNE DROITE — FILTRES
+---------------------------------------------------*/
+#filtres {
+    position: fixed;
+    top: 140px;
+    right: 0;
+    width: 220px;
+    padding: 15px;
+    border-left: 4px solid black;
+    background: white;
+}
+
+#filtres h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#filtres p {
+    font-weight: bold;
+    margin: 12px 0 5px 0;
+}
+
+#authors {
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+   GRILLE CENTRALE — 3 COLONNES
+---------------------------------------------------*/
+main {
+    margin-left: 180px;
+    margin-right: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+/* Chaque lien = une colonne / une carte */
+main a {
+    text-decoration: none;
+    color: inherit;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+main a:nth-child(3n) {
+    border-right: none;
+}
+
+main a > div {
+    padding: 20px;
+}
+
+/* ---------------------------------------------------
+   TITRES D’ARTICLES
+---------------------------------------------------*/
+main h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------
+   FOOTER ARTICLE
+---------------------------------------------------*/
+main footer {
+    border-top: 3px solid black;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* ---------------------------------------------------
+   IMAGE DE PREVIEW
+---------------------------------------------------*/
+.thumb {
+    width: 100%;
+    margin-top: 20px;
+    border: 3px solid black;
+    display: block;
+}
+
+/* ---------------------------------------------------
+   TAGS
+---------------------------------------------------*/
+.tag {
+    background: black;
+    color: white;
+    padding: 2px 6px;
+    margin-right: 5px;
+    font-size: 0.75rem;
+    display: inline-block;
+}
+
+
+
+
+main a div footer,
+main a div img.thumb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Hover on h3 shows footer and image */
+main a div h3:hover + footer,
+main a div h3:hover ~ img.thumb {
+    opacity: 1;
+    max-height: 500px;  /* enough to show content */
+}
+
+/* Better UX: hover on whole div */
+main a div:hover footer,
+main a div:hover img.thumb {
+    opacity: 1;
+    max-height: 500px;
 }
