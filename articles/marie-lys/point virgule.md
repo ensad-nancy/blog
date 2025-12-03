@@ -2,6 +2,7 @@
 title: Mais à quoi sert le point-virgule ; vraiment ?
 date: 2025-12-04-
 tags: point-virgule, inutile, graphique
+preview: images/pointvirgule.png
 
 ---
 
