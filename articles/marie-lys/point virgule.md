@@ -1,12 +1,12 @@
 ---
-title: Mais à quoi sert le point-virgule ; vraiment ?
+title: “Respirez ; vivez mieux.”
 date: 2025-12-04-
 tags: point-virgule, inutile, graphique
 preview: images/pointvirgule.png
 
 ---
 
-**Mais à quoi sert le point-virgule ; vraiment ?**
+**“Respirez ; vivez mieux.”**
 
 cher.es lecteur.rices,
 
