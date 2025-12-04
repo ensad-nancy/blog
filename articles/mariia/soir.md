@@ -2,7 +2,6 @@
 title: Un soir d’été, chaud 
 date: 20-11-2025
 tags: Une soirée dans mon vie
-preview: images/
 
 ---
  <img src="../../articles/mariia/images/10578806copy.png" class="orn">
