@@ -29,7 +29,7 @@ body{
 body > a:any-link{
     text-decoration: none;
     color: white;
-    background-color: rgb(0, 0, 136);
+    background-color: rgb(0, 0, 0);
     border-radius: 40px;
     padding: 5px;
     padding-right: 12px;
@@ -38,17 +38,17 @@ body > a:any-link{
     margin-left: 2em;
     position: fixed;
     border: 1.5px solid;
-    border-color: rgb(0, 0, 136);
+    border-color: rgb(0, 0, 0);
     z-index: 10;
 
 }
 
 body > a:hover{
-    color: rgb(0, 0, 136);
+    color: rgb(0, 0, 0);
     background-color: white;
     transition: all 0.3s;
     border: 1.5px solid;
-    border-color: rgb(0, 0, 136);
+    border-color: rgb(0, 0, 0);
 
 }
 
@@ -117,7 +117,7 @@ article h1{
     font-family: "Baskervville-Regular";
     font-size: 18pt;
     display: flex;
-    background-color: rgb(0, 0, 136);
+    background-color: rgb(0, 0, 0);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
@@ -128,7 +128,7 @@ article h1{
 }
 
 #themes div{
-    background-color: rgb(89, 89, 178);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
@@ -146,7 +146,6 @@ article h1{
 }
 
 #themes input{
-    color: rgb(0, 255, 0);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -155,7 +154,7 @@ article h1{
 
 #themes legend{
     color: white;
-    background-color: rgb(89, 89, 178);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
