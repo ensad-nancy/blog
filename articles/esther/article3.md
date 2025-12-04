@@ -1,6 +1,6 @@
 ---
 title: Une fissure dans le détail
-date: 2025-20-20
+date: 2025-27-11
 ---
 
 # Une fissure dans le détail
