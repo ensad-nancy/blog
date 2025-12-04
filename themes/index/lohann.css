@@ -3,51 +3,90 @@
     src: url(../../articles/lohann/images/KGPrimaryPenmanshipAlt.ttf);
 }
 
-body{
-    background-image:url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp) ;
+body {
+    background-image: url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp);
+    margin: 0;
+    font-family: "KG Primary", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    size: 70%;
+#layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
     color: blue;
 }
 
-body >p{
+body > p {
     font-style: italic;
     font-size: medium;
 }
 
-#themes{
- display: flex;
- width: 100%;
- border-width: 20%;
- background-color: aqua;
+#themes {
+    display: flex;
+    gap: 10px;
+    color:aqua;
+    padding: 20px;
+    position: absolute;
+    width: 26%;
+    box-sizing: border-box;
+    top: 10%;
+    height: 100%;
+    overflow-y: auto;
 }
 
-#themes legend{
+#themes legend {
     background-color: aqua;
+    padding: 5px;
+    block-size: 20%;
 }
 
-#themes div{
- flex-shrink: 0;
+#themes div {
+    flex-shrink: 0;
 }
 
-main a h3{
- font-size: 60px;
- font-family: "KG Primary";
- margin: none;
+main {
+    width: 75%;
+    padding: 20px;
+    position: absolute;
+    width: 26%;
+    box-sizing: border-box;
+    top: 10%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main a h3 {
+    font-size: 60px;
+    font-family: "KG Primary";
+    margin: 0;
+    padding: 0;
+}
+
+main a{  
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 255, 0.337);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  block-size: 40%;
+}
+
+main p {
+    visibility: hidden;
 }
 
 .thumb {
     display: none;
 }
 
-a{
+a {
     color: rgb(247, 32, 172);
     text-decoration: none;
-  
 }
 
-footer{
-}

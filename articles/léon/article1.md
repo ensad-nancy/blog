@@ -1,6 +1,6 @@
 ---
 title: oiseau tous nu
-date: 2025-11-17
+date: 2025-11-13
 tags: tag1, tag2
 preview: image/
 ---
@@ -19,7 +19,12 @@ Je l’ai visionné trois fois pour essayer de comprendre le sens exacte derriè
 
 Ok, bon après vérification, l’ensemble tourne autour d’un mythe inventé de toute pièce, une sorte de religion autour d’un animal étrange qu’on pourrait interpréter comme messager cosmique. tout ça comptais par cette grand mère vraiment terrifiante et incrusté un peu partout par du fond vert. Un peu terrifiant au final. 
 
-
+---
+title: oiseau tous nu
+date: 2025-11-20
+tags: tag1, tag2
+preview: image/
+---
 # Les météores 
 
 C’était un vendredi. Je le précise même si, au final, on s’en fout du jour où ça s’est passé, comme si ça allait changer la moindre chose. Enfin, hormis la météo, je vois pas. Bref, on était vendredi, on s’est tapé une grosse journée de chaleur. Le ciel était si bleu, étonnant pour une ville où le ciel est soit gris, soit pluvieux. Même en été on est maudits.Mais aujourd’hui il faisait beau. Avec un ami, on avait prévu d’aller sur le plateau à la tombée de la nuit : grimper sur les hauteurs de Nancy, se balader et regarder les étoiles.
@@ -31,3 +36,18 @@ On s’est posés dans la plaine, en faisant attention d’écraser le moins de 
 On a beaucoup discuté, de choses sans intérêt ,comme la plupart du temps, mais j’aime ces choses sans intérêt. On a vu quelques étoiles filantes. Malgré un ciel bien dégagé et une nuit censée être les Perséides on a eu le droit à quatre ou cinq météores. La malédiction de Nancy, au final.
 Au bout d’une heure environ, un homme venait vers nous. Il marchait le long du chemin et s’est arrêté. S’est assis dans le fossé. Il est resté là bien trente minutes, je dirais.Je pense que lui aussi, c’était un esprit, qui venait vérifier, au fur et à mesure que la bouteille se vidait, si elle resterait ici comme trace de notre passage, ou si on la garderait pour nous comme souvenir de cette soirée. Une fois vidée, il est retourné dans la forêt.
 Puis on est repartis, laissant pour seule trace de notre passage l’écrasement des plantes sous le poids de nos corps.On a repris les vélos. Sur le retour, mon sac faisait gling gling. La pente était toujours aussi raide, mais c’est ok : on n’est pas tombés.
+
+
+# Lettre à vous.
+
+21/11/2025
+
+Bonjour à vous, je me permets de vous écrire ici. De base je voulais vous envoyer une lettre pour vous dire à quel point vous avez changé ma vision du monde. Mais je me suis dit que c’est ce que tous les fans font et que je ne serai qu’un parmi tant d’autres. Alors je préfère vous écrire ici, avec l’incertitude que vous ne me lirez jamais. J’ai vu quelques interviews à votre sujet, je ne veux pas dire que je les ai toutes vues pour ne pas paraître comme étant un fan qui n’a aucune mesure de l’importance qu’il accorde à une personne qui ne lui en donnera jamais. Dans vos interviews vous dites que depuis tout petit vous voulez inspirer les gens qui vous écoutent. C’était ça votre rêve ? Baser votre vie sur un taf incroyable, des études réservées à l’élite, des contacts et des actions qui ne peuvent que renforcer votre confiance en vous en tant que star dans le seul but d’inspirer les gens ?
+Cette incertitude d’être lu par vous, je crois que ça me déplaît, j’aimerais moi aussi ressentir cette montée de fierté en recevant une réponse de votre part sous l’ouverture de ma lettre. Réponse qui à coup sûr ne sera pas rédigée par vos stagiaires ou vos secrétaires avec bien sûr un script préécrit en fonction de quel genre de messages vous auriez reçu. Une attention de votre part portée vers moi-même où derrière il n’y a que de la gentillesse et pas un ego surdimensionné qui en a marre de répondre pour la énième fois à un fan qui prétend avoir réussi sa vie grâce à vous. Sans que ce soit un message trop long car il y a tout de même votre incroyable vie à gérer.
+22/11/2025
+Bon j’ai décidé quelques heures après avoir publié mon post de vous écrire une lettre. Je l’ai postée. Normalement, vous avez dû la recevoir, j’ai pris grand soin de trouver votre adresse pour pouvoir la poster directement moi-même. Je pense que c’était important pour moi de savoir que vous la liriez à coup sûr, et que le soir en allant vous coucher vous vous dites : c’est bon j’ai réussi ma vie. J’ai accompli mon rêve. Je vous ai glissé le lien en bas de la lettre, j’espère que vous prendrez le temps de venir me lire.
+25/11/2025
+Ça fait trois jours, heure pour heure, aucune réponse. À quoi bon avoir un rêve si les personnes qui te l’accordent ont si peu d’importance à tes yeux. Est-ce que c’est toutes ces actions humanitaires et tous ces merci répartis à l’ensemble du globe qui t’ont poussé à ne plus remercier ceux qui te suivent depuis le début ? Est-ce que après toutes ces années de faits et gestes qui ne révèlent probablement pas votre véritable personne et qui ne sont que des couvertures pour qu’on vous admire encore et encore jusqu’à ce que votre ego soit suffisamment plein et rempli de remerciements qui au final n’ont aucune valeur à vos yeux si ce n’est l’effet éphémère qu’ils vous procurent et qui vous réconforte dans cette idée que quelque part dans le monde vous ne seriez pas oublié et que quelqu’un pense à vous, est-ce que toutes vos actions n’avaient que pour unique but qu’on vous admire ? Ou bien je suis juste énervé à l’idée que mon ego ne puisse être satisfait sous l’effet d’une réponse de votre part.
+Bon je me suis emballé pour rien, tu m’as répondu il y a une heure j’avais pas vu. Tu m’as envoyé un mail : merci pour ton soutien crois en toi je t’embrasse.
+J’avais écrit trois pages tu me réponds par une phrase. Je vais pas me plaindre, je fais le mec alors que je saute de joie. Je comprends aussi que dans ton message tu n’as pas lu le blog, t’as dû porter attention à l’adresse mail qui était sûrement plus accessible et rapide. Ça veut dire que je serai dans l’incertitude constante de votre lecture. J’espère que l’attention que je vous porte continuera à vous aider dans votre quête et dans votre rêve.
+Merci pour votre lecture je vous embrasse.

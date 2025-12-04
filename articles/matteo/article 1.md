@@ -1,8 +1,8 @@
 ---
 title: Un titre plutôt évocateur 
-date: 2025-11-17
+date: 2025-11-12
 tags: tag1, tag2
-preview: images/IMG_8239.png
+preview: 
 ---
 
 
@@ -25,4 +25,4 @@ Le choix de ce semple est plutôt interessant sur cette notion d’espoir et de 
 Et puis en fait, je n’ai pas vraiment à me justifier sur le fait que je ne me doutais pas d’une évasion. Le film est avant tout un film d’émotion, et de documentation sur la vie en prison. L’évasion n’est qu’une cerise sur le gâteau.  
 
 
-@FOCUSONNOTHING
+Focusonothing
