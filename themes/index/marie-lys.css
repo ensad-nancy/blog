@@ -15,16 +15,42 @@ body {
    HEADER
 ---------------------------------------------------*/
 h1 {
-    font-size: 2rem;
-    padding: 20px;
-    border-bottom: 4px solid black;
+    font-size: 60px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; /* needed for pseudo-element */
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: -500px;          /* start from left edge of h1 */
+    bottom: -5px;     /* slightly below text */
+    width: 200%;      /* line longer than text width */
+    height: 4px;
+    background-color: black;
 }
 
 body > p {
+    width: 800px;
     padding: 15px 20px;
-    border-bottom: 4px solid black;
     font-size: 0.95rem;
+    margin: 0 auto;
+    position: relative;
 }
+
+body > p::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    bottom: -5px;
+    width: 150%;
+    height: 4px;
+    background-color: black;
+}
+
 
 /* ---------------------------------------------------
    COLONNE GAUCHE — THEMES
@@ -157,4 +183,29 @@ main footer {
     margin-right: 5px;
     font-size: 0.75rem;
     display: inline-block;
+}
+
+
+
+
+main a div footer,
+main a div img.thumb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Hover on h3 shows footer and image */
+main a div h3:hover + footer,
+main a div h3:hover ~ img.thumb {
+    opacity: 1;
+    max-height: 500px;  /* enough to show content */
+}
+
+/* Better UX: hover on whole div */
+main a div:hover footer,
+main a div:hover img.thumb {
+    opacity: 1;
+    max-height: 500px;
 }
