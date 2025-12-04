@@ -3,10 +3,10 @@ body{
     background: linear-gradient(#e66465, #9198e5)
 }
     @font-face {
-  font-family: "baskervville" ;
+  font-family: "" ;
   src: 
    local("Trickster"),
-   url("Baskervville-Regular.otf") format("opentype");
+   url("") format("opentype");
 
      color: black;
 }
