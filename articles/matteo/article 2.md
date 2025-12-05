@@ -1,8 +1,8 @@
 ---
 title: Tout très vite 
-date: 2025-11-24
+date: 2025-11-19
 tags: tag1, tag2
-preview: images/IMG_8239.png
+preview: 
 ---
 
 
@@ -12,4 +12,4 @@ Je m’amuse avec les filtres snap. L’instant d’après je roule dans le jard
 
 Voila ce qu’a retenu mon téléphone de cette soirée.
 
-@FOCUSONNOTHING
+Focusonothing

@@ -6,21 +6,9 @@ body{
     font-size: medium;
 }
 
-#layout {
-    display: flex;
-    width: 100%;
-} 
-
-#sidebar {
-    width: 25%;              /* largeur ajustable */
-    min-width: 220px;     
-    background-color: aqua;
-    padding: 10px;
-    box-sizing: border-box;
-}
 
 #filters {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #themes{
@@ -31,7 +19,7 @@ body{
 }
 
 #content {
-    width: 75%;            
+    width: 75%;
     padding: 20px;
     box-sizing: border-box;
 }
