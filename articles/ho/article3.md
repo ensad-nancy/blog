@@ -1,5 +1,5 @@
 ---
-title: Pourquoi es-tu si en colère ?
+title: Pourquoi es-tu si en colère?
 date: 2025-27-11
 ---
 La série Netflix 〈BEEF〉 raconte l’histoire de personnes qui vivent en réprimant leur colère. Le personnage principal, Amy, est une PDG à succès dans le domaine du design d’intérieur. Elle semble mener une vie parfaite. Pour son mari, elle est une épouse douce. Pour sa fille, elle est une bonne mère. Au travail, elle est une dirigeante compétente. Pourtant, son enfance a été instable. Ses parents se disputaient souvent. C’est dans ce contexte qu’Amy a développé une idée forte. Elle pensait qu’elle devait être une « gentille enfant ».
