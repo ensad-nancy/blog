@@ -32,7 +32,7 @@ body > p{
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 0;
-    border: 1px solid black;
+    border: 1px solid #4f5647;
 }
 
 main{
@@ -44,7 +44,7 @@ main{
 main a{
     flex-shrink: 0;
     text-decoration: none;
-    color: black;
+    color: #4f5647;
     width: 200px;
 }
 
@@ -53,7 +53,7 @@ main a img{
 }
 
 main a h3{
-    border: 1px solid black;
+    border: 1px solid #4f5647;
     border-radius: 10px;
     height: 200px;
     width: 100%;
