@@ -151,7 +151,8 @@ main::after{
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:10%;
+    top:70%;
+    left:20%
 }
 
 
