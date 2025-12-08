@@ -44,4 +44,4 @@ Tous les symboles typographiques n’ont pas besoin d’être productifs ; certa
 
 PS : si vous pensiez que je défendais vraiment son utilité ; vous n’êtes franchement pas futé.
 
-- Dona Quichotte
+*- Dona Quichotte*

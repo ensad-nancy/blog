@@ -26,12 +26,26 @@ body > p {
     font-size: medium;
 }
 
+#filtres {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 20%;
+    height: 90%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.1);
+    color: aqua;
+}
+
 #themes {
     display: flex;
     gap: 10px;
     color:aqua;
     padding: 20px;
     position: absolute;
+    left: 20%;
     width: 26%;
     box-sizing: border-box;
     top: 10%;
@@ -50,14 +64,27 @@ body > p {
 }
 
 main {
-    width: 75%;
-    padding: 20px;
     position: absolute;
-    width: 26%;
-    box-sizing: border-box;
+    left: 46%;
     top: 10%;
-    height: 100%;
-    overflow-y: auto;
+    width: 54%;
+    height: 90%;
+    box-sizing: border-box;
+}
+
+main a {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0, 0, 255, 0.337);
+    border: 2px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 main a h3 {
@@ -90,3 +117,6 @@ a {
     text-decoration: none;
 }
 
+#filtres { position: fixed; left: 0; top: 10%; width: 20%; height: 90%; overflow-y: auto; padding: 20px; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.1); color: inherit; }
+#themes { position: fixed; left: 20%; top: 10%; width: 26%; height: 90%; overflow-y: auto; padding: 20px; box-sizing: border-box; }
+main { position: absolute; left: 46%; top: 10%; width: 54%; height: 90%; overflow-y: auto; }

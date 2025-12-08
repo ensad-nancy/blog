@@ -38,7 +38,7 @@ function parseFrontMatter($path) {
     <h1>Blog des étudiant·es de l'ensad Nancy Communication</h1>
     <p>Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ...</p>
 
-    <fieldset id="themes">
+    <div id="themes">
         <legend>Changer le thème :</legend>
         <?php foreach ($students as $student): ?>
             <div>
@@ -46,7 +46,7 @@ function parseFrontMatter($path) {
                 <label><?= ucfirst(htmlspecialchars($student)) ?></label>
             </div>
         <?php endforeach; ?>
-    </fieldset>
+        </div>
 
     <div id="filtres">
         <h2>Filtres</h2>
