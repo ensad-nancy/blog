@@ -33,11 +33,18 @@ body > p{
     flex-wrap: wrap;
     flex-shrink: 0;
     border: 1px solid #4f5647;
+    margin-left: 150px;
 }
 
 #themes div label {
     color: #4f5647;
 }
+
+/* #filtres{
+    margin-top: 500px;
+    width: 200px;
+    align-self: flex-start;
+} */
 
 main{
     display: flex;
