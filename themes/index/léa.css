@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #edededee;
+ overflow: hidden;
 }
 
 #themes{
@@ -118,7 +118,6 @@ body{
   top: 70%;
   height: 100%;
   border: 0;
-  overflow-y: auto;
   justify-content: center;
 }
 
@@ -134,28 +133,31 @@ main {
 }
 
 main::before{
-    content: "*"; 
+    content: "*";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 300px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
     top:10%;
 }
-main::before{
-    content: "("; 
+main::after{
+    content: "°";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 270px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:50%;
+    top:70%;
+    left:70%
 }
 
 
+
 main a{  
+    position: relative;
   padding: 10px 20px;
   border: 2px solid blue;
   border-radius: 100%;
@@ -167,8 +169,20 @@ main a{
   text-align: center;
 }
 
-main p {
-    visibility: hidden;
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+    line-height: 100%;
+}
+
+main img{
+    display: none;
 }
 
 h1 {
@@ -185,11 +199,32 @@ h1 {
 
 }
 
-p {
-  display: flex;
-  justify-content: center;
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: -15%;
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: 102%;
+}
+
+body > p {
+    justify-content: center;
   text-align: center;
-  position: relative;
   margin-top: 30%;
   position: absolute;
   left: 33%;
@@ -200,7 +235,6 @@ p {
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
-  display: flex;
   font-size: 20pt;
 }
 
