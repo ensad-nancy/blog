@@ -196,7 +196,7 @@ h1::before{
     z-index: -1; 
     pointer-events: none; 
     top:10%;
-    left:0%
+    left:-10%
 }
 h1::after{
     content: "}";  
