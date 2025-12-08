@@ -1,9 +1,6 @@
 ---
----
-title: oiseau tous nu
+title: les météores
 date: 2025-11-20
-tags: tag1, tag2
-preview: image/
 ---
 # Les météores 
 
