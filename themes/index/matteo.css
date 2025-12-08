@@ -73,8 +73,9 @@ body > p{
     border-style: none;
     padding: 1em;
     align-items: baseline;
-    padding: 1em 0em 1em 1em;
+    padding: 1em;
     margin: 0em 0em 1em 0em;
+    box-sizing: border-box;
 }
 
 #themes div{
@@ -113,7 +114,7 @@ body > p{
     padding-top: 10px;
     display: flex;
     left: 0;
-    position: absolute;
+    position: sticky;
 }
 
 
