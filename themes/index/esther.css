@@ -15,6 +15,10 @@
    display: none;
 }
 
+#themes legend{
+   display: none;
+}
+
 
 body{
     background-color: #fff9f9;
@@ -26,27 +30,68 @@ h1{
    font-size: 45px;
    text-align: center;
    margin: 5%;
+   text-decoration:underline;
+  
+
    }
 h1::first-letter {
   font-family: "HENTZAU 2";
- font-size:65px;
+ font-size:70px;
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
 
-body > p{ 
+body > p{
     font-family: "Rot-ProtoRoman102R 2", serif;
    font-size: medium;
    text-align: center;
    font: size 70px;
-   color: brown;
+   color: rgb(0, 0, 0);
    margin: 2%;
+   border: 2px solid black;
+   border-style:dotted;
+   padding: 10px;
+   background-color: #fff9f9;
+   }
+
+#themes{
+   border-radius: 0;
+   border-width: 0;
+   text-align: center;
+    font-family: "sinistreregular";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+   }
+
+   #themes div{
+      width: 300px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 20px;
+      border-style:dotted;
+   }
+
+
+#filtres{
+border-radius: 50%;
+border: 1px solid black;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10px;
+margin-right: 10%;
+float: right;
+width: 200px;
+height: 200px;
 }
 
-fieldset{
-   border-radius:70%;
-   border-width: 10%;
-   text-align: center;
 
+@media (max-width: 600px) {
+   #themes div{
+      width: 100px;
+   }
 }
 

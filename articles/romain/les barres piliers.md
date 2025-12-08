@@ -1,0 +1,14 @@
+---
+
+title: Christian de Madère
+date: 2025-12-04
+tags: détail graphique
+preview: 
+---
+
+# Les barres piliers
+
+L'écran qui se trouve devant mes yeux a des super-pouvoirs. Il est capable de permettre à mes doigts de me relier à des milliards de gens sur la planète. Si ,à travers ce blog, je vous transmet un bout de mon âme, c'est bien grâce à lui. Probablement qu'avant de lire ce blog, vous avez regardé des centaines, des milliers voir des millions d'heures de contenus. Mais ici, celui qui m'intéresse, c'est la vidéo. Vidéos de chats, films, gaming, vous, votre mère, ou votre oncle, tout le monde regarde des vidéos. Maintenant, pour que vidéo il y est, il faut un langage et un affichage spécifique à la vidéo. Loin de moi les questions techniques, je ne vous parlerai pas de fréquence d'images ou d'iso, uniquement de l'évidence. Le fait est qu'il a fallut créer un symbole aux pouvoirs quasi divins. Il s'agit du signe "pause". Son apparence simpliste, constituée uniquement de 2 barres verticales, d'épaisseur et de longueur identiques, contraste avec son pouvoir. Elle est capable de geler le temps. Dans tout univers de fiction, le personnage capable de maitriser le temps est forcément le plus puissant. Que son adversaire maitrise le feu, les explosions ou la lumière, aucun ne résiste au temps. Dans la vidéo, le pouvoir de ces 2 barres les rend indispensables et elles deviennent garantes du plaisir à regarder. Chaque vidéo raconte une histoire. Tout simplement parce que même les plus courtes répondent au même principe qui font d'elles des vidéos à part entière: Elles partent d'un point A pour aller à un point B. Par exemple, prenons une courte vidéo d'une balle de tennis rebondissant sur le sol. Elle part du haut de l'écran et finit par toucher le bas. Et c'est ça l'histoire de la balle. C'est une suite de micro évènements, qui ne racontent peut-être pas toujours quelque chose, mais le mouvement en lui-même raconte aussi. La pause, elle, vient briser le fil de l'histoire. Elle rassure, quand on a peur de louper quelque chose le temps d'aller aux toilettes, elle apaise, quand le suspens devient trop lourd à supporter, elle motive, quand on a hâte de voir la suite, elle enquête, quand on cherche les détails de la scène. 
+Le concept de la pause renferme bien des pouvoirs. Pour l'illustrer, seules 2 barres parallèles. Des traits à valeur de séparateurs qui figent dans le temps. Ni plus ni moins. Dans une résonnance Tsicholdienne, le symbole se veut simple et lisible. Deux barres épurées qui véhiculent parfaitement l'idée qu'elles sont censées exprimer. Nous sommes là, prisonnier entre les 2, dans cet espace vide, comme hors du temps. L'histoire s'est suspendue pour nous permettre d'en apercevoir un fragment soutenu par ces 2 piliers. 
+
+Namuel Foink 
