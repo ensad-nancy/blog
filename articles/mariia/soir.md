@@ -4,15 +4,15 @@ date: 20-11-2025
 tags: guerre
 
 ---
-
- ![paper](images/paper.jpg)
+![street](images/street.jpg)
+![kitty](images/kitty.jpg)
 
 ** Un soir d’été, chaud. ** <br>
 Très loin, on entend le bruit des voitures.<br>
  Dans la rue, les enfants du voisinage courent et jouent.<br>
   Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.<br>
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.<br>
-Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.<br>
+Les cerises dans le jardin de mon père sont déjà finies, maintenant on peut attendre les mûres blanches.![cherry](images/cherry.jpeg)<br>
 Sur la terrasse extérieure, seuls les moustiques et les hérissons qui se promènent autour dérangent.<br>
 Mon chat se cache quelque part dans le potager, sûrement en train de chasser des souris.<br>
 **Alerte aérienne.**<br>
