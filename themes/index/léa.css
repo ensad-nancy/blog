@@ -112,10 +112,10 @@ body{
 
 #filtres {
   position: absolute;
-  left: 30%;
+  left: 35%;
   width: 40%;
   box-sizing: border-box;
-  top: 60%;
+  top: 70%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -166,8 +166,8 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 34%;
-  top: 5%;
+  left: 37%;
+  top: 10%;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
@@ -182,7 +182,7 @@ p {
   position: relative;
   margin-top: 30%;
   position: absolute;
-  left: 30%;
+  left: 33%;
   width: 40%;
   box-sizing: border-box;
   top: -18%;
