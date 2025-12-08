@@ -11,7 +11,7 @@ body{
     background-color: #edededee;
 }
 
-fieldset{
+#themes{
   position: absolute;
   left: 75%;
   width: 20%;
@@ -24,11 +24,11 @@ fieldset{
   color:blue
 }
 
-fieldset legend{
+#themes legend{
     display: none;
 }
 
-fieldset div{
+#themes div{
     font-size: 32pt;
     border: 3px solid blue;
     border-radius: 50%;
@@ -36,76 +36,76 @@ fieldset div{
     display: flex;
     justify-content: center;
 }
-fieldset div:nth-child(1)::before{
+#themes div:nth-child(1)::before{
     content: "{";
 }
-fieldset div:nth-child(1)::after{
+#themes div:nth-child(1)::after{
        content: "}";
 }
-fieldset div:nth-child(2)::before{
+#themes div:nth-child(2)::before{
     content: "#";
 }
-fieldset div:nth-child(3)::before{
+#themes div:nth-child(3)::before{
     content: "⁑";
 }
-fieldset div:nth-child(4)::after{
+#themes div:nth-child(4)::after{
     content: "//";
-}fieldset div:nth-child(4)::before{
+}#themes div:nth-child(4)::before{
     content: "//";
 }
-fieldset div:nth-child(5)::before{
+#themes div:nth-child(5)::before{
     content: "{";
 }
-fieldset div:nth-child(5)::after{
+#themes div:nth-child(5)::after{
        content: "}";
 }
-fieldset div:nth-child(6)::before{
+#themes div:nth-child(6)::before{
     content: "#";
 }
-fieldset div:nth-child(7)::before{
+#themes div:nth-child(7)::before{
     content: "⁑";
 }
-fieldset div:nth-child(8)::before{
+#themes div:nth-child(8)::before{
     content: "*";
 }
-fieldset div:nth-child(8)::after{
+#themes div:nth-child(8)::after{
        content: "*";
 }
-fieldset div:nth-child(9)::before{
+#themes div:nth-child(9)::before{
     content: "//";
 }
-fieldset div:nth-child(9)::after{
+#themes div:nth-child(9)::after{
        content: "//";
 }
-fieldset div:nth-child(10)::before{
+#themes div:nth-child(10)::before{
     content: "{";
 }
-fieldset div:nth-child(10)::after{
+#themes div:nth-child(10)::after{
        content: "}";
-}fieldset div:nth-child(11)::before{
+}#themes div:nth-child(11)::before{
     content: "#";
 }
-fieldset div:nth-child(12)::before{
+#themes div:nth-child(12)::before{
     content: "⁑";
-}fieldset div:nth-child(13)::before{
+}#themes div:nth-child(13)::before{
     content: "*";
-}fieldset div:nth-child(14)::before{
+}#themes div:nth-child(14)::before{
     content: "//";
 }
-fieldset div:nth-child(14)::after{
+#themes div:nth-child(14)::after{
        content: "//";
 }
-fieldset div:nth-child(15)::before{
+#themes div:nth-child(15)::before{
     content: "{";
 }
-fieldset div:nth-child(15)::after{
+#themes div:nth-child(15)::after{
        content: "}";
-}fieldset div:nth-child(16)::before{
+}#themes div:nth-child(16)::before{
     content: "#";
 }
-fieldset div:nth-child(17)::before{
+#themes div:nth-child(17)::before{
     content: "⁑";
-}fieldset div:nth-child(18)::before{
+}#themes div:nth-child(18)::before{
     content: "*";
 }
 
