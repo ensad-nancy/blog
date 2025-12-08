@@ -144,31 +144,31 @@ fieldset#themes {
 /* Container for the theme selector */
 #themes {
     position: absolute;
-    top: 0;
+    top: 8px;
     z-index: 50;
-    display: flex;          /* puts everything in a row */
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;    /* prevents wrapping */
+    display: flex;        
+    align-items: right;
+    gap: 10px;/* distance between names */
+    white-space: nowrap;    
     font-family: 'PRMT';
     border: none;
     margin: 0 20px;
     padding: 0;
 }
 
-/* Hide legend (it exists but is useless) */
+/* Hide changer le theme */
 #themes legend {
     display: none;
 }
 
 /* Each radio+label pair */
 #themes > div {
-    display: inline-flex;   /* key: makes radio+label stay in one line */
-    align-items: center;
-    gap: 5px;
+    display: inline-flex;   
+    align-items: right;
+    gap: 0px; /* distance between names and their buttons */
 }
 
-/* Label appearance */
+
 #themes label {
     display: inline-block;
     padding: 5px 6px;
@@ -178,12 +178,13 @@ fieldset#themes {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Radio when selected */
+
 #themes input[type="radio"]:checked + label {
     background: #0259db;
     color: white;
-    font-weight: bold;
 }
+
+
 
 
 article img[alt="sandwitch"] {

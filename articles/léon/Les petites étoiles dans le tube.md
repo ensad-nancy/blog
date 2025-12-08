@@ -1,11 +1,11 @@
 ---
 ---
-title: dentifrice
+title: Les petites étoiles dans le tube
 date: 2025-11-20
 tags: tag1, tag2
 preview: image/
 
-# Dentifrice. 
+# Les petites étoiles dans le tube. 
 
 
 J’ai un ptit coup de gueule un peu nul à faire. De base je voulais le faire sur le cœur car je trouve ce symbole vraiment pas ouf. Enfin j’aime pas son utilisation, surtout qu’il ressemble pas vraiment à un cœur humain, enfin dans les grandes lignes à la limite. Puis surtout je me suis dit, ok partons de ce principe, donc tu utilises l’émoji cœur pour partager un truc avec quelqu’un, mais comment on fait si on veut parler du cœur des animaux. Parce que celui des poissons n’a pas du tout la même forme, du coup faudrait créer différents émojis cœur en fonction de quel sujet on parle. Après je pense pas que l’émoji cœur de poisson serait 
