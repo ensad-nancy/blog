@@ -32,7 +32,7 @@ h1{
     font-family: "bianzhidai-Stitches";
     font-size: 90pt;
     font-weight: normal;
-    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
     width: 100%;
     white-space: nowrap;
     display: block;
@@ -66,19 +66,20 @@ body > p{
     font-family: "Baskervville-Regular";
     font-size: 18pt;
     display: flex;
-    background-color: rgb(0, 0, 136);
+    background-color: rgb(0, 0, 0);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
     border-style: none;
     padding: 1em;
     align-items: baseline;
-    padding: 1em 0em 1em 1em;
+    padding: 1em;
     margin: 0em 0em 1em 0em;
+    box-sizing: border-box;
 }
 
 #themes div{
-    background-color: rgb(89, 89, 178);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
@@ -96,7 +97,6 @@ body > p{
 }
 
 #themes input{
-    color: rgb(0, 255, 0);
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -105,7 +105,7 @@ body > p{
 
 #themes legend{
     color: white;
-    background-color: rgb(89, 89, 178);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
@@ -114,7 +114,7 @@ body > p{
     padding-top: 10px;
     display: flex;
     left: 0;
-    position: absolute;
+    position: sticky;
 }
 
 
@@ -123,7 +123,7 @@ body > p{
 #filtres{
     font-family: "Baskervville-Regular";
     display: flex;
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 0);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
@@ -136,7 +136,7 @@ body > p{
     margin-block-start: 0;
     margin-inline-start: 0;
     color: white;
-    background-color: rgb(99, 213, 65);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     align-items: center;
@@ -149,7 +149,7 @@ body > p{
 
 #filtres #auteurices p{
     color: white;
-    background-color: rgb(99, 213, 65);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     align-items: center;
@@ -163,7 +163,7 @@ body > p{
 
 #filtres h2{
     color: white;
-    background-color: rgb(99, 213, 65);
+    background-color: rgb(48, 48, 48);
     border-radius: 90px;
     flex-shrink: 0;
     align-items: center;

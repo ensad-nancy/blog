@@ -1,6 +1,9 @@
+---
 title: Section Worldwide d’Anti-Problèmes Traumatisants
 date: 2025-11-27-
 tags: lol, génant, en réponse, admiration
+
+---
 
 **Dona Quichotte,**
 Permets-moi d’être très franc : lire ton texte comme un panégyrique de S.W.A.T. m’a laissé pantois. Tu parles d’un « bijou du cinéma américain » ; je ne crois pas que tu sois malhonnête, simplement que tu regardes la série sans mesurer le cadre dans lequel elle a été fabriquée. Alors laisse-moi remonter quelques facts et poser les bonnes questions.
