@@ -137,7 +137,7 @@ main::before{
     content: "*"; 
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 80px;
+    font-size: 150px;
     color: rgb(0, 255, 0); 
     z-index: -1; /* Placer le texte derrière les autres éléments */
     pointer-events: none; /* Empêche le texte d'interférer avec les interactions */
