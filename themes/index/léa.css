@@ -196,7 +196,7 @@ h1::before{
     z-index: -1; 
     pointer-events: none; 
     top:10%;
-    left:10%
+    left:0%
 }
 h1::after{
     content: "}";  
@@ -207,7 +207,7 @@ h1::after{
     z-index: -1; 
     pointer-events: none; 
     top:10%;
-    left:70%
+    left:100%
 }
 p {  justify-content: center;
   text-align: center;
