@@ -9,9 +9,9 @@
 body {
     background-image: url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp);
     background-size: cover;
-    background-repeat: repeat-y;  
+    background-repeat:repeat;  
     margin: 0;
-    font-family: "KG Primary", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "KG Primary";
 }
 
 
@@ -28,6 +28,9 @@ h1 {
 }
 
 body > p {
+    left: 0;
+    top: 15%;
+    width: 20%;
     font-style: italic;
     font-size: medium;
 }
@@ -66,11 +69,11 @@ body > p {
 }
 
 #themes div {
-    color: hsl(200, 100%, 50%);   /* Exemple de couleur (bleu), à personnaliser */
+    color: hsl(200, 100%, 50%);
     font-size: 1.2rem;
 }
 
-/* Exemple pour colorer des prénoms spécifiques */
+
 #themes .prenom-1 { color: red; }
 #themes .prenom-2 { color: green; }
 #themes .prenom-3 { color: yellow; }
@@ -95,11 +98,11 @@ main a {
     display: flex;
     justify-content: center;
     text-align: center;
-    border-radius: 50%;   /* Forme arrondie pour l'étoile */
+    border-radius: 50%;
 }
 
 main a::before {
-    content: "★";   /* Étoile bleue */
+    content: "★";
     font-size: 2rem;
     color: blue;
     position: absolute;
