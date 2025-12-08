@@ -143,6 +143,16 @@ main::before{
     pointer-events: none; 
     top:10%;
 }
+main::before{
+    content: "("; 
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 250px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:50%;
+}
 
 
 main a{  
