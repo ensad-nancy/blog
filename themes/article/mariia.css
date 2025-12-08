@@ -1,44 +1,293 @@
-@font-face {
-  font-family: 'VCR';
-  src: url('../../articles/mariia/images/PepperXCupa-Regular.ttf');
-}
-@font-face {
-  font-family: 'HAIR';
-  src: url('../../articles/mariia/images/La\ Machine\ Company.ttf');
-}
+
 @font-face {
   font-family: 'ATA';
-  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
+  src: url(../../articles/mariia/images/Qarinthen.otf);
 }
 
-body{
+@font-face {
+  font-family: 'RGAO';
+  src: url(../../articles/mariia/images/RomauntGaolines.ttf);
+}
+
+@font-face {
+  font-family: 'PRMT';
+  src: url(../../articles/mariia/images/premint-Regular.otf);
+}
+
+@font-face {
+  font-family: 'EX';
+  src: url(../../articles/mariia/images/NewtonScient.ttf);
+}
+#themes {
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    font-family: 'PRMT';
+}
+
+
+body {
+    padding-top: 40vh;        /* щоб текст не з’їдався картинкою */
+      position: relative;
+    z-index: 0;
+}
+/* Обгортка для всього тексту, щоби він не заходив на фото */
+article {
+    max-width: 60%;
+    margin-left: 40%;
+    padding: 30px;
+    font-size: 20px;
     font-family: 'ATA';
-    background-color: #ffffff;
-    
-}
-.title {
-    font-size: 60px;
-    font-family: 'HAIR';
-    color: #1d1d1d;
+    text-align: right;
 }
 
-.woman {
-    filter: grayscale(100%);
-max-width: 60%;
-  display: block;
-  margin: 0 auto;
+/* POP image fixed */
+article img[alt="pop"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 50%;
+}
+article h1, article h2 {
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+    color: #fdd835;           /* жовтий (м’який) */
+    text-shadow: 0 0 6px rgba(0, 60, 255, 0.4); /* синє світіння */
+    margin-top: 40px;
 }
 
 .tags {
+  display: none;
     text-align: right;
 }
 
 .date {
     text-align: right;
-}
-.orn {
-  display: block;
-  margin: 0 auto;
-  width: 40%;
+    font-family: 'ATA';
 }
 
+.woman {
+  filter: grayscale(100%);
+max-width: 50%;
+  display: block;
+  right: 0px;
+  position: relative;
+  opacity: 85%;
+}
+
+
+.title {
+    font-size: 90px;
+    font-family: 'EX';
+    color: #0259db;
+     text-align: right;
+     max-width: 100%;
+    width: 100%;
+     /* Щоб він був зверху, але під rock (якщо rock semi-transparent) */
+    position: absolute;
+    top: 0%;       /* від верхнього краю сторінки */
+    right: 0;     /* від правого краю */
+    padding: 10px; /* відступи всередині блоку */
+    
+    z-index: 10; 
+}
+
+.sentence {
+    font-size: 28px;           /* більший розмір */
+    font-family: 'PRMT';       /* або інший шрифт */
+    font-weight: 600;
+    color: #000000;            /* акцентний колір, можна синьо-жовтий як на першій сторінці */
+    display: block;            /* щоб було на окремому рядку */
+    margin: 20px 0;   
+   text-align: center;
+}
+
+
+article img[alt="paper"] {
+  filter: grayscale(100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 42vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 80%;
+}
+
+
+/* Контейнер фонового блоку через псевдоелемент на body */
+body::before {
+    content: "";
+    position: absolute;
+    top: -10px;           /* відступ зверху */
+    left: 0;
+    width: 100%;
+    height: 50px;        /* висота блоку, приблизно як висота тексту */
+    background: rgba(255, 255, 255); /* напівпрозорий білий */
+    z-index: 40;       
+    pointer-events: none;
+}
+
+/* Кнопка повернення і fieldset зверху */
+a[href="index.php"],
+fieldset#themes {
+    position: absolute;
+    top: 0px;
+    z-index: 50;         /* поверх фонового блоку */
+}
+
+/* Вирівнювання в один рядок */
+a[href="index.php"] {
+    display: inline-block;
+ font-family: 'PRMT';
+    font-size: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+fieldset#themes {
+    display: inline-block;
+    border: none;
+    margin: 0 20px;
+    padding: 0;
+}
+
+fieldset#themes legend {
+    display: none;
+}
+
+fieldset#themes > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+}
+
+a[href="index.php"]:hover,
+fieldset#themes input:checked + label {
+    opacity: 1;
+}
+
+/* Ховаємо самі кружечки */
+fieldset#themes input[type="radio"] {
+}
+
+/* Робимо, щоб label виглядав як кнопка */
+fieldset#themes label {
+    display: inline-block;
+    padding: 5px 1px;
+    margin: 0 8px;
+    border-radius: 6px;        
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+
+
+/* Коли вибрано — активний стан */
+fieldset#themes input[type="radio"]:checked + label {
+    background: #0259db;
+    color: white;
+    font-weight: bold;
+}
+
+
+article img[alt="sandwitch"] {
+ filter: grayscale(100%);
+    width: 6vw;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.quote {
+    position: absolute;
+    top: 230vh;            /* distance from the top – adjust */
+    left: 16vw;            /* distance from left edge */
+    width: 20vw;          /* how wide the quote block is */
+    font-family: 'ATA';   /* match your text */
+    font-size:20px;
+    line-height: 1.4;
+    color: #111;
+    padding: 15px 20px;
+   
+    background: rgba(255,255,255,0.6); 
+    backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
+}
+
+article img[alt="news"] {
+    position: absolute;
+    top: 445px;            /* distance from the top – adjust */
+    left: 105px;            /* distance from left edge */
+    width: 30vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.quote2 {
+    position: absolute;
+    top: 170vh;            /* distance from the top – adjust */
+    left: 2vw;            /* distance from left edge */
+    width: 20vw;          /* how wide the quote block is */
+    font-family: 'ATA';   /* match your text */
+    font-size:20px;
+    line-height: 1.4;
+    color: #111;
+    padding: 15px 20px;
+    background: rgba(255,255,255,0.6); 
+    backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
+}
+
+
+.quote .big {
+    font-size: 1.35em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000000; /* or whatever fits your palette */
+}
+
+.quote2 .big {
+    font-size: 1.35em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000000; /* or whatever fits your palette */
+}
+
+article img[alt="real"] {
+   filter: grayscale(100%);
+    position: absolute;
+    top: 1045px;            /* distance from the top – adjust */
+    left: 105px;            /* distance from left edge */
+    width: 30vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 90%;
+}
+
+.ref {
+    position: absolute;
+    top: 266.5vh;            /* distance from the top – adjust */
+    left: 3vw;            /* distance from left edge */
+    width: 10vw;          /* how wide the quote block is */
+    font-family: 'ATA';   /* match your text */
+    font-size:16px;
+    line-height: 1.4;
+    color: #404040;
+    padding: 15px 20px;
+   
+    background: rgba(244, 244, 244, 0.6); 
+    backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
+}
+.note {
+    font-size: 15px;      /* або інший шрифт */
+    font-weight: 60;
+    color: #000000;            /* акцентний колір, можна синьо-жовтий як на першій сторінці */
+    display: block;            /* щоб було на окремому рядку */
+    margin: 20px 0;   
+   text-align: left;
+}
