@@ -4,6 +4,12 @@ body{
     display: flex;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
 h1{
     position: fixed;
     bottom: 0;
@@ -13,6 +19,7 @@ h1{
     font-weight: normal;
     text-transform: uppercase;
     margin: 10px;
+    color: #4f5647;
 }
 
 body > p{
@@ -21,6 +28,7 @@ body > p{
     top: 0;
     width: 75%;
     margin: 10px;
+    color: #4f5647;
 }
 
 #themes{
@@ -34,6 +42,7 @@ body > p{
     flex-shrink: 0;
     border: 1px solid #4f5647;
     margin-left: 150px;
+    /* background: radial-gradient(#bcd6b9, #dbd5d1); */
 }
 
 #themes div label {
@@ -74,5 +83,5 @@ main a h3{
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
-    background: radial-gradient(#95979a, #95979a00);
+    background: radial-gradient(#ffff, #b8b4b1);
 }
