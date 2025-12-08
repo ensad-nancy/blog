@@ -1,3 +1,32 @@
-body{
-    background-color: #FF8C00;
+@font-face {
+    font-family: "Baskerville";
+    src: url("articles/elisa/images/Baskerville.ttc") format("ttc"),
+}
+
+body {
+    margin: 10px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(97, 107, 227), rgb(150, 21, 230), rgb(197, 0, 17));
+    font-family: "Baskerville";
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Baskerville";
+    font-size: 70px;
+    font-weight:bolder;
+    color: rgb(201, 160, 23);
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(201, 160, 23);
+}
+
+strong {
+    font-family: "Baskerville";
+    font-size: 25px;
+    color: rgb(201, 160, 23);
 }

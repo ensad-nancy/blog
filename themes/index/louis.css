@@ -1,3 +1,92 @@
 body{
-    background-color: #ADFF2F
+<<<<<<< Updated upstream
+    background-color: rgb(255, 147, 16);
+    font-family: Arial, Helvetica, sans-serif;
+    columns: 3;
+    column-gap: 5pt;
+    cursor: wait;
 }
+
+h1{
+    font-size: 75pt;
+    line-height: 1.25;
+    display: flex;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+}
+
+p{
+    font-size: 35pt;
+    color: rgb(136, 0, 255);
+    text-decoration: dotted underline;
+    text-indent: 30pt;
+    position: relative;
+    rotate: 10deg;
+    margin-left: 9%;
+    margin-right: 2.5%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h3{
+    color: blue;
+    text-decoration: overline;
+    position: relative;
+}
+
+.thumb{
+    display: none;
+}
+
+#themes{
+    border: none;
+    font-size: 12.5pt;
+    columns: 3;
+    position: relative;
+    font-weight: 600;
+    color: blue;
+    letter-spacing: 0.15pt; 
+}
+
+select{
+    position: relative;
+}
+
+input{
+    position: relative;
+}
+
+label{
+    position: relative;
+}
+
+=======
+    background-color: white;
+}
+
+h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45pt;
+    line-height: 40pt;
+    max-width: 70%;
+}
+
+h2{
+    color: hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33,75pt;
+}
+
+p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    line-height: 20pt;
+    max-width: 50%;
+}
+>>>>>>> Stashed changes

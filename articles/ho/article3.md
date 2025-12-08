@@ -1,0 +1,12 @@
+---
+title: Pourquoi es-tu si en colère?
+date: 2025-27-11
+---
+La série Netflix 〈BEEF〉 raconte l’histoire de personnes qui vivent en réprimant leur colère. Le personnage principal, Amy, est une PDG à succès dans le domaine du design d’intérieur. Elle semble mener une vie parfaite. Pour son mari, elle est une épouse douce. Pour sa fille, elle est une bonne mère. Au travail, elle est une dirigeante compétente. Pourtant, son enfance a été instable. Ses parents se disputaient souvent. C’est dans ce contexte qu’Amy a développé une idée forte. Elle pensait qu’elle devait être une « gentille enfant ».
+
+Le problème est qu’elle n’a jamais appris à exprimer sa colère de manière saine. C’est pourquoi elle dirige sa colère vers des inconnus. Ce sont des personnes qui n’ont aucun lien avec sa vie. Pour elle, c’est la manière la plus « sûre » de libérer sa colère. Ainsi, elle peut protéger son quotidien. Amy doit toujours rester calme : devant les clients, les investisseurs, son mari et son enfant. Contrôler ses émotions, faire de bons choix, se comporter comme une bonne personne. C’est comme ça qu’elle a vécu jusqu’à maintenant. Cette façon de vivre a marché.  Mais elle n’a pas duré longtemps. La jalousie, la haine de soi, l’anxiété et la colère incontrôlable qu’elle montre dans la série ont fini par me faire penser à moi-même.
+
+Quand mes désirs ne donnent pas les résultats que j’attends, je ressens quelque chose en moi. Je sens une « énergie inconfortable ». C’est difficile à expliquer. Cette énergie grandit peu à peu et devient de la colère. Et à un certain moment, sans m’en rendre compte, je trouve quelqu’un sur qui déverser cette colère. Parfois, je laisse éclater toutes mes émotions sur la personne la plus proche de moi. Parfois, je tombe même dans l’idée déformée que cette personne a ruiné ma vie. Mais cette colère ne dure pas longtemps. Comme toutes les émotions, elle finit par s’effacer. Pourtant, je répète ce même cycle, encore et encore, comme un serpent qui se mord la queue.
+
+Dans la deuxième partie de la série, Amy ne cache plus ses émotions devant son mari.« Pourquoi es-tu si en colère ? »lui demande-t-il.Elle répond :« J’en ai assez de faire semblant que rien ne va mal. »
+Aujourd’hui encore, je vis en accumulant cette énergie inconfortable, et je ne sais toujours pas gérer parfaitement mes émotions. Mais grâce à Amy, j’ai au moins commencé à regarder ma colère avec plus de sincérité. Je ne suis pas encore capable de dire que je ne la cacherai plus jamais. Mais au moins, je n’essaie plus de faire comme si elle n’existait pas.

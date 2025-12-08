@@ -1,3 +1,44 @@
-body{
-    background-color: #00FF7F;
+@font-face {
+  font-family: 'VCR';
+  src: url('../../articles/mariia/images/PepperXCupa-Regular.ttf');
 }
+@font-face {
+  font-family: 'HAIR';
+  src: url('../../articles/mariia/images/La\ Machine\ Company.ttf');
+}
+@font-face {
+  font-family: 'ATA';
+  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
+}
+
+body{
+    font-family: 'ATA';
+    background-color: #ffffff;
+    
+}
+.title {
+    font-size: 60px;
+    font-family: 'HAIR';
+    color: #1d1d1d;
+}
+
+.woman {
+    filter: grayscale(100%);
+max-width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.tags {
+    text-align: right;
+}
+
+.date {
+    text-align: right;
+}
+.orn {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+

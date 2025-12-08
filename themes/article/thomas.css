@@ -1,3 +1,46 @@
+@font-face {
+  font-family: "Akzidenz_Grotesk_Bold";
+  src: url("/articles/thomas/fonts/Akzidenz_Grotesk_Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FeDPrm2";
+  src: url("/articles/thomas/fonts/FeDPrm2.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CaslonOldFaceBT-Roman";
+  src: url("/articles/thomas/fonts/CaslonOldFaceBT-Roman.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ErbarW01-Medium";
+  src: url("/articles/thomas/fonts/ErbarW01-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FuturaStdMedium";
+  src: url("/articles/thomas/fonts/FuturaStdMedium.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+h2 {
+  font-family: "Akzidenz_Grotesk_Bold", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+article p, .article p, p {
+  font-family: "FuturaStdMedium", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
 body{
     background-color: #BA55D3;
 }

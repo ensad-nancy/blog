@@ -1,3 +1,122 @@
-body{
-    background-color: #FFB6C1;
+@font-face {
+    font-family: "KG Primary";
+    src: url(../../articles/lohann/images/KGPrimaryPenmanshipAlt.ttf);
 }
+
+body {
+    background-image: url(../../articles/lohann/images/abstrait-surface-piscine-eau-texture-fond_74190-9813.webp);
+    margin: 0;
+    font-family: "KG Primary", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: blue;
+}
+
+body > p {
+    font-style: italic;
+    font-size: medium;
+}
+
+#filtres {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 20%;
+    height: 90%;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.1);
+    color: aqua;
+}
+
+#themes {
+    display: flex;
+    gap: 10px;
+    color:aqua;
+    padding: 20px;
+    position: absolute;
+    left: 20%;
+    width: 26%;
+    box-sizing: border-box;
+    top: 10%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#themes legend {
+    background-color: aqua;
+    padding: 5px;
+    block-size: 20%;
+}
+
+#themes div {
+    flex-shrink: 0;
+}
+
+main {
+    position: absolute;
+    left: 46%;
+    top: 10%;
+    width: 54%;
+    height: 90%;
+    box-sizing: border-box;
+}
+
+main a {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0, 0, 255, 0.337);
+    border: 2px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main a h3 {
+    font-size: 60px;
+    font-family: "KG Primary";
+    margin: 0;
+    padding: 0;
+}
+
+main a{  
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: rgba(0, 0, 255, 0.337);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  block-size: 40%;
+}
+
+main p {
+    visibility: hidden;
+}
+
+.thumb {
+    display: none;
+}
+
+a {
+    color: rgb(247, 32, 172);
+    text-decoration: none;
+}
+
+#filtres { position: fixed; left: 0; top: 10%; width: 20%; height: 90%; overflow-y: auto; padding: 20px; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.1); color: inherit; }
+#themes { position: fixed; left: 20%; top: 10%; width: 26%; height: 90%; overflow-y: auto; padding: 20px; box-sizing: border-box; }
+main { position: absolute; left: 46%; top: 10%; width: 54%; height: 90%; overflow-y: auto; }
