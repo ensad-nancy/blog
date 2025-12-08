@@ -133,7 +133,7 @@ main {
   overflow-y: auto;
 }
 
-main::before{
+main div:nth-child(1)::before{
     content: "*"; 
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
@@ -143,7 +143,7 @@ main::before{
     pointer-events: none; 
     top:10%;
 }
-main::before{
+main div:nth-child(2)::before{
     content: "("; 
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
