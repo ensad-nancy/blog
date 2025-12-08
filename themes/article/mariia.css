@@ -31,7 +31,8 @@ body {
       position: relative;
     z-index: 0;
 }
-/* Обгортка для всього тексту, щоби він не заходив на фото */
+
+
 article {
     max-width: 60%;
     margin-left: 40%;
@@ -41,7 +42,7 @@ article {
     text-align: right;
 }
 
-/* POP image fixed */
+
 article img[alt="pop"] {
     position: fixed;
     top: 0;
@@ -52,6 +53,7 @@ article img[alt="pop"] {
     z-index: -1;
     opacity: 50%;
 }
+
 article h1, article h2 {
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
@@ -92,7 +94,7 @@ max-width: 50%;
     top: 0%;       /* від верхнього краю сторінки */
     right: 0;     /* від правого краю */
     padding: 10px; /* відступи всередині блоку */
-    
+    font-weight: 700;
     z-index: 10; 
 }
 
@@ -107,12 +109,12 @@ max-width: 50%;
 }
 
 
-article img[alt="paper"] {
+article img[alt="street"] {
   filter: grayscale(100%);
     position: fixed;
     top: 0;
     left: 0;
-    width: 42vw;
+    width: 40vw;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -280,4 +282,23 @@ article img[alt="real"] {
     display: block;            /* щоб було на окремому рядку */
     margin: 20px 0;   
    text-align: left;
+}
+
+article img[alt="cherry"] {
+ filter: grayscale(80%);
+    width: 4vw;
+    z-index: -1;
+    opacity: 80%;
+}
+
+
+article img[alt="kitty"] {
+   filter: grayscale(100%);
+    position: absolute;
+    top: 205px;            /* distance from the top – adjust */
+    left: 597px;            /* distance from left edge */
+    width: 20vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 80%;
 }
