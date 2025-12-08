@@ -1,6 +1,8 @@
 ---
 title: Mind loaded, Blood Orange
 date: 2025-13-11
+# tags: tag&
+# preview: image
 ---
 
 # Mind loaded, Blood Orange

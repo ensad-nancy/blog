@@ -1,0 +1,10 @@
+---
+title: MAIS QUI EST INSPIRANT ?
+date: 2025-12-2
+tags: Inspi, bonne question 
+preview: 
+---
+
+Une personne qui m’inspire, c’est vraiment une bonne question, une question que je ne me suis jamais vraiment posée. Beaucoup de personne me viennent en tête mais en meme temps personne, aucunes fulgurances, je ne sais pas, meme depuis gamin, j’ai jamais vraiment eu de star a qui j’accroché, a qui je voulais ressembler. J’ai d’abord penser au panel de personnes qui pourrait être inspirante a mes yeux, des artistes, de compositeurs, des chanteurs, des rappeur, ou bien meme des sportifs, mais la encore aucunes fulgurances. J’ai aussi penser au membres de ma famille mais la encore c’était pas ce qui me semblait le mieux pour parler de quelqu’un qui m’inspire. La encore la question se pose mais de qui donc parler ? Puis je me suis dis que ce qui m’inspire le plus sont les gens qui maitrisent un large panel de choses, des gens multidisciplinaires. Dans finalement tout les domaines, que ce sois dans la composition, la création, ou bien même juste la polyvalence. L’un des exemple que j’ai en tête est Tyler the creator, je trouve ça fascinant et inspirant le fait qu’il arrive a crée tout un univers autour de sa personne, il produit réalise, il habille, il crée, fait le mix de ses musiques ou bien même crée des vêtements. C’est ça qui m’intéresse et attise ma curiosité, c’est ça qui m’inspire et me pousse a crée. J’ai bien d’autre exemple comme Braulio Amado qui pour moi montre un trait juste, des idées novatrice qui marche, de la création de zine, d’affiche, de covers. C’est la facilité a switch de médium tout en gardant la meme pate graphique. Tout ce que je vous ai raconter au dessus et l’ensemble des choses qui fait que je trouve quelqu’un inspirant et me donne envie de produire pour moi aussi a mon tour peut être de devenir quelqu’un d’inspirant pour les autre.
+
+Stéphane Diagonale

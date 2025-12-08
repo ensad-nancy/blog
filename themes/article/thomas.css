@@ -30,17 +30,322 @@
 }
 
 
-
-h2 {
-  font-family: "Akzidenz_Grotesk_Bold", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+h1 {
+  display: none;
 }
 
-article p, .article p, p {
-  font-family: "FuturaStdMedium", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+h2 {
+  font-family: sans-serif;
+  color: #60e500;
+}
+
+a {
+  color: #60e500;
+  font-size: large;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+legend {
+  color: #60e500;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+
+article p, .article p {
+  font-family: arial, sans-serif;
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 15px;
+  color: #fff898;
 }
 
 body{
-    background-color: #BA55D3;
+    background-color: #ab448c;
+    position: relative;
+}
+
+body::before{
+  content: "";
+  position: fixed;
+  left: 69%;
+  top: 0;
+  width: 6px;                
+  height: 100vh;
+  background: #2ecc40;      
+  z-index: 9999;
+  pointer-events: none;
+}
+
+a, article {
+  box-sizing: border-box;
+  max-width: calc(70% - 24px); /* keep content to the left of the divider */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  left: calc(70% + 12px);                     
+  width: calc(30% - 24px);
+  box-sizing: border-box;
+  z-index: 1000;
+  color: #2ecc40;        
+  font-size: 3.6em;     
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+header p {
+  margin: 0;              /* remove default margins */
+  line-height: inherit;   /* keep paragraph internal spacing unchanged */
+}
+
+header p + p {
+  margin-top: 0.30rem;    /* tweak this value to taste */
+}
+
+.date, .tags {
+  color: #fff898;
+  font-size: 26px;
+}
+
+p.title {
+  line-height: 50px;
+}
+
+#themes {
+  position: fixed;
+  left: calc(70% + 12px);
+  bottom: 12px;                       /* stick to the bottom of the viewport */
+  width: calc(30% - 24px);
+  box-sizing: border-box;
+  z-index: 1000;
+  max-height: calc(100vh - 4rem);     /* avoid covering the header / keep it visible */
+  overflow-y: auto;                   /* allow scrolling if content is taller */
+  padding: 0.5rem;
+}
+
+
+#themes {
+  position: fixed;
+  left: calc(70% + 12px);
+  bottom: 12px;                       /* stick to the bottom of the viewport */
+  width: calc(30% - 24px);
+  box-sizing: border-box;
+  z-index: 1000;
+  max-height: calc(100vh - 4rem);     /* avoid covering the header / keep it visible */
+  overflow-y: auto;                   /* allow scrolling if content is taller */
+  padding: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  body::before { display: none; }
+  a, article, header, #themes {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  #themes {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: initial;
+  }
+}
+
+
+h2 {
+  display: none;
+}
+
+
+header, #themes, article, a {
+  display: block;
+}
+
+
+@media (max-width: 900px) {
+  body::before { display: none; }
+  a, article, header, #themes {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+#themes div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff898;    
+  background: #ab448c;        
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background: #2ecc40;          
+}
+
+main {
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 1%;
+}
+
+main > * {
+    flex: 0 0 calc(25% - 15px);
+    box-sizing: border-box;
+}
+
+main a, 
+main a h1, main a h2, main a h3, main a h4 {
+  display: block;           
+  width: 100%;             
+  white-space: nowrap;     
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  box-sizing: border-box;
+}
+
+ article p:first-letter {
+  color: #2ecc40;       
+  font-size: 6.6em;      
+  font-weight: 700;
+  line-height: 0.6;
+  margin-right: 0.02em;  
+}
+
+article {
+  text-align: justify;
+  word-spacing: 0.05em;
+}
+
+a {
+  margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 1100px) {
+  main > * { flex: 0 0 calc(33.333% - 13.333px); }
+}
+@media (max-width: 800px) {
+  main > * { flex: 0 0 calc(50% - 10px); }
+}
+@media (max-width: 480px) {
+  main > * { flex: 0 0 100%; }
+}
+
+
+#themes div:nth-child(2) {
+    color: rgb(210, 192, 255);
+}
+#themes div:nth-child(3) {
+    color: pink;
+}
+#themes div:nth-child(4) {
+    color: rgb(182, 254, 232);
+}#themes div:nth-child(5) {
+    color: rgb(255, 201, 173);
+}#themes div:nth-child(6) {
+    color: rgb(199, 184, 252);
+}#themes div:nth-child(7) {
+    color: rgb(255, 133, 133);
+}#themes div:nth-child(8) {
+    color: rgb(188, 255, 198);
+}#themes div:nth-child(9) {
+    color: rgb(255, 162, 233);
+}#themes div:nth-child(10) {
+    color: rgb(212, 255, 152);
+}#themes div:nth-child(11) {
+    color: rgb(152, 246, 255);
+}#themes div:nth-child(12) {
+    color: rgb(255, 226, 162);
+}#themes div:nth-child(13) {
+    color: rgb(255, 197, 197);
+}#themes div:nth-child(14) {
+    color: rgb(216, 162, 255);
+}#themes div:nth-child(15) {
+    color: rgb(241, 255, 162);
+}#themes div:nth-child(16) {
+    color: rgb(199, 240, 255);
+}#themes div:nth-child(17) {
+    color: rgb(255, 214, 221);
+}#themes div:nth-child(18) {
+    color: rgb(224, 255, 197);
+}#themes div:nth-child(19) {
+    color: rgb(255, 147, 178);
+}
+
+
+main > a[data-author="elisa"]   {
+    color: rgb(210, 192, 255) !important;
+}
+main > a[data-author="emily"]   {
+    color: pink !important;
+}
+main > a[data-author="ester"]   {
+    color: rgb(182, 254, 232) !important;
+}
+main > a[data-author="esther"]   {
+    color: rgb(255, 201, 173) !important;
+}
+main > a[data-author="fanny"]   {
+    color: rgb(199, 184, 252) !important;
+}
+main > a[data-author="ho"]   {
+    color: rgb(255, 133, 133) !important;
+}
+main > a[data-author="lohann"]   {
+    color: rgb(188, 255, 198) !important;
+}
+main > a[data-author="louis"]   {
+    color: rgb(255, 162, 233) !important;
+}
+main > a[data-author="léa"]   {
+    color: rgb(212, 255, 152) !important;
+}
+main > a[data-author="léon"]   {
+    color: rgb(152, 246, 255) !important;
+}
+main > a[data-author="marie-lys"]   {
+    color: rgb(255, 226, 162) !important;
+}
+main > a[data-author="mariia"]   {
+    color: rgb(255, 197, 197) !important;
+}
+main > a[data-author="matteo"]   {
+    color: rgb(216, 162, 255) !important;
+}
+main > a[data-author="naeun"]   {
+    color: rgb(241, 255, 162) !important;
+}
+main > a[data-author="nina"]   {
+    color: rgb(199, 240, 255) !important;
+}
+main > a[data-author="romain"]   {
+    color: rgb(255, 214, 221) !important;
+}
+main > a[data-author="thomas"]   {
+    color: rgb(224, 255, 197) !important;
+}
+main > a[data-author="yacine"]   {
+    color: rgb(255, 147, 178) !important;
 }

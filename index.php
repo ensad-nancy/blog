@@ -38,7 +38,7 @@ function parseFrontMatter($path) {
     <div id="title">
         <h1>Blog des étudiant·es de l'ensad Nancy Communication</h1>
     </div>
-    <p>Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ...</p>
+    <p>Ce blog rassemble <span>les écrits des étudiant.es</span> de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ...</p>
 
     <div id="themes">
         <legend>Changer le thème :</legend>
