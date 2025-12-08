@@ -34,7 +34,7 @@ body {
 h1 {
     position: fixed;
     top: 16px;
-    left: 20vw; /* Décalé légèrement à droite */
+    left: 20vw;
     margin: 0;
     font-family: "Great Vibes", cursive;
     font-size: 40px;
@@ -65,27 +65,20 @@ h1 + p,
 }
 
 /* ------------------------------ */
-/* BANDEAU "CHANGER LE THÈME"     */
+/* CHANGER LE THEME — VERSION PROPRE */
 /* ------------------------------ */
-#changer-theme,
-#changer-theme label {
-    position: fixed;
-    top: 40px; /* remonté vers le haut */
-    left: 20vw; /* aligné avec le titre décalé */
-    font-family: "Great Vibes", cursive !important;
-    font-size: 28px !important;
-    color: #ffffff !important;
-    white-space: nowrap !important;
-    z-index: 900;
+#themes legend {
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+    color: #fff;
 }
-
 /* ------------------------------ */
-/* BANDEAU FILTRES (à côté du thème) */
+/* BANDEAU FILTRES                 */
 /* ------------------------------ */
 #filtres {
     position: fixed;
-    top: 40px; /* même hauteur que le panneau thème */
-    left: calc(20vw + 180px); /* à côté du panneau thème */
+    top: 0;
+    right: 0;
     width: 200px;
     background: rgba(0,0,0,0.25);
     padding: 10px;
@@ -103,7 +96,7 @@ h1 + p,
 /* ------------------------------ */
 #themes {
     position: fixed;
-    top: 90px; /* sous les bandeaux thème + filtre */
+    margin-top: 25px;
     left: 0;
     width: 18vw;
     max-width: 180px;
@@ -118,51 +111,51 @@ h1 + p,
     overflow-y: auto;
     overflow-x: hidden;
 
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
 #themes::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
 
-/* HEXAGONES POUR LES PRÉNOMS */
 #themes div {
-    display: flex !important;
-    justify-content: center;
-    margin: 6px 0 !important;
+    margin: 6px 0;
     position: relative;
-}
-
-#themes div input[type="radio"] {
-    display: none !important;
-}
-
-#themes div label {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 100px !important;
-    height: 70px !important;
-    border: 3px solid #66e0ff !important;
-    background: transparent !important;
-    color: #66e0ff !important;
-    font-family: "Great Vibes", cursive !important;
-    font-size: 18px !important;
-    cursor: pointer !important;
-    transition: all 0.3s ease !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    background-color: #555555;
+    color: #66e0ff;
+    font-family: "Great Vibes", cursive;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     clip-path: polygon(
         25% 0%, 75% 0%,
         100% 50%,
         75% 100%, 25% 100%,
         0% 50%
-    ) !important;
+    );
 }
 
-#themes div label:hover {
-    transform: scale(1.05) !important;
-    box-shadow: 0 0 10px #66e0ff !important;
+#themes div input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+#themes div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #66e0ff;
 }
 
 #themes div input[type="radio"]:checked + label {
@@ -171,18 +164,11 @@ h1 + p,
     box-shadow: 0 0 12px #66e0ff !important;
 }
 
-#themes div label::after {
-    content: "~ °";
-    position: absolute;
-    bottom: -16px;
-    font-size: 16px !important;
-}
-
 /* ------------------------------ */
 /* CONTENU PRINCIPAL               */
 /* ------------------------------ */
 main {
-    margin-left: 20vw; 
+    margin-left: 20vw;
     margin-right: 0;
     max-width: calc(100% - 20vw);
     display: flex;
@@ -190,11 +176,11 @@ main {
     gap: 20px;
 }
 
-/* Bloc pour les infos filtres à droite de la frise */
+/* Bloc infos droite */
 #infos-droite {
     position: fixed;
-    top: 70px; 
-    right: 0; 
+    top: 70px;
+    right: 0;
     width: 180px;
     display: flex;
     flex-direction: column;
@@ -237,6 +223,5 @@ main a div img.thumb {
     #infos-droite { width: 150px; }
     #themes div label { width: 90px !important; height: 60px !important; font-size: 16px !important; }
     h1 { font-size: 40px !important; }
-    #changer-theme { font-size: 28px !important; }
     .bottom-info { font-size: 10px; }
 }
