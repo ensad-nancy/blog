@@ -40,13 +40,90 @@ body::before {
 
 
 #themes {
-    display: none !important;
+     font-family: "Galter";
+    font-size: 13pt;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    /* border-style: none; */
+    align-items: baseline;
+    padding: 1em;
+    margin: 0em 0em 0em 0em;
+    box-sizing: border-box;
+    position: sticky;
+    /* top: 1em; */
+    top: 0;
+    border-top-color: #f7f7f7;    
+    border-bottom-color: #f7f7f7;
+    border-top-width: 1em;
+    border-bottom-width: 1em;
+    border-style: solid;
+    border-left: none;
 }
 
-h1 {
+#themes legend {
+    font-size: 10pt;
+    color: red;
+    width: 20%;
+
+}
+
+ #themes div /*label*/{ 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+ }
+ 
+#title {
+    position: relative;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+
+#title h1 {
     font-family: 'Format_1452';
     font-size: 2.3rem;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 11;
+}
+
+#title + p {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    z-index: 999;
+}
+
+#title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/bordoro.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
 }
 
 #filtres {
@@ -60,46 +137,38 @@ h1 {
     background-color: #cccccc;
 }
 
-#filtres h2,
-#filtres p {
-    font-size: 1.2rem;
-    color: white;
-    background-color: rgb(48, 48, 48);
-    border-radius: 40px;
-    padding: 10px 20px;
-    flex-shrink: 0;
+#filtres h2 {
+color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
-#filtres select,
+#filtres #auteurices p{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+#filtres #date p{
+    margin: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    color: rgb(0, 0, 0);
+}
+
 #filtres input[type="range"] {
     margin-top: 5px;
 }
 
-#auteurices-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 5px;
-}
 
-#auteurices-tabs button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-}
 
-#auteurices-tabs button.active {
-    background-color: #0073ff;
-    color: rgb(174, 174, 174);
-    border-color: #0073ff;
-}
 
-#auteurices-tabs button:hover {
-    background-color: #e0e0e0;
-}
 
 main {
     width: 100%;
@@ -121,7 +190,7 @@ main a div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid #00000020;
+    border: 2px solid #c96c6c20;
     transition: transform 0.15s, box-shadow 0.15s;
 }
 
