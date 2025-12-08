@@ -1,9 +1,7 @@
 ---
----
 title: lettre à vous 
 date: 2025-11-20
-tags: tag1, tag2
-preview: image/
+---
 
 # Lettre à vous. 
 

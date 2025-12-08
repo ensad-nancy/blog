@@ -23,10 +23,32 @@ changeTheme();
 
 /* Changer la date */
 
-var dates = ["10.11", "17.11", "24.11", "01.12", "08.12", "15.12", "05.01", "12.01", "Tout"];
+var articles = document.querySelectorAll("main a");
+var dates = ["2025-11-10", "2025-11-17", "2025-11-24", "2025-12-01", "2025-12-08", "2025-12-15", "2026-01-05", "2026-01-12", "Tout"];
+
 document.querySelector('input[name="date"]').addEventListener('input', (event) => {
     var value = event.target.value;
-    document.querySelector('#date label').innerText = dates[value];
+    var currentDate = dates[value];
+    document.querySelector('#date label').innerText = currentDate;
+
+    if (value == dates.length - 1) {
+        articles.forEach((article) => {
+            article.style.display = "block";
+        });
+    } else {
+        var nextDate = dates[Number(value)+1];
+        var thresholdMin = new Date(currentDate);
+        var thresholdMax = new Date(nextDate);
+
+        articles.forEach((article) => {
+            var articleDate = new Date(article.getAttribute('data-date'));
+            if (articleDate >= thresholdMin && articleDate < thresholdMax){
+                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
+    }
 });
 
 /* Filtrer par auteur·ice */
