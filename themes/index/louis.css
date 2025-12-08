@@ -1,86 +1,153 @@
-body{
-    background-color: rgb(255, 147, 16);
+body {
+    background-color: rgb(255, 140, 0);
     font-family: Arial, Helvetica, sans-serif;
-    columns: 3;
+    columns: 3;            
     column-gap: 5pt;
     cursor: wait;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
+h1 {
     font-size: 75pt;
     line-height: 1.25;
     display: flex;
     text-align: justify;
-    position: sticky;
-    top: 0;
+    z-index: -1; 
+    pointer-events: none;
 }
 
-p{
+h3 {
+    color: blue;
+    text-decoration: overline;
+    transition: transform 0.5s ease;
+    margin-left: 10%;
+}
+
+h3:hover {
+    font-size: 75pt;
+    transform: rotate(-3deg);
+}
+
+p {
     font-size: 35pt;
-    color: rgb(136, 0, 255);
+    color: #8000ff;
     text-decoration: dotted underline;
     text-indent: 30pt;
     position: relative;
     rotate: 10deg;
     margin-left: 9%;
     margin-right: 2.5%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+p:hover {
+    transform: rotate(-20deg);
+    background-color: rgb(255, 255, 0);
 }
 
 a:link {
     text-decoration: none;
 }
 
-h3{
-    color: blue;
-    text-decoration: overline;
-    position: relative;
-}
-
-.thumb{
-    display: none;
-}
-
-#themes{
+#themes {
     border: none;
     font-size: 12.5pt;
     columns: 3;
-    position: relative;
     font-weight: 600;
     color: blue;
-    letter-spacing: 0.15pt; 
+    letter-spacing: 0.15pt;
 }
 
-select{
+select,
+input,
+label {
     position: relative;
 }
 
-input{
-    position: relative;
+.thumb {
+    display: none;
 }
 
-label{
-    position: relative;
+/* ----------------------------
+   RESPONSIVE MEDIA QUERIES
+---------------------------- */
+
+/* Tablets: mittlere Bildschirme */
+@media (max-width: 1024px) {
+    body {
+        columns: 2; /* weniger Spalten */
+    }
+
+    h1 {
+        font-size: 60pt; /* kleinere Überschrift */
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 28pt;
+        margin-left: 5%;
+        margin-right: 2%;
+        text-indent: 20pt;
+    }
+
+    #themes {
+        columns: 2;
+        font-size: 11pt;
+    }
 }
 
-h1{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45pt;
-    line-height: 40pt;
-    max-width: 70%;
+/* Smartphones: kleine Bildschirme */
+@media (max-width: 768px) {
+    body {
+        columns: 1; /* nur eine Spalte */
+        column-gap: 0;
+    }
+
+    h1 {
+        font-size: 45pt;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 22pt;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-indent: 15pt;
+    }
+
+    #themes {
+        columns: 1;
+        font-size: 10pt;
+        margin: 1rem;
+    }
 }
 
-h2{
-    color: hotpink;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 33,75pt;
-}
+/* Extra kleine Smartphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35pt;
+    }
 
-p{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 16pt;
-    line-height: 20pt;
-    max-width: 50%;
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 18pt;
+        text-indent: 10pt;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #themes {
+        font-size: 9pt;
+        margin: 0.5rem;
+    }
 }
