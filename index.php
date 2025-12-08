@@ -61,12 +61,12 @@ function parseFrontMatter($path) {
 
         <div id="auteurices">
             <p>Auteur·ices</p>
-            <select name="authors" id="authors">
-                <option value="all">Tous les auteurs</option>
+            <div id="auteurices-tabs">
+                <button data-author="all" class="active">Tous les auteurs</button>
                 <?php foreach ($students as $student): ?>
-                    <option value="<?= htmlspecialchars($student) ?>"><?= ucfirst(htmlspecialchars($student)) ?></option>
+                    <button data-author="<?= htmlspecialchars($student) ?>"><?= ucfirst(htmlspecialchars($student)) ?></button>
                 <?php endforeach; ?>
-            </select>
+            </div>
         </div>
     </div>
 
