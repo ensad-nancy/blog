@@ -1,6 +1,6 @@
 ---
-title: Le sombre trottoir de la biennale
-date: 2025-11-24
+title: La gow en sac à dos
+date: 2025-12-08
 # tags: tag&
 # preview: image
 ---

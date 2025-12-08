@@ -141,60 +141,50 @@ fieldset#themes {
     z-index: 50;         /* поверх фонового блоку */
 }
 
-/* Вирівнювання в один рядок */
-a[href="index.php"] {
-    display: inline-block;
- font-family: 'PRMT';
-    font-size: 12px;
-    text-decoration: none;
-    color: #333;
-}
-
-fieldset#themes {
-    display: inline-block;
+/* Container for the theme selector */
+#themes {
+    position: absolute;
+    top: 8px;
+    z-index: 50;
+    display: flex;        
+    align-items: right;
+    gap: 10px;/* distance between names */
+    white-space: nowrap;    
+    font-family: 'PRMT';
     border: none;
     margin: 0 20px;
     padding: 0;
 }
 
-fieldset#themes legend {
+/* Hide changer le theme */
+#themes legend {
     display: none;
 }
 
-fieldset#themes > div {
-    display: inline-flex;
-    align-items: center;
-    gap: 0px;
+/* Each radio+label pair */
+#themes > div {
+    display: inline-flex;   
+    align-items: right;
+    gap: 0px; /* distance between names and their buttons */
 }
 
-a[href="index.php"]:hover,
-fieldset#themes input:checked + label {
-    opacity: 1;
-}
 
-/* Ховаємо самі кружечки */
-fieldset#themes input[type="radio"] {
-}
-
-/* Робимо, щоб label виглядав як кнопка */
-fieldset#themes label {
+#themes label {
     display: inline-block;
-    padding: 5px 1px;
-    margin: 0 8px;
-    border-radius: 6px;        
+    padding: 5px 6px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 13px;
-    transition: all 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 
-
-/* Коли вибрано — активний стан */
-fieldset#themes input[type="radio"]:checked + label {
+#themes input[type="radio"]:checked + label {
     background: #0259db;
     color: white;
-    font-weight: bold;
 }
+
+
 
 
 article img[alt="sandwitch"] {
