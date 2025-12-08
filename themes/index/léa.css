@@ -154,9 +154,22 @@ main::after{
     left:70%
 }
 
+/* glyphs verts dans les articles */
 
+main a:nth-child(3)::before{
+    content: "*";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+    line-height: 100%;
+}
 
 main a{  
+  position: relative;
   padding: 10px 20px;
   border: 2px solid blue;
   border-radius: 100%;
@@ -169,7 +182,11 @@ main a{
 }
 
 main p {
-    visibility: hidden;
+    
+}
+
+main img{
+    display: none;
 }
 
 h1 {
@@ -208,9 +225,10 @@ h1::after{
     top: -10%;
     left: 102%;
 }
-p {  justify-content: center;
+
+body > p { 
+  justify-content: center;
   text-align: center;
-  position: relative;
   margin-top: 30%;
   position: absolute;
   left: 33%;
@@ -221,7 +239,6 @@ p {  justify-content: center;
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
-  display: flex;
   font-size: 20pt;
 }
 
