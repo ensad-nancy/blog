@@ -1,3 +1,242 @@
-body{
-    background-color: #FF4500;
+/* ------------------------------ */
+/* FONT FACE                       */
+/* ------------------------------ */
+@font-face {
+    font-family: "A-OTF UD Reimin Pr6N";
+    src: url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff2") format("woff2"),
+         url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* ------------------------------ */
+/* BASE GLOBALE                   */
+/* ------------------------------ */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+/* ------------------------------ */
+/* TITRE FIXE EN HAUT              */
+/* ------------------------------ */
+h1 {
+    position: fixed;
+    top: 16px;
+    left: 20vw; /* Décalé légèrement à droite */
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* ------------------------------ */
+/* BANDEAU INFOS EN BAS            */
+/* ------------------------------ */
+h1 + p,
+.bottom-info {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 16px;
+    z-index: 1000;
+    white-space: normal;
+    max-height: 3em;
+    overflow: hidden;
+}
+
+/* ------------------------------ */
+/* BANDEAU "CHANGER LE THÈME"     */
+/* ------------------------------ */
+#changer-theme,
+#changer-theme label {
+    position: fixed;
+    top: 40px; /* remonté vers le haut */
+    left: 20vw; /* aligné avec le titre décalé */
+    font-family: "Great Vibes", cursive !important;
+    font-size: 28px !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+    z-index: 900;
+}
+
+/* ------------------------------ */
+/* BANDEAU FILTRES (à côté du thème) */
+/* ------------------------------ */
+#filtres {
+    position: fixed;
+    top: 40px; /* même hauteur que le panneau thème */
+    left: calc(20vw + 180px); /* à côté du panneau thème */
+    width: 200px;
+    background: rgba(0,0,0,0.25);
+    padding: 10px;
+    font-family: "Great Vibes", cursive;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 800;
+}
+
+/* ------------------------------ */
+/* FRISE VERTICALE GAUCHE (#themes)*/
+/* ------------------------------ */
+#themes {
+    position: fixed;
+    top: 90px; /* sous les bandeaux thème + filtre */
+    left: 0;
+    width: 18vw;
+    max-width: 180px;
+    min-width: 140px;
+    height: calc(100vh - 200px);
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 500;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+#themes::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* HEXAGONES POUR LES PRÉNOMS */
+#themes div {
+    display: flex !important;
+    justify-content: center;
+    margin: 6px 0 !important;
+    position: relative;
+}
+
+#themes div input[type="radio"] {
+    display: none !important;
+}
+
+#themes div label {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100px !important;
+    height: 70px !important;
+    border: 3px solid #66e0ff !important;
+    background: transparent !important;
+    color: #66e0ff !important;
+    font-family: "Great Vibes", cursive !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+    ) !important;
+}
+
+#themes div label:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 10px #66e0ff !important;
+}
+
+#themes div input[type="radio"]:checked + label {
+    background: #66e0ff !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 12px #66e0ff !important;
+}
+
+#themes div label::after {
+    content: "~ °";
+    position: absolute;
+    bottom: -16px;
+    font-size: 16px !important;
+}
+
+/* ------------------------------ */
+/* CONTENU PRINCIPAL               */
+/* ------------------------------ */
+main {
+    margin-left: 20vw; 
+    margin-right: 0;
+    max-width: calc(100% - 20vw);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Bloc pour les infos filtres à droite de la frise */
+#infos-droite {
+    position: fixed;
+    top: 70px; 
+    right: 0; 
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 500;
+}
+
+/* ------------------------------ */
+/* IMAGES UNIFORMES               */
+/* ------------------------------ */
+main a div img.thumb {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE                      */
+/* ------------------------------ */
+@media (max-width: 1200px) {
+    #themes { width: 16vw; }
+    main { margin-left: 18vw; max-width: calc(100% - 18vw); }
+    #infos-droite { width: 160px; }
+    #filtres { width: 16vw; left: calc(18vw + 160px); }
+}
+
+@media (max-width: 900px) {
+    #themes { width: 20vw; }
+    main { margin-left: 20vw; max-width: calc(100% - 20vw); }
+    #infos-droite { width: 160px; }
+    #filtres { width: 20vw; left: calc(20vw + 160px); }
+}
+
+@media (max-width: 600px) {
+    #themes { width: 24vw; }
+    main { margin-left: 24vw; max-width: calc(100% - 24vw); }
+    #infos-droite { width: 150px; }
+    #themes div label { width: 90px !important; height: 60px !important; font-size: 16px !important; }
+    h1 { font-size: 40px !important; }
+    #changer-theme { font-size: 28px !important; }
+    .bottom-info { font-size: 10px; }
 }
