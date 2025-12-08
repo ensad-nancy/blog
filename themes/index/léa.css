@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #edededee;
+ overflow: hidden;
 }
 
 #themes{
@@ -118,7 +118,6 @@ body{
   top: 70%;
   height: 100%;
   border: 0;
-  overflow-y: auto;
   justify-content: center;
 }
 
@@ -134,25 +133,27 @@ main {
 }
 
 main::before{
-    content: "*"; 
+    content: "*";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 300px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
     top:10%;
 }
-main::before{
-    content: "("; 
+main::after{
+    content: "°";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 270px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:50%;
+    top:70%;
+    left:70%
 }
+
 
 
 main a{  
@@ -168,7 +169,7 @@ main a{
 }
 
 main p {
-    visibility: hidden;
+    ;
 }
 
 h1 {
@@ -185,9 +186,29 @@ h1 {
 
 }
 
-p {
-  display: flex;
-  justify-content: center;
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: -15%;
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: 102%;
+}
+p {  justify-content: center;
   text-align: center;
   position: relative;
   margin-top: 30%;

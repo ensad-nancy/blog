@@ -112,7 +112,9 @@ article h1{
     margin-top: 1%;
 }
 
+
 /*-----THEMES-----*/
+
 #themes{
     font-family: "Baskervville-Regular";
     font-size: 18pt;
@@ -125,6 +127,7 @@ article h1{
     align-items: baseline;
     padding: 1em 0em 1em 1em;
     margin: 3em 0em 0em 0em;
+    box-sizing: border-box;
 }
 
 #themes div{
@@ -154,7 +157,9 @@ article h1{
 
 #themes legend{
     color: white;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
@@ -163,8 +168,11 @@ article h1{
     padding-top: 10px;
     display: flex;
     left: 0;
-    position: absolute;   
+    position: sticky;
+    z-index: 2;
+
 }
+
 /*-----MAIN-----*/
 
 main{
