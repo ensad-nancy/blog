@@ -1,6 +1,8 @@
 ---
 title: Une fissure dans le détail
 date: 2025-27-11
+# tags: tag&
+# preview: image
 ---
 
 # Une fissure dans le détail
