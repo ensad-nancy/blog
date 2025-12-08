@@ -16,7 +16,7 @@ body{
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -112,10 +112,10 @@ body{
 
 #filtres {
   position: absolute;
-  left: 30%;
+  left: 35%;
   width: 40%;
   box-sizing: border-box;
-  top: 60%;
+  top: 70%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -125,17 +125,39 @@ body{
 main {
   position: absolute;
   left: 2%;
-  width: 26%;
+  width: 28%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
 }
 
+main::before{
+    content: "*"; 
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 250px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+}
+main::before{
+    content: "("; 
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 250px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:50%;
+}
+
+
 main a{  
-    padding: 10px 20px;
-    border: 2px solid blue;
+  padding: 10px 20px;
+  border: 2px solid blue;
   border-radius: 100%;
   margin-bottom: 15px;
   display: flex;
@@ -154,8 +176,8 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 34%;
-  top: 5%;
+  left: 37%;
+  top: 10%;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
@@ -170,7 +192,7 @@ p {
   position: relative;
   margin-top: 30%;
   position: absolute;
-  left: 30%;
+  left: 33%;
   width: 40%;
   box-sizing: border-box;
   top: -18%;

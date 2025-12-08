@@ -1,3 +1,164 @@
-body{
-    background-color: #93c990;
+/* -----------------------------------
+   전체 레이아웃 기본값
+----------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f5;
+    color: #222;
+    font-family: "Basteleur", serif;
+    line-height: 1.6;
+
+    /* 사이드바만큼 전체 본문 이동 */
+    margin-left: 260px;
+}
+
+/* -----------------------------------
+   왼쪽 사이드바 (#themes)
+----------------------------------- */
+#themes {
+    box-sizing: border-box;
+    width: 260px;                   /* 실제 사이드바 폭 */
+    position: fixed;                /* 화면에 고정 */
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    padding: 40px 20px;
+    border-right: 2px solid #bcbcbc;
+    background: #f7f7f5;
+
+    overflow-y: auto;
+    z-index: 100;                   /* 항상 위에 */
+}
+
+/* 라디오 버튼 + 이름 */
+#themes input[type="radio"] {
+    margin-right: 5px;
+}
+
+#themes div {
+    margin-bottom: 8px;
+}
+
+/* legend */
+#themes legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* -----------------------------------
+   오른쪽 본문 공통 스타일
+----------------------------------- */
+
+/* body가 이미 오른쪽으로 이동했으므로 margin-left 제거 */
+body > a,
+header,
+article {
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 뒤로가기 링크 */
+body > a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+}
+body > a:hover {
+    opacity: 1;
+}
+
+/* -----------------------------------
+   header (글 제목 / 날짜 / 태그)
+----------------------------------- */
+header {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 원래 HTML에 있는 제목 1개 */
+header .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+header .date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+header .tags {
+    margin-top: 6px;
+}
+
+header .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+/* -----------------------------------
+   본문(article)
+----------------------------------- */
+article {
+    max-width: 780px;
+    margin-bottom: 100px;
+}
+
+/* 문단 */
+article p {
+    margin: 0 0 1.2em 0;
+    font-size: 16px;
+}
+
+/* 제목들 */
+article h1,
+article h2,
+article h3 {
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+article h1 { font-size: 28px; }
+article h2 { font-size: 22px; }
+article h3 { font-size: 18px; }
+
+/* 리스트 */
+article ul,
+article ol {
+    padding-left: 20px;
+    margin: 0 0 1.2em 0;
+}
+
+/* 인용구 */
+article blockquote {
+    border-left: 3px solid #999;
+    padding-left: 15px;
+    margin: 1.5em 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* 이미지 */
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+    display: block;
 }
