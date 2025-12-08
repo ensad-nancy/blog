@@ -1,199 +1,142 @@
 /* ------------------------------ */
-/* FONT FACE                       */
+/* FONT IMPORTS                   */
 /* ------------------------------ */
-@font-face {
-    font-family: "A-OTF UD Reimin Pr6N";
-    src: url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff2") format("woff2"),
-         url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* ------------------------------ */
-/* BASE GLOBALE                   */
+/* BODY & RESET                   */
 /* ------------------------------ */
-html, body {
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #705e72; /* fond spécifique pour textes */
-    color: #fff;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-}
-
-/* TITRE FIXE EN HAUT */
-h1 {
-    position: fixed;
-    top: 16px;
-    left: 20vw;
-    margin: 0;
-    font-family: "Great Vibes", cursive;
-    font-size: 40px;
-    color: #fff;
-    z-index: 1000;
-}
-
-/* BANDEAU INFOS EN BAS */
-h1 + p,
-.bottom-info {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #fff;
-    background: rgba(0,0,0,0.5);
-    padding: 8px 16px;
-    z-index: 1000;
-    white-space: normal;
-    max-height: 3em;
-    overflow: hidden;
+    font-family: "Gentium Basic", serif;
+    background: #f9f7f8;
+    height: 100%;
 }
 
 /* ------------------------------ */
-/* FRISE VERTICALE GAUCHE (#themes)*/
+/* COLONNE GAUCHE HEXAGONES       */
 /* ------------------------------ */
 #themes {
     position: fixed;
-    top: 25px; /* même placement que sur index */
+    top: 50px;
     left: 0;
-    width: 18vw;
-    max-width: 180px;
-    min-width: 140px;
-    height: calc(100vh - 200px);
-    background: rgba(0,0,0,0.25);
-    backdrop-filter: blur(6px);
+    width: 160px;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     gap: 12px;
-    z-index: 500;
     overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-#themes::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-#themes legend {
-    font-family: "Great Vibes", cursive;
-    font-size: 25px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 12px;
+    z-index: 90;
 }
 
 #themes div {
-    margin: 6px 0;
     position: relative;
+    width: 100px;
+    height: 70px;
+}
+
+#themes input[type="radio"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#themes label {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 100px;
     height: 70px;
-    background-color: #555555;
+    font-family: "Gentium Basic";
+    font-size: 14px;
     color: #66e0ff;
-    font-family: "Great Vibes", cursive;
-    font-size: 18px;
+    background: #555555;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     cursor: pointer;
     transition: all 0.3s ease;
-    clip-path: polygon(
-        25% 0%, 75% 0%,
-        100% 50%,
-        75% 100%, 25% 100%,
-        0% 50%
-    );
 }
 
-#themes div input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-#themes div:hover {
+#themes div:hover label {
     transform: scale(1.05);
     box-shadow: 0 0 10px #66e0ff;
 }
 
-#themes div input[type="radio"]:checked + label {
-    background: #66e0ff !important;
-    color: #ffffff !important;
-    box-shadow: 0 0 12px #66e0ff !important;
+#themes input[type="radio"]:checked + label {
+    background: #66e0ff;
+    color: #fff;
+    box-shadow: 0 0 12px #66e0ff;
 }
 
-/* CONTENU PRINCIPAL */
-main {
-    margin-left: 20vw;
-    margin-right: 0;
-    max-width: calc(100% - 20vw);
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-/* Bloc infos droite */
-#infos-droite {
+/* ------------------------------ */
+/* HEADER CONTROLS                 */
+/* ------------------------------ */
+.header-controls {
     position: fixed;
-    top: 70px;
-    right: 0;
-    width: 180px;
+    top: 10px;
+    right: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    z-index: 500;
+    align-items: flex-end;
+    gap: 8px;
+    z-index: 200;
 }
 
-/* IMAGES UNIFORMES */
-main a div img.thumb {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
+.btn-return {
+    background: #7e4fa3;
+    color: white;
+    padding: 6px 16px;
     border-radius: 6px;
-    object-fit: cover;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Gentium Basic";
 }
 
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-    #themes { width: 16vw; }
-    main { margin-left: 18vw; max-width: calc(100% - 18vw); }
-    #infos-droite { width: 160px; }
+.btn-return:hover {
+    background: #9a64c7;
 }
 
-@media (max-width: 900px) {
-    #themes { width: 20vw; }
-    main { margin-left: 20vw; max-width: calc(100% - 20vw); }
-    #infos-droite { width: 160px; }
+.theme-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 28px;
+    color: #6b3d87;
 }
 
-@media (max-width: 600px) {
-    #themes { width: 24vw; }
-    main { margin-left: 24vw; max-width: calc(100% - 24vw); }
-    #infos-droite { width: 150px; }
-    #themes div label { width: 90px !important; height: 60px !important; font-size: 16px !important; }
-    h1 { font-size: 40px !important; }
-    .bottom-info { font-size: 10px; }
+/* ------------------------------ */
+/* MAIN CONTENT HORIZONTAL SCROLL  */
+/* ------------------------------ */
+.main-content {
+    margin-left: 180px;
+    padding: 20px;
+    height: 100vh;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-/* Images générales */
-img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
+.text-card {
+    display: inline-block;
+    width: 260px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.text-card-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+    color: #4f2b60;
+    margin-bottom: 10px;
+}
+
+.text-card-info {
+    font-size: 14px;
+    opacity: 0.7;
 }

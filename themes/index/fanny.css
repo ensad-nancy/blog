@@ -1,14 +1,7 @@
 /* ------------------------------ */
-/* FONT FACE                       */
+/* IMPORT GOOGLE FONTS            */
 /* ------------------------------ */
-@font-face {
-    font-family: "A-OTF UD Reimin Pr6N";
-    src: url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff2") format("woff2"),
-         url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* ------------------------------ */
@@ -19,13 +12,9 @@ html, body {
     padding: 0;
     background-color: #000;
     color: #fff;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
+    font-family: "Gentium Basic", serif; /* typo par défaut pour le contenu */
     font-weight: 300;
     box-sizing: border-box;
-}
-
-body {
-    padding: 0;
 }
 
 /* ------------------------------ */
@@ -36,53 +25,53 @@ h1 {
     top: 16px;
     left: 20vw;
     margin: 0;
-    font-family: "Great Vibes", cursive;
-    font-size: 40px;
+    font-family: "Great Vibes", cursive; /* <-- titre en Great Vibes */
+    font-size: 50px;
     color: #fff;
     z-index: 1000;
 }
 
 /* ------------------------------ */
-/* BANDEAU INFOS EN BAS            */
+/* BANDEAU INFOS EN BAS — INDEX    */
 /* ------------------------------ */
-h1 + p,
-.bottom-info {
+body > p:first-of-type {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
+    bottom: 10px;
+    left: 16px;
+    width: calc(100% - 32px);
+    font-family: "Gentium Basic", serif; /* bandeau bas en Gentium Basic */
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
     color: #fff;
     background: rgba(0,0,0,0.5);
-    padding: 8px 16px;
+    padding: 8px 12px;
     z-index: 1000;
-    white-space: normal;
-    max-height: 3em;
-    overflow: hidden;
+    border-radius: 8px;
 }
 
 /* ------------------------------ */
-/* CHANGER LE THEME — VERSION PROPRE */
+/* CHANGER LE THEME — INTERFACE    */
 /* ------------------------------ */
 #themes legend {
     font-family: "Great Vibes", cursive;
+    font-weight: bold;
     font-size: 25px;
     color: #fff;
 }
+
 /* ------------------------------ */
 /* BANDEAU FILTRES                 */
 /* ------------------------------ */
 #filtres {
     position: fixed;
-    top: 0;
+    top: 25px; /* aligné avec #themes */
     right: 0;
     width: 200px;
     background: rgba(0,0,0,0.25);
     padding: 10px;
     font-family: "Great Vibes", cursive;
+    font-weight: bold;
     font-size: 16px;
     color: #fff;
     display: flex;
@@ -110,7 +99,6 @@ h1 + p,
     z-index: 500;
     overflow-y: auto;
     overflow-x: hidden;
-
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -143,6 +131,11 @@ h1 + p,
     );
 }
 
+#themes div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #66e0ff;
+}
+
 #themes div input[type="radio"] {
     opacity: 0;
     position: absolute;
@@ -151,11 +144,6 @@ h1 + p,
     margin: 0;
     height: 100%;
     cursor: pointer;
-}
-
-#themes div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #66e0ff;
 }
 
 #themes div input[type="radio"]:checked + label {
@@ -167,16 +155,136 @@ h1 + p,
 /* ------------------------------ */
 /* CONTENU PRINCIPAL               */
 /* ------------------------------ */
+/* IMPORTANT: on transforme chaque carte (.parent) en un flex-column
+   avec une hauteur minimale pour pouvoir pousser le footer vers le bas. */
 main {
     margin-left: 20vw;
     margin-right: 0;
     max-width: calc(100% - 20vw);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
+    align-items: start;
+    padding: 24px;
 }
 
-/* Bloc infos droite */
+/* Chaque lien contient un div (ta structure : main > a > div) */
+main a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+main a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    background: rgba(139,122,142,0.12); /* léger fond pour visibilité */
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    min-height: 220px; /* <-- augmente cette valeur pour pousser davantage le footer */
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* Survol carte */
+main a > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* TITRE DANS LA CARTE */
+main a div h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-family: "Gentium Basic", serif;
+}
+
+/* CONTENU (si tu as des paragraphes entre le h3 et le footer) */
+main a div p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    flex: 1 1 auto; /* occupe l'espace disponible */
+}
+
+/* IMAGE (si elle existe) */
+main a div img.thumb {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* ------------------------------ */
+/* FOOTER (auteur / date / tags)  */
+/* ------------------------------ */
+/* On garde le footer en ligne (horizontal) mais on le décale légèrement vers le bas. */
+main a footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;    /* ajuste ici pour descendre un peu plus le footer */
+    flex-wrap: wrap;
+}
+
+/* Si tu veux que le footer soit visuellement "descendu" sans coller en bas,
+   tu peux augmenter min-height de la carte ET garder margin-top modéré. */
+
+/* Style des labels (Auteur·ice, Date) et des tags en forme de capsule */
+main a footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+main a footer p strong {
+    font-weight: 600;
+    font-family: "Great Vibes", cursive; /* "Auteur·ice" garde le style interface si tu veux */
+    margin-right: 6px;
+}
+
+/* Capsule pour le texte (nom, date, tag) */
+main a footer p span,
+main a footer .tag,
+main a footer p em {
+    background: #f4e8ff;      /* fond pastel */
+    color: #4a3954;           /* texte foncé */
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    font-family: "Gentium Basic", serif; /* contenu en Gentium */
+    transition: background .18s ease, transform .18s ease;
+}
+
+/* Hover artistique */
+main a footer p span:hover,
+main a footer .tag:hover,
+main a footer p em:hover {
+    background: #d6b8ff;
+    transform: scale(1.06);
+    box-shadow: 0 4px 12px rgba(214,184,255,0.18);
+    color: #000;
+}
+
+/* Si les strong (Auteur·ice:) doivent rester Great Vibes et gras,
+   sinon tu peux enlever la font-family ci-dessus. */
+
+/* ------------------------------ */
+/* BOTTOM INFO: laisse de l'espace pour le footer fixe en bas du viewport */
+/* ------------------------------ */
+body::after {
+    content: "";
+    display: block;
+    height: 84px; /* laisse de l'espace pour body > p:first-of-type fixé */
+}
+
+/* ------------------------------ */
+/* INFOS DROITE (si utilisé)      */
+/* ------------------------------ */
 #infos-droite {
     position: fixed;
     top: 70px;
@@ -189,39 +297,24 @@ main {
 }
 
 /* ------------------------------ */
-/* IMAGES UNIFORMES               */
-/* ------------------------------ */
-main a div img.thumb {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-/* ------------------------------ */
 /* RESPONSIVE                      */
 /* ------------------------------ */
 @media (max-width: 1200px) {
-    #themes { width: 16vw; }
-    main { margin-left: 18vw; max-width: calc(100% - 18vw); }
-    #infos-droite { width: 160px; }
-    #filtres { width: 16vw; left: calc(18vw + 160px); }
+    h1 { left: 18vw; font-size: 44px; }
+    main { margin-left: 18vw; max-width: calc(100% - 18vw); grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    main a > div { min-height: 200px; }
 }
 
 @media (max-width: 900px) {
-    #themes { width: 20vw; }
-    main { margin-left: 20vw; max-width: calc(100% - 20vw); }
-    #infos-droite { width: 160px; }
-    #filtres { width: 20vw; left: calc(20vw + 160px); }
+    h1 { left: 20vw; font-size: 40px; }
+    main { margin-left: 20vw; max-width: calc(100% - 20vw); grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+    main a > div { min-height: 180px; }
+    #filtres { width: 18vw; }
 }
 
 @media (max-width: 600px) {
-    #themes { width: 24vw; }
-    main { margin-left: 24vw; max-width: calc(100% - 24vw); }
-    #infos-droite { width: 150px; }
-    #themes div label { width: 90px !important; height: 60px !important; font-size: 16px !important; }
-    h1 { font-size: 40px !important; }
-    .bottom-info { font-size: 10px; }
+    h1 { left: 24vw; font-size: 36px; }
+    main { margin-left: 24vw; grid-template-columns: 1fr; padding: 12px; }
+    main a > div { min-height: auto; }
+    body > p:first-of-type { font-size: 12px; bottom: 12px; left: 12px; width: calc(100% - 24px); }
 }
