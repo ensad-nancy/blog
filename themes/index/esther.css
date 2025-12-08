@@ -54,13 +54,10 @@ body > p{
    background-color: #fff9f9;
    }
 
-fieldset{
-   border: radius 0;
+#themes{
+   border-radius: 0;
    border-width: 0;
    text-align: center;
-
-}
-#themes{
     font-family: "sinistreregular";
     display: flex;
     flex-wrap: wrap;
