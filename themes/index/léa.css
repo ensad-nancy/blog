@@ -139,9 +139,9 @@ main::before{
     font-family:'Adelphe_Trouble_Regular'; 
     font-size: 250px;
     color: rgb(0, 255, 0); 
-    z-index: -1; /* Placer le texte derrière les autres éléments */
-    pointer-events: none; /* Empêche le texte d'interférer avec les interactions */
-    white-space: nowrap; /* Empêche la rupture de ligne */
+    z-index: -1; 
+    pointer-events: none; 
+    top:20%;
 }
 
 
