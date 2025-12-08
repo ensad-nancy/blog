@@ -187,9 +187,29 @@ h1 {
 
 }
 
-p {
-  display: flex;
-  justify-content: center;
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 270px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:70%;
+    left:10%
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 270px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:70%;
+    left:70%
+}
+p {  justify-content: center;
   text-align: center;
   position: relative;
   margin-top: 30%;
