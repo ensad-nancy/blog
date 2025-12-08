@@ -45,20 +45,6 @@ h1 + p {
 
 /*filters*/
 
-:root {
-  /*filtres and themes*/
-  --left-width: 220px;   /* width for div#filtres (left) */
-  --right-width: 300px;  /* width for #themes (right) */
-  --gutter: 1rem;
-  --theme-bg-top: calc(var(--header-height) + 0.75rem); /* start just under the title */
-  --theme-bg-height: 50rem;    /* total height covering div#filtres + #themes — adjust */
-  --theme-bg-width: 100%;    /* width of the image area (matches your max-width) */
-  --theme-bg-opacity: 0.35;
-  
-  /*articles*/
-  --box-size: 500px; /* change this once to resize all boxes */
-}
-
 #themes,
 label[for*="theme"],
 select[id*="theme"],
@@ -79,32 +65,56 @@ p{
   --gutter: 1rem;
   --header-height: 6rem; /* used to keep content below the sticky h1 */
 
+  /* image area dimensions (uses existing vars) */
+  --image-top: 0;
+  --image-height: calc(var(--theme-bg-height) + var(--header-height));
+  --image-width: var(--theme-bg-width);
+
+  /* ensure these exist/override if needed */
+  --themes-height: 20rem;
+  --themes-top: calc(var(--image-top) + (var(--image-height) * 0.12));
+
+  /*filtres and themes*/
+  --left-width: 220px;   /* width for div#filtres (left) */
+  --right-width: 300px;  /* width for #themes (right) */
+  --gutter: 1rem;
   --theme-bg-top: calc(var(--header-height) + 0.75rem); /* start just under the title */
-  --theme-bg-height: 45rem;    /* total height covering div#filtres + #themes — adjust */
+  --theme-bg-height: 50rem;    /* total height covering div#filtres + #themes — adjust */
   --theme-bg-width: 100%;    /* width of the image area (matches your max-width) */
   --theme-bg-opacity: 0.35;
+  --header-height: 6rem;
+  --image-top: 0;
+  --image-height: calc(var(--theme-bg-height) + var(--header-height));
+ 
+  /*articles*/
+  --box-size: 500px; /* change this once to resize all boxes */
 }
 
 /*filters*/
 
+div#filtres {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
 div#filtres,
 div#filters {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* change to flex-start if you want items packed left */
-  gap: 1rem;
-  flex-wrap: nowrap;               /* prevent wrapping to multiple lines */
-  width: 100%;
-  max-width: 1500px;               /* match #themes max-width */
-  margin: 0.75rem auto;
-  padding: 0.75rem 1rem;
+  position: fixed;
+  /* Position relative to bottom of image */
+  top: 0;
+  left: 50% !important;
+  transform: translate(-50%, -100%) !important; /* shift left 50% and up by its full height */
+  
+  width: var(--theme-bg-width) !important;
+  max-width: 100% !important;
+  z-index: 3;
+  
+  height: auto !important; /* let content size height */
   box-sizing: border-box;
-  background: rgba(0,0,0,0.0);     /* set to rgba(0,0,0,0.6) if you want matte background */
-  border: 1px solid transparent;
-  border-radius: 8px;
-  overflow-x: auto;                /* horizontal scroll instead of wrapping on small screens */
-  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 1rem;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow: visible;
 }
 
 /* keep children inline and prevent text wrapping inside them */
@@ -140,23 +150,41 @@ div#filtres {
   border: 1px solid rgba(255,255,255,0.06);
 }
 
+/* Force #themes to span the full viewport width (override earlier rules) */
+div#themes,
 #themes {
-  position: static;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; /* legend one side, controls the other */
-  gap: 1rem;
-  width: 100%;
-  max-width: 1500px;      /* adjust to control the line length */
-  margin: 0.75rem auto;   /* sits below the title */
-  padding: 0.75rem 1rem;
+  position: fixed; /* keep positioned over the image */
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  transform: none !important;
+  margin: 0;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.6); /* matte/toned background — change as needed */
-  color: inherit;
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 8px;
-  overflow: visible;
+  padding: 0.5rem 1rem;
+  z-index: 2;
+  background: rgba(0,0,0,0.55); /* retain matte look */
+  overflow-x: auto;
+
+  /* ensure #themes is 20rem high (override earlier rules) */
+  height: 20rem !important;
+  min-height: 20rem !important;
+  box-sizing: border-box;
+  overflow: auto; /* allow scrolling if content exceeds the height */
+}
+
+/* ensure children stay in a single row and don't wrap */
+div#themes > * {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* hide legacy legend elements (div won't have legend, but safe to include) */
+div#themes legend,
+#themes legend {
+  display: none;
 }
 
 #themes legend,
@@ -189,6 +217,7 @@ legend {
   box-sizing: border-box;
 }
 
+/*
 div#filtres,
 div#filters,
 #themes {
@@ -197,7 +226,7 @@ div#filters,
   max-width: var(--box-size);
   max-height: var(--box-size);
   box-sizing: border-box;
-  margin: 0.75rem auto; /* keep centered under title */
+  margin: 0.75rem auto; /* keep centered under title /
   padding: 0.75rem;
   overflow: hidden;
   display: flex;
@@ -205,16 +234,18 @@ div#filters,
   justify-content: center;
 }
 
-/* ensure the two blocks render above the image */
+/* ensure the two blocks render above the image /
 div#filtres,
 div#filters,
 #themes,
 p {
   position: relative;
   z-index: 1;
-  /* if you want the blocks semi-transparent so the image shows through: */
-  /* background: rgba(0,0,0,0.4); */
+  /* if you want the blocks semi-transparent so the image shows through: /
+  /* background: rgba(0,0,0,0.4); /
 }
+
+*/
 
 /* Keep filters children constrained to the left column */
 div#filtres *,
@@ -241,16 +272,15 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 0; /* touch the top of the screen (behind the fixed header) */
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: var(--theme-bg-width);
-  height: calc(var(--theme-bg-height) + var(--header-height));  /* include the header height so the image begins under the very top edge */
+  height: calc(var(--theme-bg-height) + var(--header-height));
   background-image: url('../../articles/emily/Images/P1090131.JPG');
   background-size: cover;
-  background-position: top center; /* align image top with viewport top */
+  background-position: top center;
   background-repeat: no-repeat;
-  opacity: 1;
   z-index: 0;
   pointer-events: none;
 }
@@ -267,8 +297,8 @@ h3 {
 /* make article tiles the same square size and align the grid to these sizes */
 main {
   position: relative;
-  z-index: 2;
-  margin-top: calc(var(--theme-bg-height) + var(--header-height) + 1rem);
+  margin-top: calc(var(--image-height) + 1rem);
+  z-index: 3;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--box-size), var(--box-size)));
   gap: 1rem;
@@ -329,7 +359,10 @@ img[alt=tea]{
   max-width: 20px;  
 }
 
+img[alt=]
+
 img {
-    max-width: 40%;
+  max-width: 35%;
   border-radius: 5%;
+  align-items: center;
 }
