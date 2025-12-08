@@ -172,9 +172,7 @@ fieldset#themes input:checked + label {
     opacity: 1;
 }
 
-/* Ховаємо самі кружечки */
-fieldset#themes input[type="radio"] {
-}
+
 
 /* Робимо, щоб label виглядав як кнопка */
 fieldset#themes label {
