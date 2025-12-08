@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Format_1452';
     src: url('/article/léon/images/Format_1452.otf') format('truetype');
@@ -5,97 +6,96 @@
     font-style: normal;
 }
 
-body{
-    background-color: #0073ff;
+@font-face {
+    font-family: 'Galter';
+    src: url('/article/léon/images/Galter.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
+
+h1, p {
+    grid-column: 1 / -1 !important;
+}
+
+
+body {
+    background-color: #0073ff;
+    font-family: 'Galter';
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 40px;
+    padding: 40px;
+}
+
 
 h1 {
-    font-family: Format_1452;
+   
+    font-family: 'Format_1452';
     font-size: 2.3rem;
-    font-weight: 900;
     line-height: 1.1;
+    font-weight: 900;
     color: #000;
-    width: 65%;
     margin-bottom: 20px;
-    position: center;
+    
 }
 
-
 p {
-    width: 70%;
-    margin-bottom: 40px;
+    font-family: 'Galter';
+    width: 90%;
+    margin-bottom: 30px;
     color: #000;
     line-height: 1.4;
     font-size: 0.95rem;
 }
 
-#filtres {
-     display: flex;
-    background-color: rgb(127, 195, 229);
-    gap: 20px;
-    width: 100%;
-    overflow-x: auto;
-    padding: 0em 0em 0em 1em;
-    align-items: baseline;
-   
-}
-#filtres #date p{
-    margin: 0;
-    margin-block-start: 0;
-    margin-inline-start: 0;
-    color: white;
-    flex-shrink: 0;
-    align-items: center;
-    font-size: 18pt;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-#filtres #auteurices p{
-    color: white;
-    flex-shrink: 0;
-    align-items: center;
-    font-size: 18pt;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
 
-}
-#filtres h2{
-    color: white;
-    background-color: rgb(48, 48, 48);
-    border-radius: 90px;
-    flex-shrink: 0;
-    align-items: center;
-    font-size: 18pt;
-    font-weight: normal;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-
-#themes{
+#themes {
+    grid-column: 1;
     display: flex;
     width: 100%;
     overflow-x: auto;
     align-items: baseline;
-    box-sizing: border-box;
-    margin: 0em 0em 0em 10em;
+    margin-bottom: 20px;
+}
+
+#filtres {
+    grid-column: 2;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 1em;
+    background-color: rgb(127, 195, 229);
+    border-radius: 20px;
+    height: min-content;
+}
+#filtres h2 {
+    font-family: 'Galter';
+    color: white;
+    background-color: rgb(48, 48, 48);
+    border-radius: 90px;
+    padding: 10px 20px;
+    font-size: 18pt;
+    font-weight: normal;
+    flex-shrink: 0;
 }
 
 
-#filtres h2 {
-    margin-bottom: 10px;
+#filtres #date p,
+#filtres #auteurices p {
+    margin: 0;
+    color: white;
+    font-size: 18pt;
+    padding: 10px 20px;
+    flex-shrink: 0;
 }
 
 #filtres select,
@@ -104,18 +104,19 @@ p {
 }
 
 
-
 main {
-    margin-top: 40px;
+    grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 20px;
 }
+
 
 main a {
     text-decoration: none;
     color: inherit;
 }
+
 
 main a div {
     background: rgb(72, 129, 221);
@@ -134,15 +135,19 @@ main a div:hover {
     box-shadow: 0 6px 12px #00000030;
 }
 
+/* TITRE ARTICLE */
 h3 {
+    font-family: 'Galter';
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
 
+/* INFOS AUTEUR / DATE */
 footer p {
     font-size: 0.8rem;
     margin: 3px 0;
 }
+
 
 .tag {
     display: inline-block;
@@ -162,3 +167,31 @@ footer p {
     object-fit: cover;
 }
 
+.display-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 100vh; /* Nécessaire pour que le scroll fonctionne */
+    overflow: hidden; 
+    padding: 20px;
+}
+
+
+.left-column {
+    border-right: 1px solid #ffffff3b;
+    padding-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+.right-column {
+    padding-left: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.thumb{
+    display: none;
+}
