@@ -1,199 +1,102 @@
 /* ------------------------------ */
-/* FONT FACE                       */
+/* BODY & GLOBAL STYLES           */
 /* ------------------------------ */
-@font-face {
-    font-family: "A-OTF UD Reimin Pr6N";
-    src: url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff2") format("woff2"),
-         url("assets/fonts/A-OTF-UD-Reimin-Pr6N.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-/* ------------------------------ */
-/* BASE GLOBALE                   */
-/* ------------------------------ */
-html, body {
+body {
+    background-color: #705e72;
     margin: 0;
     padding: 0;
-    background-color: #705e72; /* fond spécifique pour textes */
+    font-family: 'A-OTF UD Reimin Pr6N', sans-serif;
     color: #fff;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
-}
-
-/* TITRE FIXE EN HAUT */
-h1 {
-    position: fixed;
-    top: 16px;
-    left: 20vw;
-    margin: 0;
-    font-family: "Great Vibes", cursive;
-    font-size: 40px;
-    color: #fff;
-    z-index: 1000;
-}
-
-/* BANDEAU INFOS EN BAS */
-h1 + p,
-.bottom-info {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-family: "A-OTF UD Reimin Pr6N", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 1.4;
-    color: #fff;
-    background: rgba(0,0,0,0.5);
-    padding: 8px 16px;
-    z-index: 1000;
-    white-space: normal;
-    max-height: 3em;
-    overflow: hidden;
 }
 
 /* ------------------------------ */
-/* FRISE VERTICALE GAUCHE (#themes)*/
+/* MAIN ARTICLES CONTAINER         */
 /* ------------------------------ */
-#themes {
-    position: fixed;
-    top: 25px; /* même placement que sur index */
-    left: 0;
-    width: 18vw;
-    max-width: 180px;
-    min-width: 140px;
-    height: calc(100vh - 200px);
-    background: rgba(0,0,0,0.25);
-    backdrop-filter: blur(6px);
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 40px;
+}
+
+/* ------------------------------ */
+/* ARTICLE BLOCK                  */
+/* ------------------------------ */
+main a > div {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    z-index: 500;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    justify-content: space-between; /* pousse le footer en bas */
+    background-color: #8b7a8e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    height: 100%; /* s'étend sur toute la hauteur du bloc */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-#themes::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+main a > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
-#themes legend {
-    font-family: "Great Vibes", cursive;
-    font-size: 25px;
-    color: #fff;
-    text-align: center;
+/* ------------------------------ */
+/* TITRE & TEXTE                  */
+/* ------------------------------ */
+main a div h3 {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+main a div p {
+    flex-grow: 1; /* prend tout l'espace disponible entre titre et footer */
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+
+/* ------------------------------ */
+/* IMAGE                          */
+/* ------------------------------ */
+main a div img.thumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 12px;
 }
 
-#themes div {
-    margin: 6px 0;
-    position: relative;
+/* ------------------------------ */
+/* FOOTER (auteur, date, tags)    */
+/* ------------------------------ */
+main a footer {
+    margin-top: auto; /* pousse le footer en bas */
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    width: 100px;
-    height: 70px;
-    background-color: #555555;
-    color: #66e0ff;
-    font-family: "Great Vibes", cursive;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    clip-path: polygon(
-        25% 0%, 75% 0%,
-        100% 50%,
-        75% 100%, 25% 100%,
-        0% 50%
-    );
+    font-size: 0.85rem;
+    color: #eee;
 }
 
-#themes div input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-#themes div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #66e0ff;
-}
-
-#themes div input[type="radio"]:checked + label {
-    background: #66e0ff !important;
-    color: #ffffff !important;
-    box-shadow: 0 0 12px #66e0ff !important;
-}
-
-/* CONTENU PRINCIPAL */
-main {
-    margin-left: 20vw;
-    margin-right: 0;
-    max-width: calc(100% - 20vw);
+/* Auteur et date */
+main a footer .info {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-/* Bloc infos droite */
-#infos-droite {
-    position: fixed;
-    top: 70px;
-    right: 0;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
-    z-index: 500;
 }
 
-/* IMAGES UNIFORMES */
-main a div img.thumb {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
+/* Tags */
+main a footer .tags {
+    display: flex;
+    gap: 6px;
+}
+
+main a footer .tags .tag {
+    background-color: #d6c7da;
+    color: #705e72;
+    padding: 2px 6px;
     border-radius: 6px;
-    object-fit: cover;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-    #themes { width: 16vw; }
-    main { margin-left: 18vw; max-width: calc(100% - 18vw); }
-    #infos-droite { width: 160px; }
-}
-
-@media (max-width: 900px) {
-    #themes { width: 20vw; }
-    main { margin-left: 20vw; max-width: calc(100% - 20vw); }
-    #infos-droite { width: 160px; }
-}
-
-@media (max-width: 600px) {
-    #themes { width: 24vw; }
-    main { margin-left: 24vw; max-width: calc(100% - 24vw); }
-    #infos-droite { width: 150px; }
-    #themes div label { width: 90px !important; height: 60px !important; font-size: 16px !important; }
-    h1 { font-size: 40px !important; }
-    .bottom-info { font-size: 10px; }
-}
-
-/* Images générales */
-img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 500;
 }
