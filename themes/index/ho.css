@@ -35,6 +35,10 @@ body > p{
     border: 1px solid #4f5647;
 }
 
+#themes div label {
+    color: #4f5647;
+}
+
 main{
     display: flex;
     align-items: center;
