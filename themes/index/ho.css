@@ -49,11 +49,15 @@ body > p{
     color: #4f5647;
 }
 
-/* #filtres{
-    margin-top: 500px;
+div#filtres{
+    border: 1px solid #4f5647;
+    padding: 20px;
+    height: 230px;
+    margin-top: 230px;
+    /* margin-top: 500px;
     width: 200px;
-    align-self: flex-start;
-} */
+    align-self: flex-start; */
+}
 
 main{
     display: flex;
