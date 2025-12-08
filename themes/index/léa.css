@@ -141,7 +141,7 @@ main::before{
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:20%;
+    top:-20%;
 }
 
 
