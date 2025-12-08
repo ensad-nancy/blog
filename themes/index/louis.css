@@ -1,7 +1,7 @@
 body {
     background-color: rgb(255, 140, 0);
     font-family: Arial, Helvetica, sans-serif;
-    columns: 3;
+    columns: 3;            
     column-gap: 5pt;
     cursor: wait;
     margin: 0;
@@ -13,9 +13,6 @@ h1 {
     line-height: 1.25;
     display: flex;
     text-align: justify;
-    position: sticky;
-    top: 0;
-    background: inherit;
     z-index: -1; 
     pointer-events: none;
 }
@@ -23,14 +20,16 @@ h1 {
 h3 {
     color: blue;
     text-decoration: overline;
-    transition: font-size 0.3s ease;
+    transition: transform 0.5s ease;
+    margin-left: 10%;
 }
 
 h3:hover {
     font-size: 75pt;
+    transform: rotate(-3deg);
 }
 
-p{
+p {
     font-size: 35pt;
     color: #8000ff;
     text-decoration: dotted underline;
@@ -39,12 +38,12 @@ p{
     rotate: 10deg;
     margin-left: 9%;
     margin-right: 2.5%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-p:hover{
+p:hover {
     transform: rotate(-20deg);
     background-color: rgb(255, 255, 0);
-    transition: 0.3s ease;
 }
 
 a:link {
@@ -66,13 +65,89 @@ label {
     position: relative;
 }
 
-.thumb{
+.thumb {
     display: none;
 }
 
+/* ----------------------------
+   RESPONSIVE MEDIA QUERIES
+---------------------------- */
 
-legend{
-    position: relative;
-    color: chartreuse;
+/* Tablets: mittlere Bildschirme */
+@media (max-width: 1024px) {
+    body {
+        columns: 2; /* weniger Spalten */
+    }
 
-}    
+    h1 {
+        font-size: 60pt; /* kleinere Überschrift */
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 28pt;
+        margin-left: 5%;
+        margin-right: 2%;
+        text-indent: 20pt;
+    }
+
+    #themes {
+        columns: 2;
+        font-size: 11pt;
+    }
+}
+
+/* Smartphones: kleine Bildschirme */
+@media (max-width: 768px) {
+    body {
+        columns: 1; /* nur eine Spalte */
+        column-gap: 0;
+    }
+
+    h1 {
+        font-size: 45pt;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 22pt;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-indent: 15pt;
+    }
+
+    #themes {
+        columns: 1;
+        font-size: 10pt;
+        margin: 1rem;
+    }
+}
+
+/* Extra kleine Smartphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35pt;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 18pt;
+        text-indent: 10pt;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #themes {
+        font-size: 9pt;
+        margin: 0.5rem;
+    }
+}
