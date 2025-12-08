@@ -137,7 +137,7 @@ main::before{
     content: "*";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 300px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
@@ -147,12 +147,12 @@ main::after{
     content: "°";  
     position: absolute;
     font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 250px;
+    font-size: 270px;
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
     top:70%;
-    left:20%
+    left:40%
 }
 
 
