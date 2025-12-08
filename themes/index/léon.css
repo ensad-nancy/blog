@@ -31,7 +31,7 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 40px;
-    padding: 40px;
+    padding: 10px;
 }
 
 
@@ -52,17 +52,23 @@ p {
     margin-bottom: 30px;
     color: #000;
     line-height: 1.4;
-    font-size: 0.95rem;
+    font-size: 2rem;
 }
 
 
 #themes {
     grid-column: 1;
     display: flex;
+    flex-direction: column;
     width: 100%;
-    overflow-x: auto;
-    align-items: baseline;
+    overflow-y: auto;
+    align-items: flex-start;
     margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+#themes label{
+font-size: 150%;
 }
 
 #filtres {
@@ -107,7 +113,7 @@ p {
 main {
     grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
 }
 
