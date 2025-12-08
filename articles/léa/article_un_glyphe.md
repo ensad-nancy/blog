@@ -1,0 +1,14 @@
+---
+title: Un glyphe n’arrive jamais seul.
+date: 2025-12-04
+tags:
+---
+
+
+
+#**Un glyphe n’arrive jamais seul.**
+
+Au moment où j’écrit, j’ai à ma droite Mattéo, qui manipule dans ses mains avec fierté le livre « Le détail en typographie » de Jost Hochuli. Comment parler d’un glyphe ou d’un détail graphique sans parler de ce livre. C’est vrai qu’il est important et qu’il se constitue comme une référence dans le domaine. C’est à l’égard d’une discussion autour du sujet de cette semaine que j’ai remarqué la coïncidence folle. Il y a des gens qui ont consacré une carrière entière à l’étude des glyphes. C’est assez fou quand on y pense, certains diraient que c’est un métier passion alors que d’autres diront qu’il s’agit d’un sujet de recherche. Je vous laisse deviner qui dirait quoi. Il est vrai que si on est informaticien, infirmier ou même dans le design graphique, le glyphe ne signifie pas la même chose. Prenez un quelqu’un qui code par exemple, le glyphe à une importance tout autre, une virgule de trop, votre formule est biaisée et ne fonctionnera pas. Pourtant deux accolades forment quant à elles le début d’une modification visuelle. Un infirmier lui, fera attention surtout à l’orthographe d’un nom car face aux enjeux d’un prélèvement sanguin, une lettre en moins, un point en trop, fausse absolument tout le parcours de recherche. Je ne vais pas partir dans des explications sans fin sur l’importance des glyphes dans de nombreux corps de métiers qui nous entourent mais je trouve ça tout de même passionnant de voir à quel point un signe, qu’il soit lettre, chiffre ou encore caractère typographique quelconque peut avoir autant de formes différentes en terme d’importance. Je crois qu’en réalité je n’ai pas de glyphes préférés, parler alors d’un seul glyphes dans ce sujet devient assez complexe pour moi. Ce que j’aime dans une famille typographique, c’est les glyphes inconnus. Les caractères que souvent personnes ne connait sauf les personnes du métier. Les caractères qui deviennent des sujets niches et source de documentaires sur Arte. Les caractères qui deviennent contemplatifs tant ils sont constitués avec finesse grâce à l’origine, des morceaux plombs, dotés d’une histoire bien plus longue que la notre, et qui ont raconté mille vies. Parler d’un glyphe est alors impossible à mon avis, parler d’un glyphe c’est parlé de la famille qui l’entoure, de son impact dans la page d’un livre ou sur le ticket de caisse que plus personne n’imprime. Voila pourquoi on ne peut parler que d’un glyphe, car comme un grand poète le dirait un glyphe n’arrive jamais seul. 
+
+mimidu07
+04/12
