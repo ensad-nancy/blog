@@ -32,10 +32,11 @@ body{
     font-size: 32pt;
     border: 3px solid blue;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: center;
 }
+/*glyphes décoratifs des div changement de thème*/
 #themes div:nth-child(1)::before{
     content: "{";
 }
@@ -132,29 +133,6 @@ main {
   overflow-y: auto;
 }
 
-main::before{
-    content: "*";  
-    position: absolute;
-    font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 300px;
-    color: rgb(0, 255, 0); 
-    z-index: -1; 
-    pointer-events: none; 
-    top:10%;
-}
-main::after{
-    content: "°";  
-    position: absolute;
-    font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 270px;
-    color: rgb(0, 255, 0); 
-    z-index: -1; 
-    pointer-events: none; 
-    top:70%;
-    left:70%
-}
-
-
 
 main a{  
     position: relative;
@@ -169,6 +147,7 @@ main a{
   text-align: center;
 }
 
+/*glyphes décoratifs arrière plan de main a*/
 main a:nth-child(3)::before{
     content: "*";
     position: absolute;
@@ -177,9 +156,95 @@ main a:nth-child(3)::before{
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:10%;
+    top: -145%;
     line-height: 100%;
+    left: 5%;
 }
+main a:nth-child(4)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0);
+    z-index: 0;
+    pointer-events: none;
+    top: -230%;
+    line-height: 100%;
+    left: 80%;
+}
+main a:nth-child(5)::before{
+    content: "(";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -240%;
+   line-height: 100%;
+   left: -2%;
+}
+main a:nth-child(6)::before{
+    content: ")";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -346%;
+    line-height: 100%;
+    left: 79%;
+}
+main a:nth-child(8)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -428%;
+    line-height: 100%;
+    left: 60%;}
+
+main a:nth-child(9)::before{
+    content: "~";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -423%;
+    line-height: 100%;
+   left: 38%;
+}
+main a:nth-child(10)::before{
+    content: "{";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 350px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -523%;
+    line-height: 100%;
+    left: 0%;
+}
+main a:nth-child(11)::before{
+    content: "}";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 350px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+   top: -585%;
+  line-height: 100%;
+  left: 80%;
+}
+
 
 main img{
     display: none;
@@ -198,7 +263,7 @@ h1 {
   color: blue;
 
 }
-
+/*glyphes décoratifs arrière plan de h1*/
 h1::before{
     content: "{";  
     position: absolute;
@@ -221,7 +286,31 @@ h1::after{
     top: -10%;
     left: 102%;
 }
+h2 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ left: -10%;
+  top: 0%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble_Regular";
+  font-size: 15pt;
+  color: blue;
 
+}
+#auteurices{
+width: 30%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ left: 4%;
+  top: 8%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble_Regular";
+  font-size: 15pt;
+  color: blue;
+}
 body > p {
     justify-content: center;
   text-align: center;
@@ -238,6 +327,10 @@ body > p {
   font-size: 20pt;
 }
 
+span{
+    font-family: 'Adelphe_Trouble';
+}
+
 #date {
   position: absolute;
   left: 30%;
@@ -247,4 +340,18 @@ body > p {
   height: 100%;
   border: 0;
   overflow-y: auto;
+}
+
+input[type="radio"]{
+ appearance: none;
+ position: absolute;
+ background-color: #ffffff00;
+ margin: 0;
+ padding: 0px;
+z-index: 3;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+cursor: pointer;
 }

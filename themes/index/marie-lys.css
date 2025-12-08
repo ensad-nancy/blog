@@ -1,119 +1,231 @@
+/* ===============================
+   RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===============================
+   BASE
+================================ */
 body {
     font-family: Arial, sans-serif;
     color: black;
     background: white;
 }
 
+/* ===============================
+   TITRE
+================================ */
 h1 {
     font-size: 60px;
     width: 900px;
     margin: 0 auto;
     text-align: left;
-    position: relative; 
-
+    position: relative;
 }
 
+/* Trait fixe sous le titre */
 h1::after {
     content: "";
-    position: absolute;
-    left: -500px;          
-    bottom: -5px;     
-    width: 200%;      
+    display: block;
+    position: relative;
+    top: 10px;          /* sous le titre, ajuste si nécessaire */
+    left:-270px;
+    width: 100vw;
     height: 4px;
     background-color: black;
+    pointer-events: none; 
+    z-index: 200;        
 }
 
+/* ===============================
+   TEXTE DÉFILANT CONTINU
+================================ */
 body > p {
-    width: 800px;
-    padding: 15px 20px;
+    position: relative;          
+    overflow: hidden;            
+    width: calc(100% - 400px);   
+    margin: 20px auto;
+    padding: 0;
     font-size: 0.95rem;
-    margin: 0 auto;
-    position: relative;
+    white-space: nowrap;
+    color: transparent;  
+}
+
+body > p::before {
+    content: "Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • ";
+    position: absolute;
+    left: 100%;                
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-text 22s linear infinite;
+    color: rgb(255, 0, 183);              
 }
 
 body > p::after {
     content: "";
-    position: absolute;
-    left: -200px;
-    bottom: -5px;
-    width: 150%;
+    position: absolute;     
+    bottom: -50px;             
+    left: 0;
+    width: 100%;
     height: 4px;
     background-color: black;
+    pointer-events: none;
+    display: block;
+    z-index: 1;
 }
 
+@keyframes scroll-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 
+/* =================================================
+   COLONNE GAUCHE — THEMES
+================================================= */
 #themes {
     position: fixed;
-    top: 140px;
+    top: 0;
     left: 0;
     width: 180px;
-    padding: 15px;
-    border-right: 4px solid black;
-    background: white;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    padding-top: 140px; 
+}
+
+#themes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;       
+    width: 4px;
+    height: 100vh;
+    background: rgb(0, 0, 0);
 }
 
 #themes legend {
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+    padding: 15px;
+}
+
+#themes input[type="radio"] {
+    display: none;
 }
 
 #themes div {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 
 #themes label {
-    background: #ff30ff;
-    padding: 6px 12px;
-    border-radius: 999px;
-    color: white;
-    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    background: white;
+    color: black;
     cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
+#themes label:hover {
+    background: #ff30ff;
+    color: white;
+}
+
+#themes input[type="radio"]:checked + label {
+    background: #ff30ff;
+    color: white;
+    font-weight: bold;
+}
+
+#themes::-webkit-scrollbar {
+    width: 6px;
+}
+
+#themes::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* =================================================
+   COLONNE DROITE — FILTRES
+================================================= */
 #filtres {
     position: fixed;
-    top: 140px;
+    top: 0;
     right: 0;
     width: 220px;
-    padding: 15px;
-    border-left: 4px solid black;
+    height: 100vh;
     background: white;
+    padding: 15px;
+    padding-top: 160px;
+    z-index: 10;  
+}
+
+/* Décalage du contenu interne pour faire descendre “Date” et éléments */
+#filtres > * {
+    margin-top: 10px;
+}
+
+#filtres::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;        
+    width: 4px;
+    height: 100vh;
+    background: black;
 }
 
 #filtres h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 #filtres p {
     font-weight: bold;
-    margin: 12px 0 5px 0;
+    margin: 12px 0 50px;
 }
 
 #authors {
     width: 100%;
 }
 
+/* =================================================
+   CENTRE — GRID ARTICLES
+================================================= */
 main {
     margin-left: 180px;
     margin-right: 220px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    position: relative; 
 }
 
+/* Trait fixe au-dessus de la grille */
+main::before {
+    content: "";
+    display: block;
+    position: absolute;        
+    top: 0px;             
+    left: -190px;                
+    width: 100vw;
+    height: 4px;            
+    background-color: black;
+    pointer-events: none;   
+    z-index: 200;            
+}
+
+/* Articles */
 main a {
     text-decoration: none;
     color: inherit;
@@ -143,6 +255,7 @@ main footer {
     font-size: 0.85rem;
 }
 
+/* images */
 .thumb {
     width: 100%;
     margin-top: 20px;
@@ -150,6 +263,7 @@ main footer {
     display: block;
 }
 
+/* tags */
 .tag {
     background: black;
     color: white;
@@ -159,21 +273,15 @@ main footer {
     display: inline-block;
 }
 
-
-
-
+/* =================================================
+   HOVER ARTICLES
+================================================= */
 main a div footer,
 main a div img.thumb {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease;
-}
-
-main a div h3:hover + footer,
-main a div h3:hover ~ img.thumb {
-    opacity: 1;
-    max-height: 500px;  
 }
 
 main a div:hover footer,
