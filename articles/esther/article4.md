@@ -1,6 +1,8 @@
 ---
 title: Les danseurs anglais
 date: 2025-04-12
+# tags: tag&
+# preview: image
 ---
 
 # Les danseurs anglais 
