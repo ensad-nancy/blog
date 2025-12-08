@@ -133,9 +133,21 @@ main {
   overflow-y: auto;
 }
 
+main::before{
+    content: "*"; 
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 80px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; /* Placer le texte derrière les autres éléments */
+    pointer-events: none; /* Empêche le texte d'interférer avec les interactions */
+    white-space: nowrap; /* Empêche la rupture de ligne */
+}
+
+
 main a{  
-    padding: 10px 20px;
-    border: 2px solid blue;
+  padding: 10px 20px;
+  border: 2px solid blue;
   border-radius: 100%;
   margin-bottom: 15px;
   display: flex;
