@@ -1,50 +1,183 @@
-
-@font-face {
-    font-family: 'NICE';
-    src: url('../../articles/marie-lys/Images/OceansideTr.ttf'); 
-}
-
-html, body {
-    min-height: 100%;
-    margin: 10;
+* {
+    margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #001f5b 0%, #4979b0 50%, #c0d5ff 100%);
-    background-attachment: fixed; 
-    color: white;
-    font-family: Georgia, 'Times New Roman', serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
-h1:first-of-type {
-    font-family: 'NICE', sans-serif;
-    font-size: 55px;         
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background: white;
+}
+
+h1 {
+    font-size: 60px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; 
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    left: -500px;          
+    bottom: -5px;     
+    width: 200%;      
+    height: 4px;
+    background-color: black;
+}
+
+body > p {
+    width: 800px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+body > p::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    bottom: -5px;
+    width: 150%;
+    height: 4px;
+    background-color: black;
+}
+
+
+#themes {
+    position: fixed;
+    top: 140px;
+    left: 0;
+    width: 180px;
+    padding: 15px;
+    border-right: 4px solid black;
+    background: white;
+}
+
+#themes legend {
+    font-size: 0.9rem;
     font-weight: bold;
-    color: rgb(6, 12, 45);
+    margin-bottom: 10px;
+}
 
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.4),
-        0 0 10px rgba(255, 255, 255, 0.3),
-        0 0 15px rgba(255, 255, 255, 0.2),
-        0 0 20px rgba(255, 255, 255, 0.1),
-        0 0 25px rgba(255, 255, 255, 0.05);
+#themes div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#themes label {
+    background: #ff30ff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+#filtres {
+    position: fixed;
+    top: 140px;
+    right: 0;
+    width: 220px;
+    padding: 15px;
+    border-left: 4px solid black;
+    background: white;
+}
+
+#filtres h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#filtres p {
+    font-weight: bold;
+    margin: 12px 0 5px 0;
+}
+
+#authors {
+    width: 100%;
+}
+
+main {
+    margin-left: 180px;
+    margin-right: 220px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+main a:nth-child(3n) {
+    border-right: none;
+}
+
+main a > div {
+    padding: 20px;
+}
+
+main h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+main footer {
+    border-top: 3px solid black;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.thumb {
+    width: 100%;
+    margin-top: 20px;
+    border: 3px solid black;
+    display: block;
+}
+
+.tag {
+    background: black;
+    color: white;
+    padding: 2px 6px;
+    margin-right: 5px;
+    font-size: 0.75rem;
+    display: inline-block;
 }
 
 
-h1:not(:first-of-type), h2, h3, h4, h5, h6 {
-    font-family: 'NICE', sans-serif;
-    font-size: 28px;           
-    font-weight: normal;
-    color: rgb(6, 12, 45);
+
+
+main a div footer,
+main a div img.thumb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-p, span, div {
-    font-family: Georgia, 'Times New Roman', serif; 
-    font-size: 18px; 
-    color: rgb(243, 244, 255);
+main a div h3:hover + footer,
+main a div h3:hover ~ img.thumb {
+    opacity: 1;
+    max-height: 500px;  
 }
 
-img {
-    max-width: 40%;
-    border-radius: 5%;
+main a div:hover footer,
+main a div:hover img.thumb {
+    opacity: 1;
+    max-height: 500px;
 }

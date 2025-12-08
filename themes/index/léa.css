@@ -8,15 +8,15 @@
 }
 
 body{
-    background-color: #edededee;
+ overflow: hidden;
 }
 
-fieldset{
+#themes{
   position: absolute;
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -24,11 +24,11 @@ fieldset{
   color:blue
 }
 
-fieldset legend{
+#themes legend{
     display: none;
 }
 
-fieldset div{
+#themes div{
     font-size: 32pt;
     border: 3px solid blue;
     border-radius: 50%;
@@ -36,106 +36,130 @@ fieldset div{
     display: flex;
     justify-content: center;
 }
-fieldset div:nth-child(1)::before{
+#themes div:nth-child(1)::before{
     content: "{";
 }
-fieldset div:nth-child(1)::after{
+#themes div:nth-child(1)::after{
        content: "}";
 }
-fieldset div:nth-child(2)::before{
+#themes div:nth-child(2)::before{
     content: "#";
 }
-fieldset div:nth-child(3)::before{
+#themes div:nth-child(3)::before{
     content: "⁑";
 }
-fieldset div:nth-child(4)::after{
+#themes div:nth-child(4)::after{
     content: "//";
-}fieldset div:nth-child(4)::before{
+}#themes div:nth-child(4)::before{
     content: "//";
 }
-fieldset div:nth-child(5)::before{
+#themes div:nth-child(5)::before{
     content: "{";
 }
-fieldset div:nth-child(5)::after{
+#themes div:nth-child(5)::after{
        content: "}";
 }
-fieldset div:nth-child(6)::before{
+#themes div:nth-child(6)::before{
     content: "#";
 }
-fieldset div:nth-child(7)::before{
+#themes div:nth-child(7)::before{
     content: "⁑";
 }
-fieldset div:nth-child(8)::before{
+#themes div:nth-child(8)::before{
     content: "*";
 }
-fieldset div:nth-child(8)::after{
+#themes div:nth-child(8)::after{
        content: "*";
 }
-fieldset div:nth-child(9)::before{
+#themes div:nth-child(9)::before{
     content: "//";
 }
-fieldset div:nth-child(9)::after{
+#themes div:nth-child(9)::after{
        content: "//";
 }
-fieldset div:nth-child(10)::before{
+#themes div:nth-child(10)::before{
     content: "{";
 }
-fieldset div:nth-child(10)::after{
+#themes div:nth-child(10)::after{
        content: "}";
-}fieldset div:nth-child(11)::before{
+}#themes div:nth-child(11)::before{
     content: "#";
 }
-fieldset div:nth-child(12)::before{
+#themes div:nth-child(12)::before{
     content: "⁑";
-}fieldset div:nth-child(13)::before{
+}#themes div:nth-child(13)::before{
     content: "*";
-}fieldset div:nth-child(14)::before{
+}#themes div:nth-child(14)::before{
     content: "//";
 }
-fieldset div:nth-child(14)::after{
+#themes div:nth-child(14)::after{
        content: "//";
 }
-fieldset div:nth-child(15)::before{
+#themes div:nth-child(15)::before{
     content: "{";
 }
-fieldset div:nth-child(15)::after{
+#themes div:nth-child(15)::after{
        content: "}";
-}fieldset div:nth-child(16)::before{
+}#themes div:nth-child(16)::before{
     content: "#";
 }
-fieldset div:nth-child(17)::before{
+#themes div:nth-child(17)::before{
     content: "⁑";
-}fieldset div:nth-child(18)::before{
+}#themes div:nth-child(18)::before{
     content: "*";
 }
 
 
 #filtres {
   position: absolute;
-  left: 30%;
+  left: 35%;
   width: 40%;
   box-sizing: border-box;
-  top: 60%;
+  top: 70%;
   height: 100%;
   border: 0;
-  overflow-y: auto;
   justify-content: center;
 }
 
 main {
   position: absolute;
   left: 2%;
-  width: 26%;
+  width: 28%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
 }
 
+main::before{
+    content: "*";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+}
+main::after{
+    content: "°";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 270px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:70%;
+    left:70%
+}
+
+
+
 main a{  
-    padding: 10px 20px;
-    border: 2px solid blue;
+    position: relative;
+  padding: 10px 20px;
+  border: 2px solid blue;
   border-radius: 100%;
   margin-bottom: 15px;
   display: flex;
@@ -145,8 +169,20 @@ main a{
   text-align: center;
 }
 
-main p {
-    visibility: hidden;
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+    line-height: 100%;
+}
+
+main img{
+    display: none;
 }
 
 h1 {
@@ -154,8 +190,8 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 34%;
-  top: 5%;
+  left: 37%;
+  top: 10%;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
@@ -163,14 +199,35 @@ h1 {
 
 }
 
-p {
-  display: flex;
-  justify-content: center;
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: -15%;
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: 102%;
+}
+
+body > p {
+    justify-content: center;
   text-align: center;
-  position: relative;
   margin-top: 30%;
   position: absolute;
-  left: 30%;
+  left: 33%;
   width: 40%;
   box-sizing: border-box;
   top: -18%;
@@ -178,7 +235,6 @@ p {
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
-  display: flex;
   font-size: 20pt;
 }
 

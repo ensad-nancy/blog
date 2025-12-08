@@ -1,3 +1,78 @@
-body{
-    background-color: #ADFF2F
+body {
+    background-color: rgb(255, 140, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    columns: 3;
+    column-gap: 5pt;
+    cursor: wait;
+    margin: 0;
+    padding: 0;
 }
+
+h1 {
+    font-size: 75pt;
+    line-height: 1.25;
+    display: flex;
+    text-align: justify;
+    position: sticky;
+    top: 0;
+    background: inherit;
+    z-index: -1; 
+    pointer-events: none;
+}
+
+h3 {
+    color: blue;
+    text-decoration: overline;
+    transition: font-size 0.3s ease;
+}
+
+h3:hover {
+    font-size: 75pt;
+}
+
+p{
+    font-size: 35pt;
+    color: #8000ff;
+    text-decoration: dotted underline;
+    text-indent: 30pt;
+    position: relative;
+    rotate: 10deg;
+    margin-left: 9%;
+    margin-right: 2.5%;
+}
+
+p:hover{
+    transform: rotate(-20deg);
+    background-color: rgb(255, 255, 0);
+    transition: 0.3s ease;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#themes {
+    border: none;
+    font-size: 12.5pt;
+    columns: 3;
+    font-weight: 600;
+    color: blue;
+    letter-spacing: 0.15pt;
+}
+
+select,
+input,
+label {
+    position: relative;
+}
+
+.thumb{
+    display: none;
+}
+
+
+legend{
+    position: relative;
+    color: chartreuse;
+
+}    

@@ -1,0 +1,13 @@
+---
+title: DL
+date: 2025-12-04
+tags: signe graphique
+---
+
+<link rel="stylesheet" href="/themes/article/thomas.css">
+
+## DL
+
+C’est presque obsessif. Une flèche qui pointe vers le bas un rectangle horizontal. Un rectangle ou plutôt une barre, bien que cela ne change rien au fond. Cette barre représente un support, une matière où de la nouvelle donnée vient s'adhérer. S’adhérer d’abord oui mais surtout traverser, pour aller quelque part, un endroit désigné. La flèche, un flot comme une descente de cascade, un passage obligatoire pour la donnée. Ca ne veut concrètement rien dire, figuration mensongère. Il y plus de vérité dans la barre que dans la flèche, puisque la donnée viendra forcément se poser un moment sur une surface plane, quelque soit sa taille. La flèche n’a en réalité aucune matière, le fantôme d’une venue. Il n’y a jamais eu de flèche, et pourquoi vers le bas. Et pas le haut. Il a plus de données après le passage, les choses s’empilent, ça devrait monter. Mais les choses descendent pour symboliser leur récolte, comme dans un panier, une chute. Personne ne sait vraiment où les choses tombent, c’est invisible et pourtant, visible sur l’interface. Quelque part, on se sait où, ces choses vivent et meurent. Elles se corrompent avec le temps, c’est un processus naturel. La matérialité même du support cause la disparition de toutes choses.<br />Pourquoi c’est presque obsessif ? Parce que c'est un état transitoire. Flèche et barre sont les balises visibles d’une opération inconnue, dont le seul résultat se scinde en réussite ou en échec. Etat transitoire implique temporalité, plus cette donnée est grande plus l’échec a de chance de se concrétiser. 0 ou 1, rien d’autre. Que la donnée soit obtenue à 25, 50 ou 100% la composition sera toujours faite de 0 et de 1.<br />C’est également obsessif parce nous désirons la donnée maintenant. On ne désire pas la donnée dont on veut faire l'acquisition dans 30 minutes, 2 jours, 1 mois… on la veut de suite, mais il est tout à fait possible de l’oublier dans ces laps de temps. Il y a de brefs désirs qui n'aboutissent qu’à des oublis momentanés. Il y a aussi ces choses insoupçonnées qui restent. Il y a aussi ces choses à obtenir sans les désirer, parce qu’on nous l’ordonne, de manière plus qu’insistante, dans ce cas nous devons croire en la flèche et la barre parce que cette opération se joue en dehors de notre champ d’action. Alors nous fixons, nous fixons dans l'espoir que l’opération se fasse vite. Ce n’est pas un spectacle en soit, mais ça peut nous captiver. Dans les cas extrêmes, nous hypnotiser, changer notre humeur, nous angoisser. Ca serait donc possiblement obsessif, cette fixation du regard sur quelque chose qui n’existe que pour que nous l’observons.
+
+
