@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #edededee;
+ overflow: hidden;
 }
 
 #themes{
@@ -16,7 +16,7 @@ body{
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -36,6 +36,7 @@ body{
     display: flex;
     justify-content: center;
 }
+/*glyphes décoratifs des div changement de thème*/
 #themes div:nth-child(1)::before{
     content: "{";
 }
@@ -112,30 +113,31 @@ body{
 
 #filtres {
   position: absolute;
-  left: 30%;
+  left: 35%;
   width: 40%;
   box-sizing: border-box;
-  top: 60%;
+  top: 70%;
   height: 100%;
   border: 0;
-  overflow-y: auto;
   justify-content: center;
 }
 
 main {
   position: absolute;
   left: 2%;
-  width: 26%;
+  width: 28%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
 }
 
+
 main a{  
-    padding: 10px 20px;
-    border: 2px solid blue;
+    position: relative;
+  padding: 10px 20px;
+  border: 2px solid blue;
   border-radius: 100%;
   margin-bottom: 15px;
   display: flex;
@@ -145,8 +147,58 @@ main a{
   text-align: center;
 }
 
-main p {
-    visibility: hidden;
+/*glyphes décoratifs arrière plan de main a*/
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top:10%;
+    line-height: 100%;
+}
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -145%;
+    line-height: 100%;
+    left: 5%;
+}
+main a:nth-child(5)::before{
+    content: "(";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -240%;
+   line-height: 100%;
+   left: -2%;
+}
+
+main a:nth-child(6)::before{
+    content: ")";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 400px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -145%;
+    line-height: 100%;
+    left: 5%;
+}
+
+main img{
+    display: none;
 }
 
 h1 {
@@ -154,23 +206,44 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 34%;
-  top: 5%;
+  left: 37%;
+  top: 10%;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
   color: blue;
 
 }
+/*glyphes décoratifs arrière plan de h1*/
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: -15%;
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: 102%;
+}
 
-p {
-  display: flex;
-  justify-content: center;
+body > p {
+    justify-content: center;
   text-align: center;
-  position: relative;
   margin-top: 30%;
   position: absolute;
-  left: 30%;
+  left: 33%;
   width: 40%;
   box-sizing: border-box;
   top: -18%;
@@ -178,7 +251,6 @@ p {
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
-  display: flex;
   font-size: 20pt;
 }
 
@@ -191,4 +263,18 @@ p {
   height: 100%;
   border: 0;
   overflow-y: auto;
+}
+
+input[type="radio"]{
+ appearance: none;
+ position: absolute;
+ background-color: #ffffff00;
+ margin: 0;
+ padding: 0px;
+z-index: 3;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+cursor: pointer;
 }
