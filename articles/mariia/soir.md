@@ -6,7 +6,9 @@ tags: guerre
 ---
 ![street](images/street.jpg)
 ![kitty](images/kitty.jpg)
-
+![message](images/message.jpg)
+![message2](images/message2.jpg)
+![message3](images/message3.jpg)
 ** Un soir d’été, chaud. ** <br>
 Très loin, on entend le bruit des voitures.<br>
  Dans la rue, les enfants du voisinage courent et jouent.<br>

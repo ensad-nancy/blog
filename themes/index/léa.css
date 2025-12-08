@@ -36,6 +36,7 @@ body{
     display: flex;
     justify-content: center;
 }
+/*glyphes décoratifs des div changement de thème*/
 #themes div:nth-child(1)::before{
     content: "{";
 }
@@ -132,29 +133,6 @@ main {
   overflow-y: auto;
 }
 
-main::before{
-    content: "*";  
-    position: absolute;
-    font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 300px;
-    color: rgb(0, 255, 0); 
-    z-index: -1; 
-    pointer-events: none; 
-    top:10%;
-}
-main::after{
-    content: "°";  
-    position: absolute;
-    font-family:'Adelphe_Trouble_Regular'; 
-    font-size: 270px;
-    color: rgb(0, 255, 0); 
-    z-index: -1; 
-    pointer-events: none; 
-    top:70%;
-    left:70%
-}
-
-
 
 main a{  
     position: relative;
@@ -169,6 +147,7 @@ main a{
   text-align: center;
 }
 
+/*glyphes décoratifs arrière plan de main a*/
 main a:nth-child(3)::before{
     content: "*";
     position: absolute;
@@ -179,6 +158,43 @@ main a:nth-child(3)::before{
     pointer-events: none; 
     top:10%;
     line-height: 100%;
+}
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -145%;
+    line-height: 100%;
+    left: 5%;
+}
+main a:nth-child(5)::before{
+    content: "(";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -240%;
+   line-height: 100%;
+   left: -2%;
+}
+
+main a:nth-child(6)::before{
+    content: ")";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 400px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -145%;
+    line-height: 100%;
+    left: 5%;
 }
 
 main img{
@@ -198,7 +214,7 @@ h1 {
   color: blue;
 
 }
-
+/*glyphes décoratifs arrière plan de h1*/
 h1::before{
     content: "{";  
     position: absolute;
@@ -247,4 +263,18 @@ body > p {
   height: 100%;
   border: 0;
   overflow-y: auto;
+}
+
+input[type="radio"]{
+ appearance: none;
+ position: absolute;
+ background-color: #ffffff00;
+ margin: 0;
+ padding: 0px;
+z-index: 3;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+cursor: pointer;
 }

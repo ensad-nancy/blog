@@ -15,103 +15,184 @@ h1 {
     width: 900px;
     margin: 0 auto;
     text-align: left;
-    position: relative; 
-
+    position: relative;
 }
 
 h1::after {
     content: "";
     position: absolute;
-    left: -500px;          
-    bottom: -5px;     
-    width: 200%;      
+    left: -500px;
+    bottom: -5px;
+    width: 300%;
     height: 4px;
     background-color: black;
+    z-index: 100;
 }
 
+/* ===============================
+   TEXTE DÉFILANT CONTINU
+================================ */
 body > p {
-    width: 800px;
-    padding: 15px 20px;
+    position: relative;          
+    overflow: hidden;            
+    width: calc(100% - 400px);   
+    margin: 20px auto;
+    padding: 0;
     font-size: 0.95rem;
-    margin: 0 auto;
-    position: relative;
+    white-space: nowrap;
+    color: transparent;           /* masque le texte original */
+}
+
+body > p::before {
+    content: "Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • ";
+    position: absolute;
+    left: 100%;                
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll-text 22s linear infinite;
+    color: rgb(255, 0, 183);              
 }
 
 body > p::after {
     content: "";
-    position: absolute;
-    left: -200px;
-    bottom: -5px;
-    width: 150%;
+    position: absolute;     
+    bottom: -50px;             
+    left: 0;
+    width: 100%;              /* ligne qui fait toute la largeur du p */
     height: 4px;
     background-color: black;
+    pointer-events: none;     /* ne bloque pas les clics */
+    display: block;
+    z-index: 1;
 }
 
+@keyframes scroll-text {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
 
 #themes {
     position: fixed;
-    top: 140px;
+    top: 0;
     left: 0;
     width: 180px;
-    padding: 15px;
-    border-right: 4px solid black;
-    background: white;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    padding-top: 140px; 
+}
+
+#themes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;       
+    width: 4px;
+    height: 100vh;
+    background: rgb(240, 7, 7);
 }
 
 #themes legend {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    padding: 15px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#themes input[type="radio"] {
+    display: none;
 }
 
 #themes div {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 
 #themes label {
-    background: #ff30ff;
-    padding: 6px 12px;
-    border-radius: 999px;
-    color: white;
-    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 1rem;
+    border-bottom: 2px solid black;
+    background: white;
+    color: black;
     cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
+#themes label:hover {
+    background: #ff30ff;
+    color: white;
+}
+
+#themes input[type="radio"]:checked + label {
+    background: #ff30ff;
+    color: white;
+    font-weight: bold;
+}
+
+#themes::-webkit-scrollbar {
+    width: 6px;
+}
+
+#themes::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* =================================================
+   CÔTÉ DROIT — FILTRES
+   Trait vertical jusqu’en haut, contenu décalé
+================================================= */
 #filtres {
     position: fixed;
-    top: 140px;
+    top: 0;
     right: 0;
     width: 220px;
-    padding: 15px;
-    border-left: 4px solid black;
+    height: 100vh;
     background: white;
+    padding: 15px;
+    padding-top: 160px; /* garde le contenu à sa position originale */
+    z-index: 10;
+}
+
+#filtres::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;        
+    width: 4px;
+    height: 100vh;
+    background: black;
 }
 
 #filtres h2 {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 15px;
+    top: 500px;
 }
 
 #filtres p {
     font-weight: bold;
-    margin: 12px 0 5px 0;
+    margin: 12px 0 50px;
 }
 
 #authors {
     width: 100%;
 }
 
+/* =================================================
+   CENTRE — GRID ARTICLES
+================================================= */
 main {
     margin-left: 180px;
     margin-right: 220px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    border-left: none;    
+    border-right: none;
 }
 
 main a {
@@ -136,6 +217,8 @@ main h3 {
     text-transform: uppercase;
 }
 
+
+
 main footer {
     border-top: 3px solid black;
     padding-top: 10px;
@@ -143,6 +226,7 @@ main footer {
     font-size: 0.85rem;
 }
 
+/* images */
 .thumb {
     width: 100%;
     margin-top: 20px;
@@ -150,6 +234,7 @@ main footer {
     display: block;
 }
 
+/* tags */
 .tag {
     background: black;
     color: white;
@@ -159,9 +244,9 @@ main footer {
     display: inline-block;
 }
 
-
-
-
+/* =================================================
+   HOVER ARTICLES
+================================================= */
 main a div footer,
 main a div img.thumb {
     opacity: 0;
@@ -170,14 +255,9 @@ main a div img.thumb {
     transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-main a div h3:hover + footer,
-main a div h3:hover ~ img.thumb {
-    opacity: 1;
-    max-height: 500px;  
-}
-
 main a div:hover footer,
 main a div:hover img.thumb {
     opacity: 1;
     max-height: 500px;
 }
+
