@@ -195,7 +195,7 @@ h1::before{
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:10%;
+    top:8%;
     left:-10%
 }
 h1::after{
@@ -206,7 +206,7 @@ h1::after{
     color: rgb(0, 255, 0); 
     z-index: -1; 
     pointer-events: none; 
-    top:10%;
+    top:8%;
     left:100%
 }
 p {  justify-content: center;
