@@ -65,6 +65,7 @@ h1::before {
   background: transparent;
   box-shadow: -12px 0 0 0 #005eeb;   /* the moon arc */
   opacity: 0.9;
+  
 }
 
 p {
