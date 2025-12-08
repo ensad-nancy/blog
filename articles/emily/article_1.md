@@ -4,6 +4,7 @@ date: 2025-11-10
 tags: Weekend, Famille
 preview: Images\fenetre.jpg
 preview: Images\fenetre1.jpg
+preview: images\tea.png
 ---
 
 ![fenetre](images/fenetre1.jpg)
@@ -41,5 +42,6 @@ Concrètement, la conversation que j’ai eu avec le grand-père de mon copain a
 J’espère que vous aurez appris quelque chose,
 
 La buveuse de thé.
+![tea](images/tea.png)
 
 ![fenetre1](images/fenetre.jpg)
