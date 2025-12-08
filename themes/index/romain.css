@@ -83,7 +83,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     height: 300px;
-    align-items: center;
+    align-items: center;    
 }
 
 #themes div{
@@ -96,8 +96,13 @@ h2{
     border: 10px;
     font-family: 'MenilEtroit';
     font-size: 193%;
-    font-stretch: 10%;
+    letter-spacing: 1.5px;
+    text-align: center;
+      transform: scale(1.08);
+ 
 }
+
+
 
 #themes legend{
     color: #ffffff;
@@ -188,6 +193,7 @@ input[type="range"]::-ms-thumb{
     font-family: 'Ptolemy Great Primer';
     font-size: 135%;
      text-decoration: underline;
+     margin-top: 0%;
 }
 
 
@@ -197,7 +203,7 @@ input[type="range"]::-ms-thumb{
    Change values in `#filtres { --auteur-offset: ...; --auteur-x-offset: ... }`
    or inline: <div id="filtres" style="--auteur-x-offset: 30px; --auteur-offset: 12px"> */
 #filtres{
-        --auteur-offset: -110%;
+        --auteur-offset: -79%;
     --auteur-x-offset: 76%;   /* horizontal offset (rightwards). Use negative to go left */
 }
 
@@ -215,3 +221,58 @@ input[type="range"]::-ms-thumb{
     #filtres #auteurices{ transform: none; }
 }
 
+main{
+        display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1%;
+    
+}
+
+main a{
+    background-color: rgb(162, 187, 2);
+    border-radius: 25px;
+    border-style: dotted;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+}
+
+main h3{
+    font-family: 'MenilEtroit', serif;
+    font-size: 165%;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+        border-style: dotted;
+    text-align: center;
+    border-color: black;
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+   
+}
+
+main strong{
+    font-family: 'Ptolemy Great Primer', serif;
+    font-size: 120%;
+    color: #000000;
+}
+
+p{
+    color: #000000;
+}
+    
+
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  background: white;
+  transform: rotate(45deg);   /* Donne la forme diamant */
+  cursor:cell;
+  display: inline-block;
+}
+
+input[type="radio"]:checked {
+  background: #333;
+}
