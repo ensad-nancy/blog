@@ -1,3 +1,134 @@
 body{
-    background-color: #b7ffff;
+    background-color: #0073ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #000;
+    width: 65%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    left: -180px; /* ajuste selon ta maquette */
+    top: -40px;
+    width: 180px;
+    height: 180px;
+    background-image: url("images/hey.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+p {
+    width: 70%;
+    margin-bottom: 40px;
+    color: #000;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+
+
+#themes,
+#filtres {
+    background: #ffffff20;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+#filtres h2 {
+    margin-bottom: 10px;
+}
+
+#filtres select,
+#filtres input[type="range"] {
+    margin-top: 5px;
+}
+
+
+
+main {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main a div {
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2px solid #00000020;
+}
+
+main a div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px #00000030;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 3px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    margin-right: 4px;
+}
+
+
+.thumb {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+    h1 {
+        width: 100%;
+    }
+
+    h1::before {
+        display: none; /* si l’image gêne sur mobile */
+    }
+
+    p {
+        width: 100%;
+    }
 }
