@@ -48,10 +48,10 @@ h1 + p {
 :root {
   /*filtres and themes*/
   --left-width: 220px;   /* width for div#filtres (left) */
-  --right-width: 300px;  /* width for fieldset#themes (right) */
+  --right-width: 300px;  /* width for #themes (right) */
   --gutter: 1rem;
   --theme-bg-top: calc(var(--header-height) + 0.75rem); /* start just under the title */
-  --theme-bg-height: 50rem;    /* total height covering div#filtres + fieldset#themes — adjust */
+  --theme-bg-height: 50rem;    /* total height covering div#filtres + #themes — adjust */
   --theme-bg-width: 100%;    /* width of the image area (matches your max-width) */
   --theme-bg-opacity: 0.35;
   
@@ -59,7 +59,7 @@ h1 + p {
   --box-size: 500px; /* change this once to resize all boxes */
 }
 
-fieldset#themes,
+#themes,
 label[for*="theme"],
 select[id*="theme"],
 select[name*="theme"] {
@@ -80,7 +80,7 @@ p{
   --header-height: 6rem; /* used to keep content below the sticky h1 */
 
   --theme-bg-top: calc(var(--header-height) + 0.75rem); /* start just under the title */
-  --theme-bg-height: 45rem;    /* total height covering div#filtres + fieldset#themes — adjust */
+  --theme-bg-height: 45rem;    /* total height covering div#filtres + #themes — adjust */
   --theme-bg-width: 100%;    /* width of the image area (matches your max-width) */
   --theme-bg-opacity: 0.35;
 }
@@ -96,7 +96,7 @@ div#filters {
   gap: 1rem;
   flex-wrap: nowrap;               /* prevent wrapping to multiple lines */
   width: 100%;
-  max-width: 1500px;               /* match fieldset#themes max-width */
+  max-width: 1500px;               /* match #themes max-width */
   margin: 0.75rem auto;
   padding: 0.75rem 1rem;
   box-sizing: border-box;
@@ -119,7 +119,7 @@ div#filters > * {
 /* keep children inline and prevent wrapping inside these square boxes */
 div#filtres > *,
 div#filters > *,
-fieldset#themes > *:not(legend) {
+#themes > *:not(legend) {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -134,13 +134,13 @@ div#filters select {
   box-sizing: border-box;
 }
 
-/* optional: give the same matte look as fieldset#themes */
+/* optional: give the same matte look as #themes */
 div#filtres {
   background: rgba(0,0,0,0.6);
   border: 1px solid rgba(255,255,255,0.06);
 }
 
-fieldset#themes {
+#themes {
   position: static;
   display: flex;
   flex-direction: row;
@@ -159,7 +159,7 @@ fieldset#themes {
   overflow: visible;
 }
 
-fieldset#themes legend,
+#themes legend,
 legend {
   margin: 0;
   padding: 0;
@@ -169,19 +169,19 @@ legend {
   white-space: nowrap;
 }
 
-/* Ensure controls inside fieldset flow inline and size nicely */
-fieldset#themes > *:not(legend) {
+/* Ensure controls inside #themes flow inline and size nicely */
+#themes > *:not(legend) {
   margin: 0;
   display: inline-flex;
   align-items: center;
 }
 
-/* If theme controls are inside the fieldset, keep them positioned relative to it */
-fieldset#themes label[for*="theme"],
-fieldset#themes select[id*="theme"],
-fieldset#themes select[name*="theme"],
-fieldset#themes #theme-label,
-fieldset#themes #theme-select {
+/* If theme controls are inside the #themes keep them positioned relative to it */
+#themes label[for*="theme"],
+#themes select[id*="theme"],
+#themes select[name*="theme"],
+#themes #theme-label,
+#themes #theme-select {
   position: relative;
   left: 0;
   top: 0;
@@ -191,7 +191,7 @@ fieldset#themes #theme-select {
 
 div#filtres,
 div#filters,
-fieldset#themes {
+#themes {
   width: var(--box-size);
   height: var(--box-size);
   max-width: var(--box-size);
@@ -208,7 +208,7 @@ fieldset#themes {
 /* ensure the two blocks render above the image */
 div#filtres,
 div#filters,
-fieldset#themes,
+#themes,
 p {
   position: relative;
   z-index: 1;
