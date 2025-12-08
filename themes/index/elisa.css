@@ -1,6 +1,6 @@
 body {
-    margin: 10px;
-    min-height: 100vh;
+    margin: 0px;
+    width: 100%;
     background: linear-gradient(135deg, rgb(103, 156, 216), rgb(163, 5, 18));
     font-family: "Baskerville";
     display: block;
@@ -8,10 +8,27 @@ body {
 fieldset{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    font-weight:bold;
-    display: block;
-    background-color: rgb(163, 5, 18);
-    color:aliceblue;
+    background-color: aliceblue;
+    width: 97%;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: none; 
+    padding: none;
+    border-radius: 5px;
+}
+
+#themes div{
+    color: aliceblue;
+    background: linear-gradient(135deg, rgb(163, 5, 18), rgb(103, 156, 216));
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+
 }
 legend{
     color: rgb(163, 5, 18);
@@ -36,7 +53,8 @@ h1{
 
 main{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    align-self: center;
 }
 
 main a{
@@ -45,6 +63,9 @@ main a{
     margin: 5%;
     padding: 5%;
     text-align: center;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt;
 }
 
 main a:visited{
@@ -53,6 +74,7 @@ main a:visited{
     margin: 5%;
     padding: 5%;
     text-align: center;
+    border-radius: 5px;
 }
 
 main a:hover{
@@ -62,12 +84,18 @@ main a:hover{
     padding: 5%;
     text-align: center;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 main a h3{
-    font-size: 25pt;
+    font-size: 20pt;
     font-family:'Courier New', Courier, monospace;
     font-weight: normal;
+}
+
+footer{
+    font-size: 10pt;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a:link{
