@@ -48,7 +48,7 @@ article img[alt="pop"] {
     top: 0;
     left: 0;
     width: 40vw;
-    height: 100vh;
+    height: 110vh;
     object-fit: cover;
     z-index: -1;
     opacity: 50%;
@@ -88,8 +88,7 @@ max-width: 50%;
     color: #0259db;
      text-align: right;
      max-width: 100%;
-    width: 100%;
-     /* Щоб він був зверху, але під rock (якщо rock semi-transparent) */
+    width: 100%;  /* Щоб він був зверху, але під rock (якщо rock semi-transparent) */
     position: absolute;
     top: 0%;       /* від верхнього краю сторінки */
     right: 0;     /* від правого краю */
@@ -114,8 +113,8 @@ article img[alt="street"] {
     position: fixed;
     top: 0;
     left: 0;
-    width: 40vw;
-    height: 100vh;
+    width: 35vw;
+    height: 110vh;
     object-fit: cover;
     z-index: -1;
     opacity: 80%;
@@ -129,7 +128,7 @@ body::before {
     top: -10px;           /* відступ зверху */
     left: 0;
     width: 100%;
-    height: 50px;        /* висота блоку, приблизно як висота тексту */
+    height: 35px;        /* висота блоку, приблизно як висота тексту */
     background: rgba(255, 255, 255); /* напівпрозорий білий */
     z-index: 40;       
     pointer-events: none;
@@ -139,14 +138,29 @@ body::before {
 a[href="index.php"],
 fieldset#themes {
     position: absolute;
-    top: 0px;
-    z-index: 50;         /* поверх фонового блоку */
+     top: 0px;           
+    left: 17px;  
+    z-index: 100;    
 }
+
+a[href="index.php"] {
+    display: inline-block;
+    padding: 1px 10px;        /* space inside */
+    background: #0259db; /* semi-transparent stylish background */
+    color: #fff;              /* white text */
+    text-decoration: none;    /* remove underline */
+    border-radius: 1px; 
+      font-family: 'PRMT'; 
+      font-size: 12px;
+    transition: all 0.3s ease; /* smooth hover effect */
+}
+
+
 
 /* Container for the theme selector */
 #themes {
     position: absolute;
-    top: 8px;
+    top: 2px;
     z-index: 50;
     display: flex;        
     align-items: right;
@@ -166,14 +180,14 @@ fieldset#themes {
 /* Each radio+label pair */
 #themes > div {
     display: inline-flex;   
-    align-items: right;
+    align-items: left;
     gap: 0px; /* distance between names and their buttons */
 }
 
 
 #themes label {
     display: inline-block;
-    padding: 5px 6px;
+    padding: 2px 9px;
     border-radius: 6px;
     cursor: pointer;
     font-size: 13px;
@@ -182,9 +196,40 @@ fieldset#themes {
 
 
 #themes input[type="radio"]:checked + label {
+    opacity: 1;
     background: #0259db;
     color: white;
 }
+
+
+/* Default — all labels slightly faded */
+#themes label {
+    opacity: 0.35;
+    transition: opacity 0.3s;
+}
+
+/* Hover — brighten slightly */
+#themes label:hover {
+    opacity: 0.65;
+}
+/* circles */
+#themes input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #889de8;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 3px; /* small space before label */
+    transition: 0.25s ease;
+    position: relative;
+    top: 0px; /* align vertically with label */
+   
+}
+
+
 
 
 
@@ -275,6 +320,7 @@ article img[alt="real"] {
     background: rgba(244, 244, 244, 0.6); 
     backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
 }
+
 .note {
     font-size: 15px;      /* або інший шрифт */
     font-weight: 60;
@@ -293,12 +339,52 @@ article img[alt="cherry"] {
 
 
 article img[alt="kitty"] {
-   filter: grayscale(100%);
+   filter: grayscale(80%);
     position: absolute;
     top: 205px;            /* distance from the top – adjust */
-    left: 597px;            /* distance from left edge */
-    width: 20vw;  
+    left: 530px;            /* distance from left edge */
+    width: 15vw;  
     object-fit: cover;
     z-index: 1;
     opacity: 80%;
 }
+
+
+
+article img[alt="message"] {
+    filter: grayscale(80%);
+    position: absolute;
+    top: 845px;            /* distance from the top – adjust */
+    right: 20px;         /* distance from left edge */
+    width: 10vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 80%;
+}
+article img[alt="message2"] {
+    filter: grayscale(80%);
+    position: absolute;
+    top: 745px;            /* distance from the top – adjust */
+    left: 655px;            /* distance from left edge */
+    width: 10vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 80%;
+}
+article img[alt="message3"] {
+    filter: grayscale(80%);
+    position: absolute;
+    top: 445px;            /* distance from the top – adjust */
+    left: 545px;            /* distance from left edge */
+    width: 10vw;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 80%;
+}
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 title: A message to myself
 date: 2025-11-20
 tags: personal
-preview: images/
+preview: #images/
 ---
 
 # A message to myself: 
