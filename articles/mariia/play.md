@@ -1,10 +1,10 @@
 ---
 title: Play
-date: 20-11-2025
+date: 2025-11-28
 tags: triangle
 
 ---
-
+![play](images/play.jpg)
 ** Play **<br>
 Un simple triangle peut exprimer l’idée de mouvement mieux que n’importe quelle icône complexe.
 Il regarde toujours vers l’avant, comme s’il savait que l’avancer est la seule façon d’exister. Dans un système média, il agit comme la première note : <span class="sentence">c’est lui qui lance la séquence, fixe le rythme et enlève le silence de la pause.</span> <br>

@@ -1,6 +1,6 @@
 ---
 title: Un soir d’été, Chaud 
-date: 20-11-2025
+date: 2025-11-20
 tags: guerre
 
 ---
