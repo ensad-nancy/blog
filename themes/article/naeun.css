@@ -9,8 +9,8 @@ body {
     font-family: "Basteleur", serif;
     line-height: 1.6;
 
-    /* 사이드바만큼 전체 본문 이동 */
-    margin-left: 260px;
+    /* 사이드바 폭만큼 전체 본문 이동 */
+    margin-left: 240px;
 }
 
 /* -----------------------------------
@@ -18,42 +18,96 @@ body {
 ----------------------------------- */
 #themes {
     box-sizing: border-box;
-    width: 260px;                   /* 실제 사이드바 폭 */
-    position: fixed;                /* 화면에 고정 */
+    width: 220px;                /* 줄어든 사이드바 폭 */
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
 
-    padding: 40px 20px;
+    padding: 30px 15px;
     border-right: 2px solid #bcbcbc;
     background: #f7f7f5;
 
     overflow-y: auto;
-    z-index: 100;                   /* 항상 위에 */
+    z-index: 100;
+
+    /* 학생 리스트 2열 구성 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 6px;
 }
 
-/* 라디오 버튼 + 이름 */
-#themes input[type="radio"] {
-    margin-right: 5px;
-}
-
-#themes div {
-    margin-bottom: 8px;
-}
-
-/* legend */
+/* legend — Changer le thème */
 #themes legend {
-    font-size: 14px;
+    grid-column: 1 / -1;                /* 2열 전체 차지 */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    opacity: 0.7;
+ /* 추가된 부분 ↓↓↓ */
+    text-align: center;     /* 중앙 정렬 */
+    margin-bottom: 4px;     /* 이름과 더 가깝게 */
+    margin-top: -8px;       /* 전체 상단 여백 조금 당기기 */
+
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 70% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* 라디오 숨기지 않고 전체를 클릭 영역으로 확장 */
+#themes div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;  /* 클릭 영역 크기 ↑ */
+}
+
+/* input이 label 전체를 덮음 → label 클릭 = input 클릭 동일 */
+#themes input[type="radio"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;        /* div 전체 클릭 가능 */
+    height: 100%;
+    opacity: 0;         /* 보이지 않지만 살아 있음 */
+    cursor: pointer;
+    margin: 0;
+}
+
+/* label은 그냥 텍스트만 보여주는 역할 */
+#themes label {
+    position: relative;
+    z-index: 2;        /* input 위에 보이지만 클릭은 input이 받음 */
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.85;
+    pointer-events: none; /* 클릭이 label로 가지 않고 input으로 전달됨 */
+}
+
+/* hover 스타일 */
+#themes div:hover label {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* 선택된 사용자 시각 강조 */
+#themes input[type="radio"]:checked + label {
     font-weight: bold;
-    margin-bottom: 12px;
-    display: block;
+    opacity: 1;
 }
 
 /* -----------------------------------
-   오른쪽 본문 공통 스타일
+   오른쪽 본문 공통 스타일(index + article)
 ----------------------------------- */
 
-/* body가 이미 오른쪽으로 이동했으므로 margin-left 제거 */
+/* sidebar 자체가 body를 밀고 있으므로 margin-left는 0 */
 body > a,
 header,
 article {

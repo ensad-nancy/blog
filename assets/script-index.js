@@ -23,29 +23,59 @@ changeTheme();
 
 /* Changer la date */
 
-var dates = ["10.11", "17.11", "24.11", "01.12", "08.12", "15.12", "05.01", "12.01", "Tout"];
+var articles = document.querySelectorAll("main a");
+var dates = ["2025-11-10", "2025-11-17", "2025-11-24", "2025-12-01", "2025-12-08", "2025-12-15", "2026-01-05", "2026-01-12", "Tout"];
+
 document.querySelector('input[name="date"]').addEventListener('input', (event) => {
     var value = event.target.value;
-    document.querySelector('#date label').innerText = dates[value];
-});
+    var currentDate = dates[value];
+    document.querySelector('#date label').innerText = currentDate;
 
-/* Filtrer par auteur·ice */
-
-var selectAuthor = document.querySelector('#auteurices select');
-selectAuthor.addEventListener("change", (event) => {
-    var author = event.target.value;
-    var articles = document.querySelectorAll("main a");
-    if (author === "all") {
+    if (value == dates.length - 1) {
         articles.forEach((article) => {
             article.style.display = "block";
         });
     } else {
+        var nextDate = dates[Number(value)+1];
+        var thresholdMin = new Date(currentDate);
+        var thresholdMax = new Date(nextDate);
+
         articles.forEach((article) => {
-            if (author === "all" || article.getAttribute('data-author') === author) {
+            var articleDate = new Date(article.getAttribute('data-date'));
+            if (articleDate >= thresholdMin && articleDate < thresholdMax){
                 article.style.display = "block";
             } else {
                 article.style.display = "none";
             }
         });
     }
+});
+
+/* Filtrer par auteur·ice */
+
+var auteuricesTabs = document.querySelectorAll('#auteurices-tabs button');
+auteuricesTabs.forEach(button => {
+    button.addEventListener('click', (event) => {
+        var author = event.target.getAttribute('data-author');
+        var articles = document.querySelectorAll("main a");
+
+        // Remove active class from all buttons
+        auteuricesTabs.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        event.target.classList.add('active');
+
+        if (author === "all") {
+            articles.forEach((article) => {
+                article.style.display = "block";
+            });
+        } else {
+            articles.forEach((article) => {
+                if (article.getAttribute('data-author') === author) {
+                    article.style.display = "block";
+                } else {
+                    article.style.display = "none";
+                }
+            });
+        }
+    });
 });
