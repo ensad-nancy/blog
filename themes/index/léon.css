@@ -1,3 +1,228 @@
-body{
-    background-color: #ffee8e;
+
+@font-face {
+    font-family: 'Format_1452';
+    src: url('/article/léon/images/Format_1452.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Galter';
+    src: url('/article/léon/images/Galter.otf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0073ff;
+    font-family: 'Galter';
+    padding: 20px;
+    color: #000;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/hmm.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+#themes {
+     font-family: "Galter";
+    font-size: 13pt;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    /* border-style: none; */
+    align-items: baseline;
+    padding: 1em;
+    margin: 0em 0em 0em 0em;
+    box-sizing: border-box;
+    position: sticky;
+    /* top: 1em; */
+    top: 0;
+    border-top-color: #f7f7f7;    
+    border-bottom-color: #f7f7f7;
+    border-top-width: 1em;
+    border-bottom-width: 1em;
+    border-style: solid;
+    border-left: none;
+}
+
+#themes legend {
+    font-size: 10pt;
+    color: red;
+    width: 20%;
+
+}
+
+ #themes div /*label*/{ 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+ }
+ 
+#title {
+    position: relative;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+
+#title h1 {
+    font-family: 'Format_1452';
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 11;
+}
+
+#title + p {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    z-index: 999;
+}
+
+#title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/bordoro.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+#filtres {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1em;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    background-color: #cccccc;
+}
+
+#filtres h2 {
+color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#filtres #auteurices p{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+#filtres #date p{
+    margin: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    color: rgb(0, 0, 0);
+}
+
+#filtres input[type="range"] {
+    margin-top: 5px;
+}
+
+
+
+
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main a div {
+    background: rgb(60, 110, 189);
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #c96c6c20;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+main a div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px #00000030;
+}
+
+
+h3 {
+    font-family: 'Galter';
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+
+footer p {
+    font-size: 0.8rem;
+    margin: 3px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #a29090;
+    color: rgb(142, 221, 253);
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    margin-right: 4px;
+}
+
+
+.thumb {
+    display: none;
 }
