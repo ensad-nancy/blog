@@ -121,8 +121,9 @@ div#filtres{
 
 main{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 100px;
+    margin-top: 250px;
 }
 
 main a{
