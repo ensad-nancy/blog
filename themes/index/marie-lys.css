@@ -62,8 +62,10 @@ body > p::before {
     white-space: nowrap;
     display: inline-block;
     animation: scroll-text 22s linear infinite;
-    color: rgb(255, 0, 183);              
+    color: #ff30ff;              
 }
+
+
 
 body > p::after {
     content: "";
@@ -87,16 +89,16 @@ body > p::after {
    COLONNE GAUCHE — THEMES
 ================================================= */
 #themes {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 150px;
     left: 0;
     width: 180px;
-    height: 100vh;
+    height: 200vh;
     background: rgb(255, 255, 255);
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 10;
-    padding-top: 140px; 
+    pq
 }
 
 #themes::before {
@@ -105,35 +107,53 @@ body > p::after {
     top: 0;
     left: 100%;       
     width: 4px;
-    height: 100vh;
+    height: 1000px;
     background: rgb(0, 0, 0);
+}
+#themes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;        /* thickness */
+    height: 200%;
+    background: black; /* color of the line */
+    pointer-events: none;
+    z-index: 100;
 }
 
 #themes legend {
+    position: static;
     font-size: 15px;
     font-weight: bold;
-    padding: 15px;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
-#themes input[type="radio"] {
-    display: none;
-}
+
+
 
 #themes div {
-    display: block;
-}
-
-#themes label {
-    display: block;
-    width: 100%;
-    padding: 10px 8px;
-    font-size: 1rem;
-    border-bottom: 2px solid black;
-    background: white;
-    color: black;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
+    background: #ffffff;
+    margin: 10px 0;              /* ← spacing between plates */
+    padding: 12px 16px;
+    border-radius: 12px;          /* ← plate shape */
+    position: relative;
+    z-index: -100;
+    }
+    
+    #themes label {
+        display: block;
+        border: none;                 /* ← remove the old underline */
+        background: transparent;      /* ← plate handles background */
+        padding: 0;                   /* ← rely on container padding */
+        margin: 0;
+        font-size: 1rem;
+        color: black;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
 
 #themes label:hover {
     background: #ff30ff;
@@ -141,18 +161,74 @@ body > p::after {
 }
 
 #themes input[type="radio"]:checked + label {
-    background: #ff30ff;
-    color: white;
+    color: #ff30ff;
     font-weight: bold;
 }
-
-#themes::-webkit-scrollbar {
-    width: 6px;
+#themes input[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ff30ff22;
+    border-radius: 12px;
+    z-index: -1;
 }
 
-#themes::-webkit-scrollbar-thumb {
-    background: black;
+
+
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+
+#themes div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 4px;                   /* ← thickness */
+    width: 100%;
+    background: black;            /* ← line color */
+}
+
+#themes div:hover {
+    background: #ff30ff;      /* soft transparent pink */
+    box-shadow: 0 5 2px #ff30ff;
+    transition: 0.2s ease;
+    border-radius: 0px;
+}
+
+#themes div {
+    position: relative;
+    overflow: visible;
+}
+#themes div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;                 /* default */
+    bottom: 0;
+    background: transparent;
+    transition: 0.2s ease;
+    z-index: -1;
+}
+#themes div:hover::before {
+    background: #ff30ff;
+    top: 4px;               /* ← LOWER the hover block */
+    bottom: -4px;           /* optional, makes it bigger downward */
+    border-radius: 0px;
+    box-shadow: 0 5px 2px #ff30ff;
+}
+
 
 /* =================================================
    COLONNE DROITE — FILTRES

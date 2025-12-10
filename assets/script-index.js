@@ -64,7 +64,7 @@ selectAuthor.addEventListener("change", (event) => {
     } else {
         articles.forEach((article) => {
             if (author === "all" || article.getAttribute('data-author') === author) {
-                article.style.display = "block";
+                                article.style.display = "block";
             } else {
                 article.style.display = "none";
             }

@@ -57,7 +57,7 @@ article img[alt="pop"] {
 article h1, article h2 {
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
-    color: #fdd835;           /* жовтий (м’який) */
+    color: #000000;           /* жовтий (м’який) */
     text-shadow: 0 0 6px rgba(0, 60, 255, 0.4); /* синє світіння */
     margin-top: 40px;
 }
@@ -118,6 +118,18 @@ article img[alt="street"] {
     object-fit: cover;
     z-index: -1;
     opacity: 80%;
+}
+
+article img[alt="play"] {
+  filter: grayscale(100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 40%;
 }
 
 
