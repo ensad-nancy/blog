@@ -1,15 +1,24 @@
+/* ===============================
+   RESET
+================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===============================
+   BASE
+================================ */
 body {
     font-family: Arial, sans-serif;
     color: black;
     background: white;
 }
 
+/* ===============================
+   TITRE
+================================ */
 h1 {
     font-size: 60px;
     width: 900px;
@@ -18,15 +27,18 @@ h1 {
     position: relative;
 }
 
+/* Trait fixe sous le titre */
 h1::after {
     content: "";
-    position: absolute;
-    left: -500px;
-    bottom: -5px;
-    width: 300%;
+    display: block;
+    position: relative;
+    top: 10px;          /* sous le titre, ajuste si nécessaire */
+    left:-270px;
+    width: 100vw;
     height: 4px;
     background-color: black;
-    z-index: 100;
+    pointer-events: none; 
+    z-index: 200;        
 }
 
 /* ===============================
@@ -40,7 +52,7 @@ body > p {
     padding: 0;
     font-size: 0.95rem;
     white-space: nowrap;
-    color: transparent;           /* masque le texte original */
+    color: transparent;  
 }
 
 body > p::before {
@@ -50,18 +62,20 @@ body > p::before {
     white-space: nowrap;
     display: inline-block;
     animation: scroll-text 22s linear infinite;
-    color: rgb(255, 0, 183);              
+    color: #ff30ff;              
 }
+
+
 
 body > p::after {
     content: "";
     position: absolute;     
     bottom: -50px;             
     left: 0;
-    width: 100%;              /* ligne qui fait toute la largeur du p */
+    width: 100%;
     height: 4px;
     background-color: black;
-    pointer-events: none;     /* ne bloque pas les clics */
+    pointer-events: none;
     display: block;
     z-index: 1;
 }
@@ -71,17 +85,20 @@ body > p::after {
     100% { transform: translateX(-100%); }
 }
 
+/* =================================================
+   COLONNE GAUCHE — THEMES
+================================================= */
 #themes {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 150px;
     left: 0;
     width: 180px;
-    height: 100vh;
+    height: 200vh;
     background: rgb(255, 255, 255);
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 10;
-    padding-top: 140px; 
+    pq
 }
 
 #themes::before {
@@ -90,36 +107,53 @@ body > p::after {
     top: 0;
     left: 100%;       
     width: 4px;
-    height: 100vh;
-    background: rgb(240, 7, 7);
+    height: 1000px;
+    background: rgb(0, 0, 0);
+}
+#themes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;        /* thickness */
+    height: 200%;
+    background: black; /* color of the line */
+    pointer-events: none;
+    z-index: 100;
 }
 
 #themes legend {
-    font-size: 1rem;
+    position: static;
+    font-size: 15px;
     font-weight: bold;
-    padding: 15px;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
-#themes input[type="radio"] {
-    display: none;
-}
+
+
 
 #themes div {
-    display: block;
-}
-
-#themes label {
-    display: block;
-    width: 100%;
-    padding: 10px 8px;
-    font-size: 1rem;
-    border-bottom: 2px solid black;
-    background: white;
-    color: black;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
+    background: #ffffff;
+    margin: 10px 0;              /* ← spacing between plates */
+    padding: 12px 16px;
+    border-radius: 12px;          /* ← plate shape */
+    position: relative;
+    z-index: -100;
+    }
+    
+    #themes label {
+        display: block;
+        border: none;                 /* ← remove the old underline */
+        background: transparent;      /* ← plate handles background */
+        padding: 0;                   /* ← rely on container padding */
+        margin: 0;
+        font-size: 1rem;
+        color: black;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
 
 #themes label:hover {
     background: #ff30ff;
@@ -127,22 +161,77 @@ body > p::after {
 }
 
 #themes input[type="radio"]:checked + label {
-    background: #ff30ff;
-    color: white;
+    color: #ff30ff;
     font-weight: bold;
 }
-
-#themes::-webkit-scrollbar {
-    width: 6px;
+#themes input[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ff30ff22;
+    border-radius: 12px;
+    z-index: -1;
 }
 
-#themes::-webkit-scrollbar-thumb {
-    background: black;
+
+
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+
+#themes div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 4px;                   /* ← thickness */
+    width: 100%;
+    background: black;            /* ← line color */
+}
+
+#themes div:hover {
+    background: #ff30ff;      /* soft transparent pink */
+    box-shadow: 0 5 2px #ff30ff;
+    transition: 0.2s ease;
+    border-radius: 0px;
+}
+
+#themes div {
+    position: relative;
+    overflow: visible;
+}
+#themes div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;                 /* default */
+    bottom: 0;
+    background: transparent;
+    transition: 0.2s ease;
+    z-index: -1;
+}
+#themes div:hover::before {
+    background: #ff30ff;
+    top: 4px;               /* ← LOWER the hover block */
+    bottom: -4px;           /* optional, makes it bigger downward */
+    border-radius: 0px;
+    box-shadow: 0 5px 2px #ff30ff;
+}
+
 
 /* =================================================
-   CÔTÉ DROIT — FILTRES
-   Trait vertical jusqu’en haut, contenu décalé
+   COLONNE DROITE — FILTRES
 ================================================= */
 #filtres {
     position: fixed;
@@ -152,8 +241,13 @@ body > p::after {
     height: 100vh;
     background: white;
     padding: 15px;
-    padding-top: 160px; /* garde le contenu à sa position originale */
-    z-index: 10;
+    padding-top: 160px;
+    z-index: 10;  
+}
+
+/* Décalage du contenu interne pour faire descendre “Date” et éléments */
+#filtres > * {
+    margin-top: 10px;
 }
 
 #filtres::before {
@@ -169,8 +263,7 @@ body > p::after {
 #filtres h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 15px;
-    top: 500px;
+    margin-bottom: 18px;
 }
 
 #filtres p {
@@ -191,10 +284,24 @@ main {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-left: none;    
-    border-right: none;
+    position: relative; 
 }
 
+/* Trait fixe au-dessus de la grille */
+main::before {
+    content: "";
+    display: block;
+    position: absolute;        
+    top: 0px;             
+    left: -190px;                
+    width: 100vw;
+    height: 4px;            
+    background-color: black;
+    pointer-events: none;   
+    z-index: 200;            
+}
+
+/* Articles */
 main a {
     text-decoration: none;
     color: inherit;
@@ -216,8 +323,6 @@ main h3 {
     margin-bottom: 25px;
     text-transform: uppercase;
 }
-
-
 
 main footer {
     border-top: 3px solid black;
@@ -260,4 +365,3 @@ main a div:hover img.thumb {
     opacity: 1;
     max-height: 500px;
 }
-

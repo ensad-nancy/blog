@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'rieslingregular';
+    src: url('riesling-webfont.eot');
+    src: url('riesling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('riesling-webfont.woff2') format('woff2'),
+         url('riesling-webfont.woff') format('woff'),
+         url('riesling-webfont.ttf') format('truetype'),
+         url('riesling-webfont.svg#rieslingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     margin: 0px;
     width: 100%;
@@ -30,6 +43,19 @@ body {
     font-size: 15px;
 
 }
+
+#themes div:hover{
+    color: aliceblue;
+    background: linear-gradient(135deg, rgb(103, 156, 216), rgb(163, 5, 18));
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
 legend{
     color: rgb(163, 5, 18);
     font-family: 'Courier New', Courier, monospace;
@@ -44,7 +70,7 @@ img{
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'rieslingregular';
     font-size: 50px;
     color: rgb(163, 5, 18);
     font-weight: bolder;
