@@ -1,102 +1,243 @@
 /* ------------------------------ */
+/* IMPORT GOOGLE FONTS            */
+/* ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* ------------------------------ */
 /* BODY & GLOBAL STYLES           */
 /* ------------------------------ */
 body {
-    background-color: #705e72;
     margin: 0;
     padding: 0;
-    font-family: 'A-OTF UD Reimin Pr6N', sans-serif;
+    background-color: #000;
     color: #fff;
+    font-family: "Gentium Basic", serif;
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* ------------------------------ */
-/* MAIN ARTICLES CONTAINER         */
+/* BOUTON RETOUR FIXE LOSANGE LARGE ET BAS */
 /* ------------------------------ */
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    padding: 40px;
+a[href="index.php"] {
+    position: fixed;
+    top: 10px; /* en haut */
+    left: 10px; /* aligné avec #themes */
+    z-index: 1000;
+
+    width: 140px;  /* plus large */
+    height: 50px;  /* moins haut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #66e0ff;  
+    color: #000;
+    font-family: "Great Vibes", cursive;
+    font-size: 18px;
+    text-decoration: none;
+
+    clip-path: polygon(
+        20% 0%, 80% 0%,
+        100% 50%,
+        80% 100%, 20% 100%,
+        0% 50%
+    );  /* losange plus étendu et moins haut */
+    text-shadow: 1px 1px 3px #0099ff;
+    box-shadow: 0 0 6px #66e0ff;
+    outline: 2px solid #66e0ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a[href="index.php"]:hover {
+    background-color: #9b59b6; /* violet au survol */
+    box-shadow: 0 0 12px #9b59b6;
+    transform: scale(1.05);
 }
 
 /* ------------------------------ */
-/* ARTICLE BLOCK                  */
+/* FRISE — CHANGER LE THEME       */
 /* ------------------------------ */
-main a > div {
+#themes {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    width: 18vw;
+    max-width: 180px;
+    min-width: 140px;
+    height: calc(100vh - 120px);
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* pousse le footer en bas */
-    background-color: #8b7a8e;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    height: 100%; /* s'étend sur toute la hauteur du bloc */
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
+    gap: 12px;
+    padding: 10px;
+    z-index: 900;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
-main a > div:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+#themes::-webkit-scrollbar { width: 0; }
+
+#themes legend {
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #0099ff;
+    margin-bottom: 10px;
 }
 
-/* ------------------------------ */
-/* TITRE & TEXTE                  */
-/* ------------------------------ */
-main a div h3 {
-    font-size: 1.4rem;
-    margin: 0 0 10px 0;
-    font-weight: 600;
-}
-
-main a div p {
-    flex-grow: 1; /* prend tout l'espace disponible entre titre et footer */
-    margin: 0 0 12px 0;
-    line-height: 1.5;
-}
-
-/* ------------------------------ */
-/* IMAGE                          */
-/* ------------------------------ */
-main a div img.thumb {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
-
-/* ------------------------------ */
-/* FOOTER (auteur, date, tags)    */
-/* ------------------------------ */
-main a footer {
-    margin-top: auto; /* pousse le footer en bas */
+#themes div {
+    margin: 6px 0;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    font-size: 0.85rem;
-    color: #eee;
+    text-align: center;
+    width: 120px;
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Great Vibes", cursive;
+    font-size: 18px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><polygon points="12,0 24,12 12,24 0,12" fill="purple"/></svg>') 12 12, pointer;
+    transition: all 0.3s ease;
+    clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+    );
+    text-shadow: 1px 1px 3px #0099ff;
+    box-shadow: 0 0 6px #66e0ff;
+    outline: 2px solid #66e0ff;
 }
 
-/* Auteur et date */
-main a footer .info {
+#themes div:hover {
+    transform: scale(1.05);
+    background-color: #9b59b6; /* violet au hover */
+    box-shadow: 0 0 12px #9b59b6;
+}
+
+#themes div input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#themes div input[type="radio"]:checked + label {
+    background: #66e0ff !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: 0 0 12px #66e0ff !important;
+    outline: 2px solid #66e0ff !important;
+}
+
+/* ------------------------------ */
+/* CONTENU PRINCIPAL               */
+/* ------------------------------ */
+main {
+    margin-left: 200px;
+    padding: 60px 40px 40px 40px;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: calc(100% - 200px);
 }
 
-/* Tags */
-main a footer .tags {
+/* ------------------------------ */
+/* ARTICLE                         */
+/* ------------------------------ */
+article {
+    max-width: 600px;
+    font-family: "Gentium Basic", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Images plus petites et proportionnelles */
+article img.thumb {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+/* ------------------------------ */
+/* HEADER ARTICLE                  */
+/* ------------------------------ */
+header {
     display: flex;
-    gap: 6px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    font-family: "Great Vibes", cursive;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 950;
 }
 
-main a footer .tags .tag {
+header .title { font-size: 24px; margin: 0; }
+header .date { font-size: 18px; margin: 2px 0 0 0; }
+
+header .tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+header .tags .tag {
     background-color: #d6c7da;
     color: #705e72;
-    padding: 2px 6px;
+    padding: 4px 10px;
     border-radius: 6px;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* ------------------------------ */
+/* PARAGRAPHES                     */
+/* ------------------------------ */
+article p {
+    font-family: "Gentium Basic", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 16px 0;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE                      */
+/* ------------------------------ */
+@media (max-width: 1200px) {
+    main { margin-left: 180px; max-width: calc(100% - 180px); padding-top: 60px; }
+    #themes { width: 140px; top: 100px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
+}
+
+@media (max-width: 900px) {
+    main { margin-left: 160px; max-width: calc(100% - 160px); padding-top: 60px; }
+    #themes { width: 120px; top: 90px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
+}
+
+@media (max-width: 600px) {
+    main { margin-left: 140px; max-width: calc(100% - 140px); padding-top: 60px; }
+    #themes { width: 100px; top: 80px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
 }
