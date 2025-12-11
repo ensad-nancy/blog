@@ -2,7 +2,7 @@
 title: Apple has a new update
 date: 2025-11-25
 tags: opinion
-preview: #images/
+preview:
 ---
 
 # Apple has a new update 
