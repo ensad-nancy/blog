@@ -136,11 +136,11 @@ main {
 
 
 main a{  
-    position: relative;
-  padding: 10px 20px;
+  position: relative;
+  padding: 0px 15px;
   border: 2px solid blue;
   border-radius: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   font-family: "Adelphe_Trouble";
