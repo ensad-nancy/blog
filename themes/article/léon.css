@@ -1,1 +1,124 @@
+@font-face {
+    font-family: 'Format_1452';
+    src: url('/article/léon/images/Format_1452.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Galter';
+    src: url('/article/léon/images/Galter.otf') format('truetype');
+}
 
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #83bbff;
+    font-family: 'Galter';
+    padding: 20px;
+    color: #000;
+    position: relative;
+    overflow-y: auto;       /* 📌 AJOUT → scroll vertical */
+    min-height: 100vh;      /* garantis une hauteur minimale */
+}
+
+/* Le texte au-dessus du thème */
+body > p {
+    position: relative;
+    z-index: 20;
+}
+
+/* Fond */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/envellope.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* MENU THEME STICKY EN BAS */
+#themes {
+    font-family: "Galter";
+    font-size: 13pt;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    box-sizing: border-box;
+
+    position: sticky;
+    bottom: 0;  /* 📌 FIX : sticky propre */
+    
+    border-top: 1em solid #f7f7f7;
+    border-bottom: 1em solid #f7f7f7;
+
+    scrollbar-width: thin;
+    scrollbar-color: #15ff00 #e5e5e5;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(4px);
+
+    z-index: 1;  /* Passe SOUS ton texte */
+}
+
+/* SCROLLBAR */
+#themes::-webkit-scrollbar {
+    height: 8px;
+}
+#themes::-webkit-scrollbar-track {
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+#themes::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+/* TITRE */
+#title h1 {
+    font-family: 'Format_1452';
+    font-size: 2.3rem;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 11;
+}
+
+/* Sous-titre */
+#title + p {
+    position: absolute;
+    height: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+}
+
+/* Cadre décoratif du titre */
+#title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/bordoro.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
