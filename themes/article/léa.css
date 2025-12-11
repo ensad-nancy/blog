@@ -1,3 +1,103 @@
 body{
     background-color: #FF69B4;
 }
+
+#themes{
+  position: absolute;
+  left: 75%;
+  width: 20%;
+  box-sizing: border-box;
+  top: 2%;
+  height: 100%;
+  border: 0;
+  overflow-y: auto;
+  font-family: "Adelphe_Trouble";
+  color:blue
+}
+
+#themes legend{
+    display: none;
+}
+
+#themes div{
+    font-size: 32pt;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*glyphes décoratifs des div changement de thème*/
+#themes div:nth-child(1)::before{
+    content: "{";
+}
+#themes div:nth-child(1)::after{
+       content: "}";
+}
+#themes div:nth-child(2)::before{
+    content: "#";
+}
+#themes div:nth-child(3)::before{
+    content: "⁑";
+}
+#themes div:nth-child(4)::after{
+    content: "//";
+}#themes div:nth-child(4)::before{
+    content: "//";
+}
+#themes div:nth-child(5)::before{
+    content: "{";
+}
+#themes div:nth-child(5)::after{
+       content: "}";
+}
+#themes div:nth-child(6)::before{
+    content: "#";
+}
+#themes div:nth-child(7)::before{
+    content: "⁑";
+}
+#themes div:nth-child(8)::before{
+    content: "*";
+}
+#themes div:nth-child(8)::after{
+       content: "*";
+}
+#themes div:nth-child(9)::before{
+    content: "//";
+}
+#themes div:nth-child(9)::after{
+       content: "//";
+}
+#themes div:nth-child(10)::before{
+    content: "{";
+}
+#themes div:nth-child(10)::after{
+       content: "}";
+}#themes div:nth-child(11)::before{
+    content: "#";
+}
+#themes div:nth-child(12)::before{
+    content: "⁑";
+}#themes div:nth-child(13)::before{
+    content: "*";
+}#themes div:nth-child(14)::before{
+    content: "//";
+}
+#themes div:nth-child(14)::after{
+       content: "//";
+}
+#themes div:nth-child(15)::before{
+    content: "{";
+}
+#themes div:nth-child(15)::after{
+       content: "}";
+}#themes div:nth-child(16)::before{
+    content: "#";
+}
+#themes div:nth-child(17)::before{
+    content: "⁑";
+}#themes div:nth-child(18)::before{
+    content: "*";
+}

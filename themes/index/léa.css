@@ -359,30 +359,6 @@ span{
     font-family: 'Adelphe_Trouble';
 }
 
-span::before{
-    content: "(";  
-    position: absolute;
-    font-family:'Adelphe_Trouble'; 
-   font-size: 50px;
-   color: rgb(0, 255, 0);
-   z-index: -1;
-   pointer-events: none;
-   top: -2%;
-   left: 39%;
-}
-span::after{
-    content: ")";  
-    position: absolute;
-    font-family:'Adelphe_Trouble'; 
-   font-size: 50px;
-   color: rgb(0, 255, 0);
-   z-index: -1;
-   pointer-events: none;
-   top: -2%;
-   left: 39%;
-}
-
-
 #date {
   position: absolute;
   left: 30%;
