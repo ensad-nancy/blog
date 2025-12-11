@@ -35,6 +35,7 @@ body{
     margin-bottom: 35px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 /*glyphes décoratifs des div changement de thème*/
 #themes div:nth-child(1)::before{
@@ -125,7 +126,7 @@ body{
 main {
   position: absolute;
   left: 2%;
-  width: 28%;
+  width: 30%;
   box-sizing: border-box;
   top: 2%;
   height: 100%;
@@ -135,11 +136,11 @@ main {
 
 
 main a{  
-    position: relative;
-  padding: 10px 20px;
+  position: relative;
+  padding: 0px 15px;
   border: 2px solid blue;
   border-radius: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   font-family: "Adelphe_Trouble";
@@ -193,7 +194,7 @@ main a:nth-child(6)::before{
     z-index: -1;
     pointer-events: none;
     top: -346%;
-    line-height: 100%;
+    line-height: 100%;     
     left: 79%;
 }
 main a:nth-child(8)::before{
@@ -244,7 +245,34 @@ main a:nth-child(11)::before{
   line-height: 100%;
   left: 80%;
 }
-
+main a:nth-child(12)::before{
+    content: "‹...›";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+   font-size: 300px;
+   color: rgb(0, 255, 0);
+   z-index: -1;
+   pointer-events: none;
+   pointer-events: none;
+   pointer-events: none;
+   top: -545%;
+   line-height: 100%;
+   left: 2%;
+}
+main a:nth-child(13)::before{
+    content: "¤";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+   font-size: 160px;
+  color: rgb(0, 255, 0);
+  z-index: -1;
+  pointer-events: none;
+  pointer-events: none;
+  pointer-events: none;
+  top: -484%;
+  line-height: 100%;
+  left: 60%;
+}
 
 main img{
     display: none;

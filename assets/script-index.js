@@ -53,29 +53,21 @@ document.querySelector('input[name="date"]').addEventListener('input', (event) =
 
 /* Filtrer par auteur·ice */
 
-var auteuricesTabs = document.querySelectorAll('#auteurices-tabs button');
-auteuricesTabs.forEach(button => {
-    button.addEventListener('click', (event) => {
-        var author = event.target.getAttribute('data-author');
-        var articles = document.querySelectorAll("main a");
-
-        // Remove active class from all buttons
-        auteuricesTabs.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        event.target.classList.add('active');
-
-        if (author === "all") {
-            articles.forEach((article) => {
-                article.style.display = "block";
-            });
-        } else {
-            articles.forEach((article) => {
-                if (article.getAttribute('data-author') === author) {
-                    article.style.display = "block";
-                } else {
-                    article.style.display = "none";
-                }
-            });
-        }
-    });
+var selectAuthor = document.querySelector('#auteurices select');
+selectAuthor.addEventListener("change", (event) => {
+    var author = event.target.value;
+    var articles = document.querySelectorAll("main a");
+    if (author === "all") {
+        articles.forEach((article) => {
+            article.style.display = "block";
+        });
+    } else {
+        articles.forEach((article) => {
+            if (author === "all" || article.getAttribute('data-author') === author) {
+                                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
+    }
 });

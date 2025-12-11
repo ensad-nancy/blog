@@ -27,8 +27,6 @@ body{
     height: 12em;
     background-color: rgb(243, 255, 131);
     margin: 1em 0em 0em 0em;
-    /* position: sticky;
-    top: 10px; */
 }
 
 h1{
@@ -88,6 +86,7 @@ body > p{
     border-bottom-width: 1em;
     border-style: solid;
     border-left: none;
+    border-right: none;
 }
 
  #themes div /*label*/{ 
@@ -139,7 +138,6 @@ input[type="radio"]{
     left: 0;
     position: sticky;
     z-index: 2;
-
 }
 
 
@@ -260,6 +258,8 @@ select{
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 4em 0em 0em 0em;
+
 }
 
 main a{

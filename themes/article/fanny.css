@@ -1,142 +1,243 @@
 /* ------------------------------ */
-/* FONT IMPORTS                   */
+/* IMPORT GOOGLE FONTS            */
 /* ------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* ------------------------------ */
-/* BODY & RESET                   */
+/* BODY & GLOBAL STYLES           */
 /* ------------------------------ */
-body, html {
+body {
     margin: 0;
     padding: 0;
+    background-color: #000;
+    color: #fff;
     font-family: "Gentium Basic", serif;
-    background: #f9f7f8;
-    height: 100%;
-}
-
-/* ------------------------------ */
-/* COLONNE GAUCHE HEXAGONES       */
-/* ------------------------------ */
-#themes {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 160px;
-    height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    overflow-y: auto;
-    z-index: 90;
-}
-
-#themes div {
     position: relative;
-    width: 100px;
-    height: 70px;
+    overflow-x: hidden;
 }
 
-#themes input[type="radio"] {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-}
+/* ------------------------------ */
+/* BOUTON RETOUR FIXE LOSANGE LARGE ET BAS */
+/* ------------------------------ */
+a[href="index.php"] {
+    position: fixed;
+    top: 10px; /* en haut */
+    left: 10px; /* aligné avec #themes */
+    z-index: 1000;
 
-#themes label {
+    width: 140px;  /* plus large */
+    height: 50px;  /* moins haut */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 70px;
-    font-family: "Gentium Basic";
-    font-size: 14px;
-    color: #66e0ff;
-    background: #555555;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    text-align: center;
+
+    background-color: #66e0ff;  
+    color: #000;
+    font-family: "Great Vibes", cursive;
+    font-size: 18px;
+    text-decoration: none;
+
+    clip-path: polygon(
+        20% 0%, 80% 0%,
+        100% 50%,
+        80% 100%, 20% 100%,
+        0% 50%
+    );  /* losange plus étendu et moins haut */
+    text-shadow: 1px 1px 3px #0099ff;
+    box-shadow: 0 0 6px #66e0ff;
+    outline: 2px solid #66e0ff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-#themes div:hover label {
+a[href="index.php"]:hover {
+    background-color: #9b59b6; /* violet au survol */
+    box-shadow: 0 0 12px #9b59b6;
     transform: scale(1.05);
-    box-shadow: 0 0 10px #66e0ff;
-}
-
-#themes input[type="radio"]:checked + label {
-    background: #66e0ff;
-    color: #fff;
-    box-shadow: 0 0 12px #66e0ff;
 }
 
 /* ------------------------------ */
-/* HEADER CONTROLS                 */
+/* FRISE — CHANGER LE THEME       */
 /* ------------------------------ */
-.header-controls {
+#themes {
     position: fixed;
-    top: 10px;
-    right: 20px;
+    top: 100px;
+    left: 10px;
+    width: 18vw;
+    max-width: 180px;
+    min-width: 140px;
+    height: calc(100vh - 120px);
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
-    z-index: 200;
+    gap: 12px;
+    padding: 10px;
+    z-index: 900;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
-.btn-return {
-    background: #7e4fa3;
-    color: white;
-    padding: 6px 16px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: "Gentium Basic";
-}
+#themes::-webkit-scrollbar { width: 0; }
 
-.btn-return:hover {
-    background: #9a64c7;
-}
-
-.theme-title {
+#themes legend {
     font-family: "Great Vibes", cursive;
-    font-size: 28px;
-    color: #6b3d87;
-}
-
-/* ------------------------------ */
-/* MAIN CONTENT HORIZONTAL SCROLL  */
-/* ------------------------------ */
-.main-content {
-    margin-left: 180px;
-    padding: 20px;
-    height: 100vh;
-    overflow-x: scroll;
-    white-space: nowrap;
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-}
-
-.text-card {
-    display: inline-block;
-    width: 260px;
-    background: #fff;
-    padding: 18px;
-    border-radius: 14px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
-}
-
-.text-card-title {
-    font-family: "Great Vibes", cursive;
-    font-size: 32px;
-    color: #4f2b60;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #0099ff;
     margin-bottom: 10px;
 }
 
-.text-card-info {
-    font-size: 14px;
-    opacity: 0.7;
+#themes div {
+    margin: 6px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 80px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Great Vibes", cursive;
+    font-size: 18px;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><polygon points="12,0 24,12 12,24 0,12" fill="purple"/></svg>') 12 12, pointer;
+    transition: all 0.3s ease;
+    clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+    );
+    text-shadow: 1px 1px 3px #0099ff;
+    box-shadow: 0 0 6px #66e0ff;
+    outline: 2px solid #66e0ff;
+}
+
+#themes div:hover {
+    transform: scale(1.05);
+    background-color: #9b59b6; /* violet au hover */
+    box-shadow: 0 0 12px #9b59b6;
+}
+
+#themes div input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#themes div input[type="radio"]:checked + label {
+    background: #66e0ff !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: 0 0 12px #66e0ff !important;
+    outline: 2px solid #66e0ff !important;
+}
+
+/* ------------------------------ */
+/* CONTENU PRINCIPAL               */
+/* ------------------------------ */
+main {
+    margin-left: 200px;
+    padding: 60px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: calc(100% - 200px);
+}
+
+/* ------------------------------ */
+/* ARTICLE                         */
+/* ------------------------------ */
+article {
+    max-width: 600px;
+    font-family: "Gentium Basic", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Images plus petites et proportionnelles */
+article img.thumb {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+/* ------------------------------ */
+/* HEADER ARTICLE                  */
+/* ------------------------------ */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    font-family: "Great Vibes", cursive;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 950;
+}
+
+header .title { font-size: 24px; margin: 0; }
+header .date { font-size: 18px; margin: 2px 0 0 0; }
+
+header .tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+header .tags .tag {
+    background-color: #d6c7da;
+    color: #705e72;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* ------------------------------ */
+/* PARAGRAPHES                     */
+/* ------------------------------ */
+article p {
+    font-family: "Gentium Basic", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 16px 0;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE                      */
+/* ------------------------------ */
+@media (max-width: 1200px) {
+    main { margin-left: 180px; max-width: calc(100% - 180px); padding-top: 60px; }
+    #themes { width: 140px; top: 100px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
+}
+
+@media (max-width: 900px) {
+    main { margin-left: 160px; max-width: calc(100% - 160px); padding-top: 60px; }
+    #themes { width: 120px; top: 90px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
+}
+
+@media (max-width: 600px) {
+    main { margin-left: 140px; max-width: calc(100% - 140px); padding-top: 60px; }
+    #themes { width: 100px; top: 80px; left: 10px; }
+    a[href="index.php"] { top: 10px; left: 10px; width: 140px; height: 50px; }
 }
