@@ -28,6 +28,7 @@ Menace de drones d’attaque.<br>
 Et encore une dizaine de messages transférés par ma mère depuis différents groupes locaux.<br>
 La journée n’est pas encore terminée, mais l’obscurité tombe déjà.<br>
 Demain matin, il y aura de terribles nouvelles.<br>
+-- N. Phie
 
 <span class="note">
 *Shahed — drone kamikaze<br>
