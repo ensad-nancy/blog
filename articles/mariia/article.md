@@ -36,6 +36,7 @@ Pendant le visionnage, on ne ressent pas que c’est une histoire sur les victim
 La série ne pousse pas à réfléchir, ni à être plus prudent ; elle fait seulement ressentir l’horreur, comme dans une attraction.
     
  Mais en aucun cas elle ne rend hommage aux victimes. Et c’est sans doute pour cela qu’après l’avoir vue, <span class="sentence">il ne reste pas une compréhension, mais un goût amer.</span>
+-- N. Phie
  </div>
  <div class="quote">
 “I feel like Netflix <span class="big">should’ve asked if we mind</span> or how we felt about making it. They didn’t ask me anything. They just did it,” she continued. “I could even understand it if they gave some of the money to the victims’ children. … The victims have children and grandchildren. If the show benefited them in some way, it wouldn’t feel so harsh and careless. It’s sad that <span class="big">they’re just making money off of this tragedy.</span> That’s just <span class="big">greed.</span>”
