@@ -49,25 +49,27 @@ h1{
    }
 
    #themes{
-   border-radius: 0;
-   border-width: 0;
+   border-radius: 0%;
+   border-width: 0%;
    text-align: center;
     font-family: "sinistreregular";
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:17px;
+    gap: 10px;
     color: #000;
-    position: relative;
+    font-size: 91%;
+
+  
    }
 
    #themes div{
-      width:300px;
-      height: 50px;
+      width:250px;
+      height: 46px;
       border-radius: 70px;
       background-color: #f1ebeb;
       text-align: center;
-            display: flex;
+      display: flex;
     align-items: center;
     justify-content: center;
      
@@ -76,18 +78,14 @@ h1{
    article{
 border-radius: 2px;
  border-style: dotted;
- margin: 10px;
+ margin: 20px;
  text-align:right;
    transform: scale(1.02);
     box-shadow: 0 0 22px #dbd6d6;
     color: #750a11;
+
    
    }
-
-article a:hover {
-   transition: all 0.5s linear;
-   font-variant: small-caps;
-}
 
 
 
@@ -107,8 +105,4 @@ article a:hover {
       cursor: pointer;
    }
 
-  @media (max-width: 600px) {
-   #themes div{
-      width: 100px;
-   }
-}
+
