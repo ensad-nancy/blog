@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'ATA';
-  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
+  src: url(../../articles/mariia/images/NewtonScient.ttf);
 }
 
 @font-face {
@@ -15,10 +15,25 @@
 }
 
 body{
-    background-color: #d6d2c8;
-    font-family: 'RGAO';
+    background-color: #f0ede4;
+    font-family: 'ATA';
     color: #1d1d1d;
 }
+
+body::before {
+    content: "";
+    position: fixed;     /* stays in place while scrolling */
+    top: 0;
+    bottom: 0;
+    left: 8px;          /* adjust until it visually aligns with "B" */
+    width: 0;
+    border-left: 3px dotted #0259db;  /* dotted line */
+    z-index: -1;         /* so it stays behind the content */
+    opacity: 0.8;        /* optional, gives a subtle look */
+}
+
+
+
 
 .preview {
    height: 5px;
@@ -29,15 +44,51 @@ body{
     color: #ccff00;
 }
 
+#title {
+    position: relative;
+}
+
+#title::before {
+    content: "";
+    position: absolute;
+    top: -25px;               /* distance ABOVE the title */
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 3px dotted #0259db;  /* dotted line */
+    opacity: 0.6;             /* optional */
+}
+
+
 img {
     display: block;
    margin: 0 auto;
     filter: grayscale(100%);
+
     
 }
 img:hover {
   filter: grayscale(0%);
+  
 }
+
+
+
+/* IMAGE HIDDEN BY DEFAULT */
+main a div img.thumb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+/* IMAGE REVEALS WHEN HOVERING TITLE */
+main a:hover img.thumb  {
+    opacity: 1;
+    max-height: 500px;  
+}
+
+
 
 text {
   padding: 20%;    /* відступи з боків */
@@ -47,76 +98,46 @@ text {
 h1 {
   color: #005eeb;
   text-align: center;  
-  border-bottom: 3px dotted #0259db;
-  padding-bottom: .3rem;
-  font-size: 70px; 
+  border-bottom: 3px dotted #0259dbc5;
+  padding-bottom: 1.3rem;
+  font-size: 90px; 
   position: relative;
+  font-family: 'RGAO';
  }
 
-h1::before {
-  content: "";
-  position: absolute;
-  top: 30px;          /* moves moon above the title */
-  left: 6%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: transparent;
-  box-shadow: -12px 0 0 0 #005eeb;   /* the moon arc */
-  opacity: 0.9;
-  
-}
 
-p {
-  font-family: 'PRMT';
+
+
+body > p {
+    font-family: 'PRMT';
   text-transform: uppercase;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  font-size: 20.7px;
-  max-width: 100%;
-  text-align: center; 
+  letter-spacing: 4.2px;
+  opacity: 0.9;
+  font-size: 18px;
+  text-align: right; 
   color: #0259db;
-  position: relative; /* щоб ::before/::after відносно нього */
+  position: relative;
+  top: -40px;
+  border-bottom: 3px dotted #0259dbc3;
+  padding-bottom: .3rem;
 }
 
-
-p::before {
+/* Horizontal lines */
+body > p::before,
+body > p::after {
   content: '';
   display: inline-block;
-  width: 190px; /* довжина лінії */
+  width: 220px; /* довжина лінії */
+  opacity: 0.5;
   height: 2px;
   background: #0259db;
-  margin-right: 20px; /* відстань до тексту */
-  vertical-align: middle;
-}
-p::after {
-  content: '';
-  display: inline-block;
-  width: 190px; /* довжина лінії */
-  height: 2px;
-  background: #0259db;
-  margin-left: 20px; /* відстань до тексту */
+  margin-right: 6px; /* відстань до тексту */
   vertical-align: middle;
 }
 
-p:nth-child(1) {
-  color: #0259db;
-  font-weight: 600;
-  font-size: 20px;
-  opacity: 1;
-}
-p:nth-child(2) {
-  color: #0259db;
-  font-weight: 600;
-  text-align: right;
-}
-p:nth-child(3) {
-  color: #0259db;
-  font-weight: 600;
-  text-align: right;
-}
+body > p::before { margin-right: 20px; }
 
+body > p::after  { margin-left: 20px; }
 
 
 legend {
@@ -137,20 +158,60 @@ a div .thumb {
     width: 150px;
     height: 120px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 1px;
 }
 
 
+#themes {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 50;
+    
+    display: flex;
+    gap: 15px;
+
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    
+    border-radius: 8px;
+}
 
 #themes label {
-    transition: 0.4s ease;
-    cursor: pointer;
-    font-size: 24px;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #fffffe;
+    font-family: 'PRMT';
+    color: #0259db;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin: 0 4px;
+
+    /* The torn edge */
+    clip-path: polygon(
+        0 0, 100% 0,
+        100% 70%, 95% 80%,
+        90% 70%, 85% 78%,
+        80% 70%, 75% 82%,
+        70% 72%, 65% 80%,
+        60% 70%, 55% 82%,
+        50% 70%, 45% 80%,
+        40% 72%, 35% 78%,
+        30% 70%, 25% 80%,
+        20% 72%, 15% 78%,
+        10% 70%, 5% 80%,
+        0 70%
+    );
+
+    transition: 0.25s ease;
 }
 
+
+
 #themes label:hover {
-    letter-spacing: 10px;
-    transform: scale(1.8);
+    letter-spacing: 5px;
+    transform: scale(1.2) rotate(-1deg);
     color: #0259db;
 }
 
@@ -161,20 +222,23 @@ main h3 {
     position: relative;
     display: inline-block;
     padding-bottom: 4px;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'RGAO';
+    text-align: right;
 }
 
 main h3:hover {
   color: #0c6dff;
- transform: scale(1.1);
+ transform: scale(0.9);
  animation-delay: 2s;
  transition: 0.3s ease;
     
 }
 
+
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
     padding: 1rem;
 }
@@ -183,7 +247,7 @@ main a div {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
-    background: #efece3;
+    background: #fffffe;
     display: flex;
     flex-direction: column; 
     gap: 1rem;
@@ -196,14 +260,7 @@ main a div img.thumb {
     border-radius: 6px;
 }
 
-#themes div {
-    border-bottom: 3px dotted #0259db;
-    padding-bottom: 6px;
-    margin-bottom: 6px;
-    border-top: 3px dotted #0259db;
-    padding-top: 6px;
-    margin-top: 6px;
-}
+
 
 #themes div:last-child {
     border-bottom: none;
@@ -216,8 +273,9 @@ main a div img.thumb {
   display: flex;               
   justify-content: center;     
   align-items: center;        
-  gap: 20px;                   
-  padding: 15px 0;             
+  gap: 200px;                   
+  padding: 5px 10px; 
+  font-family: 'PRMT';            
 }
 
 #filtres > div {
@@ -235,6 +293,15 @@ main a div img.thumb {
     letter-spacing: 1px;   
 }
 
+
+#filtres p {
+    font-family: 'PRMT';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+
 main a {
     text-decoration: none;  
     color: inherit;         
@@ -251,11 +318,11 @@ main a div::after {
     content: "";
     position: absolute;
     top: 10px;          
-    left: 45%;            
+    left: 85%;            
     transform: translateX(-50%) scale(0.6) rotate(-15deg);
     
-    width: 28px;           
-    height: 28px;
+    width: 20px;           
+    height: 20px;
     background: #0259db;
     opacity: 0;
     transition: 0.3s ease;
@@ -278,37 +345,42 @@ main a:hover div::after {
 
 
 #themes {
-  display: grid;
-    grid-template-columns: repeat(5, minmax(120px, 1fr));
-    gap: 15px ;
+    position: absolute;
+    top: 0px;
+    z-index: 50;
+    display: flex;        
+    align-items: right;
+    gap: 5px;/* distance between names */
+    white-space: nowrap;    
+    font-family: 'PRMT';
     border: none;
+    margin: 0px 20px;
+    padding: 0px;
+}
+#themes legend {
+    display: none;
 }
 
-#themes div {
-    padding: 10px 18px;
-    background: #f3eee2;
-    border-radius: 15px;
-    width: fit-content;
-    animation: floaty 6s ease-in-out infinite alternate;
+#themes > div {
+    display: inline-flex;   
+    align-items: left;
+    gap: 0px; /* distance between names and their buttons */
 }
 
-#themes div:nth-child(odd) {
-    margin-left: 40px;
-    animation-delay: 1s;
+#themes label {
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
 }
-
-#themes div:nth-child(3n) {
-    margin-left: 80px;
-    animation-delay: 2s;
-}
-
-
 
 
 input[type="radio"] {
     appearance: none;
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
     background: #000000;
     clip-path: polygon(
@@ -333,7 +405,7 @@ main a div {
     position: relative;
     border-radius: 8px;
     padding: 1rem;
-    background: #efece3;
+    background: #fffefc;
     border: 1px solid #ddd;
 }
 
@@ -343,13 +415,13 @@ main a div::before {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -10px; 
-    width: 20px;
+    left: -7px; 
+    width: 15px;
 
     background: radial-gradient(circle at left,
         transparent 0,
         transparent 8px,
-        #efece3 8px);
+        #0259db 8px);
 
     background-size: 20px 40px;
     background-repeat: repeat-y;
