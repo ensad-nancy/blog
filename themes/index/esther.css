@@ -1,6 +1,6 @@
  @font-face {
-   font-family:"HENTZAU 2";
-   src: url("../../articles/esther/images/HENTZAU-2.TTF") format("opentype");
+   font-family:"ruritaniaoutline ";
+   src: url("../../articles/esther/images/ruritaniaoutline.ttf") format("opentype");
 } 
 @font-face {
    font-family:"Rot-ProtoRoman102R 2";
@@ -41,10 +41,12 @@ h1{
 
    }
 h1::first-letter {
-  font-family: "HENTZAU 2";
- font-size:150px;
-  font-weight: bold;
-  color: #57070c  ;
+  font-family: "ruritaniaoutline ";
+ font-size:230px;
+  font-weight:100;
+  color: #57070c;
+  box-shadow: #750a11;
+  
 }
 
 body > p{
@@ -72,7 +74,7 @@ body > p{
     justify-content: center;
     gap: 10px;
     color: #000;
-    font-size: 85%;
+    font-size: 91%;
 
   
    }
@@ -88,6 +90,11 @@ body > p{
     justify-content: center;
      
    }
+   #themes div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 22px #dbd6d6;
+    color: #750a11;
+}
 
    input[type="radio"]{
       position: absolute;
@@ -155,10 +162,14 @@ width: 130%;
 }
 
 main a:hover h3{
-   letter-spacing: 10px ;
+   letter-spacing: 3px ;
    transition: all 0.5s linear;
+   color: #57070c;
+   font-variant: small-caps;
 }
  
+
+
 
 h3::first-letter{
    font-family:"";
