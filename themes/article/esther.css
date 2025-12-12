@@ -14,13 +14,18 @@ body{
    src: local("sinistreragular"), url("../../articles/esther/images/SINISTRE/sinistreregular.otf") format("opentype");
 } 
 
-.thumb{
-   display: none;
-}
 
 #themes legend{
    display: none;
 }
+
+.thumb{
+    display: none;
+}
+img{
+   display: none;
+}
+
 
 body{
     background-color: #fff9f9;
@@ -32,10 +37,15 @@ h1{
    font-family:"sinistreregular";
    font-size: 45px;
    margin: 0%;
-    position:absolute;
     text-decoration-line: underline;
-    bottom: 0;
+    text-align:right;
+    bottom: 0%;
+    top:130%;
     right: 0;
+    text-align: right;
+    position:absolute;
+    color: #000;
+
    }
 
    #themes{
@@ -48,23 +58,38 @@ h1{
     justify-content: center;
     gap:17px;
     color: #000;
-
-  
+    position: relative;
    }
 
    #themes div{
-      width: 300px;
+      width:300px;
       height: 50px;
       border-radius: 70px;
       background-color: #f1ebeb;
       text-align: center;
+            display: flex;
+    align-items: center;
+    justify-content: center;
+     
      
    }
    article{
 border-radius: 2px;
  border-style: dotted;
  margin: 10px;
+ text-align:right;
+   transform: scale(1.02);
+    box-shadow: 0 0 22px #dbd6d6;
+    color: #750a11;
+   
    }
+
+article a:hover {
+   transition: all 0.5s linear;
+   font-variant: small-caps;
+}
+
+
 
    header{
     display: none;
@@ -82,4 +107,8 @@ border-radius: 2px;
       cursor: pointer;
    }
 
-  
+  @media (max-width: 600px) {
+   #themes div{
+      width: 100px;
+   }
+}

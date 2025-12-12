@@ -27,16 +27,20 @@ body{
  font-family:"Rot-ProtoRoman102R 2", serif;
  font-size: large;
 }
+
+
+
 h1{
    font-family:"sinistreregular";
    font-size: 45px;
    margin: 2%;
     position:absolute;
+    bottom: auto;
     text-decoration-line: underline;
     bottom: 0;
     right: 0;
     color: #57070c;
-  
+    
   
 
    }
@@ -45,15 +49,14 @@ h1::first-letter {
  font-size:230px;
   font-weight:100;
   color: #57070c;
-  box-shadow: #750a11;
+
   
 }
 
 body > p{
     font-family: "Rot-ProtoRoman102R 2", serif;
-   font-size: medium;
+   font-size:100%;
    text-align:left;
-   font: size 130%;
    color: rgb(0, 0, 0);
    margin: 2%;
    padding: 10px;
@@ -121,6 +124,8 @@ float: right;
 width: 200px;
 height: 200px;
 background-color: #fff9f9;
+transform: scale(2.OO);
+ box-shadow: 0 0 9px #9d8a8a;
 }
 
 
