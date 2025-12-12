@@ -14,14 +14,14 @@
 body {
     margin: 0px;
     width: 100%;
-    background: linear-gradient(135deg, rgb(103, 156, 216), rgb(163, 5, 18));
+    background-color: antiquewhite;
     font-family: "Baskerville";
     display: block;
 }
 #themes{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    background-color: aliceblue;
+    background-color: antiquewhite
     width: 97%;
     margin: 10px;
     display: grid;
@@ -32,7 +32,7 @@ body {
 }
 
 #themes div{
-    color: aliceblue;
+    color: antiquewhite;
     background: linear-gradient(135deg, rgb(163, 5, 18), rgb(103, 156, 216));
     width: 120px;
     height: 20px;
@@ -45,7 +45,7 @@ body {
 }
 
 #themes div:hover{
-    color: aliceblue;
+    color: antiquewhite;
     background: linear-gradient(135deg, rgb(103, 156, 216), rgb(163, 5, 18));
     width: 150px;
     height: 20px;
@@ -125,12 +125,12 @@ footer{
 }
 
 a:link{
-    color:aliceblue;
+    color:antiquewhite;
     text-decoration: none;
 }
 
 a:visited{
-    color:aliceblue;
+    color:antiquewhite;
     text-decoration: none;
 }
 a:hover{
