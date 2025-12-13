@@ -88,7 +88,7 @@ body {
 }
 
 /* -----------------------------------
-   FILTRES — only date + auteurs
+   FILTRES — stable & smaller (FINAL)
 ----------------------------------- */
 
 #filtres {
@@ -98,84 +98,28 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 
     z-index: 150;
 }
 
-/* filtre 제목 완전 제거 */
-#filtres h2 {
-    display: none;
-}
-
-/* 공통 pill wrapper */
+/* 공통 pill */
 #filtres div {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+
+    height: 30px;                 /* ↓ 작게 */
+    padding: 0 12px;
 
     background: #fff;
-    border-radius: 18px;
-    padding: 5px 9px;
-
+    border-radius: 14px;
     box-shadow: 0 0 0 1px #ddd inset;
 }
 
 /* -----------------------------------
-   DATE — range + label (tout)
------------------------------------ */
-
-/* range */
-#filtres input[type="range"] {
-    appearance: none;
-    -webkit-appearance: none;
-
-    width: 140px;
-    height: 20px;
-    margin: 0;
-
-    background: transparent;
-}
-
-/* track */
-#filtres input[type="range"]::-webkit-slider-runnable-track {
-    height: 2px;
-    background: #000;
-}
-#filtres input[type="range"]::-moz-range-track {
-    height: 2px;
-    background: #000;
-}
-
-/* thumb */
-#filtres input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 12px;
-    height: 12px;
-    margin-top: -5px;
-
-    background: #000;
-    border-radius: 50%;
-}
-#filtres input[type="range"]::-moz-range-thumb {
-    width: 12px;
-    height: 12px;
-    background: #000;
-    border-radius: 50%;
-}
-
-/* date label (ex: "tout") */
-#filtres span,
-#filtres .date-pill {
-    font-family: "Basteleur", serif;
-    font-size: 16px;
-    line-height: 1;
-    white-space: nowrap;
-}
-
-/* -----------------------------------
-   AUTEURS — select pill
+   AUTEUR — select (완전 고정)
 ----------------------------------- */
 
 #filtres select {
@@ -183,41 +127,132 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
 
+    display: inline-flex;
+    align-items: center;
+
+    width: 150px;                 /* ← min 아님, 고정 */
+    height: 100%;
+
     background: transparent;
     border: none;
 
     font-family: "Basteleur", serif;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1;
+
+    padding: 0 20px 0 0;
+    text-align: center;
     white-space: nowrap;
 
-    padding-right: 36px;
     cursor: pointer;
 }
 
-/* auteurs arrow */
+/* auteur arrow */
 #filtres div:has(select)::after {
     content: "";
     position: absolute;
-
-    right: 18px;
+    right: 10px;
     top: 50%;
     transform: translateY(-30%);
 
-    width: 0;
-    height: 0;
-
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 12px solid #bdbdbd;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #aaa;
 
     pointer-events: none;
 }
 
-/* 불필요한 설명 제거 */
+/* underline (pseudo-element, no reflow) */
+#filtres select::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* -----------------------------------
+   DATE — slider + text (완전 고정)
+----------------------------------- */
+
+/* date text */
+#filtres span,
+#filtres .date-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;                 /* ← 완전 고정 */
+    height: 100%;
+
+    font-family: "Basteleur", serif;
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+
+    position: relative;
+}
+
+/* date underline */
+#filtres span::after,
+#filtres .date-pill::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* slider */
+#filtres input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 80px;
+    height: 12px;
+    margin: 0;
+
+    background: transparent;
+}
+
+/* track */
+#filtres input[type="range"]::-webkit-slider-runnable-track {
+    height: 1.5px;
+    background: #000;
+}
+#filtres input[type="range"]::-moz-range-track {
+    height: 1.5px;
+    background: #000;
+}
+
+/* thumb */
+#filtres input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    margin-top: -3px;
+
+    background: #000;
+    border-radius: 50%;
+}
+#filtres input[type="range"]::-moz-range-thumb {
+    width: 7px;
+    height: 7px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* 설명 제거 */
 #filtres div p {
     display: none;
 }
+
 
 /* -----------------------------------
    메인(article 목록) — 3열 Grid
