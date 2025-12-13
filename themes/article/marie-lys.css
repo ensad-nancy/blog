@@ -1,352 +1,253 @@
-}
-
-/* ===============================
-   TITRE
-================================ */
-h1 {
-    font-size: 60px;
-    width: 900px;
-    margin: 0 auto;
-    text-align: left;
-    position: relative;
-}
-
-/* Trait fixe sous le titre */
-h1::after {
-    content: "";
-    display: block;
-    position: relative;
-    top: 10px;          /* sous le titre, ajuste si nécessaire */
-    left:-270px;
-    width: 100vw;
-    height: 4px;
-    background-color: black;
-    pointer-events: none; 
-    z-index: 200;        
-}
-
-/* ===============================
-   TEXTE DÉFILANT CONTINU
-================================ */
-body > p {
-    position: relative;          
-    overflow: hidden;            
-    width: calc(100% - 400px);   
-    margin: 20px auto;
-    padding: 0;
-    font-size: 0.95rem;
-    white-space: nowrap;
-    color: transparent;  
-}
-
-body > p::before {
-    content: "Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • ";
-    position: absolute;
-    left: 100%;                
-    white-space: nowrap;
-    display: inline-block;
-    animation: scroll-text 22s linear infinite;
-    color: #ff30ff;              
-}
-
-
-
-body > p::after {
-    content: "";
-    position: absolute;     
-    bottom: -50px;             
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: black;
-    pointer-events: none;
-    display: block;
-    z-index: 1;
-}
-
-@keyframes scroll-text {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
 /* =================================================
-   COLONNE GAUCHE — THEMES
-================================================= */
-#themes {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    width: 180px;
-    height: 200vh;
-    background: rgb(255, 255, 255);
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 10;
-    pq
+   RÉINITIALISATION & GRILLE GLOBALE STABLE
+   ================================================= */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-#themes::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 100%;       
-    width: 4px;
-    height: 1000px;
-    background: rgb(0, 0, 0);
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    display: grid; 
+    margin: 0; 
 }
-#themes::after {
-    content: "";
-    position: absolute;
+
+body::after {
+    content: none; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body > p {
+    display: none;
+}
+
+
+/* --------------------------------------------------------------------------------------------------
+   BOUTON RETOUR (Encart Rose)
+   -------------------------------------------------------------------------------------------------- */
+a[href="index.php"] {
+    display: block; 
+    position: fixed; 
+    top: 20px; 
+    left: 20px;
+    z-index: 200; 
+    
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px; 
+    
+    background-color: #ff30ff; 
+    color: white; 
+    border: 3px solid black;
+    border-radius: 5px; 
+}
+
+
+/* --------------------------------------------------------------------------------------------------
+   COLONNE GAUCHE : THÈMES (POSITIONNEMENT ABSOLU & Z-INDEX FORCÉ POUR LE CLIC)
+   -------------------------------------------------------------------------------------------------- */
+#themes {
+    position: absolute; 
     top: 0;
-    right: 0;
-    width: 4px;        /* thickness */
-    height: 200%;
-    background: black; /* color of the line */
-    pointer-events: none;
-    z-index: 100;
+    left: 0;
+    width: 220px; 
+    
+    height: 100vh;
+    background: white;
+    border-right: 4px solid black; 
+    overflow-y: auto; 
+    z-index: 90; 
 }
 
 #themes legend {
-    position: static;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0;
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
-
-
-
-
-#themes div {
-    background: #ffffff;
-    margin: 10px 0;              /* ← spacing between plates */
-    padding: 12px 16px;
-    border-radius: 12px;          /* ← plate shape */
-    position: relative;
-    z-index: -100;
-    }
-    
-    #themes label {
-        display: block;
-        border: none;                 /* ← remove the old underline */
-        background: transparent;      /* ← plate handles background */
-        padding: 0;                   /* ← rely on container padding */
-        margin: 0;
-        font-size: 1rem;
-        color: black;
-        cursor: pointer;
-        transition: color 0.2s ease;
-    }
-
-#themes label:hover {
-    background: #ff30ff;
-    color: white;
-}
-
-#themes input[type="radio"]:checked + label {
-    color: #ff30ff;
-    font-weight: bold;
-}
-#themes input[type="radio"]:checked + label::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #ff30ff22;
-    border-radius: 12px;
-    z-index: -1;
-}
-
-
-
-input[type="radio"]{
-    position: absolute;
-    appearance: none;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 0;
-    padding: 0px;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-#themes div::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    height: 4px;                   /* ← thickness */
-    width: 100%;
-    background: black;            /* ← line color */
-}
-
-#themes div:hover {
-    background: #ff30ff;      /* soft transparent pink */
-    box-shadow: 0 5 2px #ff30ff;
-    transition: 0.2s ease;
-    border-radius: 0px;
-}
-
-#themes div {
-    position: relative;
-    overflow: visible;
-}
-#themes div::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;                 /* default */
-    bottom: 0;
-    background: transparent;
-    transition: 0.2s ease;
-    z-index: -1;
-}
-#themes div:hover::before {
-    background: #ff30ff;
-    top: 4px;               /* ← LOWER the hover block */
-    bottom: -4px;           /* optional, makes it bigger downward */
-    border-radius: 0px;
-    box-shadow: 0 5px 2px #ff30ff;
-}
-
-
-/* =================================================
-   COLONNE DROITE — FILTRES
-================================================= */
-#filtres {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 220px;
-    height: 100vh;
-    background: white;
-    padding: 15px;
-    padding-top: 160px;
-    z-index: 10;  
-}
-
-/* Décalage du contenu interne pour faire descendre “Date” et éléments */
-#filtres > * {
-    margin-top: 10px;
-}
-
-#filtres::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;        
-    width: 4px;
-    height: 100vh;
-    background: black;
-}
-
-#filtres h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-}
-
-#filtres p {
-    font-weight: bold;
-    margin: 12px 0 50px;
-}
-
-#authors {
-    width: 100%;
-}
-
-/* =================================================
-   CENTRE — GRID ARTICLES
-================================================= */
-main {
-    margin-left: 180px;
-    margin-right: 220px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: relative; 
-}
-
-/* Trait fixe au-dessus de la grille */
-main::before {
-    content: "";
     display: block;
-    position: absolute;        
-    top: 0px;             
-    left: -190px;                
-    width: 100vw;
-    height: 4px;            
-    background-color: black;
-    pointer-events: none;   
-    z-index: 200;            
-}
-
-/* Articles */
-main a {
-    text-decoration: none;
-    color: inherit;
-    border-right: 4px solid black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 15px; 
+    padding-top: 70px; 
     border-bottom: 4px solid black;
 }
 
-main a:nth-child(3n) {
-    border-right: none;
+#themes div { 
+    border-bottom: 4px solid black;
+    position: static; 
 }
 
-main a > div {
-    padding: 20px;
+#themes label { 
+    display: block; 
+    padding: 12px 15px; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    
+    /* Tentative de correction du problème de clic (HTML/JS non accessible) */
+    position: relative; 
+    z-index: 100; 
 }
 
-main h3 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-
-main footer {
-    border-top: 3px solid black;
-    padding-top: 10px;
-    margin-top: 20px;
-    font-size: 0.85rem;
-}
-
-/* images */
-.thumb {
-    width: 100%;
-    margin-top: 20px;
-    border: 3px solid black;
-    display: block;
-}
-
-/* tags */
-.tag {
-    background: black;
+#themes label:hover { 
+    background-color: #ff30ff; 
     color: white;
-    padding: 2px 6px;
-    margin-right: 5px;
-    font-size: 0.75rem;
-    display: inline-block;
 }
+
+#themes input[type="radio"] { 
+    display: none;
+}
+
+#themes input[type="radio"]:checked + label { 
+    background-color: black; 
+    color: white; 
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------------------------------------------------------------
+   CONTENU CENTRAL : HEADER & ARTICLE (Décalé pour laisser la place à la colonne absolue)
+   -------------------------------------------------------------------------------------------------- */
+header, article {
+    margin-left: 220px; 
+    width: calc(100% - 220px); 
+    display: block; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px;
+    margin-bottom: 0; 
+}
+
+/* Conteneur de lecture interne (centrage des blocs de 900px) */
+header > *, article > * {
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* --------------------------------------------------
+   Titre et Métadonnées 
+   -------------------------------------------------- */
+.title {
+    order: 1; 
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 10px; 
+}
+
+.date {
+    order: 2; 
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0;
+    padding-bottom: 5px; 
+    text-align: left;
+}
+
+.tags {
+    order: 3; 
+    margin-bottom: 0;
+    padding-bottom: 15px; 
+    text-align: left;
+}
+
+/* Barre de séparation */
+header::after {
+    order: 4; 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 0; 
+}
+
+
+/* --------------------------------------------------
+   Article (Corps du texte)
+   -------------------------------------------------- */
+
+article {
+    margin-top: 40px; /* <--- MODIFICATION : Décalage de l'article vers le bas (1cm) */
+    padding-top: 0; 
+    padding-bottom: 100px; 
+}
+
+/* Espace vertical minimal pour le premier paragraphe */
+article p:first-of-type {
+    padding-top: 5px; 
+}
+
+/* Rétablit l'espacement entre les paragraphes et le padding horizontal */
+article p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------
+   IMAGES DANS L'ARTICLE (Centrées)
+   -------------------------------------------------------------------------------------------------- */
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 4px solid black; 
+}
+
 
 /* =================================================
-   HOVER ARTICLES
-================================================= */
-main a div footer,
-main a div img.thumb {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
+   MEDIA QUERIES 
+   ================================================= */
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
+    #themes { 
+        display: none; 
+        position: static; 
+        width: auto;
+    }
+    article, header {
+        margin-left: 0;
+        width: 100%;
+        grid-column: 1;
+    }
+    
+    a[href="index.php"] {
+        position: static;
+        margin: 20px;
+        padding: 5px 10px;
+        background-color: transparent;
+        color: black;
+        border: none;
+        border-radius: 0;
+    }
+    article, header {
+        padding: 0 20px;
+        align-items: flex-start; 
+    }
+    .title {
+        font-size: 3rem; 
+    }
 }
-
-main a div:hover footer,
-main a div:hover img.thumb {
-    opacity: 1;
-    max-height: 500px;
-}
-
