@@ -6,27 +6,30 @@
 body {
     margin: 10px;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgb(97, 107, 227), rgb(150, 21, 230), rgb(197, 0, 17));
-    font-family: "Baskerville";
+    background-color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
     font-size: 20px;
 }
 
 h1 {
-    font-family: "Baskerville";
-    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
     font-weight:bolder;
-    color: rgb(201, 160, 23);
+    color: antiquewhite;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(163, 5, 18), rgb(103, 156, 216));
 }
 
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bolder;
-    color: rgb(201, 160, 23);
+    color: rgb(163, 5, 18);
 }
 
 strong {
-    font-family: "Baskerville";
+    font-family:'Courier New', Courier, monospace;
     font-size: 25px;
-    color: rgb(201, 160, 23);
+    color: antiquewhite;
+    background: linear-gradient(135deg, rgb(163, 5, 18), rgb(103, 156, 216));
 }
