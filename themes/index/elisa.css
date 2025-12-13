@@ -81,7 +81,8 @@ main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-self: center;
-    size: 30px;
+    width: 144px;
+    height: 680px;
 }
 
 main a{
