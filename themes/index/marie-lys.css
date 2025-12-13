@@ -1,6 +1,3 @@
-/* =================================================
-   RÉINITIALISATION & GRILLE GLOBALE STABLE
-================================================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,22 +11,9 @@ body {
     min-height: 100vh;
     display: grid; 
     margin: 0; 
-    position: relative; /* CLÉ : Sert de référence pour #themes */
+    position: relative; 
 }
 
-/* RETIRER body::before si vous l'avez ajouté dans la tentative précédente */
-/* body::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 180px; 
-    width: 4px;
-    height: 100%; 
-    background: black;
-    pointer-events: none;
-    z-index: 5;
-} */
 
 body::after {
     content: none; 
@@ -43,10 +27,6 @@ body > p {
     display: block; 
 }
 
-
-/* ===============================
-   TITRE
-================================ */
 h1 {
     font-size: 60px;
     width: 900px;
@@ -55,13 +35,13 @@ h1 {
     position: relative;
 }
 
-/* Trait fixe sous le titre */
+
 h1::after {
     content: "";
     display: block;
     position: absolute; 
     
-    /* CENTRAGE ET PLEINE LARGEUR */
+    
     left: 50%; 
     transform: translateX(-50%); 
     width: 100vw; 
@@ -73,9 +53,6 @@ h1::after {
     z-index: 200;        
 }
 
-/* ===============================
-   TEXTE DÉFILANT CONTINU
-================================ */
 body > p {
     position: relative;          
     overflow: hidden;            
@@ -115,16 +92,13 @@ body > p::after {
     100% { transform: translateX(-50%); } 
 }
 
-/* =================================================
-   COLONNE GAUCHE — THEMES (Hauteur = 100%)
-================================================= */
 #themes {
     position: absolute; 
     top: 0;             
     left: 0;
     width: 180px;
     height: auto; 
-    min-height: 100%;       /* CLÉ : S'étend sur la hauteur du body */
+    min-height: 100%;       
     background: rgb(255, 255, 255);
     overflow-y: auto;
     overflow-x: hidden;
@@ -147,7 +121,7 @@ body > p::after {
     top: 0;
     right: 0;
     width: 4px;        
-    height: 100%; /* CLÉ : C'est ici qu'il fallait 100% et non 200% */
+    height: 600%; 
     background: black; 
     pointer-events: none;
     z-index: 100;
@@ -257,10 +231,6 @@ input[type="radio"]{
     box-shadow: 0 5px 2px #ff30ff;
 }
 
-
-/* =================================================
-   COLONNE DROITE — FILTRES
-================================================= */
 #filtres {
     position: fixed; 
     top: 0;         
@@ -283,7 +253,7 @@ input[type="radio"]{
     top: 0;
     left: 0;        
     width: 4px;
-    height: 100vh; /* La ligne suit la hauteur de la colonne fixe */
+    height: 100vh; 
     background: black;
 }
 
@@ -302,9 +272,6 @@ input[type="radio"]{
     width: 100%;
 }
 
-/* =================================================
-   CENTRE — GRID ARTICLES
-================================================= */
 main {
     margin-left: 180px;
     margin-right: 220px;
@@ -315,7 +282,6 @@ main {
     min-height: 100vh; 
 }
 
-/* Trait fixe au-dessus de la grille */
 main::before {
     content: "";
     display: block;
@@ -329,7 +295,6 @@ main::before {
     z-index: 200;            
 }
 
-/* Articles */
 main a {
     text-decoration: none;
     color: inherit;
@@ -359,7 +324,6 @@ main footer {
     font-size: 0.85rem;
 }
 
-/* images */
 .thumb {
     width: 100%;
     margin-top: 20px;
@@ -367,7 +331,6 @@ main footer {
     display: block;
 }
 
-/* tags */
 .tag {
     background: black;
     color: white;
@@ -377,9 +340,6 @@ main footer {
     display: inline-block;
 }
 
-/* =================================================
-   HOVER ARTICLES
-================================================= */
 main a div footer,
 main a div img.thumb {
     opacity: 0;

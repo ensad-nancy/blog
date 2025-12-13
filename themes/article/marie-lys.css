@@ -1,7 +1,4 @@
-/* =================================================
-   RÉINITIALISATION & GRILLE GLOBALE STABLE
-   ================================================= */
-   * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -29,9 +26,7 @@ body > p {
 }
 
 
-/* --------------------------------------------------------------------------------------------------
-   BOUTON RETOUR (Encart Rose)
-   -------------------------------------------------------------------------------------------------- */
+
 a[href="index.php"] {
     display: block; 
     position: fixed; 
@@ -45,14 +40,12 @@ a[href="index.php"] {
     
     background-color: #ff30ff; 
     color: white; 
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 5px; 
 }
 
 
-/* --------------------------------------------------------------------------------------------------
-   COLONNE GAUCHE : THÈMES (POSITIONNEMENT ABSOLU & Z-INDEX FORCÉ POUR LE CLIC)
-   -------------------------------------------------------------------------------------------------- */
+
 #themes {
     position: absolute; 
     top: 0;
@@ -88,7 +81,6 @@ a[href="index.php"] {
     cursor: pointer; 
     transition: background-color 0.2s;
     
-    /* Tentative de correction du problème de clic (HTML/JS non accessible) */
     position: relative; 
     z-index: 100; 
 }
@@ -108,10 +100,6 @@ a[href="index.php"] {
     font-weight: bold;
 }
 
-
-/* --------------------------------------------------------------------------------------------------
-   CONTENU CENTRAL : HEADER & ARTICLE (Décalé pour laisser la place à la colonne absolue)
-   -------------------------------------------------------------------------------------------------- */
 header, article {
     margin-left: 220px; 
     width: calc(100% - 220px); 
@@ -126,7 +114,6 @@ header {
     margin-bottom: 0; 
 }
 
-/* Conteneur de lecture interne (centrage des blocs de 900px) */
 header > *, article > * {
     max-width: 900px;
     width: 100%;
@@ -134,9 +121,6 @@ header > *, article > * {
     margin-right: auto;
 }
 
-/* --------------------------------------------------
-   Titre et Métadonnées 
-   -------------------------------------------------- */
 .title {
     order: 1; 
     font-size: 5rem;
@@ -164,7 +148,6 @@ header > *, article > * {
     text-align: left;
 }
 
-/* Barre de séparation */
 header::after {
     order: 4; 
     content: "";
@@ -176,22 +159,17 @@ header::after {
 }
 
 
-/* --------------------------------------------------
-   Article (Corps du texte)
-   -------------------------------------------------- */
-
 article {
-    margin-top: 40px; /* <--- MODIFICATION : Décalage de l'article vers le bas (1cm) */
+    margin-top: 40px; 
     padding-top: 0; 
     padding-bottom: 100px; 
 }
 
-/* Espace vertical minimal pour le premier paragraphe */
 article p:first-of-type {
     padding-top: 5px; 
 }
 
-/* Rétablit l'espacement entre les paragraphes et le padding horizontal */
+
 article p {
     line-height: 1.6;
     font-size: 1.1rem;
@@ -200,10 +178,6 @@ article p {
     padding-right: 20px;
 }
 
-
-/* --------------------------------------------------------------------------------------------------
-   IMAGES DANS L'ARTICLE (Centrées)
-   -------------------------------------------------------------------------------------------------- */
 article img {
     max-width: 100%;
     height: auto;
@@ -216,9 +190,6 @@ article img {
 }
 
 
-/* =================================================
-   MEDIA QUERIES 
-   ================================================= */
 @media (max-width: 1024px) {
     body {
         grid-template-columns: 1fr; 
