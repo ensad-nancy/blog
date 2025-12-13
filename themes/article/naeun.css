@@ -1,6 +1,13 @@
 /* -----------------------------------
    전체 레이아웃 기본값
 ----------------------------------- */
+a:any-link,
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +17,7 @@ body {
     line-height: 1.6;
 
     /* 사이드바 폭만큼 전체 본문 이동 */
-    margin-left: 240px;
+    margin-left: 220px;
 }
 
 /* -----------------------------------
@@ -18,7 +25,8 @@ body {
 ----------------------------------- */
 #themes {
     box-sizing: border-box;
-    width: 220px;                /* 줄어든 사이드바 폭 */
+    width: 220px;
+    /* 줄어든 사이드바 폭 */
     position: fixed;
     left: 0;
     top: 0;
@@ -40,24 +48,35 @@ body {
 
 /* legend — Changer le thème */
 #themes legend {
-    grid-column: 1 / -1;                /* 2열 전체 차지 */
+    grid-column: 1 / -1;
+    /* 2열 전체 차지 */
     font-family: Helvetica, Arial, sans-serif;
     font-size: 11px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 10px;
     opacity: 0.7;
- /* 추가된 부분 ↓↓↓ */
-    text-align: center;     /* 중앙 정렬 */
-    margin-bottom: 4px;     /* 이름과 더 가깝게 */
-    margin-top: -8px;       /* 전체 상단 여백 조금 당기기 */
+    /* 추가된 부분 ↓↓↓ */
+    text-align: center;
+    /* 중앙 정렬 */
+    margin-bottom: 4px;
+    /* 이름과 더 가깝게 */
+    margin-top: -8px;
+    /* 전체 상단 여백 조금 당기기 */
 
     animation: blink 2s infinite;
 }
 
 @keyframes blink {
-    0%, 70% { opacity: 0.3; }
-    100% { opacity: 1; }
+
+    0%,
+    70% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* 라디오 숨기지 않고 전체를 클릭 영역으로 확장 */
@@ -66,7 +85,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32px;  /* 클릭 영역 크기 ↑ */
+    height: 32px;
+    /* 클릭 영역 크기 ↑ */
 }
 
 /* input이 label 전체를 덮음 → label 클릭 = input 클릭 동일 */
@@ -74,9 +94,11 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;        /* div 전체 클릭 가능 */
+    width: 100%;
+    /* div 전체 클릭 가능 */
     height: 100%;
-    opacity: 0;         /* 보이지 않지만 살아 있음 */
+    opacity: 0;
+    /* 보이지 않지만 살아 있음 */
     cursor: pointer;
     margin: 0;
 }
@@ -84,11 +106,13 @@ body {
 /* label은 그냥 텍스트만 보여주는 역할 */
 #themes label {
     position: relative;
-    z-index: 2;        /* input 위에 보이지만 클릭은 input이 받음 */
+    z-index: 2;
+    /* input 위에 보이지만 클릭은 input이 받음 */
     font-size: 15px;
     cursor: pointer;
     opacity: 0.85;
-    pointer-events: none; /* 클릭이 label로 가지 않고 input으로 전달됨 */
+    pointer-events: none;
+    /* 클릭이 label로 가지 않고 input으로 전달됨 */
 }
 
 /* hover 스타일 */
@@ -98,7 +122,7 @@ body {
 }
 
 /* 선택된 사용자 시각 강조 */
-#themes input[type="radio"]:checked + label {
+#themes input[type="radio"]:checked+label {
     font-weight: bold;
     opacity: 1;
 }
@@ -108,25 +132,33 @@ body {
 ----------------------------------- */
 
 /* sidebar 자체가 body를 밀고 있으므로 margin-left는 0 */
-body > a,
+body>a,
 header,
 article {
-    margin-left: 0;
-    padding-left: 20px;
-    padding-right: 40px;
+    text-decoration: none;
+    max-width: 700px;
+    /* 본문 폭 기준 */
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 40px;
+    padding-right: 40px; */
     position: relative;
     z-index: 1;
+    
+
 }
 
 /* 뒤로가기 링크 */
-body > a {
+body>a {
     display: inline-block;
-    margin-top: 20px;
     text-decoration: none;
-    font-size: 14px;
     opacity: 0.7;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-body > a:hover {
+
+body>a:hover {
     opacity: 1;
 }
 
@@ -137,24 +169,32 @@ header {
     margin-top: 60px;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
+
 
 /* 원래 HTML에 있는 제목 1개 */
 header .title {
-    font-size: 32px;
-    font-weight: 700;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 500;
     margin: 0 0 10px 0;
-}
-
-header .date {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
+    padding: 0px 7px;
+    border: 1.5px solid #636363;
+    /* 얇은 스트로크 */
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
 
 header .tags {
     margin-top: 6px;
+    text-align: center;
+
 }
 
 header .tag {
@@ -162,23 +202,50 @@ header .tag {
     padding: 2px 8px;
     border: 1px solid #bbb;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 6px;
+}
+
+header .date {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-family: Helvetica, Arial, sans-serif;
+    right: 100px;
 }
 
 /* -----------------------------------
    본문(article)
 ----------------------------------- */
 article {
-    max-width: 780px;
+    max-width: 600px;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
 /* 문단 */
 article p {
-    margin: 0 0 1.2em 0;
-    font-size: 16px;
+    margin: 0 0 1.4em 0;
+
+    font-size: 14px;
+    font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.7;
+
+    text-align: justify;
+    /* ← 핵심 */
+    hyphens: auto;
+    /* ← 프랑스어에 매우 중요 */
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+    text-justify: inter-word;
 }
+
+
 
 /* 제목들 */
 article h1,
@@ -189,14 +256,22 @@ article h3 {
     margin-bottom: 15px;
 }
 
-article h1 { font-size: 28px; }
-article h2 { font-size: 22px; }
-article h3 { font-size: 18px; }
+article h1 {
+    font-size: 22px;
+}
+
+article h2 {
+    font-size: 22px;
+}
+
+article h3 {
+    font-size: 18px;
+}
 
 /* 리스트 */
 article ul,
 article ol {
-    padding-left: 20px;
+    padding-left: 0px;
     margin: 0 0 1.2em 0;
 }
 
