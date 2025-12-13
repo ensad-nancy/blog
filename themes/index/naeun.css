@@ -22,9 +22,9 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    bottom: 80px;
+    bottom: 70px;
     padding: 30px 15px;
-    border-right: 2px solid #bcbcbc;
+    border-right: 1.5px solid #bcbcbc;
     background: #f7f7f5;
     overflow-y: auto;
     z-index: 100;
@@ -88,39 +88,135 @@ body {
 }
 
 /* -----------------------------------
-   필터(Filtres) — 오른쪽 상단 고정 + 가로 정렬
+   FILTRES — only date + auteurs
 ----------------------------------- */
 
 #filtres {
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 110px;
+    right: 40px;
 
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 16px;
 
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    z-index: 200;
+    z-index: 150;
 }
 
+/* filtre 제목 완전 제거 */
 #filtres h2 {
-    font-size: 14px;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: none;
 }
 
-#filtres div p {
-    margin: 0;
-    font-size: 12px;
-    opacity: 0.7;
+/* 공통 pill wrapper */
+#filtres div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #fff;
+    border-radius: 18px;
+    padding: 5px 9px;
+
+    box-shadow: 0 0 0 1px #ddd inset;
 }
 
-#filtres select,
+/* -----------------------------------
+   DATE — range + label (tout)
+----------------------------------- */
+
+/* range */
 #filtres input[type="range"] {
-    margin-top: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 140px;
+    height: 20px;
+    margin: 0;
+
+    background: transparent;
+}
+
+/* track */
+#filtres input[type="range"]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: #000;
+}
+#filtres input[type="range"]::-moz-range-track {
+    height: 2px;
+    background: #000;
+}
+
+/* thumb */
+#filtres input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    margin-top: -5px;
+
+    background: #000;
+    border-radius: 50%;
+}
+#filtres input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* date label (ex: "tout") */
+#filtres span,
+#filtres .date-pill {
+    font-family: "Basteleur", serif;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* -----------------------------------
+   AUTEURS — select pill
+----------------------------------- */
+
+#filtres select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: transparent;
+    border: none;
+
+    font-family: "Basteleur", serif;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+/* auteurs arrow */
+#filtres div:has(select)::after {
+    content: "";
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+    transform: translateY(-30%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #bdbdbd;
+
+    pointer-events: none;
+}
+
+/* 불필요한 설명 제거 */
+#filtres div p {
+    display: none;
 }
 
 /* -----------------------------------
@@ -201,7 +297,7 @@ body > p:first-of-type {
     margin: 0;
 
     background: #f7f7f5;
-    border-top: 2px solid #bcbcbc;
+    border-top: 1.5px solid #bcbcbc;
 
     font-size: 12px;
     line-height: 1.5;
