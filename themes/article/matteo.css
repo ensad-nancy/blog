@@ -25,22 +25,26 @@ body{
 body > a:any-link{
     text-decoration: none;
     color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 6, 22);  
+            backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);  
     border-radius: 40px;
     padding: 5px 12px 5px 12px;
     margin: 7em 0em 0em 2em;
     position: fixed;
     border: 1.5px solid;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(0, 6, 22);
     z-index: 10;
 }
 
 body > a:hover{
     color: rgb(0, 0, 0);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);  
     transition: all 0.3s;
     border: 1.5px solid;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(0, 6, 22);
 
 }
 
@@ -49,34 +53,41 @@ body > a:hover{
 
 header .title{
     background-color: white;
-    padding: 2%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    margin: 3em 0em 0em 3em;
-    width: 40em;
+    padding: 1em 1em 1em 1em;
+    margin: 3em 1em 2em 3em;
+    width: 14em;
     font-size: 16pt;
+    left: 67%;
+    top: 6.2em;
+    position: absolute;
 }
 
 header .date{
     background-color: white;
-    padding: 2%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    margin: 1em 0em 0em 3em;
-    width: 40em;
+    padding: 1em 1em 1em 1em;   
+    margin: 10em 0em 0em 3em;
+    width: 14em;
+    left: 67%;
+    position: absolute;
+    /* top: 12em; */
     font-size: 16pt;
 }
 
 header .tags{
     background-color: white;
-    padding: 2%;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    margin: 1em 0em 0em 3em;
-    width: 40em;
+    padding: 1em 1em 1em 1em;
+    margin: 14em 0em 0em 3em;    
+    width: 14em;
+    left: 67%;
+    position: absolute;
+    /* top: 16em; */
     font-size: 16pt;
 }
 
+/* header{
+    position: sticky;
+    top: 0;
+} */
 
 
 /*-----ARTICLE-----*/
@@ -94,7 +105,8 @@ article{
 }
 
 article p a{
-    color: rgb(0, 0, 136);
+    /* color: rgb(176, 170, 26);   */
+    color: rgb(133, 126, 0);
     text-decoration: none;
 }
 
@@ -111,7 +123,7 @@ article h1{
     font-family: "Baskervville-Regular";
     font-size: 13pt;
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 6, 22);    
     gap: 20px;
     width: 100%;
     overflow-x: auto;
@@ -130,6 +142,7 @@ article h1{
     border-style: solid;
     border-left: none;
     border-right: none;
+    z-index: 5;
 }
 
  #themes div /*label*/{ 
@@ -167,7 +180,7 @@ input[type="radio"]{
 }
 
 #themes legend{
-    color: white;
+    color: color(srgb 0.7 0.8088 1);
     background-color: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -210,14 +223,19 @@ main a h3{
 
 
 a:hover{
-    color: #00ff00;
+    /* color: rgb(176, 170, 26);  */
+    color: color(srgb 0 0.3316 1);  
     transition: 0.3s;
 }
 
 
 /*-----IMAGES-----*/
 
-.thumb{
+/* .thumb{
+    display: none;
+} */
+
+img{
     display: none;
 }
 
