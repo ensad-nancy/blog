@@ -34,7 +34,7 @@ html, body{
 }
 body{
     margin:0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Chillax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--muted);
     background: linear-gradient(180deg,#fff 0%, #fffafc 40%);
     position:relative;
@@ -96,27 +96,18 @@ body::after{
 
 #filtres h2{ margin-top:0; color:#fff; font-weight:600 }
 
-#themes{ 
-    border:none; 
-    padding:0; 
-    margin-bottom:18px;
-}
-
-#themes div{ display:flex; align-items:center; gap:8px; margin-bottom:8px }
-#themes input[type="radio"]{ accent-color: #fff; }
-#themes label{ color:#fff; text-transform:capitalize }
-
 /* layout for main content */
 main{
     grid-column: 2 / 3;
     margin-left:0;
-    padding:48px 56px;
+    padding:0 56px 48px 56px;
     position:relative;
     z-index:1;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap:28px;
+    align-items:start;
 }
-
-/* grid of article cards */
-main{ display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:28px; align-items:start }
 
 main a{ color:inherit; text-decoration:none }
 
@@ -216,14 +207,6 @@ footer p{ margin:6px 0 }
     opacity:0.95;
 }
 
-/* tweak for small screens: revert to single-column flow */
-@media (max-width:880px){
-    body{ display:block }
-    #filtres{ position:relative; width:100%; height:auto; box-shadow:none; grid-column:auto }
-    main{ margin-left:0; padding:24px }
-    main{ grid-template-columns: 1fr }
-}
-
 /* small UI niceties */
 input[type=range]{ width:100% }
 select#authors{ width:100%; padding:6px; border-radius:6px; border:none }
@@ -234,6 +217,7 @@ h1{ margin:0; padding:18px 0; color:var(--muted); text-align: center; }
 
 /* theme selector placed under header, centered in available space */
 #themes{
+    grid-column: 1 / -1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -264,13 +248,11 @@ h1{ margin:0; padding:18px 0; color:var(--muted); text-align: center; }
 
 /* hide the radios visually but keep them accessible */
 #themes input[type="radio"]{
-    position:absolute !important;
-    opacity:0;
-    width:1px;
-    height:1px;
-    margin:0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+   opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 #themes label{
@@ -319,14 +301,4 @@ body > p:first-of-type{
 #title {
     grid-column: 1 / -1;
     text-align: center;
-}
-
-#themes {
-    grid-column: 1 / -1;
-    text-align: center;
-}
-
-/* Set font for p tags to Chillax */
-p {
-    font-family: "Chillax";
 }

@@ -120,13 +120,11 @@ body > a:first-child {
 }
 
 #themes input[type="radio"]{
-    position:absolute !important;
-    opacity:0;
-    width:1px;
-    height:1px;
-    margin:0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 #themes label{
@@ -209,7 +207,7 @@ article {
     color: #3b1f2b;
 }
 
-article h1, article h2, article h3, article h4, article h5, article h6 {
+article h2 {
     font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
     color: #3b1f2b;
     margin-top: 30px;
@@ -225,16 +223,4 @@ article img {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* responsive */
-@media (max-width: 880px) {
-    header {
-        margin: 10px;
-        padding: 20px 10px;
-    }
-    article {
-        margin: 10px;
-        padding: 15px;
-    }
 }
