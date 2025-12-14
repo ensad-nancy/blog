@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'EX';
-  src: url('../../articles/mariia/images/ArtScript.ttf');
+  src: url('../../articles/mariia/images/Florentia_Italic.ttf');
   unicode-range: U+0400-04FF; /* Cyrillic */
 }
 
@@ -43,7 +43,7 @@
 
 body {
     background-color: #f6f6f4;
-    padding-top: 40vh;        /* щоб текст не з’їдався картинкою */
+    padding-top: 40vh;       
       position: relative;
     z-index: 0;
     background-image: repeating-linear-gradient(
@@ -409,7 +409,7 @@ article img[alt="teatr"] {
     left: 3vw;            /* distance from left edge */
     width: 16vw;          /* how wide the quote block is */
     font-family: 'EX';   /* match your text */
-    font-size:28px;
+    font-size:21px;
     line-height: 1.;
     color: #0259db;
     padding: 15px 20px;
