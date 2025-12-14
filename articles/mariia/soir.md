@@ -10,7 +10,7 @@ tags: guerre
 ![message2](images/message2.jpg)
 ![message3](images/message3.jpg)
 ** Un soir d’été, chaud. ** <br>
-Très loin, on entend le bruit des voitures.<br>
+Très loin on entend le bruit des voitures.<br>
  Dans la rue, les enfants du voisinage courent et jouent.<br>
   Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.<br>
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.<br>

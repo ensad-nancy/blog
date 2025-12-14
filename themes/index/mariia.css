@@ -7,17 +7,31 @@
 @font-face {
   font-family: 'RGAO';
   src: url(../../articles/mariia/images/RomauntGaolines.ttf);
+   unicode-range: U+0000-00FF;
 }
 
 @font-face {
   font-family: 'PRMT';
   src: url(../../articles/mariia/images/premint-Regular.otf);
+
+}
+
+@font-face {
+  font-family: 'RGAO';
+  src: url('../../articles/mariia/images/ArtScript.ttf');
+  unicode-range: U+0400-04FF; /* Cyrillic */
 }
 
 body{
-    background-color: #f0ede4;
+    background-color: #edece9;
     font-family: 'PRMT';
     color: #1d1d1d;
+  background-image:
+    linear-gradient(rgba(2, 89, 219, 0.062) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 89, 219, 0.068) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
 }
 
 body::before {
@@ -208,7 +222,7 @@ main h3 {
     position: relative;
     display: inline-block;
     padding-bottom: 4px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'RGAO';
     text-align: right;
 }
