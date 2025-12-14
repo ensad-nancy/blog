@@ -59,7 +59,7 @@ legend {
 
 article p, .article p {
   font-family: arial, sans-serif;
-  line-height: 1.2;
+  line-height: 1.3;
   font-size: 15px;
   color: #fff898;
 }
@@ -72,7 +72,7 @@ body{
 body::before{
   content: "";
   position: fixed;
-  left: 69%;
+  left: 60%;
   top: 0;
   width: 6px;                
   height: 100vh;
@@ -83,15 +83,15 @@ body::before{
 
 a, article {
   box-sizing: border-box;
-  max-width: calc(70% - 24px); /* keep content to the left of the divider */
+  max-width: calc(61% - 24px); 
   margin: 0;
   padding: 0;
 }
 
 header {
   position: fixed;
-  left: calc(70% + 12px);                     
-  width: calc(30% - 24px);
+  left: calc(61% + 12px);                     
+  width: calc(40% - 24px);
   box-sizing: border-box;
   z-index: 1000;
   color: #2ecc40;        
@@ -101,12 +101,12 @@ header {
 }
 
 header p {
-  margin: 0;              /* remove default margins */
-  line-height: inherit;   /* keep paragraph internal spacing unchanged */
+  margin: 0;              
+  line-height: inherit;   
 }
 
 header p + p {
-  margin-top: 0.30rem;    /* tweak this value to taste */
+  margin-top: 0.30rem;   
 }
 
 .date, .tags {
@@ -119,19 +119,19 @@ p.title {
 }
 
 header p.title {
-  margin: 0 0 1.5rem; /* big space after title — tweak value to taste */
+  margin: 0 0 1.5rem; 
 }
 
 
 #themes {
   position: fixed;
-  left: calc(70% + 3px);
-  bottom: 5px;                       /* stick to the bottom of the viewport */
-  width: calc(30% - 24px);
+  left: calc(61% + 7px);
+  bottom: 5px;                      
+  width: calc(37% - 24px);
   box-sizing: border-box;
   z-index: 1000;
-  max-height: calc(100vh - 4rem);     /* avoid covering the header / keep it visible */
-  overflow-y: auto;                   /* allow scrolling if content is taller */
+  max-height: calc(100vh - 4rem);    
+  overflow-y: auto;                   
   padding: 0.5rem;
 }
 
