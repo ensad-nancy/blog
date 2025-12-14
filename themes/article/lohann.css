@@ -2,7 +2,7 @@
 
 body{
     background-image:url(../../articles/lohann/images/eau-dans-differents-environnements_23-2151919155.webp);
-    background-size:auto 100%;
+    background-size:contain;
     font-family: "KG Primary", Geneva, Tahoma, sans-serif;
     font-size: medium;
 }
@@ -13,9 +13,18 @@ body{
 }
 
 #themes{
- display:inline;
+ display:flex;
  gap: 10px;
- background-color: aqua;
+ flex-wrap: wrap;
+}
+
+#themes div {
+    flex-shrink: 0;
+    list-style-type: none; /* Enlève les puces de base */
+    background: url('path_to_your_fish_image.png') no-repeat left center; /* Remplace 'path_to_your_fish_image.png' par ton URL de l'image du poisson */
+    padding-left: 30px; /* Ajuste l'espace pour l'image du poisson */
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 #content {
@@ -27,6 +36,7 @@ body{
 #legend{
     background-color: aqua;
     scrollbar-width: none;
+    overflow: hidden;
 }
 
 #themes div{
