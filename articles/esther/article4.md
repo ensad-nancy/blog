@@ -15,14 +15,14 @@ Une seule fraise ou deux ? <BR>
 Ils sont comme ces petites dérives dans un propos.<BR>
 Des aristocrates en quête d’exploration<BR>
 Ils sont discrets mais plutôt inévitables. <BR>
-"Vous prendriez bien du lait avec votre thé ?" <BR>
+    "Vous prendriez bien du lait avec votre thé ?" <BR>
 Vous voyez, inévitable.<BR>
 Ils dansent au-dessus, dans l’espace vide de l’interligne.<BR>
 Parce qu’ils sont à part un peu prétentieux et modeste à la fois<BR>
 Comme si être un peu au-dessus, c’était laisser la place à l’autre<BR>
 Tout en lui montrant qu’il valait mieux être là-haut<BR>
 Un piédestal maladroit <BR>
-" C’est cru comme propos."<BR>
+    "C’est cru comme propos."<BR>
 Oui, mais vous adorez ça. <BR>
 Plus hauts, ils ne se gêneraient pas.<BR>
 Ils sont comme des éléments délicats,<BR>

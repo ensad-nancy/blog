@@ -19,9 +19,13 @@
 body {
     background-color: #0073ff;
     font-family: 'Galter';
-    padding: 20px;
+    /* padding: 20px;
     color: #000;
-    position: relative;
+    position: relative; */
+}
+
+body > p{
+    z-index: 10;
 }
 
 body::before {
@@ -39,48 +43,102 @@ body::before {
 }
 
 
+/*----THEMES----*/
 #themes {
-     font-family: "Galter";
+    font-family: "Galter";
     font-size: 13pt;
     display: flex;
-    background-color: rgb(247, 247, 247);
+    flex-wrap: nowrap;         
     gap: 20px;
-    width: 100%;
-    overflow-x: auto;
-    /* border-style: none; */
-    align-items: baseline;
-    padding: 1em;
-    margin: 0em 0em 0em 0em;
+     width: 100%;
+    overflow-x: auto;           
+    overflow-y: hidden;
+    background-color: rgb(143 184 255);
+    align-items: center;
+    /* padding: 1em; */
+    margin: 0;
     box-sizing: border-box;
-    position: sticky;
-    /* top: 1em; */
-    top: 0;
-    border-top-color: #f7f7f7;    
-    border-bottom-color: #f7f7f7;
-    border-top-width: 1em;
-    border-bottom-width: 1em;
-    border-style: solid;
-    border-left: none;
+    z-index: 12;
+    height: 150px;
+}
+
+
+
+
+/* #themes::-webkit-scrollbar {
+    height: 8px;
+}
+#themes::-webkit-scrollbar-track {
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+#themes::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+} */
+
+
+#themes div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 90px;
+    flex-shrink: 0;                
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;           
+    cursor: pointer;
 }
 
 #themes legend {
-    font-size: 10pt;
-    color: red;
-    width: 20%;
-
+    color: white;
+    background-color: rgb(143 184 255);
+    padding: 4em 2em 4em 2em;
+    flex-shrink: 0;
+    display: flex;
+    left: 0;
+    position: sticky;
+    z-index: 2;
 }
 
- #themes div /*label*/{ 
+  /* #themes div label{ 
     position: relative;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    overflow: hidden;
- }
+    overflow: hidden; 
+} */
+
+ 
+ 
+ #themes label{
+    display: block;
+    width: 100%;
+    background-image: url(/articles/léon/images/cire.png);
+    padding: 4em;
+    background-size: 150%;
+    background-position: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
  
 #title {
     position: relative;
@@ -106,11 +164,11 @@ body::before {
 
 #title + p {
     position: absolute;
-    top: 25%;
+    height: 175px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
-    z-index: 999;
+    
 }
 
 #title::before {
@@ -130,38 +188,26 @@ body::before {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 1em;
-    border-radius: 20px;
+    /* padding: 1em; */
+    /* border-radius: 20px; */
     margin-bottom: 30px;
     overflow-x: auto;
-    background-color: #cccccc;
+    background-color: rgb(143 184 255);
+    /* margin: 1em 0em 0em 0em;*/
 }
 
 #filtres h2 {
-color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-#filtres #auteurices p{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 90px;
+    font-size: 1.2rem;
+    color: rgba(0, 30, 255, 0.514);
+    background-color: rgb(143 184 255);
+    /* border-radius: 40px; */
+    padding: 2em 2em 2em 2em;
     flex-shrink: 0;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    color: white;
+    /* margin: 1em 0em 0em 0em;*/
 }
 
-
-#filtres #date p{
-    margin: 0;
-    margin-block-start: 0;
-    margin-inline-start: 0;
-    color: rgb(0, 0, 0);
-}
-
+#filtres select,
 #filtres input[type="range"] {
     margin-top: 5px;
 }
@@ -183,45 +229,44 @@ main a {
 }
 
 main a div {
-    background: rgb(60, 110, 189);
-    padding: 20px;
-    border-radius: 30px;
-    min-height: 180px;
+    
+    position: relative;
+    height: 240px;
+    background-image: url(/articles/léon/images/ferme.png);
+    background-size: 167%;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid #c96c6c20;
-    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+main a div > * {
+    padding: 20px;
 }
 
 main a div:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px #00000030;
+    transform: translateY(-6px) rotate(-0.5deg);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
 }
+
 
 
 h3 {
     font-family: 'Galter';
-    margin-bottom: 10px;
+    /* margin-bottom: 0px; */
     font-size: 1.1rem;
+    margin: 3em 0em 0em 0em;
+    text-align: center;
 }
 
 
-footer p {
+footer {
     font-size: 0.8rem;
-    margin: 3px 0;
+    text-align: center;
+    margin: 0em 0em 0em 0em;
+    top: 0;
+    position: relative;
+    line-height: 2em;
 }
-
-.tag {
-    display: inline-block;
-    background: #a29090;
-    color: rgb(142, 221, 253);
-    padding: 2px 6px;
-    border-radius: 10px;
-    font-size: 0.7rem;
-    margin-right: 4px;
-}
-
 
 .thumb {
     display: none;

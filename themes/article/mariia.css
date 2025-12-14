@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: 'ATAV';
+  src: url(../../articles/mariia/images/Atavyros.otf);
+}
+
+@font-face {
   font-family: 'RGAO';
   src: url(../../articles/mariia/images/RomauntGaolines.ttf);
 }
@@ -54,12 +59,8 @@ article img[alt="pop"] {
     opacity: 50%;
 }
 
-article h1, article h2 {
-    font-family: "Inter", sans-serif;
-    letter-spacing: 1px;
-    color: #000000;           /* жовтий (м’який) */
-    text-shadow: 0 0 6px rgba(0, 60, 255, 0.4); /* синє світіння */
-    margin-top: 40px;
+ article h2 {
+ display: none;
 }
 
 .tags {
@@ -114,7 +115,7 @@ article img[alt="street"] {
     top: 0;
     left: 0;
     width: 35vw;
-    height: 110vh;
+    height: 120vh;
     object-fit: cover;
     z-index: -1;
     opacity: 80%;
@@ -132,6 +133,17 @@ article img[alt="play"] {
     opacity: 40%;
 }
 
+article img[alt="Les"] {
+  filter: grayscale(100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 60%;
+}
 
 /* Контейнер фонового блоку через псевдоелемент на body */
 body::before {
@@ -360,6 +372,34 @@ article img[alt="kitty"] {
     z-index: 1;
     opacity: 80%;
 }
+
+article img[alt="teatr"] {
+   filter: grayscale(100%);
+    position: absolute;
+    top: 100px;            /* distance from the top – adjust */
+    left: 600px;            /* distance from left edge */
+    width: 300px;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 60%;
+    rotate: -10deg;
+}
+
+.citata {
+    position: absolute;
+    top: 66.5vh;            /* distance from the top – adjust */
+    left: 3vw;            /* distance from left edge */
+    width: 14vw;          /* how wide the quote block is */
+    font-family: 'ATAV';   /* match your text */
+    font-size:18px;
+    line-height: 1.4;
+    color: #0259db;
+    padding: 15px 20px;
+   
+    background: rgba(218, 218, 218, 0.505); 
+    backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
+}
+
 
 
 

@@ -8,7 +8,7 @@ date: 2025-20-11
 
 
 # Les chevilles qui craquent
-Les chevilles qui craquent
+Les chevilles qui craquent<BR>
 
 Parler de lui est passionnant. Alors je cherche toutes ces soirées qui ont été définies par lui. En voici une liste. <BR>
 
@@ -27,6 +27,13 @@ La soirée du dernier jour de la semaine qu’on aime tant <BR>
 Les soirées batteries<BR>
 Les soirées où il n’aime pas sa soirée<BR>
 Celles où il fait briller la maison<BR>
+La soirée où il l'a fait rire<BR>
+Celles où il ne s'excuse pas d'être lui<BR>
+La soiée où il m'a tout raconté<BR>
+Les soirées où on se souvient de ce qui est parti<BR>
+Celles du toit au vent <BR>
+Celles des hivers chauds<BR>
 Celles des chaussures qui vivent trop longtemps <BR>
+Celles où le temps nous ment <BR>
 Celles des céréales sans lait<BR>
 Et toutes les autres. <BR>
