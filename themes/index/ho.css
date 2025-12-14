@@ -61,7 +61,14 @@ body > p{
     margin-left: 297px;
     margin-top: 19px;
     text-transform: uppercase;
-    /* background: radial-gradient(#bcd6b9, #dbd5d1); */
+    background: radial-gradient(#bcd6b9 35%, #dbd5d1 65%);
+}
+
+#themes input[type="radio"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
 legend{
@@ -78,7 +85,7 @@ legend{
     color: #4f5647;
     text-transform: uppercase;
     line-height: 2.2;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -86,11 +93,33 @@ legend{
     background: radial-gradient(#bcd6b9, #dbd5d1);
 } */
 
-input[type="radio"][name="theme"] + label {
-    position: relative; 
+/* #themes div {
+    background: #dbd5d1; 
 }
 
-input[type="radio"][name="theme"] + label::before {
+#themes div:nth-child(1):hover {
+    background: radial-gradient(#FFD700, #dbd5d1); 
+    background-clip: border-box;
+}
+#themes div:nth-child(2):hover {
+    background: radial-gradient(#ADD8E6, #dbd5d1); 
+    background-clip: border-box;
+}
+#themes div:nth-child(3):hover {
+    background: radial-gradient(#90EE90, #dbd5d1);
+    background-clip: border-box; 
+}
+#themes div:nth-child(4):hover {
+    background: radial-gradient(#f4a76e, #dbd5d1); 
+    background-clip: border-box;
+} */
+
+
+/* input[type="radio"][name="theme"] + label {
+    position: relative; 
+} */
+
+/* input[type="radio"][name="theme"] + label::before {
     content: '{{'; 
     opacity: 0; 
     transition: opacity 0.3s; 
@@ -102,12 +131,12 @@ input[type="radio"][name="theme"] + label:hover::after {
   opacity: 0; 
   transition: opacity 0.3s; 
   margin-right: 0; 
-}
-
+} */
+/* 
 input[type="radio"][name="theme"] + label:hover::before,
 input[type="radio"][name="theme"] + label:hover::after{
     opacity: 1; 
-}
+} */
 
 div#filtres{
     border: 1px solid #4f5647;
@@ -115,18 +144,47 @@ div#filtres{
     height: 234px;
     margin-top: 230px;
     margin-left: 130px;
-    margin-right: 90px;
+    margin-right: 130px;
     text-transform: uppercase;
+    position: relative;
+    background-color: #dbd5d1;
+    
     /* margin-top: 500px;
     width: 200px;
     align-self: flex-start; */
 }
+div#filtres::after {
+    content: '';
+    position: absolute;
+    height: 65px; 
+    width: 65px; 
+    border: solid #4f5647;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+    bottom: 57px; 
+    right: -113px; 
+    z-index: 5;
+}
+
+div#filtres::before {
+    content: '';        
+    position: absolute; 
+    top: auto;
+    bottom: 90px;;         
+    height: 1px;        
+    background-color: #4f5647; 
+    left: -132px;
+    right: -125px;      
+    z-index: -20;         
+}
+
 
 main{
     display: flex;
     align-items: flex-start;
     gap: 114px;
     margin-top: 250px;
+    margin-left: 103px;
 }
 
 main a{
