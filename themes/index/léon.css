@@ -1,3 +1,283 @@
-body{
-    background-color: #ffee8e;
+
+@font-face {
+    font-family: 'Format_1452';
+    src: url('/article/léon/images/Format_1452.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Galter';
+    src: url('/article/léon/images/Galter.otf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0073ff;
+    font-family: 'Galter';
+    /* padding: 20px;
+    color: #000;
+    position: relative; */
+}
+
+body > p{
+    z-index: 10;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/hmm.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+/*----THEMES----*/
+#themes {
+    font-family: "Galter";
+    font-size: 13pt;
+    display: flex;
+    flex-wrap: nowrap;         
+    gap: 20px;
+     width: 100%;
+    overflow-x: auto;           
+    overflow-y: hidden;
+    background-color: rgb(143 184 255);
+    align-items: center;
+    /* padding: 1em; */
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 12;
+    height: 150px;
+}
+
+
+
+
+/* #themes::-webkit-scrollbar {
+    height: 8px;
+}
+#themes::-webkit-scrollbar-track {
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+#themes::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+} */
+
+
+#themes div {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 90px;
+    flex-shrink: 0;                
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;           
+    cursor: pointer;
+}
+
+#themes legend {
+    color: white;
+    background-color: rgb(143 184 255);
+    padding: 4em 2em 4em 2em;
+    flex-shrink: 0;
+    display: flex;
+    left: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+  /* #themes div label{ 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 90px;
+    flex-shrink: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden; 
+} */
+
+ 
+ 
+ #themes label{
+    display: block;
+    width: 100%;
+    background-image: url(/articles/léon/images/cire.png);
+    padding: 4em;
+    background-size: 150%;
+    background-position: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+ 
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.7);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+
+
+#title {
+    position: relative;
+    height: 300px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+
+#title h1 {
+    font-family: 'Format_1452';
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 11;
+}
+
+#title + p {
+    position: absolute;
+    height: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    
+}
+
+#title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/articles/léon/images/bordoro.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+#filtres {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding: 1em; */
+    /* border-radius: 20px; */
+    margin-bottom: 30px;
+    overflow-x: auto;
+    background-color: rgb(143 184 255);
+    /* margin: 1em 0em 0em 0em;*/
+}
+
+#filtres h2 {
+    font-size: 1.2rem;
+    color: rgba(0, 30, 255, 0.514);
+    background-color: rgb(143 184 255);
+    /* border-radius: 40px; */
+    padding: 2em 2em 2em 2em;
+    flex-shrink: 0;
+    color: white;
+    /* margin: 1em 0em 0em 0em;*/
+}
+
+#filtres select,
+#filtres input[type="range"] {
+    margin-top: 5px;
+}
+
+
+
+
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main a div {
+    
+    position: relative;
+    height: 240px;
+    background-image: url(/articles/léon/images/ferme.png);
+    background-size: 167%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main a div > * {
+    padding: 20px;
+}
+
+main a div:hover {
+    transform: translateY(-6px) rotate(-0.5deg);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+
+
+h3 {
+    font-family: 'Galter';
+    /* margin-bottom: 0px; */
+    font-size: 1.1rem;
+    margin: 3em 0em 0em 0em;
+    text-align: center;
+}
+
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0em 0em 0em 0em;
+    top: 0;
+    position: relative;
+    line-height: 2em;
+}
+
+.thumb {
+    display: none;
 }

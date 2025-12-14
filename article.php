@@ -57,7 +57,7 @@ $mdContent = preg_replace(
 
 <a href="index.php">← Retour</a>
 
-<fieldset id="themes">
+<div id="themes">
   <legend>Changer le thème :</legend>
   <?php foreach ($students as $student): ?>
             <div>
@@ -65,7 +65,7 @@ $mdContent = preg_replace(
                 <label><?= ucfirst(htmlspecialchars($student)) ?></label>
             </div>
     <?php endforeach; ?>
-</fieldset>
+  </div>
 
 <header>
     <p class="title"><?= htmlspecialchars($title) ?></p>

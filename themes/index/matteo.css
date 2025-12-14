@@ -1,7 +1,3 @@
-html, body {
-    /* overflow-x: hidden; */
-}
-
 /*-----FONTS-----*/
 
 @font-face {
@@ -21,37 +17,43 @@ html, body {
 /*-----BODY-----*/
 
 body{
-    background: #f7f7f7;  
-    margin-top: 0;  
-    margin: 0; 
+    background: #f7f7f7;
+    margin-top: 0;
+    margin: 0;
 }
 
-
+#title{
+    overflow-x: hidden;
+    height: 12em;
+    background-color: rgb(243, 255, 131);
+    margin: 1em 0em 0em 0em;
+}
 
 h1{
     font-family: "bianzhidai-Stitches";
     font-size: 90pt;
     font-weight: normal;
-    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
     width: 100%;
-    white-space: nowrap; 
+    white-space: nowrap;
     display: block;
     animation: scroll-left 20s linear infinite;
-    /* background: #485cb8; */
+    margin: 0; 
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-350%); 
+    transform: translateX(-350%);
   }
 }
 
+
 body > p{
     font-family: "Baskervville-Regular";
-    font-size: 16pt;
+    font-size: 13pt;
     font-weight:lighter;
     width: 20em;
     background-color: white;
@@ -64,28 +66,39 @@ body > p{
 /*-----THEMES-----*/
 #themes{
     font-family: "Baskervville-Regular";
-    font-size: 18pt;
+    font-size: 13pt;
     display: flex;
-    background-color: rgb(0, 0, 136);
+    background-color: rgb(0, 0, 0);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
-    border-style: none;
-    margin-left: 0;
-    margin-bottom: 1em;
-    padding: 1em;
+    /* border-style: none; */
     align-items: baseline;
-
+    padding: 1em;
+    margin: 0em 0em 0em 0em;
+    box-sizing: border-box;
+    position: sticky;
+    /* top: 1em; */
+    top: 0;
+    border-top-color: #f7f7f7;    
+    border-bottom-color: #f7f7f7;
+    border-top-width: 1em;
+    border-bottom-width: 1em;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
 }
 
-#themes div{
-    background-color: rgb(89, 89, 178);
+ #themes div /*label*/{ 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
+    overflow: hidden;
 }
 
 #themes label{
@@ -96,17 +109,25 @@ body > p{
     padding-top: 10px;
 }
 
-#themes input{
-    color: rgb(0, 255, 0);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 #themes legend{
     color: white;
-    background-color: rgb(89, 89, 178);
+    background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 90px;
     flex-shrink: 0;
     padding-left: 20px;
@@ -115,7 +136,8 @@ body > p{
     padding-top: 10px;
     display: flex;
     left: 0;
-    position: absolute;   
+    position: sticky;
+    z-index: 2;
 }
 
 
@@ -123,13 +145,19 @@ body > p{
 
 #filtres{
     font-family: "Baskervville-Regular";
+    font-size: 13pt;
     display: flex;
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 0);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
-    padding: 1em;
+    padding: 0em 0em 0em 1em;
     align-items: baseline;
+    box-sizing: border-box;
+    position: sticky;
+    /* top: 6.5em; */
+    top: 6.4em;
+    z-index: 5;
 }
 
 #filtres #date p{
@@ -137,16 +165,49 @@ body > p{
     margin-block-start: 0;
     margin-inline-start: 0;
     color: white;
-    background-color: rgb(99, 213, 65);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 90px;
     flex-shrink: 0;
     align-items: center;
-    font-size: 18pt;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+#filtres #auteurices p{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#filtres h2{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: 13pt;
+    border-radius: 90px;
+    flex-shrink: 0;
+    align-items: center;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+
+/*-----INPUT RANGE-----*/
 
 input[type="range"] {
     appearance: none;
@@ -168,44 +229,37 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 10px;
 }
 
-input label{
+#date label{
     appearance: none;
     color: white;
+    display: flex;
+    margin: 2px 20px 0px 350px;
 }
 
-#filtres #auteurices p{
-    color: white;
-    background-color: rgb(99, 213, 65);
-    border-radius: 90px;
-    flex-shrink: 0;
-    align-items: center;
-    font-size: 18pt;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
+select{
+    position: absolute;
+    appearance: none;
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    border: transparent;
+    font-family: Baskerville;
+    font-size: 12pt;
 }
 
-#filtres h2{
-    color: white;
-    background-color: rgb(99, 213, 65);
-    border-radius: 90px;
-    flex-shrink: 0;
-    align-items: center;
-    font-size: 18pt;
-    font-weight: normal;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-
+/*-----MAIN-----*/
 
 main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 4em 0em 0em 0em;
+
 }
 
 main a{
