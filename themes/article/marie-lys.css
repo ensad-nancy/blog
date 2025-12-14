@@ -1,36 +1,224 @@
-@font-face {
-    font-family: 'NICE';
-    src: url('../../articles/marie-lys/images/Fluox___.ttf');
-}
-
-html, body {
-    min-height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffffff 0%, #8eadd1 50%, #ff00e1 100%);
-    background-attachment: fixed; 
-    color: white;
-    font-family: 'NICE';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.title, h1, h2, h3, h4, h5, h6 {
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    display: grid; 
+    margin: 0; 
+}
 
+body::after {
+    content: none; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body > p {
+    display: none;
+}
+
+
+
+a[href="index.php"] {
+    display: block; 
+    position: fixed; 
+    top: 20px; 
+    left: 20px;
+    z-index: 200; 
+    
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px; 
+    
+    background-color: #ff30ff; 
+    color: white; 
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+
+
+#themes {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 220px; 
+    
+    height: 100vh;
+    background: white;
+    border-right: 4px solid black; 
+    overflow-y: auto; 
+    z-index: 90; 
+}
+
+#themes legend {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 15px; 
+    padding-top: 70px; 
+    border-bottom: 4px solid black;
+}
+
+#themes div { 
+    border-bottom: 4px solid black;
+    position: static; 
+}
+
+#themes label { 
+    display: block; 
+    padding: 12px 15px; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    
+    position: relative; 
+    z-index: 100; 
+}
+
+#themes label:hover { 
+    background-color: #ff30ff; 
     color: white;
+}
+
+#themes input[type="radio"] { 
+    display: none;
+}
+
+#themes input[type="radio"]:checked + label { 
+    background-color: black; 
+    color: white; 
+    font-weight: bold;
+}
+
+header, article {
+    margin-left: 220px; 
+    width: calc(100% - 220px); 
+    display: block; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px;
+    margin-bottom: 0; 
+}
+
+header > *, article > * {
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .title {
-    font-size: 55px;
-    font-family: 'NICE';
+    order: 1; 
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 10px; 
 }
 
-h2, h3, h4, h5, h6 {
-    font-size: 28px;
+.date {
+    order: 2; 
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0;
+    padding-bottom: 5px; 
+    text-align: left;
 }
 
-p, span, div {
-    font-family: Georgia, 'Times New Roman', serif; 
-    font-size: 18px; 
-    color: white;
+.tags {
+    order: 3; 
+    margin-bottom: 0;
+    padding-bottom: 15px; 
+    text-align: left;
+}
+
+header::after {
+    order: 4; 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 0; 
+}
+
+
+article {
+    margin-top: 40px; 
+    padding-top: 0; 
+    padding-bottom: 100px; 
+}
+
+article p:first-of-type {
+    padding-top: 5px; 
+}
+
+
+article p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 4px solid black; 
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
+    #themes { 
+        display: none; 
+        position: static; 
+        width: auto;
+    }
+    article, header {
+        margin-left: 0;
+        width: 100%;
+        grid-column: 1;
+    }
+    
+    a[href="index.php"] {
+        position: static;
+        margin: 20px;
+        padding: 5px 10px;
+        background-color: transparent;
+        color: black;
+        border: none;
+        border-radius: 0;
+    }
+    article, header {
+        padding: 0 20px;
+        align-items: flex-start; 
+    }
+    .title {
+        font-size: 3rem; 
+    }
 }
