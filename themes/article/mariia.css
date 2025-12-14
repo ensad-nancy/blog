@@ -59,12 +59,8 @@ article img[alt="pop"] {
     opacity: 50%;
 }
 
-article h1, article h2 {
-    font-family: "Inter", sans-serif;
-    letter-spacing: 1px;
-    color: #000000;           /* жовтий (м’який) */
-    text-shadow: 0 0 6px rgba(0, 60, 255, 0.4); /* синє світіння */
-    margin-top: 40px;
+ article h2 {
+ display: none;
 }
 
 .tags {
