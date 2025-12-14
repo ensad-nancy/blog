@@ -140,6 +140,16 @@ input[type="radio"]{
     cursor: pointer;
 }
  
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.7);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+
+
 #title {
     position: relative;
     height: 300px;

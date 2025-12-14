@@ -7,7 +7,7 @@
     src: url('/article/léon/images/Galter.otf') format('truetype');
 }
 
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,11 +20,10 @@ body {
     padding: 20px;
     color: #000;
     position: relative;
-    overflow-y: auto;       /* 📌 AJOUT → scroll vertical */
-    min-height: 100vh;      /* garantis une hauteur minimale */
+    overflow-y: auto;      
 }
 
-/* Le texte au-dessus du thème */
+
 body > p {
     position: relative;
     z-index: 20;
