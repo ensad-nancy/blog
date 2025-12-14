@@ -25,7 +25,7 @@ body{
     margin-top: -2.5%;
     margin-left: -1%;
     z-index: 1;
-    background-color: #ff2e2e89;
+    background-color: #000000;
     border-radius: 40px;
     border-style: dotted;
     border-width: 4px;
@@ -40,7 +40,7 @@ body{
 
 #themes div{
     color: #000000;
-    background-color: rgb(237, 250, 152);
+    background-color: rgb(162, 187, 2);
     width: 68%;
     height: 44%;
     border-color: #ffffff;
@@ -56,6 +56,7 @@ body{
 #themes legend{
     color: rgb(237, 250, 152);
     font-family: 'Ptolemy Great Primer';
+    background-color: #000000;
     font-size: 200%;
     display: flex;
     margin-left: 11%;
@@ -86,10 +87,51 @@ input[type="radio"]:checked {
 
 
 p.title{
-    font-size: 632%;
+    color: aliceblue;
+    font-size: 500%;
     margin-top: 1%;
     font-family: 'MenilEtroit'; 
     letter-spacing: 35px;
     text-align: center;
-    text-decoration: underline;
+    background-color: #000000;
+}
+
+p.date{
+    font-size: 150%;
+    font-family: 'Ptolemy Great Primer';
+    text-align: center;
+    border: 2px solid #333;
+    width: 10%;
+    margin-top: -11%;
+    margin-left: 2%;
+    background-color: rgb(237, 250, 152);
+    
+
+}
+
+.thumb{
+    display: none;
+}
+
+h1{
+    display: none;
+}
+
+p{
+    font-family: 'Ptolemy Great Primer';
+    font-size: 120%;
+    margin-top: 3%;
+   
+}
+
+article{
+  color: aliceblue;
+    background-color: #000000;
+    border-radius: 40px;
+    margin-top: 5%;
+        padding: 3em;
+}
+
+.tags{
+    border-radius: 40px;
 }
