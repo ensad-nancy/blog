@@ -2,7 +2,7 @@
 title: A Person Who Inspires Me
 date: 2025-12-03
 tags: personal
-preview: #images/
+preview:
 ---
 
 # A Person Who Inspires Me

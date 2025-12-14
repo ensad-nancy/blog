@@ -6,6 +6,13 @@ h1, h2, h3, h4, h5, h6, legend{
     color: #60e500;
 }
 
+legend {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
 
 h1 {
     font-family: sans-serif;

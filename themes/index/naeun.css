@@ -22,9 +22,9 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    bottom: 80px;
+    bottom: 70px;
     padding: 30px 15px;
-    border-right: 2px solid #bcbcbc;
+    border-right: 1.5px solid #bcbcbc;
     background: #f7f7f5;
     overflow-y: auto;
     z-index: 100;
@@ -88,40 +88,171 @@ body {
 }
 
 /* -----------------------------------
-   필터(Filtres) — 오른쪽 상단 고정 + 가로 정렬
+   FILTRES — stable & smaller (FINAL)
 ----------------------------------- */
 
 #filtres {
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 110px;
+    right: 40px;
 
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 12px;
 
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    z-index: 200;
+    z-index: 150;
 }
 
-#filtres h2 {
-    font-size: 14px;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* 공통 pill */
+#filtres div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    height: 30px;                 /* ↓ 작게 */
+    padding: 0 12px;
+
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px #ddd inset;
 }
 
-#filtres div p {
-    margin: 0;
-    font-size: 12px;
-    opacity: 0.7;
+/* -----------------------------------
+   AUTEUR — select (완전 고정)
+----------------------------------- */
+
+#filtres select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+
+    width: 150px;                 /* ← min 아님, 고정 */
+    height: 100%;
+
+    background: transparent;
+    border: none;
+
+    font-family: "Basteleur", serif;
+    font-size: 13px;
+    line-height: 1;
+
+    padding: 0 20px 0 0;
+    text-align: center;
+    white-space: nowrap;
+
+    cursor: pointer;
 }
 
-#filtres select,
+/* auteur arrow */
+#filtres div:has(select)::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-30%);
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #aaa;
+
+    pointer-events: none;
+}
+
+/* underline (pseudo-element, no reflow) */
+#filtres select::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* -----------------------------------
+   DATE — slider + text (완전 고정)
+----------------------------------- */
+
+/* date text */
+#filtres span,
+#filtres .date-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;                 /* ← 완전 고정 */
+    height: 100%;
+
+    font-family: "Basteleur", serif;
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+
+    position: relative;
+}
+
+/* date underline */
+#filtres span::after,
+#filtres .date-pill::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* slider */
 #filtres input[type="range"] {
-    margin-top: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 80px;
+    height: 12px;
+    margin: 0;
+
+    background: transparent;
 }
+
+/* track */
+#filtres input[type="range"]::-webkit-slider-runnable-track {
+    height: 1.5px;
+    background: #000;
+}
+#filtres input[type="range"]::-moz-range-track {
+    height: 1.5px;
+    background: #000;
+}
+
+/* thumb */
+#filtres input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    margin-top: -3px;
+
+    background: #000;
+    border-radius: 50%;
+}
+#filtres input[type="range"]::-moz-range-thumb {
+    width: 7px;
+    height: 7px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* 설명 제거 */
+#filtres div p {
+    display: none;
+}
+
 
 /* -----------------------------------
    메인(article 목록) — 3열 Grid
@@ -201,7 +332,7 @@ body > p:first-of-type {
     margin: 0;
 
     background: #f7f7f5;
-    border-top: 2px solid #bcbcbc;
+    border-top: 1.5px solid #bcbcbc;
 
     font-size: 12px;
     line-height: 1.5;
