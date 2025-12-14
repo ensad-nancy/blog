@@ -1,24 +1,32 @@
-/* ===============================
-   RESET
-================================ */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* ===============================
-   BASE
-================================ */
 body {
     font-family: Arial, sans-serif;
+    background-color: white;
     color: black;
-    background: white;
+    min-height: 100vh;
+    display: grid; 
+    margin: 0; 
+    position: relative; 
 }
 
-/* ===============================
-   TITRE
-================================ */
+
+body::after {
+    content: none; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body > p {
+    display: block; 
+}
+
 h1 {
     font-size: 60px;
     width: 900px;
@@ -27,23 +35,24 @@ h1 {
     position: relative;
 }
 
-/* Trait fixe sous le titre */
+
 h1::after {
     content: "";
     display: block;
-    position: relative;
-    top: 10px;          /* sous le titre, ajuste si nécessaire */
-    left:-270px;
-    width: 100vw;
+    position: absolute; 
+    
+    
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100vw; 
+    
+    top: 90px; 
     height: 4px;
     background-color: black;
     pointer-events: none; 
     z-index: 200;        
 }
 
-/* ===============================
-   TEXTE DÉFILANT CONTINU
-================================ */
 body > p {
     position: relative;          
     overflow: hidden;            
@@ -56,13 +65,13 @@ body > p {
 }
 
 body > p::before {
-    content: "Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • ";
+    content: "Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • Ce blog rassemble les écrits des étudiant.es de 3e année du département communication de l'ensad Nancy. Il est développé et alimenté dans le cadre d'un cours mené conjointement par Chloé Delchini et Quentin Astié. En cours de construction ... • ";
     position: absolute;
-    left: 100%;                
+    left: 0; 
     white-space: nowrap;
     display: inline-block;
     animation: scroll-text 22s linear infinite;
-    color: rgb(255, 0, 183);              
+    color: #ff30ff;              
 }
 
 body > p::after {
@@ -80,23 +89,20 @@ body > p::after {
 
 @keyframes scroll-text {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); } 
 }
 
-/* =================================================
-   COLONNE GAUCHE — THEMES
-================================================= */
 #themes {
-    position: fixed;
-    top: 0;
+    position: absolute; 
+    top: 0;             
     left: 0;
     width: 180px;
-    height: 100vh;
+    height: auto; 
+    min-height: 100%;       
     background: rgb(255, 255, 255);
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 10;
-    padding-top: 140px; 
 }
 
 #themes::before {
@@ -105,35 +111,53 @@ body > p::after {
     top: 0;
     left: 100%;       
     width: 4px;
-    height: 100vh;
+    height: 100%;
     background: rgb(0, 0, 0);
+    display: none; 
+}
+#themes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;        
+    height: 600%; 
+    background: black; 
+    pointer-events: none;
+    z-index: 100;
 }
 
 #themes legend {
+    position: static;
     font-size: 15px;
     font-weight: bold;
-    padding: 15px;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-top: 20px; 
 }
 
-#themes input[type="radio"] {
-    display: none;
-}
 
 #themes div {
-    display: block;
-}
-
-#themes label {
-    display: block;
-    width: 100%;
-    padding: 10px 8px;
-    font-size: 1rem;
-    border-bottom: 2px solid black;
-    background: white;
-    color: black;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
+    background: #ffffff;
+    margin: 10px 0;              
+    padding: 12px 16px;
+    border-radius: 12px;          
+    position: relative;
+    z-index: -100;
+    }
+    
+    #themes label {
+        display: block;
+        border: none;                 
+        background: transparent;      
+        padding: 0;                   
+        margin: 0;
+        font-size: 1rem;
+        color: black;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
 
 #themes label:hover {
     background: #ff30ff;
@@ -141,35 +165,84 @@ body > p::after {
 }
 
 #themes input[type="radio"]:checked + label {
-    background: #ff30ff;
-    color: white;
+    color: #ff30ff;
     font-weight: bold;
 }
-
-#themes::-webkit-scrollbar {
-    width: 6px;
+#themes input[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ff30ff22;
+    border-radius: 12px;
+    z-index: -1;
 }
 
-#themes::-webkit-scrollbar-thumb {
-    background: black;
-}
-
-/* =================================================
-   COLONNE DROITE — FILTRES
-================================================= */
-#filtres {
-    position: fixed;
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#themes div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 4px;                   
+    width: 100%;
+    background: black;            
+}
+
+#themes div:hover {
+    background: #ff30ff;      
+    box-shadow: 0 5 2px #ff30ff;
+    transition: 0.2s ease;
+    border-radius: 0px;
+}
+
+#themes div {
+    position: relative;
+    overflow: visible;
+}
+#themes div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;                 
+    bottom: 0;
+    background: transparent;
+    transition: 0.2s ease;
+    z-index: -1;
+}
+#themes div:hover::before {
+    background: #ff30ff;
+    top: 4px;               
+    bottom: -4px;           
+    border-radius: 0px;
+    box-shadow: 0 5px 2px #ff30ff;
+}
+
+#filtres {
+    position: fixed; 
+    top: 0;         
     right: 0;
     width: 220px;
-    height: 100vh;
+    height: 100vh;  
     background: white;
     padding: 15px;
-    padding-top: 160px;
+    padding-top: 160px; 
     z-index: 10;  
 }
 
-/* Décalage du contenu interne pour faire descendre “Date” et éléments */
 #filtres > * {
     margin-top: 10px;
 }
@@ -180,7 +253,7 @@ body > p::after {
     top: 0;
     left: 0;        
     width: 4px;
-    height: 100vh;
+    height: 100vh; 
     background: black;
 }
 
@@ -199,9 +272,6 @@ body > p::after {
     width: 100%;
 }
 
-/* =================================================
-   CENTRE — GRID ARTICLES
-================================================= */
 main {
     margin-left: 180px;
     margin-right: 220px;
@@ -209,9 +279,9 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: relative; 
+    min-height: 100vh; 
 }
 
-/* Trait fixe au-dessus de la grille */
 main::before {
     content: "";
     display: block;
@@ -225,7 +295,6 @@ main::before {
     z-index: 200;            
 }
 
-/* Articles */
 main a {
     text-decoration: none;
     color: inherit;
@@ -255,7 +324,6 @@ main footer {
     font-size: 0.85rem;
 }
 
-/* images */
 .thumb {
     width: 100%;
     margin-top: 20px;
@@ -263,7 +331,6 @@ main footer {
     display: block;
 }
 
-/* tags */
 .tag {
     background: black;
     color: white;
@@ -273,9 +340,6 @@ main footer {
     display: inline-block;
 }
 
-/* =================================================
-   HOVER ARTICLES
-================================================= */
 main a div footer,
 main a div img.thumb {
     opacity: 0;

@@ -1,6 +1,6 @@
 ---
 title: Un soir d’été, Chaud 
-date: 20-11-2025
+date: 2025-11-20
 tags: guerre
 
 ---
@@ -10,7 +10,7 @@ tags: guerre
 ![message2](images/message2.jpg)
 ![message3](images/message3.jpg)
 ** Un soir d’été, chaud. ** <br>
-Très loin, on entend le bruit des voitures.<br>
+Très loin on entend le bruit des voitures.<br>
  Dans la rue, les enfants du voisinage courent et jouent.<br>
   Il me semble qu’avec les restes de matériaux de construction ils ont fabriqué un skatepark.<br>
 Un coucher de soleil rose qu’on ne voit jamais complètement à cause des arbres et des hautes clôtures.<br>
@@ -28,6 +28,7 @@ Menace de drones d’attaque.<br>
 Et encore une dizaine de messages transférés par ma mère depuis différents groupes locaux.<br>
 La journée n’est pas encore terminée, mais l’obscurité tombe déjà.<br>
 Demain matin, il y aura de terribles nouvelles.<br>
+-- N. Phie
 
 <span class="note">
 *Shahed — drone kamikaze<br>
