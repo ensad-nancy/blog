@@ -1,7 +1,8 @@
 
 
 body{
-    background-color: aqua;
+    background-image:url(../../articles/lohann/images/eau-dans-differents-environnements_23-2151919155.webp);
+    background-size:auto 100%;
     font-family: "KG Primary", Geneva, Tahoma, sans-serif;
     font-size: medium;
 }
@@ -12,8 +13,7 @@ body{
 }
 
 #themes{
- display: flex;
- flex-direction: column; 
+ display:inline;
  gap: 10px;
  background-color: aqua;
 }
