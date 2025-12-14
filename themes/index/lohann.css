@@ -59,13 +59,14 @@ body > p {
     overflow: auto;
     text-align: center;
     color: yellow;
+    border-color: rgb(255, 35, 182);
+    overflow: hidden;
 }
 
 #filtres {
     position:fixed;
     display:block;
-
-    right: 0;
+    right: 10%;
     top: 15%;
     gap:20px;
     block-size: auto;
@@ -81,6 +82,7 @@ body > p {
     position: fixed;
     margin-right: 0;
     width: 26%;
+    left: 10%;
     top: 15%;
     height: 100%;
     overflow-y: auto;
@@ -100,7 +102,7 @@ main a {
     background-color: rgba(0, 0, 255);
     box-sizing:content-box;
     display: flex;
-    font-size: 20%;
+    /* font-size: 20%; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -110,8 +112,8 @@ main a {
 }
 
 footer {
-    font-size: 20%;
-    margin-top: 10%;
+   font-size: 50%;
+   padding: none;
 }
 
 main a h3 {
