@@ -21,8 +21,8 @@ body{
 #themes div {
     flex-shrink: 0;
     list-style-type: none; /* Enlève les puces de base */
-    background: url('path_to_your_fish_image.png') no-repeat left center; /* Remplace 'path_to_your_fish_image.png' par ton URL de l'image du poisson */
-    padding-left: 30px; /* Ajuste l'espace pour l'image du poisson */
+    background:url('../../articles/lohann/images/Goldfish-PNG-Transparent-Image.webp') no-repeat left center;
+    padding-left: 30px;
     margin-bottom: 10px;
     font-size: 1.1em;
 }
