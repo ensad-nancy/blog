@@ -1,19 +1,305 @@
-body {
-
+@font-face {
+    font-family: "DelaGothicOne";
+    src: url("/font/DelaGothicOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-#themes{
-    display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
+@font-face {
+    font-family: "DottedNewspaper";
+    src: url("/font/DottedNewspaper.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: "Chillax";
+    src: url("/font/Chillax_Complete/Fonts/TTF/Chillax-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+:root{
+    --pink-deep: #e86ea3;
+    --pink-soft: #f4cfe0;
+    --lavender: rgba(198,160,196,0.9);
+    --card-bg: rgba(215,184,210,0.85);
+    --header-h: 360px;
+    --muted: #5a3f4f;
+}
+
+/* page background with soft decorative shapes */
+html, body{
+    height:100%;
+}
+body{
+    margin:0;
+    font-family: "Chillax", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--muted);
+    background: linear-gradient(180deg,#fff 0%, #fffafc 40%);
+    position:relative;
+    overflow-x:hidden;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-auto-rows: auto;
+}
+
+/* decorative soft pink ribbons/circles using pseudo-element */
+body::before{
+    content:"";
+    position:fixed;
+    top:-10%;
+    left:-10%;
+    width:140%;
+    height:120%;
+    background-image:
+        radial-gradient(circle at 80% 10%, rgba(232,110,163,0.14) 0%, rgba(232,110,163,0.06) 20%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(232,110,163,0.12) 0%, rgba(232,110,163,0.04) 18%, transparent 38%),
+        radial-gradient(circle at 60% 50%, rgba(198,160,196,0.12) 0%, rgba(198,160,196,0.04) 18%, transparent 36%);
+    transform: rotate(-6deg);
+    filter: blur(10px);
+    z-index:0;
+    pointer-events:none;
+}
+
+/* header image (top banner) */
+/* top banner created purely with CSS (no image) */
+body::after{
+    content:"";
+    position:absolute; /* changed from fixed so it scrolls with the page */
+    top:0;
+    left:0;
+    width:100%;
+    height:360px;
+    background: linear-gradient(180deg, var(--pink-deep) 0%, #d97aa0 50%);
+    z-index:1;
+    pointer-events:none;
+}
+
+/* filters area: no longer a fixed left sidebar; placed in document flow below header */
+#filtres{
+    /* left pink banner placed in the first grid column and sticky so it follows scroll */
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(24px + 0px); /* will stick a little below top when scrolling */
+    align-self: start;
+    width:220px;
+    height: auto;
+    background: linear-gradient(180deg, var(--pink-deep), #d76a98);
+    color: #fff;
+    padding:28px 14px;
+    box-shadow: 8px 0 24px rgba(0,0,0,0.08);
+    z-index:3;
+}
+
+#filtres h2{ margin-top:0; color:#fff; font-weight:600 }
+
+/* layout for main content */
+main{
+    grid-column: 2 / 3;
+    margin-left:0;
+    padding:0 56px 48px 56px;
+    position:relative;
+    z-index:1;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap:28px;
+    align-items:start;
+}
+
+main a{ color:inherit; text-decoration:none }
+
+main a > div{
+    background: var(--card-bg);
+    border-radius:14px;
+    padding:26px;
+    min-height:220px;
+    box-shadow: 0 6px 18px rgba(106,68,85,0.12);
+    position:relative;
+    overflow:hidden;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+main a:hover > div{ transform: translateY(-6px); box-shadow: 0 16px 34px rgba(106,68,85,0.18) }
+
+
+h3{
+    /* main decorative title style (hand-drawn / dotted) */
+    font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
+    font-size:34px;
+    font-weight: lighter;
+    margin:0 0 18px 0;
+    color: #3b1f2b;
+    letter-spacing:1px;
+}
+
+/* big decorative header title */
 h1{
-    @font-face {
-        font-family:dotted_newspaper ;
-        src: url (dotted_newspaper.ttf) format(truetyoe);
-    }
-    
+    font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
+    font-size:84px;
+    font-weight:normal;
+    line-height:0.9;
+    margin:0;
+    color:#1f1420;
+    text-align: center;
+    text-shadow:
+        2px 2px 0 rgba(255,255,255,0.85),
+        4px 4px 0 rgba(232,110,163,0.15),
+        -1px -1px 0 rgba(0,0,0,0.12);
+    transform: translateY(22px);
+    z-index:3;
+    position:relative;
+}
+
+/* decorative star shapes behind the title (pure CSS) */
+/*h1::before, h1::after{
+    content:"";
+    position:absolute;
+    z-index:2; /* behind h1 but above banner */
+/*    width:520px;
+    height:520px;
+    top:-120px;
+    right: -160px;
+    transform: rotate(-12deg);
+    pointer-events:none;
+    filter: drop-shadow(6px 6px 8px rgba(0,0,0,0.08));
+} */
+
+h1::before{
+    right:-160px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border-radius:12px;
+    box-shadow: 0 0 0 12px rgba(232,110,163,0.06), 0 0 0 20px rgba(198,160,196,0.04) inset;
+}
+
+h1::after{
+    right:180px;
+    top:-40px;
+    width:360px;
+    height:360px;
+    transform: rotate(8deg);
+    background: transparent;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border: 12px solid rgba(255,255,255,0.7);
+    box-shadow: 0 0 0 6px rgba(232,110,163,0.08);
+    mix-blend-mode: multiply;
+}
+
+footer{ margin-top:12px; color: rgba(59,31,43,0.9); font-size:14px }
+footer p{ margin:6px 0 }
+
+.tag{ display:inline-block; background: rgba(255,255,255,0.18); padding:4px 8px; border-radius:8px; margin-right:6px; font-size:12px }
+
+/* preview thumbnail in card */
+.thumb{
+    position:absolute;
+    top: 140px;
+    right:14px;
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    mix-blend-mode: multiply;
+    opacity:0.95;
+}
+
+/* small UI niceties */
+input[type=range]{ width:100% }
+select#authors{ width:100%; padding:6px; border-radius:6px; border:none }
+
+/* ensure the page headings sit above decorative background */
+/* position header title and theme selector under banner */
+h1{ margin:0; padding:18px 0; color:var(--muted); text-align: center; }
+
+/* theme selector placed under header, centered in available space */
+#themes{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:8px 0 22px 0;
+    margin:8px 0 20px 0;
+    background: transparent;
+}
+
+#themes legend{
+    display:block;
+    font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
+    font-size:30px;
+    line-height:1;
+    color:#3b1f2b;
+    margin-bottom:10px;
+    padding:0;
+    font-weight:normal;
+    text-transform: none;
+}
+
+/* theme name chips (labels) - horizontal row under the legend */
+#themes > div{
+    margin:6px 10px;
+    background: transparent;
+    padding:0;
+}
+
+/* hide the radios visually but keep them accessible */
+#themes input[type="radio"]{
+   opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#themes label{
+    cursor:pointer;
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:999px;
+    background: rgba(255,255,255,0.18);
+    color:#3b1f2b;
+    font-family: "Chillax";
+    font-size:13px;
+    line-height:1;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    text-transform:capitalize;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.03);
+}
+
+#themes label:hover{ transform: translateY(-3px); box-shadow: 0 8px 18px rgba(106,68,85,0.08) }
+
+/* show selected state when radio is checked */
+#themes input[type="radio"]:checked + label{
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));
+    color: var(--pink-deep);
+    box-shadow: 0 8px 20px rgba(232,110,163,0.12);
+    transform: translateY(-2px);
+}
+
+/* intro paragraph (torn paper) */
+body > p:first-of-type{
+    position:relative;
+    z-index:3;
+    float:right;
+    width:380px;
+    margin:72px 56px 0 0;
+    background:#fff;
+    padding:22px 20px;
+    border-radius:6px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.18), inset 0 0 0 4px rgba(0,0,0,0.02);
+    font-size:15px;
+    line-height:1.45;
+    color:#3b1f2b;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 90%, 85% 85%, 75% 92%, 60% 86%, 45% 94%, 30% 86%, 15% 92%, 0 86%);
+}
+
+/* Center h1 and #themes on the page */
+#title {
+    grid-column: 1 / -1;
+    text-align: center;
 }

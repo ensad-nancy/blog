@@ -57,85 +57,81 @@ body > p{
     align-content: center;
     flex-wrap: wrap;
     flex-shrink: 0;
+    gap: 10px;
     border: 1px solid #4f5647;
-    margin-left: 297px;
+    margin-left:100px;
     margin-top: 19px;
     text-transform: uppercase;
     background: radial-gradient(#bcd6b9 35%, #dbd5d1 65%);
 }
 
-#themes input[type="radio"] {
-    position: absolute;
+/* #themes input[type="radio"] {
+    position: relative;
     inset: 0;
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 legend{
     position: absolute;
-    left: 12%;
+    left: -36px;
     top: 24%;
     text-transform: uppercase;
-    border: 1px solid black;
+    /* border: 1px solid #4f5647; */
     border-radius: 50%;
     padding: 1em 3em;
+    color:#4f5647;
+    font-size: 25px;
+}
+
+#themes div {
+    position: relative;
 }
 
 #themes div label {
     color: #4f5647;
     text-transform: uppercase;
-    line-height: 2.2;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-
-/* #themes div:hover{
-    background: radial-gradient(#bcd6b9, #dbd5d1);
-} */
-
-/* #themes div {
-    background: #dbd5d1; 
+#themes div input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
-#themes div:nth-child(1):hover {
-    background: radial-gradient(#FFD700, #dbd5d1); 
-    background-clip: border-box;
-}
-#themes div:nth-child(2):hover {
-    background: radial-gradient(#ADD8E6, #dbd5d1); 
-    background-clip: border-box;
-}
-#themes div:nth-child(3):hover {
-    background: radial-gradient(#90EE90, #dbd5d1);
-    background-clip: border-box; 
-}
-#themes div:nth-child(4):hover {
-    background: radial-gradient(#f4a76e, #dbd5d1); 
-    background-clip: border-box;
-} */
-
-
-/* input[type="radio"][name="theme"] + label {
-    position: relative; 
-} */
-
-/* input[type="radio"][name="theme"] + label::before {
+#themes div:hover::before {
     content: '{{'; 
     opacity: 0; 
-    transition: opacity 0.3s; 
-    margin-right: 0; 
+    transition: opacity 0.2s; 
+    margin-right: 0;
+    color: #4f5647;
+    font-size: 25px;
 }
 
-input[type="radio"][name="theme"] + label:hover::after {
+#themes div:hover::after {
   content: '}}'; 
   opacity: 0; 
-  transition: opacity 0.3s; 
+  transition: opacity 0.2s; 
   margin-right: 0; 
-} */
-/* 
-input[type="radio"][name="theme"] + label:hover::before,
-input[type="radio"][name="theme"] + label:hover::after{
-    opacity: 1; 
+  color: #4f5647;
+  font-size: 25px;
+}
+
+#themes div:hover::before,
+#themes div:hover::after{
+    opacity: 1;
+}
+
+/* input:is([type="radio"], [type="checkbox"]) {
+    margin-top: 3px;
+    margin-right: 2px;
+    box-sizing: border-box;
 } */
 
 div#filtres{
@@ -148,7 +144,7 @@ div#filtres{
     text-transform: uppercase;
     position: relative;
     background-color: #dbd5d1;
-    
+    color: #4f5647;
     /* margin-top: 500px;
     width: 200px;
     align-self: flex-start; */
@@ -161,8 +157,8 @@ div#filtres::after {
     border: solid #4f5647;
     border-width: 0 1px 1px 0;
     transform: rotate(-45deg);
-    bottom: 57px; 
-    right: -113px; 
+    bottom: 100.8px;
+    right: -158px; 
     z-index: 5;
 }
 
@@ -170,13 +166,50 @@ div#filtres::before {
     content: '';        
     position: absolute; 
     top: auto;
-    bottom: 90px;;         
+    bottom: 133.3px;      
     height: 1px;        
     background-color: #4f5647; 
     left: -132px;
-    right: -125px;      
+    right: -170px;      
     z-index: -20;         
 }
+
+/* #themes input[type="radio"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+} */
+
+#date input[type="range"] {
+    appearance: none ;
+    cursor: pointer;
+    background: #4f5647;
+    height: 0.1rem;
+    position: relative;
+    top: -12px;
+}
+
+select{
+    appearance: none;
+    color: #4f5647;
+    margin-left: 0;
+    padding: 0px;
+    top: 0;
+    width: 99%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 11pt;
+    background: #dbd5d1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* #date input[type="range"]::-webkit-slider-runnable-track {
+    height: 0.1rem;
+    background: #4f5647; 
+    border-radius: 0px;
+    margin-bottom: 10px;
+} */
 
 
 main{
@@ -184,7 +217,7 @@ main{
     align-items: flex-start;
     gap: 114px;
     margin-top: 250px;
-    margin-left: 103px;
+    margin-left: 140px;
 }
 
 main a{
@@ -204,10 +237,15 @@ main a h3{
     height: 200px;
     width: 100%;
     font-weight: normal;
-    display: flex;
+    font-size: 25px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
     /* background: radial-gradient(#ffff, #b8b4b1); */
+}
+
+main a strong{
+    font-weight: lighter;
 }

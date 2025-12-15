@@ -8,6 +8,17 @@
     src: url('/article/léon/images/Galter.otf') format('truetype');
 }
 
+font-face {
+    font-family: 'Butler';
+    src: url('/article/léon/images/Butler.otf') format('truetype');
+}
+
+font-face {
+    font-family: 'Chopin';
+    src: url('/article/léon/images/Chopin.ttf') format('truetype');
+}
+
+
 
 * {
     margin: 0;
@@ -17,7 +28,7 @@
 
 
 body {
-    background-color: #0073ff;
+    background-color: #b9e8ff;
     font-family: 'Galter';
     /* padding: 20px;
     color: #000;
@@ -26,6 +37,7 @@ body {
 
 body > p{
     z-index: 10;
+    
 }
 
 body::before {
@@ -45,17 +57,16 @@ body::before {
 
 /*----THEMES----*/
 #themes {
-    font-family: "Galter";
+        font-family: "Galter";
     font-size: 13pt;
     display: flex;
-    flex-wrap: nowrap;         
+    flex-wrap: nowrap;
     gap: 20px;
-     width: 100%;
-    overflow-x: auto;           
+    width: 100%;
+    overflow-x: auto;
     overflow-y: hidden;
-    background-color: rgb(143 184 255);
+    background-color: rgb(179 213 229);
     align-items: center;
-    /* padding: 1em; */
     margin: 0;
     box-sizing: border-box;
     z-index: 12;
@@ -65,17 +76,6 @@ body::before {
 
 
 
-/* #themes::-webkit-scrollbar {
-    height: 8px;
-}
-#themes::-webkit-scrollbar-track {
-    background: #e5e5e5;
-    border-radius: 10px;
-}
-#themes::-webkit-scrollbar-thumb {
-    background: #999;
-    border-radius: 10px;
-} */
 
 
 #themes div {
@@ -90,8 +90,8 @@ body::before {
 }
 
 #themes legend {
-    color: white;
-    background-color: rgb(143 184 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(8, 0, 255, 0);
     padding: 4em 2em 4em 2em;
     flex-shrink: 0;
     display: flex;
@@ -99,18 +99,6 @@ body::before {
     position: sticky;
     z-index: 2;
 }
-
-  /* #themes div label{ 
-    position: relative;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 90px;
-    flex-shrink: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    overflow: hidden; 
-} */
 
  
  
@@ -140,9 +128,20 @@ input[type="radio"]{
     cursor: pointer;
 }
  
+
+input[type="range"] {
+    width: 8rem;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    height: 0.5rem;
+    border-radius: 10px;
+    margin: -27px 30px -17px 90px;
+    display: flex;
+}
+
 input[type="range"]::-webkit-slider-thumb {
     appearance: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
     width: 2rem;
     height: 1rem;
     border-radius: 10px;
@@ -165,20 +164,24 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 #title h1 {
-    font-family: 'Format_1452';
-    font-size: 2.3rem;
-    margin-bottom: 20px;
+    font-family: 'Butler';
+    font-size: 31px;
+    margin-bottom: -35px;
+    left: -210px;
     position: relative;
     z-index: 11;
 }
 
 #title + p {
     position: absolute;
-    height: 175px;
+    height: 150px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     
+}
+#filtres #auteurices p{
+    color: rgb(0, 0, 0);
 }
 
 #title::before {
@@ -188,7 +191,7 @@ input[type="range"]::-webkit-slider-thumb {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/articles/léon/images/bordoro.png');
+    background-image: url('/articles/léon/images/Smains.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -202,18 +205,32 @@ input[type="range"]::-webkit-slider-thumb {
     /* border-radius: 20px; */
     margin-bottom: 30px;
     overflow-x: auto;
-    background-color: rgb(143 184 255);
+    background-color: rgba(8, 0, 255, 0);
     /* margin: 1em 0em 0em 0em;*/
+}
+
+#filtres #date p{
+       margin: 2px;
+    margin-block-start: -5px;
+    margin-inline-start: -17px;
+    color: #000000;
+    border-radius: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 17px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #filtres h2 {
     font-size: 1.2rem;
     color: rgba(0, 30, 255, 0.514);
-    background-color: rgb(143 184 255);
+    background-color: rgb(8, 0, 255, 0);
     /* border-radius: 40px; */
-    padding: 2em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
     flex-shrink: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     /* margin: 1em 0em 0em 0em;*/
 }
 
@@ -222,6 +239,11 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 5px;
 }
 
+/* Thumb styles - cross-browser */
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    color: #ffffff;
+}
 
 
 
@@ -280,4 +302,12 @@ footer {
 
 .thumb {
     display: none;
+}
+a:hover{
+    color: #a5a5a5;
+    transition: 0.3s;
+}
+
+label{ 
+  color :#000000
 }

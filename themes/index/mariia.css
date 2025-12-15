@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'RGAO';
-  src: url('../../articles/mariia/images/ArtScript.ttf');
+  src: url('../../articles/mariia/images/Florentia_Italic.ttf');
   unicode-range: U+0400-04FF; /* Cyrillic */
 }
 
@@ -53,6 +53,10 @@ body::before {
    height: 5px;
 }
 
+
+
+
+
 .title {
     font-size: 100px;
     color: #000000;
@@ -74,7 +78,11 @@ body::before {
 }
 
 
+
+
+
 img {
+  max-width: 200px;
     display: block;
    margin: 0 auto;
     filter: grayscale(100%);
@@ -87,8 +95,6 @@ img:hover {
 }
 
 
-
-/* IMAGE HIDDEN BY DEFAULT */
 main a div img.thumb {
     opacity: 0;
     max-height: 0;
@@ -96,11 +102,13 @@ main a div img.thumb {
     transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 
-/* IMAGE REVEALS WHEN HOVERING TITLE */
+
 main a:hover img.thumb  {
     opacity: 1;
-    max-height: 500px;  
+    max-height: 250px;  
 }
+
+
 
 
 
@@ -217,6 +225,9 @@ a div .thumb {
 
 
 
+
+
+
 main h3 {
   color: #0259db;
     position: relative;
@@ -236,6 +247,32 @@ main h3:hover {
 }
 
 
+main .tag {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+  z-index: 0;
+}
+
+
+main .tag::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 0.15em;
+  height: 0.9em;
+
+  background: #035fea4b;
+  opacity: 0.35;
+
+  transform: rotate(-2deg);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+
+
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -248,8 +285,8 @@ main a div {
     border-radius: 8px;
     padding: 1rem;
     background: #fffffe;
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column;
     gap: 1rem;
 }
 
@@ -269,59 +306,67 @@ main a div img.thumb {
 
 #filtres {
   position: relative;
-  background: #fffdf8; /* паперовий, не чисто білий */
-  padding: 4px 8px 28px;
-  margin: 20px auto;
-  max-width: 350px;
-left: 500px;
+  margin: 30px auto 40px;
+  padding: 12px 24px 16px;
+  max-width: 900px;
+
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto auto;
-  gap: 20px 10px;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+gap: 8px 12px;
 
+  background: #fffdf8;
   font-family: 'PRMT';
-
- 
 }
+
 
 
 
 #filtres::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -6px;
   left: 0;
   right: 0;
-  height: 15px;
+  height: 12px;
 
   background: radial-gradient(circle at top,
     transparent 0,
-    transparent 8px,
-    #fffdf8 8px);
+    transparent 6px,
+    #fffdf8 6px);
 
-  background-size: 40px 20px;
+  background-size: 30px 12px;
   background-repeat: repeat-x;
 }
 
 
 
-#filtres h2 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 22px;
-  color: #0259db;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
 
-  border-bottom: 1px dashed rgba(0,0,0,0.25);
+#filtres h2 {
+  padding: 0 20px 0 0; 
+  font-size: 23px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0259db;
+  margin: 0;
+  border-right: 1px dashed rgba(0,0,0,0.25);
 }
 
 #filtres > div {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  gap: 10px;
 }
+
+#filtres p {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0;
+}
+
 
 #date {
   grid-column: 1;
@@ -333,21 +378,18 @@ left: 500px;
   align-items: flex-center;
 }
 
-#filtres p {
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  opacity: 0.7;
-  margin: 0;
-}
+
 
 #filtres input[type="range"],
 #filtres select {
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.35);
   padding: 4px 6px;
   font-family: inherit;
+  font-size: 14px;
 }
+
 
 
    
