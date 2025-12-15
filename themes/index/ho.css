@@ -64,6 +64,13 @@ body > p{
     background: radial-gradient(#bcd6b9 35%, #dbd5d1 65%);
 }
 
+#themes input[type="radio"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
 legend{
     position: absolute;
     left: 12%;

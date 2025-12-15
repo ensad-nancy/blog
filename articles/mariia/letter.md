@@ -1,10 +1,11 @@
 ---
-title: Dyakuyu
+title: Дякую:Merci
 date: 2025-12-10
 tags: 
 
 ---
 ![Les](images/Kurbas.jpg)
+![teatr](images/teatr.jpg)
 ** Les Kurbas **<br>
 Personne n’a jamais vu tes créations comme tu les avais imaginées. Personne ne pourra vraiment ressentir ton travail, tes émotions, tout ce que tu voulais transmettre.
 Mais tu as laissé une trace qui restera pour toujours. Tu es une inspiration, tu es une motivation.
@@ -24,3 +25,7 @@ Tu n’as pas vu comment tes idées ont survécu. Mais nous, nous voyons que le 
 
 Merci.<br>
 -- N. Phie
+
+<div class="citata">
+"Театр має бути таким, яким суспільство має бути завтра, актор повинен бути не тільки талановитим, але й висококультурним”
+</div>

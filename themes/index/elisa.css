@@ -15,13 +15,13 @@ body {
     margin: 0px;
     width: 100%;
     background-color: antiquewhite;
-    font-family: "Baskerville";
+    font-family:'Courier New', Courier, monospace;
     display: block;
 }
 #themes{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
-    background-color: antiquewhite
+    background-color: antiquewhite;
     width: 97%;
     margin: 10px;
     display: grid;
@@ -61,7 +61,7 @@ legend{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     padding: 5px;
-    background-color: aliceblue;
+    background-color: antiquewhite;
     font-weight:bold;
 }
 
@@ -81,6 +81,8 @@ main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-self: center;
+    width: 144px;
+    height: 680px;
 }
 
 main a{
