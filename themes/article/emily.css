@@ -12,17 +12,42 @@ a {
 }
 
 body{
-    background-image: url(images/fenetre1.jpg);
-    background-color: #000000;
+    background-color: #334313;
     text-align: left;
     font-family: 'MedievalSharp-Regular';
-    color: azure;
+    color: rgb(255, 229, 150);
     margin: 5%;
     border: 5%;  
 }
 
 div#themes {
-    text-align: left;
+  position: relative;
+  top:  1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  min-height: 20rem;
+  height: 20rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+header{
+  background-image: (url(../../articles/emily/Images/P1090128.JPG));
+  height: 200px;
+}
+
+/* hide legacy legend elements (div won't have legend, but safe to include) */
+div#themes legend,
+#themes legend {
+  display: none;
 }
 
 article{ text-align: center;}
@@ -31,7 +56,9 @@ article{ text-align: center;}
     font-size: 30px;
 }
 
-
+.thumb {
+  visibility: hidden;
+}
 
 img[alt=fenetre1]{
     width: 300px; 
@@ -47,6 +74,7 @@ img[alt=tea]{
     max-width: 20px;
     color:white;
     align-items: center;
+    visibility: visible;
 }
 
 

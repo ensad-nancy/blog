@@ -2,7 +2,9 @@
 
 body{
     background-image:url(../../articles/lohann/images/eau-dans-differents-environnements_23-2151919155.webp);
-    background-size:contain;
+    background-size:auto 100%;
+    background-repeat: repeat-x;
+    background-position: bottom;
     font-family: "KG Primary", Geneva, Tahoma, sans-serif;
     font-size: medium;
 }
@@ -20,7 +22,7 @@ body{
 
 #themes div {
     flex-shrink: 0;
-    list-style-type: none; /* Enlève les puces de base */
+    list-style-type: none;
     background:url('../../articles/lohann/images/Goldfish-PNG-Transparent-Image.webp') no-repeat left center;
     padding-left: 30px;
     margin-bottom: 10px;

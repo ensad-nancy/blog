@@ -1,6 +1,6 @@
 ---
 
-title: Christian de Madère
+title: Les barres piliers
 date: 2025-12-04
 tags: détail graphique
 preview: 

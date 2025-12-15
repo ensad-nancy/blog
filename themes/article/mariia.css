@@ -4,10 +4,6 @@
   src: url(../../articles/mariia/images/Qarinthen.otf);
 }
 
-@font-face {
-  font-family: 'ATAV';
-  src: url(../../articles/mariia/images/Atavyros.otf);
-}
 
 @font-face {
   font-family: 'RGAO';
@@ -57,8 +53,8 @@ body {
 
 
 article {
-    max-width: 60%;
-    margin-left: 40%;
+    max-width: 50%;
+    margin-left: 45%;
     padding: 30px;
     font-size: 20px;
     font-family: 'ATA';
