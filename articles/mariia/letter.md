@@ -1,7 +1,8 @@
 ---
 title: Дякую:Merci
 date: 2025-12-10
-tags: 
+tags: activiste ukrainien, hommage
+preview: images/kurb.jpg
 
 ---
 ![Les](images/Kurbas.jpg)
