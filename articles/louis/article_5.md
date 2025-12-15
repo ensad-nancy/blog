@@ -1,5 +1,5 @@
 ---
-title: A Person Who Inspires Me
+title: An Evening in My Life
 date: 2025-12-10
 tags: personal
 preview:
