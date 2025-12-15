@@ -46,7 +46,7 @@ h1::after {
     transform: translateX(-50%); 
     width: 100vw; 
     
-    top: 90px; 
+    top: 140px; 
     height: 4px;
     background-color: black;
     pointer-events: none; 
@@ -94,7 +94,7 @@ body > p::after {
 
 #themes {
     position: absolute; 
-    top: 0;             
+    top: 125px;             
     left: 0;
     width: 180px;
     height: auto; 
@@ -108,7 +108,7 @@ body > p::after {
 #themes::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -280px;
     left: 100%;       
     width: 4px;
     height: 100%;
@@ -117,14 +117,13 @@ body > p::after {
 }
 #themes::after {
     content: "";
-    position: absolute;
+   position: fixed;
     top: 0;
-    right: 0;
-    width: 4px;        
-    height: 600%; 
-    background: black; 
-    pointer-events: none;
-    z-index: 100;
+    left: 180px;   /* exact width of #themes */
+    width: 4px;
+    height: 100vh;
+    background: black;
+    z-index: 10000;
 }
 
 #themes legend {
@@ -232,7 +231,7 @@ input[type="radio"]{
 }
 
 #filtres {
-    position: fixed; 
+    position: absolute; 
     top: 0;         
     right: 0;
     width: 220px;
