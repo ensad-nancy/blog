@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: 'ATAV';
+  src: url(../../articles/mariia/images/Atavyros.otf);
+}
+
+@font-face {
   font-family: 'RGAO';
   src: url(../../articles/mariia/images/RomauntGaolines.ttf);
 }
@@ -17,7 +22,17 @@
 @font-face {
   font-family: 'EX';
   src: url(../../articles/mariia/images/NewtonScient.ttf);
+   unicode-range: U+0000-00FF;
+
 }
+
+@font-face {
+  font-family: 'EX';
+  src: url('../../articles/mariia/images/Florentia_Italic.ttf');
+  unicode-range: U+0400-04FF; /* Cyrillic */
+}
+
+
 #themes {
     position: absolute;
     top: 0px;
@@ -27,9 +42,17 @@
 
 
 body {
-    padding-top: 40vh;        /* щоб текст не з’їдався картинкою */
+    background-color: #f6f6f4;
+    padding-top: 40vh;       
       position: relative;
     z-index: 0;
+    background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(2, 89, 219, 0.105) 0px,
+    rgba(2, 89, 219, 0.161) 1px,
+    transparent 1px,
+    transparent 24px
+  );
 }
 
 
@@ -54,12 +77,8 @@ article img[alt="pop"] {
     opacity: 50%;
 }
 
-article h1, article h2 {
-    font-family: "Inter", sans-serif;
-    letter-spacing: 1px;
-    color: #000000;           /* жовтий (м’який) */
-    text-shadow: 0 0 6px rgba(0, 60, 255, 0.4); /* синє світіння */
-    margin-top: 40px;
+ article h2 {
+ display: none;
 }
 
 .tags {
@@ -371,6 +390,34 @@ article img[alt="kitty"] {
     z-index: 1;
     opacity: 80%;
 }
+
+article img[alt="teatr"] {
+   filter: grayscale(100%);
+    position: absolute;
+    top: 120px;            /* distance from the top – adjust */
+    left: 630px;            /* distance from left edge */
+    width: 270px;  
+    object-fit: cover;
+    z-index: 1;
+    opacity: 60%;
+    rotate: -10deg;
+}
+
+.citata {
+    position: absolute;
+    top: 66.5vh;            /* distance from the top – adjust */
+    left: 3vw;            /* distance from left edge */
+    width: 16vw;          /* how wide the quote block is */
+    font-family: 'EX';   /* match your text */
+    font-size:21px;
+    line-height: 1.;
+    color: #0259db;
+    padding: 15px 20px;
+   
+    background: rgba(218, 218, 218, 0.505); 
+    backdrop-filter: blur(4px);      /* gives nice minimalistic glass effect */
+}
+
 
 
 
