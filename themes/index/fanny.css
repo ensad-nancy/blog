@@ -181,7 +181,7 @@ body > p:first-of-type {
 #filtres *:not(h2) {
     font-family: "Great Vibes", cursive;
     font-size: 16px;
-    color: #fff; /* texte blanc lisible */
+    color: #000000; /* texte blanc lisible */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* léger contour pour détacher du fond */
     background: none; /* plus de bloc blanc */
     padding: 2px 0;
