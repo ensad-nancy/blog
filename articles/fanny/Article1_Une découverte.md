@@ -21,9 +21,4 @@ FMLD
 
 ---
 
-![](images/IMG_20251029_141627.jpg)
-![](images/IMG_20251029_141638.jpg)
-![](images/IMG_20251029_141802.jpg)
-![](images/IMG_20251029_142335.jpg)
-
 
