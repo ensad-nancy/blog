@@ -53,6 +53,10 @@ body::before {
    height: 5px;
 }
 
+
+
+
+
 .title {
     font-size: 100px;
     color: #000000;
@@ -221,6 +225,9 @@ a div .thumb {
 
 
 
+
+
+
 main h3 {
   color: #0259db;
     position: relative;
@@ -240,6 +247,32 @@ main h3:hover {
 }
 
 
+main .tag {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+  z-index: 0;
+}
+
+
+main .tag::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 0.15em;
+  height: 0.9em;
+
+  background: #035fea4b;
+  opacity: 0.35;
+
+  transform: rotate(-2deg);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+
+
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -252,8 +285,8 @@ main a div {
     border-radius: 8px;
     padding: 1rem;
     background: #fffffe;
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column;
     gap: 1rem;
 }
 
