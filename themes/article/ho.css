@@ -117,7 +117,7 @@ header{
 header::before{
     content: '';        
     position: absolute; 
-    top: 390px;
+    top: 301px;
     bottom: 433px;;         
     height: 1px;        
     background-color: #4f5647; 
@@ -139,13 +139,13 @@ header::after{
     top: 358px;
 }
 header .title{
-    margin-top: 288px;
+    margin-top: 326px;
     margin-left: 70px;
     font-size: 30px;
 }
 
 header .date{
-    margin-top: -400px;
+    margin-top: -452px;
     margin-left: 250px;
     font-size: 17px;
 }
