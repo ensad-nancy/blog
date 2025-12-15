@@ -20,3 +20,6 @@ Mais c'est pour ça que je l'aime, c'est le prix à payer, le poid à porter.
 Il vit avec moi et je l'ai voulu. 
 
 Grosse victime magazine, merde à celui qui le lira.
+
+
+imjustagirl
