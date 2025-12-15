@@ -1,5 +1,5 @@
 ---
-title: Se divertir sur les tragédies des gens et «glorifier» le “Monster”, Jeffrey Dahmer
+title: Se divertir sur les tragédies des gens et «glorifier» le “Monster”
 date: 2025-11-12
 tags: serial killer, sandwich
 preview: images/p22931799_b_v13_aa-2.jpg
