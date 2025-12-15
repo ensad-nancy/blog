@@ -167,14 +167,13 @@ article {
     position: relative;
 }
 
-/* Images plus petites et proportionnelles */
 article img.thumb {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+    max-width: 60%;       
+    height: auto;          
+    display: block;
+    margin: 20px auto;     
+    object-fit: contain;  
     border-radius: 6px;
-    transition: all 0.4s ease;
 }
 
 /* ------------------------------ */
