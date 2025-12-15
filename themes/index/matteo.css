@@ -251,18 +251,18 @@ select{
 /*-----MAIN-----*/
 
 main{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 4em 0em 0em 0em;
-
+    columns: 3;
+    margin: 4em 3em 0em 1em;
 }
 
 main a{
-    width: 80%;
+    display: inline-block;
     background-color: white;
     margin: 5%;
     padding: 0em 1em 1em 2em;
     text-align: left;
+    break-inside: avoid;
+    width: 85%;
 }
 
 main a h3{
