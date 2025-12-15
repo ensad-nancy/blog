@@ -1,9 +1,9 @@
 body{
-    background-color: #fff9f9;
+    background-color: #e6bcbc;
 }
  @font-face {
-   font-family:"HENTZAU 2";
-   src: url("../../articles/esther/images/HENTZAU-2.TTF") format("opentype");
+   font-family:"ruritaniaoutline ";
+   src: url("../../articles/esther/images/ruritaniaoutline.ttf") format("opentype");
 } 
 @font-face {
    font-family:"Rot-ProtoRoman102R 2";
@@ -13,6 +13,15 @@ body{
    font-family:"sinistreregular";
    src: local("sinistreragular"), url("../../articles/esther/images/SINISTRE/sinistreregular.otf") format("opentype");
 } 
+
+ @font-face {
+   font-family:"ruritania ";
+   src: url("../../articles/esther/images/ruritania.ttf") format("opentype");
+} 
+
+
+
+
 
 
 #themes legend{
@@ -36,16 +45,14 @@ body{
 h1{
    font-family:"sinistreregular";
    font-size: 45px;
-   margin: 0%;
     text-decoration-line: underline;
-    text-align:right;
-    bottom: 0%;
-    top:130%;
+    color: #000;
+ position: fixed;
+    bottom: 0;
     right: 0;
     text-align: right;
-    position:absolute;
-    color: #000;
-
+     margin: 10px;
+   text-transform: uppercase;
    }
 
    #themes{
@@ -57,10 +64,12 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    color: #000;
-    font-size: 91%;
+    color: #000000;
+    font-size: 100%;
 
-  
+    position: relative;
+    
+
    }
 
    #themes div{
@@ -68,25 +77,30 @@ h1{
       height: 46px;
       border-radius: 70px;
       background-color: #f1ebeb;
+      border-style: dotted;
+      border-color: #57070c;
       text-align: center;
       display: flex;
     align-items: center;
     justify-content: center;
-     
-     
    }
+
+
+
+
    article{
 border-radius: 2px;
  border-style: dotted;
- margin: 20px;
+ margin: 55px;
  text-align:right;
    transform: scale(1.02);
-    box-shadow: 0 0 22px #dbd6d6;
-    color: #750a11;
-
-   
+    box-shadow: 0 0 20px #ababab;
+    color: #57070c;
+    padding: 4%;
+    position: relative;
+    margin-bottom: 50%;
+  
    }
-
 
 
    header{
@@ -104,5 +118,12 @@ border-radius: 2px;
       opacity: 0;
       cursor: pointer;
    }
+
+
+   .container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
