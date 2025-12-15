@@ -9,8 +9,20 @@ body {
     font-family: "Basteleur", serif;
     line-height: 1.6;
 
+
+    
     /* sidebar 폭만큼 본문 이동 */
     margin-left: 240px;
+}
+
+h1 {
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 28pt;
+}
+
+h2 {
+    font-size: 13pt;
 }
 
 /* -----------------------------------
@@ -22,9 +34,9 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    bottom: 80px;
+    bottom: 70px;
     padding: 30px 15px;
-    border-right: 2px solid #bcbcbc;
+    border-right: 1.5px solid #bcbcbc;
     background: #f7f7f5;
     overflow-y: auto;
     z-index: 100;
@@ -72,7 +84,7 @@ body {
 }
 
 #themes label {
-    font-size: 15px;
+    font-size: 14px;
     opacity: 0.85;
     pointer-events: none;
 }
@@ -88,40 +100,201 @@ body {
 }
 
 /* -----------------------------------
-   필터(Filtres) — 오른쪽 상단 고정 + 가로 정렬
+   FILTRES — stable & smaller (FINAL)
 ----------------------------------- */
 
 #filtres {
     position: fixed;
-    top: 80px;
-    right: 20px;
-
+    top: 110px;
+    right: 40px;
+    
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 12px;
 
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    z-index: 200;
+    z-index: 150;
+    font-size: 13px;
 }
 
-#filtres h2 {
-    font-size: 14px;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* FILTRES 타이틀만 얇게 */
+#filtres > *:first-child {
+    font-weight: 300;
 }
 
-#filtres div p {
-    margin: 0;
-    font-size: 12px;
-    opacity: 0.7;
+
+/* 공통 pill */
+#filtres div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    height: 30px;                 /* ↓ 작게 */
+    padding: 0 12px;
+
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 0 0 1px #ddd inset;
 }
 
-#filtres select,
+/* -----------------------------------
+   AUTEUR — select (완전 고정)
+----------------------------------- */
+
+#filtres select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+
+    width: 150px;                 /* ← min 아님, 고정 */
+    height: 100%;
+
+    background: transparent;
+    border: none;
+
+    font-family: "Basteleur", serif;
+    font-size: 13px;
+    line-height: 1;
+
+    padding: 0 20px 0 0;
+    text-align: center;
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+/* auteur arrow */
+#filtres div:has(select)::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-30%);
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #aaa;
+
+    pointer-events: none;
+}
+
+/* underline (pseudo-element, no reflow) */
+#filtres select::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* -----------------------------------
+   DATE — slider + text (완전 고정)
+----------------------------------- */
+
+/* date text */
+#filtres span,
+#filtres .date-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;                 /* ← 완전 고정 */
+    height: 100%;
+
+    font-family: "Basteleur", serif;
+    font-size: 13px;
+    line-height: 1;
+    white-space: nowrap;
+
+    position: relative;
+}
+
+/* === DATE pill 흔들림 방지 핵심 === */
+#filtres span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* =====================================
+   DATE pill 가로 흔들림 완전 차단
+===================================== */
+
+/* date pill 자체를 고정 폭으로 */
+#filtres div:has(input[type="range"]) {
+    width: 172px;          /* ← 여기 숫자만 조절하면 됨 */
+    justify-content:space-evenly ;
+    flex-wrap: nowrap; 
+}
+
+
+/* date underline */
+#filtres span::after,
+#filtres .date-pill::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+        transform: translateX(-50%);
+
+
+    width: 80%;
+    height: 1.5px;
+    background: #bdbdbd;
+}
+
+/* slider */
 #filtres input[type="range"] {
-    margin-top: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+
+    flex-shrink: 0;            /* ← 사이즈 고정 */
+    width: 80px;
+    height: 12px;
+    margin: 0;
+
+    background: transparent;
 }
+
+/* track */
+#filtres input[type="range"]::-webkit-slider-runnable-track {
+    height: 1.5px;
+    background: #000;
+}
+#filtres input[type="range"]::-moz-range-track {
+    height: 1.5px;
+    background: #000;
+}
+
+/* thumb */
+#filtres input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 7px;
+    margin-top: -3px;
+
+    background: #000;
+    border-radius: 50%;
+}
+#filtres input[type="range"]::-moz-range-thumb {
+    width: 7px;
+    height: 7px;
+    background: #000;
+    border-radius: 50%;
+}
+
+/* 설명 제거 */
+#filtres div p {
+    display: none;
+}
+
 
 /* -----------------------------------
    메인(article 목록) — 3열 Grid
@@ -189,6 +362,34 @@ main footer {
 }
 
 /* -----------------------------------
+   카드 hover 상태
+----------------------------------- */
+
+
+/* =====================================
+   이미지 없는 카드만 hover 블랙 반전
+===================================== */
+
+main > a:not(:has(.thumb[src])):hover > div {
+    background: #000;
+    border-color: #000;
+}
+
+main > a:not(:has(.thumb[src])):hover > div,
+main > a:not(:has(.thumb[src])):hover > div * {
+    color: #d6d6d6;
+}
+
+main > a:not(:has(.thumb[src])):hover .tag {
+    background: #2a2a2a;
+}
+
+main > a:not(:has(.thumb[src])):hover footer p:nth-child(2) {
+    color: #bfbfbf;
+}
+
+
+/* -----------------------------------
    소개문구 footer bar (전체 폭 고정)
 ----------------------------------- */
 body > p:first-of-type {
@@ -201,7 +402,7 @@ body > p:first-of-type {
     margin: 0;
 
     background: #f7f7f5;
-    border-top: 2px solid #bcbcbc;
+    border-top: 1.5px solid #bcbcbc;
 
     font-size: 12px;
     line-height: 1.5;
@@ -271,4 +472,47 @@ main > a > div footer p:nth-child(2) {
 /* Auteur:, Date:, Tags: 같은 prefix 숨기기 */
 main > a > div footer p strong {
     display: none;
+}
+
+
+/* =====================================
+   Responsive: small screens = no overlap
+===================================== */
+@media (max-width: 1100px) {
+  /* fixed 해제 → 문서 흐름으로 들어가서 안 겹침 */
+  #filtres {
+    position: sticky;          /* 스크롤 시 너무 멀리 안 사라지게 */
+    top: 12px;                 /* 화면 위에서 살짝 띄움 */
+    right: auto;               /* fixed용 값 무력화 */
+    left: auto;
+
+    margin: 12px 40px 0 40px;  /* 본문 padding이 40px이라 맞춤 */
+    justify-content: flex-end; /* 오른쪽 정렬 느낌 유지 */
+    flex-wrap: wrap;           /* 줄바꿈 허용 → 작은 화면 대응 */
+    gap: 10px;
+    z-index: 150;
+  }
+
+  /* pill이 너무 길어서 겹치면 자동으로 줄바꿈되게 */
+  #filtres div {
+    flex: 0 1 auto;
+  }
+}
+
+/* 더 작은 화면에서는 필터를 한 줄 “블록”처럼 */
+@media (max-width: 700px) {
+  #filtres {
+    justify-content: flex-start;
+    margin: 12px 20px 0 20px;  /* 좁은 화면은 여백 축소 */
+  }
+
+  /* auteur 폭을 줄여서 한 줄에 더 잘 들어가게 */
+  #filtres select {
+    width: 120px;
+  }
+
+  /* date pill 폭도 살짝 줄임 (겹침 방지) */
+  #filtres div:has(input[type="range"]) {
+    width: 160px;
+  }
 }
