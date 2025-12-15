@@ -66,7 +66,7 @@ body > p {
 #filtres {
     position:fixed;
     display:block;
-    right: 10%;
+    right: 2%;
     top: 15%;
     gap:20px;
     block-size: auto;
@@ -83,7 +83,7 @@ body > p {
     position: fixed;
     margin-right: 0;
     width: 26%;
-    left: 10%;
+    left: 2%;
     top: 15%;
     height: 100%;
     overflow-y: auto;
