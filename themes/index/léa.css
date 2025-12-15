@@ -216,7 +216,7 @@ main a:nth-child(9)::before{
     color: rgb(0, 255, 0);
     z-index: -1;
     pointer-events: none;
-    top: -353%;
+ top: -273%;
     line-height: 100%;
    left: 38%;
 }
@@ -240,7 +240,7 @@ main a:nth-child(11)::before{
     color: rgb(0, 255, 0);
     z-index: -1;
     pointer-events: none;
-   top: -305%;
+top: -966%;
   line-height: 100%;
   left: 80%;
 }
@@ -254,7 +254,7 @@ main a:nth-child(12)::before{
    pointer-events: none;
    pointer-events: none;
    pointer-events: none;
-   top: -534%;
+top: -424%;
    line-height: 100%;
    left: 2%;
 }
@@ -292,7 +292,7 @@ main a:nth-child(15)::before{
     color: rgb(0, 255, 0);
     z-index: 0;
     pointer-events: none;
-    top: -458%;
+    top: -548%;
     line-height: 100%;
     left: 80%;
 }
@@ -315,7 +315,7 @@ main a:nth-child(17)::before{
     color: rgb(0, 255, 0);
     z-index: -1;
     pointer-events: none;
-    top: -615%;
+    top: -545%;
     line-height: 100%;
     left: 80%;
 }
@@ -327,9 +327,9 @@ main a:nth-child(18)::before{
     color: rgb(0, 255, 0);
     z-index: -1;
     pointer-events: none;
-    top: -528%;
-    line-height: 100%;
-    left: 60%;}
+   top: -628%;
+  line-height: 100%;
+  left: 70%;}
 
 
 

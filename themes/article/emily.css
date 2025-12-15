@@ -50,7 +50,13 @@ div#themes legend,
   display: none;
 }
 
-article{ text-align: center;}
+article{ 
+  text-align: center;
+  background-image: url("../../articles/emily/Images/mug.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
 .title{
     font-size: 30px;
