@@ -14,6 +14,18 @@
     font-style: normal;
 }
 
+/*-----VARIABLE-----*/
+
+body{
+    --gutter-width: 10%;
+}
+
+/*-----ALL-----*/
+
+*{
+    box-sizing: border-box;
+}
+
 /*-----BODY-----*/
 
 body{
@@ -50,36 +62,31 @@ body > a:hover{
 
 /*-----HEADER-----*/
 
+header{
+    position: absolute;
+    margin-top: 4em;
+    right: var(--gutter-width);
+    width: calc(30% - var(--gutter-width) - var(--gutter-width)/2);
+}
 
 header .title{
     background-color: white;
     padding: 1em 1em 1em 1em;
-    margin: 3em 1em 2em 3em;
-    width: 14em;
+    /* margin: 3em 1em 2em 3em; */
     font-size: 16pt;
-    left: 67%;
-    top: 6.2em;
-    position: absolute;
 }
 
 header .date{
     background-color: white;
     padding: 1em 1em 1em 1em;   
-    margin: 10em 0em 0em 3em;
-    width: 14em;
-    left: 67%;
-    position: absolute;
-    /* top: 12em; */
+    /* margin: 10em 0em 0em 3em; */
     font-size: 16pt;
 }
 
 header .tags{
     background-color: white;
     padding: 1em 1em 1em 1em;
-    margin: 14em 0em 0em 3em;    
-    width: 14em;
-    left: 67%;
-    position: absolute;
+    /* margin: 14em 0em 0em 3em; */
     /* top: 16em; */
     font-size: 16pt;
 }
@@ -96,10 +103,10 @@ article{
     font-family: "Baskervville-Regular";
     font-size: 16pt;
     font-weight:lighter;
-    width: 40em;
+    width: calc(70% - var(--gutter-width) - var(--gutter-width)/2);
     background-color: white;
     margin-top: 4em;
-    margin-left: 3em;
+    margin-left: var(--gutter-width);
     padding: 2%;
     margin-bottom: 6em;
 }
@@ -131,7 +138,6 @@ article h1{
     align-items: baseline;
     padding: 1em;
     margin: 0em 0em 0em 0em;
-    box-sizing: border-box;
     position: sticky;
     /* top: 1em; */
     top: 0;

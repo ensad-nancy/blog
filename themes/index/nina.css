@@ -129,6 +129,7 @@ h3{
     /* main decorative title style (hand-drawn / dotted) */
     font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
     font-size:34px;
+    font-weight: lighter;
     margin:0 0 18px 0;
     color: #3b1f2b;
     letter-spacing:1px;
@@ -138,6 +139,7 @@ h3{
 h1{
     font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
     font-size:84px;
+    font-weight:normal;
     line-height:0.9;
     margin:0;
     color:#1f1420;
@@ -152,18 +154,18 @@ h1{
 }
 
 /* decorative star shapes behind the title (pure CSS) */
-h1::before, h1::after{
+/*h1::before, h1::after{
     content:"";
     position:absolute;
     z-index:2; /* behind h1 but above banner */
-    width:520px;
+/*    width:520px;
     height:520px;
     top:-120px;
     right: -160px;
     transform: rotate(-12deg);
     pointer-events:none;
     filter: drop-shadow(6px 6px 8px rgba(0,0,0,0.08));
-}
+} */
 
 h1::before{
     right:-160px;
@@ -196,7 +198,7 @@ footer p{ margin:6px 0 }
 /* preview thumbnail in card */
 .thumb{
     position:absolute;
-    top:14px;
+    top: 140px;
     right:14px;
     width:120px;
     height:120px;
@@ -226,16 +228,15 @@ h1{ margin:0; padding:18px 0; color:var(--muted); text-align: center; }
     background: transparent;
 }
 
-/* big decorative legend (Changer de thème :) in DottedNewspaper) */
 #themes legend{
     display:block;
     font-family: "DottedNewspaper", "DelaGothicOne", cursive, serif;
-    font-size:48px;
+    font-size:30px;
     line-height:1;
     color:#3b1f2b;
     margin-bottom:10px;
     padding:0;
-    font-weight:700;
+    font-weight:normal;
     text-transform: none;
 }
 
