@@ -64,12 +64,12 @@ body > p{
     background: radial-gradient(#bcd6b9 35%, #dbd5d1 65%);
 }
 
-#themes input[type="radio"] {
+/* #themes input[type="radio"] {
     position: relative;
     inset: 0;
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 legend{
     position: absolute;
@@ -92,10 +92,9 @@ legend{
 
 input[type="radio"][name="theme"] + label {
     position: relative; 
-    margin-left: -27px;
 }
 
-input[type="radio"][name="theme"] + label::before {
+input[type="radio"][name="theme"] + label:hover::before {
     content: '{{'; 
     opacity: 0; 
     transition: opacity 0.2s; 
