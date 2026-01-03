@@ -1,17 +1,21 @@
 ---
-title: A Person Who Inspires Me
-date: 2025-12-03
-tags: personal
+title: Apple has a new update
+date: 2025-11-25
+tags: Un détail graphique
 preview:
 ---
 
-# A Person Who Inspires Me
-Eike König is someone who shows me how clear design can actually be when you dare to be honest. His works look simple at first glance – type, space, message – but it’s exactly this directness that makes them so strong. No distractions, no unnecessary ballast. Just attitude, black on white.
+# Apple has a new update 
+Recently, I updated the software on my laptop, a 14" MacBook Pro (2021). The current version is called macOS Tahoe 26.1.
 
-What inspires me about him is this courage to reduce. This willingness not to complicate things, but to bring them back to the essentials. He doesn’t design to please; he designs to say something. And that hits me every time: this clarity I so often wish I had myself.
+I cannot yet say whether the device is now running faster or what security-related adjustments come with the update.
 
-König’s work feels like a mirror. It reminds me that design isn’t just a craft, but a way of taking a position. A language that becomes loud when you use it properly. He shows me that you don’t need anything excessive to create impact – just a clear idea and the courage to let it stand.
+What is immediately noticeable, however, is the change in the interface design. The update introduces the so-called “Liquid Glass” effect.
 
-Maybe that’s why he inspires me so much: because his design shows how powerful it becomes when you simply stop hiding.
+Suddenly, everything appears much rounder: the menu bar, the app icons, and many elements now have a glass-like sheen. Due to the more pronounced rounded corners, some space is lost in the edges unless the full-screen mode is enabled — which I rarely use. The overall look reminds me somewhat of the VTech toy laptops from the 1990s.
+
+The appearance can probably be customized further, but I have not yet explored those options. My intention was simply to record my first impression.
+
+It would be interesting to know what design considerations Apple pursued with this change. What is clear is that the appearance has noticeably shifted compared to previous versions and seems to adopt certain current design trends.
 
 *L.D.*
