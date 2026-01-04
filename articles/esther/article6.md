@@ -1,7 +1,7 @@
 ---
 title: Charlie et le papier peint.. 
 date: 2026-03-01
-# tags: tag&
+tags: un commentaire
 # preview: image
 ---
 

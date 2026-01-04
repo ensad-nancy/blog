@@ -1,7 +1,7 @@
 ---
 title: On va se rendre compte que la terre n’a plus toutes ses dents. 
 date: 2025-03-12
-# tags: tag&
+tags: une adresse à quelqu'un 
 # preview: image
 ---
 
