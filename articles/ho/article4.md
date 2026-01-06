@@ -1,6 +1,6 @@
 ---
 title: nüshu
-date: 2025-04-12
+date: 2025-12-04
 ---
 Ce motif est composé de points et de lignes longues et étirées vers le bas, dont la forme évoque des feuilles qui tombent, des gouttes de pluie ou encore des larmes. Il s’agit d’une écriture transmise secrètement de génération en génération par des femmes qui, autrefois, ne pouvaient pas utiliser les caractères chinois, considérés comme le domaine exclusif des hommes. Aujourd’hui, je souhaite vous présenter le nüshu, une écriture qui a profondément inspiré mon travail de graphisme.
 Cette écriture est née dans un village de la région de Jiangyong (江永), dans la province du Hunan, en Chine. Entouré de montagnes, ce village était un lieu à la fois très calme et paisible, mais aussi coupé du monde extérieur. Le nüshu est ainsi devenu bien plus qu’un simple moyen de communication : il s’est imposé comme un support essentiel de réconfort psychologique et de lien émotionnel entre les femmes. À l’époque, celles-ci ne recevaient pas d’éducation en caractères chinois, mais elles devaient apprendre des techniques artisanales comme la broderie ou la couture. Bien qu’elles ne puissent pas écrire en chinois, elles avaient, elles aussi, le désir de communiquer et d’exprimer leurs émotions, et le nüshu est devenu l’écriture qui portait ces sentiments.

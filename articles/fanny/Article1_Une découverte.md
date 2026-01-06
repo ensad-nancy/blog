@@ -15,7 +15,7 @@ Je suis contente d'avoir enfin fait cette démarche, celle de visiter la premiè
 
 Il est aussi particulier de visiter un endroit dont on connaît déjà l’histoire. Le fait d’avoir attendu toutes ces années signifie que j’avais déjà acquis une certaine connaissance de ce que j’allais voir. Les meubles, peintures, vitraux et autres objets que j’avais découverts en photo ou étudiés d’un point de vue technique, je les voyais enfin en vrai. Comme si, avant de pouvoir les observer directement, il m’avait fallu accumuler tout ce savoir — alors qu’en réalité, il ne tenait qu’à moi de venir ici dès ma première année dans cette ville.
 
-Je recommande vivement cette visite, que l’on connaisse ou non son histoire. Et pour ceux qui ont longtemps repoussé : n’ayez pas honte. Parfois, il y a une forme de beauté dans le fait de découvrir — enfin — ce que l’on croyait déjà connaître.
+Je recommande vivement cette visite, que l’on connaisse ou non son histoire. Et pour ceux qui ont longtemps repoussé : n’ayez pas honte. Parfois, il y a une forme de beauté dans le fait de découvrir enfin ce que l’on croyait déjà connaître.
 
 FMLD
 

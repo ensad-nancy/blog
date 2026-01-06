@@ -1,14 +1,146 @@
-body{
-    background-color: rgb(255, 255, 255)
+/* ===========================
+   GLOBAL STYLES (Clean Brutalism)
+=========================== */
+body {
+    background-color: rgb(255, 255, 255);
+    /* Mischung aus deinen Vorgaben */
+    font-family: Arial, Helvetica, sans-serif;
+    columns: 3;
+    column-gap: 30pt; /* Mehr Platz zwischen den Spalten erhöht Lesbarkeit */
+    column-rule: 1px solid #eee; 
+    cursor: default; /* "wait" nur bei Hover-Effekten für bessere UX */
+    margin: 0;
+    padding: 160px 40px 40px; /* Mehr Rand für "Atemraum" */
+    line-height: 1.4; /* Goldener Standard für Lesbarkeit */
 }
 
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 50pt;
-  color: ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: clamp(40pt, 8vw, 60pt);
+    color: #000;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 10px solid #000;
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 28pt;
+    color: red;
+    text-decoration: underline wavy red;
+    margin: 20px 0;
+    transform: rotate(-1deg);
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: blue;
+    font-size: 1.5rem;
+    text-decoration: overline;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+h3:hover {
+    background: blue;
+    color: white;
+    transform: skewX(-10deg);
 }
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 22.5pt;
+    font-size: 18pt; /* 22.5pt war sehr groß für Spaltentext, 18pt ist ein Kompromiss */
+    color: #1a1a1a;
+    text-align: left; /* Justify in Spalten erzeugt oft hässliche Lücken */
+    text-decoration: none; 
+    margin-bottom: 1.5rem;
+    position: relative;
+    /* Rotation auf 0 reduziert, Chaos passiert erst beim Hover */
+    transform: rotate(0deg); 
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s;
+    break-inside: avoid;
+}
+
+/* Der "Chaos-Effekt" wird gezielt eingesetzt */
+p:hover {
+    transform: rotate(2deg) scale(1.02);
+    background-color: rgba(255, 255, 0, 0.5);
+    cursor: wait;
+}
+
+/* ===========================
+   THEME BAR
+=========================== */
+#themes {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    background-color: #adff2f; /* greenyellow */
+    color: #8000ff;       
+    display: flex;        
+    flex-wrap: nowrap;    
+    align-items: center;
+    overflow-x: auto;     
+    white-space: nowrap;  
+    padding: 1.5rem;        
+    gap: 2rem;           
+    z-index: 999;         
+    font-size: 1.8rem;
+    border-bottom: 10px solid #000; /* Massive schwarze Kante */
+    transform: rotate(-1.5deg) translateY(-10px); /* Radikalere Schräge */
+    cursor: default;
+}
+
+#themes::-webkit-scrollbar {
+    height: 12px;          
+}
+
+#themes::-webkit-scrollbar-thumb {
+    background-color: #000; /* Schwarze Scrollbar für mehr Härte */
+    border: 2px solid #ff0;
+}
+
+#themes legend {
+    font-size: 2.2rem;
+    font-weight: 900;
+    background: #000;
+    color: #fff;
+    padding: 0 15px;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transform: rotate(2deg);
+}
+
+#themes div {
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+}
+
+#themes input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #000; 
+}
+
+#themes label {
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.1s;}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 1100px) {
+    body { columns: 2; }
+}
+
+@media (max-width: 768px) {
+    body { 
+        columns: 1; 
+        padding-top: 120px;
+    }
+    p { font-size: 16pt; }
 }
