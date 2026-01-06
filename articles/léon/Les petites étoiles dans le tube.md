@@ -1,6 +1,7 @@
 ---
 title: Les petites étoiles dans le tube
 date: 2025-11-20
+tags: un détail graphique
 ---
 
 # Les petites étoiles dans le tube. 
