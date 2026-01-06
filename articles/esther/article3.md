@@ -1,7 +1,7 @@
 ---
 title: Une fissure dans le détail
 date: 2025-27-11
-# tags: tag&
+tags: quelque chose qui inspire 
 # preview: image
 ---
 
