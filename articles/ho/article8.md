@@ -1,6 +1,6 @@
 ---
 title: étoile
-date: 2025-01-01
+date: 2026-01-01
 ---
 
 "quand une personne meurt, est-ce qu’elle devient une étoile?"
