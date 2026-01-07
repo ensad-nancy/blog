@@ -1,0 +1,12 @@
+-----
+title : Adieu 
+date: 23/05/25
+tags: Une adresse a quelqu'un 
+
+-----
+
+
+# Adieu 
+
+Salut Esther, avec Matteo ça fait déjà bien une heure qu’on est partis et je ne pense pas qu’un jour nous 
+reviendrons. Tout allait bien, on se souvenait à peu près du chemin qu’il fallait emprunter. On savait qu’une fois arrivés devant l’Intermarché on devait juste le contourner pour retrouver la route. Mais voilà, ça fait maintenant bien 1h qu’on marche et aucun Intermarché à l’horizon. On est passés devant le radar et comme tu le sais on n’a pas pu s’empêcher de courir juste devant pour voir ce que ça faisait. C’est peut-être là qu’était l’Intermarché, devant le radar qui sait ? En tout cas on a bien rigolé même si à l’heure actuelle on ne rigole plus vraiment. On a eu une once d’espoir lorsqu’on a enfin trouvé un Intermarché mais on a eu beau faire le tour, aucune route semblable à nos souvenirs. Je t’écris avec le peu de batterie qu’il me reste. Pourquoi je ne mets pas l’adresse sur Google Map plutôt que de t’envoyer ce dernier message ? Aucun moyen de la retrouver, l’information n’est disponible dans aucun mail et aucun numéro à contacter en cas de problèmes. J’ai 4 %, une connexion vraiment douteuse qui ne me permet même pas de vous prévenir sur Instagram. Alors je t’écris ici avec espoir que tu liras ces mots. On a rencontré un groupe de Hollandais. Ils ne parlaient pas français, mais comme tu le sais l’anglais n’a plus de secret pour nous, ils allaient eux aussi vers un internat, on les a suivis avec l’infime chance que ce soit le même endroit. Sur le chemin on s’est rendu compte que le paysage changeait et devenait méconnaissable, mais par déni on arrivait à reconnaître certains bâtiments qui menaient vers notre internat. Une fois arrivés là-bas, ce n’était pas le nôtre. Matteo a pu rentrer pour recharger son téléphone de quelques pour-cent. J’ai parlé avec un gardien qui m’a expliqué qu’il n’y avait que deux internats et que l’autre était à une dizaine de minutes plus bas. On a bu de l’eau, on les a remerciés et maintenant nous voici. Sur le chemin. Il est bientôt deux heures, on ne pourra bientôt plus rentrer. L’info du gardien était vraie mais le lieu où vous vous trouvez est à bien 30 minutes à l’opposé de nous. On a couru aussi vite que possible mais la batterie n’a pas pu tenir. On continue de marcher avec l’espoir de retrouver notre route, perdus au milieu d’une ville qu’on ne connaît pas.
