@@ -3,9 +3,7 @@ title: Lettre à la Normandie
 date: 2025-12-08
 # tags: tag&
 # preview: image
----
-<img src="Blog/articles/lohann/images/20251124_102241.jpg" alt="lowcost3000" width="300"/>
-   
+--- 
 #
 ##
 Chère soeur,
@@ -29,3 +27,5 @@ J'aspire à quelque chose de différent, j'ai conscience que c'est une chance et
 Bientôt, nous nous verrons lors des festivités anuelles, 
 J'apporterai le dessert,
 Je vous embrasse
+lo'
+
