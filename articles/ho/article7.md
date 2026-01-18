@@ -1,6 +1,6 @@
 ---
 title: L’océan de l’information
-date: 2025-01-25
+date: 2026-01-25
 preview: images/Pasted Graphic.tiff
 ---
 
