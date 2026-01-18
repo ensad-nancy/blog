@@ -8,15 +8,15 @@
 }
 
 body{
-    background-color: #edededee;
+ overflow: hidden;
 }
 
-fieldset{
+#themes{
   position: absolute;
   left: 75%;
   width: 20%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
@@ -24,120 +24,123 @@ fieldset{
   color:blue
 }
 
-fieldset legend{
+#themes legend{
     display: none;
 }
 
-fieldset div{
+#themes div{
     font-size: 32pt;
     border: 3px solid blue;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
-fieldset div:nth-child(1)::before{
+/*glyphes décoratifs des div changement de thème*/
+#themes div:nth-child(1)::before{
     content: "{";
 }
-fieldset div:nth-child(1)::after{
+#themes div:nth-child(1)::after{
        content: "}";
 }
-fieldset div:nth-child(2)::before{
+#themes div:nth-child(2)::before{
     content: "#";
 }
-fieldset div:nth-child(3)::before{
+#themes div:nth-child(3)::before{
     content: "⁑";
 }
-fieldset div:nth-child(4)::after{
+#themes div:nth-child(4)::after{
     content: "//";
-}fieldset div:nth-child(4)::before{
+}#themes div:nth-child(4)::before{
     content: "//";
 }
-fieldset div:nth-child(5)::before{
+#themes div:nth-child(5)::before{
     content: "{";
 }
-fieldset div:nth-child(5)::after{
+#themes div:nth-child(5)::after{
        content: "}";
 }
-fieldset div:nth-child(6)::before{
+#themes div:nth-child(6)::before{
     content: "#";
 }
-fieldset div:nth-child(7)::before{
+#themes div:nth-child(7)::before{
     content: "⁑";
 }
-fieldset div:nth-child(8)::before{
+#themes div:nth-child(8)::before{
     content: "*";
 }
-fieldset div:nth-child(8)::after{
+#themes div:nth-child(8)::after{
        content: "*";
 }
-fieldset div:nth-child(9)::before{
+#themes div:nth-child(9)::before{
     content: "//";
 }
-fieldset div:nth-child(9)::after{
+#themes div:nth-child(9)::after{
        content: "//";
 }
-fieldset div:nth-child(10)::before{
+#themes div:nth-child(10)::before{
     content: "{";
 }
-fieldset div:nth-child(10)::after{
+#themes div:nth-child(10)::after{
        content: "}";
-}fieldset div:nth-child(11)::before{
+}#themes div:nth-child(11)::before{
     content: "#";
 }
-fieldset div:nth-child(12)::before{
+#themes div:nth-child(12)::before{
     content: "⁑";
-}fieldset div:nth-child(13)::before{
+}#themes div:nth-child(13)::before{
     content: "*";
-}fieldset div:nth-child(14)::before{
+}#themes div:nth-child(14)::before{
     content: "//";
 }
-fieldset div:nth-child(14)::after{
+#themes div:nth-child(14)::after{
        content: "//";
 }
-fieldset div:nth-child(15)::before{
+#themes div:nth-child(15)::before{
     content: "{";
 }
-fieldset div:nth-child(15)::after{
+#themes div:nth-child(15)::after{
        content: "}";
-}fieldset div:nth-child(16)::before{
+}#themes div:nth-child(16)::before{
     content: "#";
 }
-fieldset div:nth-child(17)::before{
+#themes div:nth-child(17)::before{
     content: "⁑";
-}fieldset div:nth-child(18)::before{
+}#themes div:nth-child(18)::before{
     content: "*";
 }
 
 
 #filtres {
   position: absolute;
-  left: 30%;
+  left: 35%;
   width: 40%;
   box-sizing: border-box;
-  top: 60%;
+  top: 70%;
   height: 100%;
   border: 0;
-  overflow-y: auto;
   justify-content: center;
 }
 
 main {
   position: absolute;
   left: 2%;
-  width: 26%;
+  width: 30%;
   box-sizing: border-box;
-  top: 10%;
+  top: 2%;
   height: 100%;
   border: 0;
   overflow-y: auto;
 }
 
+
 main a{  
-    padding: 10px 20px;
-    border: 2px solid blue;
+  position: relative;
+  padding: 0px 15px;
+  border: 2px solid blue;
   border-radius: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   font-family: "Adelphe_Trouble";
@@ -145,8 +148,194 @@ main a{
   text-align: center;
 }
 
-main p {
-    visibility: hidden;
+/*glyphes décoratifs arrière plan de main a*/
+main a:nth-child(3)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -185%;
+    line-height: 100%;
+    left: 5%;
+}
+main a:nth-child(4)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0);
+    z-index: 0;
+    pointer-events: none;
+    top: -243%;
+    line-height: 100%;
+    left: 80%;
+}
+main a:nth-child(5)::before{
+    content: "(";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    top: -246%;
+    line-height: 100%;
+    left: 0%;
+}
+main a:nth-child(6)::before{
+    content: ")";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -448%;
+    line-height: 100%;
+    left: 80%;
+}
+main a:nth-child(8)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -428%;
+    line-height: 100%;
+    left: 60%;}
+
+main a:nth-child(9)::before{
+    content: "~";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+ top: -273%;
+    line-height: 100%;
+   left: 38%;
+}
+main a:nth-child(10)::before{
+    content: "{";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 350px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -413%;
+    line-height: 100%;
+    left: 0%;
+}
+main a:nth-child(11)::before{
+    content: "}";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 350px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+top: -966%;
+  line-height: 100%;
+  left: 80%;
+}
+main a:nth-child(12)::before{
+    content: "‹...›";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+   font-size: 300px;
+   color: rgb(0, 255, 0);
+   z-index: -1;
+   pointer-events: none;
+   pointer-events: none;
+   pointer-events: none;
+top: -424%;
+   line-height: 100%;
+   left: 2%;
+}
+main a:nth-child(13)::before{
+    content: "¤";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+   font-size: 160px;
+  color: rgb(0, 255, 0);
+  z-index: -1;
+  pointer-events: none;
+  pointer-events: none;
+  pointer-events: none;
+  top: -855%;
+  line-height: 100%;
+  left: 0%;
+}
+
+main a:nth-child(14)::before{
+    content: "*";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -388%;
+    left: 10%;}
+
+main a:nth-child(15)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0);
+    z-index: 0;
+    pointer-events: none;
+    top: -548%;
+    line-height: 100%;
+    left: 80%;
+}
+main a:nth-child(16)::before{
+    content: "(";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    top: -436%;
+    line-height: 100%;
+    left: 0%;
+}
+main a:nth-child(17)::before{
+    content: ")";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+    top: -545%;
+    line-height: 100%;
+    left: 80%;
+}
+main a:nth-child(18)::before{
+    content: "°";
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 300px;
+    color: rgb(0, 255, 0);
+    z-index: -1;
+    pointer-events: none;
+   top: -628%;
+  line-height: 100%;
+  left: 70%;}
+
+
+
+
+main img{
+    display: none;
 }
 
 h1 {
@@ -154,23 +343,85 @@ h1 {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 34%;
-  top: 5%;
+  left: 37%;
+  top: 10%;
   text-align: justify;
   font-family: "Adelphe_Trouble_Regular";
   font-size: 30pt;
   color: blue;
 
 }
-
-p {
+/*glyphes décoratifs arrière plan de h1*/
+h1::before{
+    content: "{";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: -15%;
+}
+h1::after{
+    content: "}";  
+    position: absolute;
+    font-family:'Adelphe_Trouble_Regular'; 
+    font-size: 150px;
+    color: rgb(0, 255, 0); 
+    z-index: -1; 
+    pointer-events: none; 
+    top: -10%;
+    left: 102%;
+}
+h2 {
+  width: 30%;
   display: flex;
   justify-content: center;
+  position: absolute;
+ left: 29%;
+  top: -2%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble";
+  font-size: 20pt;
+  color: blue;
+
+}
+
+h2::before{
+    content: "//*";
+    color:blue;
+    font-family: "Adelphe_Trouble";
+    font-size: 20pt;
+}
+h2::after{
+    content: "*//";
+    color:blue;
+    font-family: "Adelphe_Trouble";
+    font-size: 20pt;
+}
+#auteurices{
+width: 25%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ left: 12%;
+  top: 8%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble_Regular";
+  font-size: 15pt;
+  color: blue;
+  border: 2px solid blue;  /* Bordure autour du <p> */
+  border-radius: 60%; 
+}
+
+
+body > p {
+    justify-content: center;
   text-align: center;
-  position: relative;
   margin-top: 30%;
   position: absolute;
-  left: 30%;
+  left: 33%;
   width: 40%;
   box-sizing: border-box;
   top: -18%;
@@ -178,17 +429,111 @@ p {
   border: 0;
   font-family: "Adelphe_Trouble_Regular";
   color: blue;
-  display: flex;
   font-size: 20pt;
+}
+
+span{
+    font-family: 'Adelphe_Trouble';
 }
 
 #date {
   position: absolute;
-  left: 30%;
-  width: 40%;
+  left: 50%;
+  width: 64%;
   box-sizing: border-box;
-  top: 9%;
+  top: 6%;
   height: 100%;
   border: 0;
   overflow-y: auto;
+}
+
+input[type="range"] {
+  appearance: none;
+  background: transparent;
+  width: 10rem;
+  cursor: pointer;
+  background: rgba(0, 255, 8);
+  height: 0.5rem;
+  border-radius: 10px;
+  margin: -27px 30px -17px 90px;
+  display: flex;
+  position: absolute;
+top: 8.5%;
+  left: -23%;
+}
+
+#date p{ 
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ left: -22px;
+  top: -3%;
+  text-align: justify;
+  font-family: "Adelphe_Trouble";
+  font-size: 20pt;
+  color: blue;
+}
+
+#auteurices p::before {
+  content: "(";  /* Le contenu ajouté avant le <p> */
+  font-family:  "Adelphe_Trouble_Regular"; 
+  font-size:  25pt;                /* Texte en italique */
+  color: rgb(0, 255, 0);                       /* Couleur du texte */
+}
+
+#auteurices p::after {
+  content: ")";  /* Le contenu ajouté après le <p> */
+  font-family:  "Adelphe_Trouble_Regular";  
+  font-size:  25pt;                 /* Texte en italique */
+  color: rgb(0, 255, 0);                    /* Couleur du texte */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgb(0,0,255);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+}
+
+
+input[type="radio"]{
+ appearance: none;
+ position: absolute;
+ background-color: #ffffff00;
+ margin: 0;
+ padding: 0px;
+z-index: 3;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+cursor: pointer;
+}
+
+#date label{ 
+  position: absolute;
+  color: blue;
+  font-family: "Adelphe_Trouble_Regular";
+  font-size: 18pt;
+  top: 8%;
+  left: 3%;
+}
+
+select{
+    position: absolute;
+    appearance: none;
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    cursor: pointer;
+    border: transparent;
+    font-family: "Adelphe_Trouble_Regular";
+    font-size: 12pt;
 }

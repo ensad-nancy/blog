@@ -1,3 +1,152 @@
-body{
-    background-color: #ADFF2F
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+body {
+    background-color: rgb(255, 140, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    columns: 3;
+    column-gap: 20pt; /* Etwas breiter für die brutalistische Spaltentrennung */
+    column-rule: 3px solid #000; /* Konstruktionsmerkmal: Sichtbare Spaltentrennung */
+    cursor: wait;
+    margin: 0;
+    padding: 0;
+    padding-top: 130px; 
+    overflow-x: hidden;
 }
+
+h1 {
+    font-size: 85pt;
+    line-height: 1;
+    display: block; /* Flex entfernt für besseren Textfluss in Spalten */
+    text-align: left;
+    z-index: -1;
+    pointer-events: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.15); /* Geisterhafter Hintergrund-Look */
+    margin: 0 0 40px 0;
+}
+
+h2 {
+    font-size: 40pt;
+    color: red;
+    background-color: #000; /* Brutalistisch: Text in Blöcken */
+    padding: 5px 15px;
+    text-decoration: underline wavy red;
+    margin-left: 9%;
+    margin-bottom: 20px;
+    display: inline-block; /* Verhindert, dass der schwarze Balken die ganze Breite einnimmt */
+    transform: rotate(-2deg);
+}
+
+h3 {
+    color: blue;
+    background: #fff; /* Kontrastreicher Block */
+    padding: 2px 10px;
+    border: 3px solid blue;
+    text-decoration: overline;
+    transition: transform 0.2s steps(4), font-size 0.3s ease; /* Steps-Animation wirkt technischer/kälter */
+    margin-left: 10%;
+    display: inline-block;
+    position: relative;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    inset: -30px; /* Modernes CSS für den Hover-Bereich */
+}
+
+h3:hover {
+    font-size: 75pt;
+    transform: rotate(-3deg) scale(1.1);
+    z-index: 10;
+}
+
+p {
+    font-size: 35pt;
+    color: #8000ff;
+    text-decoration: dotted underline;
+    text-indent: 30pt;
+    position: relative;
+    rotate: 10deg;
+    margin: 60px 2.5% 60px 9%; /* Abstände erhöht, damit Rotationen nicht kollidieren */
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    break-inside: avoid; /* Verhindert das unschöne Zerreißen von Absätzen in Spalten */
+    background: rgba(255, 255, 255, 0.05);
+}
+
+p:hover {
+    transform: rotate(-20deg);
+    background-color: rgb(255, 255, 0);
+    outline: 5px solid #000; /* Harter Fokus-Rahmen */
+    z-index: 5;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.thumb {
+    display: none;
+}
+
+/* ===========================
+   THEME BAR
+=========================== */
+#themes {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;          
+    background-color: #adff2f; /* greenyellow */
+    color: #8000ff;       
+    display: flex;        
+    flex-wrap: nowrap;    
+    align-items: center;
+    overflow-x: auto;     
+    white-space: nowrap;  
+    padding: 1.5rem;        
+    gap: 2rem;           
+    z-index: 999;         
+    font-size: 1.8rem;
+    border-bottom: 10px solid #000; /* Massive schwarze Kante */
+    transform: rotate(-1.5deg) translateY(-10px); /* Radikalere Schräge */
+    cursor: default;
+}
+
+#themes::-webkit-scrollbar {
+    height: 12px;          
+}
+
+#themes::-webkit-scrollbar-thumb {
+    background-color: #000; /* Schwarze Scrollbar für mehr Härte */
+    border: 2px solid #ff0;
+}
+
+#themes legend {
+    font-size: 2.2rem;
+    font-weight: 900;
+    background: #000;
+    color: #fff;
+    padding: 0 15px;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transform: rotate(2deg);
+}
+
+#themes div {
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+}
+
+#themes input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #000; 
+}
+
+#themes label {
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.1s;}

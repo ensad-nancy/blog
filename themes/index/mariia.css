@@ -1,43 +1,116 @@
 
 @font-face {
   font-family: 'ATA';
-  src: url(../../articles/mariia/images/Earth\ 2073.ttf);
+  src: url(../../articles/mariia/images/NewtonScient.ttf);
 }
 
 @font-face {
   font-family: 'RGAO';
   src: url(../../articles/mariia/images/RomauntGaolines.ttf);
+   unicode-range: U+0000-00FF;
 }
 
 @font-face {
   font-family: 'PRMT';
   src: url(../../articles/mariia/images/premint-Regular.otf);
+
+}
+
+@font-face {
+  font-family: 'RGAO';
+  src: url('../../articles/mariia/images/Florentia_Italic.ttf');
+  unicode-range: U+0400-04FF; /* Cyrillic */
 }
 
 body{
-    background-color: #d6d2c8;
-    font-family: 'RGAO';
+    background-color: #edece9;
+    font-family: 'PRMT';
     color: #1d1d1d;
+  background-image:
+    linear-gradient(rgba(2, 89, 219, 0.062) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 89, 219, 0.068) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
+
+
+
+body::before {
+    content: "";
+    position: fixed;     /* stays in place while scrolling */
+    top: 0;
+    bottom: 0;
+    left: 8px;          /* adjust until it visually aligns with "B" */
+    width: 0;
+    border-left: 3px dotted #0259db;  /* dotted line */
+    z-index: -1;         /* so it stays behind the content */
+    opacity: 0.8;        /* optional, gives a subtle look */
+}
+
+
+
 
 .preview {
    height: 5px;
 }
 
+
+
+
+
 .title {
     font-size: 100px;
-    color: #ccff00;
+    color: #000000;
 }
 
+#title {
+    position: relative;
+}
+
+#title::before {
+    content: "";
+    position: absolute;
+    top: -25px;               /* distance ABOVE the title */
+    left: 0;
+    right: 0;
+    height: 0;
+    border-top: 3px dotted #0259db;  /* dotted line */
+    opacity: 0.6;             /* optional */
+}
+
+
+
+
+
 img {
+  max-width: 200px;
     display: block;
    margin: 0 auto;
     filter: grayscale(100%);
+
     
 }
 img:hover {
   filter: grayscale(0%);
+  
 }
+
+
+main a div img.thumb {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+
+main a:hover img.thumb  {
+    opacity: 1;
+    max-height: 250px;  
+}
+
+
+
+
 
 text {
   padding: 20%;    /* відступи з боків */
@@ -47,62 +120,46 @@ text {
 h1 {
   color: #005eeb;
   text-align: center;  
-  border-bottom: 3px dotted #0259db;
-  padding-bottom: .3rem;
-  font-size: 70px; 
-}
+  border-bottom: 3px dotted #0259dbc5;
+  padding-bottom: 1.3rem;
+  font-size: 90px; 
+  position: relative;
+  font-family: 'RGAO';
+ }
 
 
 
-p {
-  font-family: 'PRMT';
+
+body > p {
+    font-family: 'PRMT';
   text-transform: uppercase;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  font-size: 20.7px;
-  max-width: 100%;
-  text-align: center; 
+  letter-spacing: 4.2px;
+  opacity: 0.9;
+  font-size: 18px;
+  text-align: right; 
   color: #0259db;
-  position: relative; /* щоб ::before/::after відносно нього */
+  position: relative;
+  top: -40px;
+  border-bottom: 3px dotted #0259dbc3;
+  padding-bottom: .3rem;
 }
 
-
-p::before {
+/* Horizontal lines */
+body > p::before,
+body > p::after {
   content: '';
   display: inline-block;
-  width: 190px; /* довжина лінії */
+  width: 220px; /* довжина лінії */
+  opacity: 0.5;
   height: 2px;
   background: #0259db;
-  margin-right: 20px; /* відстань до тексту */
-  vertical-align: middle;
-}
-p::after {
-  content: '';
-  display: inline-block;
-  width: 190px; /* довжина лінії */
-  height: 2px;
-  background: #0259db;
-  margin-left: 20px; /* відстань до тексту */
+  margin-right: 6px; /* відстань до тексту */
   vertical-align: middle;
 }
 
-p:nth-child(1) {
-  color: #0259db;
-  font-weight: 600;
-  font-size: 20px;
-  opacity: 1;
-}
-p:nth-child(2) {
-  color: #0259db;
-  font-weight: 600;
-  text-align: right;
-}
-p:nth-child(3) {
-  color: #0259db;
-  font-weight: 600;
-  text-align: right;
-}
+body > p::before { margin-right: 20px; }
 
+body > p::after  { margin-left: 20px; }
 
 
 legend {
@@ -123,22 +180,51 @@ a div .thumb {
     width: 150px;
     height: 120px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 1px;
 }
+
 
 
 
 #themes label {
-    transition: 0.4s ease;
-    cursor: pointer;
-    font-size: 25px;
+    display: inline-block;
+    padding: 6px 10px;
+    background: #fffffe;
+    font-family: 'PRMT';
+    color: #0259db;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    margin: 1px 4px;
+
+    /* The torn edge */
+    clip-path: polygon(
+        0 0, 100% 0,
+        100% 70%, 95% 80%,
+        90% 70%, 85% 78%,
+        80% 70%, 75% 82%,
+        70% 72%, 65% 80%,
+        60% 70%, 55% 82%,
+        50% 70%, 45% 80%,
+        40% 72%, 35% 78%,
+        30% 70%, 25% 80%,
+        20% 72%, 15% 78%,
+        10% 70%, 5% 80%,
+        0 70%
+    );
+
+    transition: 0.25s ease;
 }
 
+
+
 #themes label:hover {
-    letter-spacing: 10px;
-    transform: scale(1.7);
+    letter-spacing: 5px;
+    transform: scale(1.2) rotate(-1deg);
     color: #0259db;
 }
+
+
+
 
 
 
@@ -147,12 +233,49 @@ main h3 {
     position: relative;
     display: inline-block;
     padding-bottom: 4px;
-    font-size: 40px;
+    font-size: 35px;
+    font-family: 'RGAO';
+    text-align: right;
 }
+
+main h3:hover {
+  color: #0c6dff;
+ transform: scale(0.9);
+ animation-delay: 2s;
+ transition: 0.3s ease;
+    
+}
+
+
+main .tag {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+  z-index: 0;
+}
+
+
+main .tag::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 0.15em;
+  height: 0.9em;
+
+  background: #035fea4b;
+  opacity: 0.35;
+
+  transform: rotate(-2deg);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
     padding: 1rem;
 }
@@ -161,9 +284,9 @@ main a div {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
-    background: #efece3;
-    display: flex;
-    flex-direction: column; 
+    background: #fffffe;
+  display: flex;
+  flex-direction: column;
     gap: 1rem;
 }
 
@@ -174,44 +297,106 @@ main a div img.thumb {
     border-radius: 6px;
 }
 
-#themes div {
-    border-bottom: 3px dotted #0259db;
-    padding-bottom: 6px;
-    margin-bottom: 6px;
-    border-top: 3px dotted #0259db;
-    padding-top: 6px;
-    margin-top: 6px;
-}
+
 
 #themes div:last-child {
     border-bottom: none;
 }
 
 
-
-
 #filtres {
-  display: flex;               
-  justify-content: center;     
-  align-items: center;        
-  gap: 20px;                   
-  padding: 15px 0;             
+  position: relative;
+  margin: 30px auto 40px;
+  padding: 12px 24px 16px;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+gap: 8px 12px;
+
+  background: #fffdf8;
+  font-family: 'PRMT';
+}
+
+
+
+
+#filtres::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 12px;
+
+  background: radial-gradient(circle at top,
+    transparent 0,
+    transparent 6px,
+    #fffdf8 6px);
+
+  background-size: 30px 12px;
+  background-repeat: repeat-x;
+}
+
+
+
+
+#filtres h2 {
+  padding: 0 20px 0 0; 
+  font-size: 23px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0259db;
+  margin: 0;
+  border-right: 1px dashed rgba(0,0,0,0.25);
 }
 
 #filtres > div {
   display: flex;
-  flex-direction: column;      
-  align-items: center;         
+  align-items: center;
+  gap: 10px;
 }
 
-#filtres h2 {
-    
-    font-size: 30px;        
-    color: #0259db;         
-    text-align: left;     
-    margin-right: 35px;   
-    letter-spacing: 1px;   
+#filtres p {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0;
 }
+
+
+#date {
+  grid-column: 1;
+  align-items: center;
+}
+
+#auteurices {
+  grid-column: 3;
+  align-items: flex-center;
+}
+
+
+
+#filtres input[type="range"],
+#filtres select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+  padding: 4px 6px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+
+
+   
+
+
+
+
 
 main a {
     text-decoration: none;  
@@ -229,11 +414,11 @@ main a div::after {
     content: "";
     position: absolute;
     top: 10px;          
-    left: 45%;            
+    left: 85%;            
     transform: translateX(-50%) scale(0.6) rotate(-15deg);
     
-    width: 28px;           
-    height: 28px;
+    width: 20px;           
+    height: 20px;
     background: #0259db;
     opacity: 0;
     transition: 0.3s ease;
@@ -253,52 +438,95 @@ main a:hover div::after {
     transform: scale(1.30) rotate(0deg);
 }
 
+
+
 #themes {
-  display: grid;
-    grid-template-columns: repeat(5, minmax(120px, 1fr));
-    gap: 10px ;
+    position: absolute;
+    top: 0px;
+    z-index: 50;
+    display: flex;        
+    align-items: center;
+    gap: 7px;/* distance between names */
+    white-space: nowrap;    
+    font-family: 'PRMT';
     border: none;
+    margin: 0px 0px;
+    padding: 2px;
+}
+#themes legend {
+    display: none;
 }
 
-#themes div {
-    padding: 8px 14px;
-    background: #f3eee2;
-    border-radius: 30px;
-    width: fit-content;
-    animation: floaty 6s ease-in-out infinite alternate;
+#themes > div {
+    position: relative;
+    display: inline-flex;
 }
 
-#themes div:nth-child(odd) {
-    margin-left: 40px;
-    animation-delay: 1s;
+#themes label {
+    display: inline-block;
+    padding: 8px 8px;
+    font-family: 'PRMT';
+    font-size: 17px;
+    color: #0259db;
+
+    background: rgba(255,255,255,0.6);
+    border: 1px solid #d0d0d0;
+    border-radius: 1px;
+
+    pointer-events: none;   
+    transition: background 0.25s ease, transform 0.2s ease;
 }
 
-#themes div:nth-child(3n) {
-    margin-left: 80px;
-    animation-delay: 2s;
-}
 
 
 
-
-input[type="radio"] {
-    appearance: none;
-    width: 22px;
-    height: 22px;
+#themes input[type="radio"] {
+    position: absolute;
+    inset: 0;               
+    opacity: 0;
     cursor: pointer;
-    background: #000000;
-    clip-path: polygon(
-        50% 0%, 61% 35%, 98% 35%,
-        68% 57%, 79% 91%, 
-        50% 70%, 21% 91%, 
-        32% 57%, 2% 35%, 
-        39% 35%
-    );
-    transition: transform 0.15s ease;
+    z-index: 2;            
+    appearance: none;
 }
 
-input[type="radio"]:checked {
-    background: #0259db;
-    transform: scale(1.25) rotate(8deg);
-    box-shadow: 0 0 8px #ffe169aa;
+
+
+
+
+
+main a div {
+    position: relative;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fffefc;
+    border: 1px solid #ddd;
 }
+
+
+main a div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -7px; 
+    width: 15px;
+
+    background: radial-gradient(circle at left,
+        transparent 0,
+        transparent 8px,
+        #0259db 8px);
+
+    background-size: 20px 40px;
+    background-repeat: repeat-y;
+}
+
+#themes > div:hover label {
+    background: rgba(2, 89, 219, 0.261);
+    transform: translateY(-1px);
+}
+
+#themes input[type="radio"]:checked + label {
+    background: #0259db;
+    color: #fff;
+}
+

@@ -11,4 +11,7 @@ date: 2025-11-17
 ###
 **PIDAPIPO, c'est le titre du livre-recettes-photo-famille; ce livre me parle même si je n'y comprends rien parce qu'il est en Allemand. Je le lis comme un livre plutôt photo que recettes et ça me va comme ça.**
 
+lo'
+
+
 *1 [Un artiste qui encadrait ses fins de repas](https://www.beauxarts.com/grand-format/daniel-spoerri-inventeur-du-eat-art-et-des-tableaux-pieges-est-mort-a-94-ans/)

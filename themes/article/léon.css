@@ -1,3 +1,177 @@
-body{
-    background-color: #b7ffff;
+@font-face {
+    font-family: 'Format_1452';
+    src: url('/article/léon/images/Format_1452.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Galter';
+    src: url('/article/léon/images/Galter.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chopin';
+    src: url('/article/léon/images/Chopin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('/article/léon/images/Butler.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Galter';
+    padding: 20px;
+    color: #000;
+    overflow-y: auto;
+}
+
+
+#themes {
+    font-size: 13pt;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    align-items: center;
+    padding: 1em;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+#themes legend {
+    color: #000000;
+}
+
+header {
+    max-width: 700px;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+header .title {
+    position: absolute;
+    top: 67px;
+    right: 100px;
+    font-family: 'Butler';
+    font-size: 0.9rem;
+    text-align: right;
+    z-index: 5;
+}
+
+header .date {
+    position: absolute;
+    top: 86px;
+    right: 100px;
+    font-size: 0.8rem;
+    text-align: right;
+    z-index: 5;
+}
+
+header .tags {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 0.8rem;
+    text-align: right;
+    z-index: 5;
+}
+
+.tag {
+    margin-left: 6px;
+}
+
+
+article {
+    position: relative;
+    max-width: 660px;
+    margin: -20px auto 80px;
+ 
+    padding-top: clamp(120px, 18vw, 150px);
+    padding-bottom: clamp(160px, 22vw, 220px);
+    padding-left: clamp(70px, 12vw, 100px);
+    padding-right: clamp(70px, 12vw, 100px);
+
+    /* background-image: url("/articles/léon/images/pageb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center; */
+
+    border: 30px solid transparent;
+    border-image: url("/articles/léon/images/bordure.png") 30 round;
+    background-color: white;
+
+    font-size: 1rem;
+    line-height: 1.65;
+
+    transform: rotate(-0.2deg);
+    z-index: 1;
+
+   
+    overflow: hidden;
+}
+
+article img{
+    width: 100%;
+}
+
+
+article h1 {
+    font-family: "Butler";
+    font-size: 30pt;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+article p {
+    font-family: "Galter";
+    margin-bottom: 1.2em;
+    opacity: 0.7;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+
+article p:last-child {
+    margin-top: 4rem;
+    text-align: right;
+    font-size: 1rem;
+}
+
+
+#themes label {
+    display: block;
+    width: 100%;
+    background-image: url(/articles/léon/images/cire.png);
+    padding: 4em;
+    background-size: 150%;
+    background-position: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+input[type="radio"] {
+    position: absolute;
+    appearance: none;
+    inset: 0;
+    cursor: pointer;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.7);
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
 }

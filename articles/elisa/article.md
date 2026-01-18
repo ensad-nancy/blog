@@ -37,6 +37,6 @@ Fin bref, a la fin les enfants retournent dans leur monde mais attention parce q
 
 *(Je finirais par vous dire que même si c’est facile à critiquer c’est aussi un film avec pleins de belles choses qui font croire à la magie!)*
 
-**Allez à la prochaines les jeunes,** 
+**Allez à la prochaines les jeunes** 
 
 **FOXYFOX**

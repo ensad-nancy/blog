@@ -1,3 +1,129 @@
 body{
-    background-color: #a293ff;
+    background-color: #e6bcbc;
 }
+ @font-face {
+   font-family:"ruritaniaoutline ";
+   src: url("../../articles/esther/images/ruritaniaoutline.ttf") format("opentype");
+} 
+@font-face {
+   font-family:"Rot-ProtoRoman102R 2";
+   src: local("Rot-ProtoRoman102R 2"), url("../../articles/esther/images/Rot-ProtoRoman102R\ 2.otf") format("opentype");
+} 
+@font-face {
+   font-family:"sinistreregular";
+   src: local("sinistreragular"), url("../../articles/esther/images/SINISTRE/sinistreregular.otf") format("opentype");
+} 
+
+ @font-face {
+   font-family:"ruritania ";
+   src: url("../../articles/esther/images/ruritania.ttf") format("opentype");
+} 
+
+
+
+
+
+
+#themes legend{
+   display: none;
+}
+
+.thumb{
+    display: none;
+}
+img{
+   display: none;
+}
+
+
+body{
+    background-color: #fff9f9;
+ font-family:"Rot-ProtoRoman102R 2", serif;
+ font-size: large;
+ 
+}
+h1{
+   font-family:"sinistreregular";
+   font-size: 45px;
+    text-decoration-line: underline;
+    color: #000;
+ position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+     margin: 10px;
+   text-transform: uppercase;
+   }
+
+   #themes{
+   border-radius: 0%;
+   border-width: 0%;
+   text-align: center;
+    font-family: "sinistreregular";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: #000000;
+    font-size: 100%;
+
+    position: relative;
+    
+
+   }
+
+   #themes div{
+      width:250px;
+      height: 46px;
+      border-radius: 70px;
+      background-color: #f1ebeb;
+      border-style: dotted;
+      border-color: #57070c;
+      text-align: center;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+
+
+   article{
+border-radius: 2px;
+ border-style: dotted;
+ margin: 55px;
+ text-align:left;
+   transform: scale(1.02);
+    box-shadow: 0 0 20px #ababab;
+    color: #57070c;
+    padding: 4%;
+    position: relative;
+    margin-bottom: 50%;
+  
+   }
+
+
+   header{
+    display: none;
+   }
+
+
+   input[type="radio"]{
+      position: absolute;
+      margin: 0;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+   }
+
+
+   .container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+

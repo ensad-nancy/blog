@@ -1,36 +1,309 @@
-@font-face {
-    font-family: 'NICE';
-    src: url('../../articles/marie-lys/images/Fluox___.ttf');
-}
-
-html, body {
-    min-height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #001f5b 0%, #0057b8 50%, #ff7a00 100%);
-    background-attachment: fixed; 
-    color: white;
-   
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.title, h1, h2, h3, h4, h5, h6 {
-    font-family: 'NICE', sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    display: grid; 
+    margin: 0; 
+}
+
+body::after {
+    content: none; 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body > p {
+    display: none;
+}
+
+
+
+a[href="index.php"] {
+    display: block; 
+    position: fixed; 
+    top: 20px; 
+    left: 20px;
+    z-index: 200; 
+    
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px; 
+    
+    background-color: #ff30ff; 
+    color: white; 
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+
+
+#themes {
+    position: absolute; 
+    top: 135px;             
+    left: 0;
+    width: 180px;
+    height: auto; 
+    min-height: 100%;       
+    background: rgb(255, 255, 255);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+#themes::before {
+    content: "";
+    position: absolute;
+    top: -280px;
+    left: 100%;       
+    width: 4px;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: none; 
+}
+#themes::after {
+    content: "";
+   position: fixed;
+    top: 0;
+    left: 180px;   /* exact width of #themes */
+    width: 4px;
+    height: 100vh;
+    background: black;
+    z-index: 10000;
+}
+
+#themes legend {
+    position: static;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-top: 20px; 
+}
+
+
+#themes div {
+    background: #ffffff;
+    margin: 10px 0;              
+    padding: 12px 16px;
+    border-radius: 12px;          
+    position: relative;
+    z-index: -100;
+    }
+    
+    #themes label {
+        display: block;
+        border: none;                 
+        background: transparent;      
+        padding: 0;                   
+        margin: 0;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+
+#themes label:hover {
+    background: #ff30ff;
     color: white;
+}
+
+#themes input[type="radio"]:checked + label {
+    color: #ff30ff;
+    font-weight: bold;
+}
+#themes input[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ff30ff22;
+    border-radius: 12px;
+    z-index: -1;
+}
+
+input[type="radio"]{
+    position: absolute;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    padding: 0px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#themes div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 4px;                   
+    width: 100%;
+    background: black;            
+}
+
+#themes div:hover {
+    background: #ff30ff;      
+    box-shadow: 0 5 2px #ff30ff;
+    transition: 0.2s ease;
+    border-radius: 0px;
+}
+
+#themes div {
+    position: relative;
+    overflow: visible;
+}
+#themes div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;                 
+    bottom: 0;
+    background: transparent;
+    transition: 0.2s ease;
+    z-index: -1;
+}
+#themes div:hover::before {
+    background: #ff30ff;
+    top: 4px;               
+    bottom: -4px;           
+    border-radius: 0px;
+    box-shadow: 0 5px 2px #ff30ff;
+}
+
+header, article {
+    margin-left: 220px; 
+    width: calc(100% - 220px); 
+    display: block; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 50px;
+    margin-bottom: 0; 
+}
+
+header > *, article > * {
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .title {
-    font-size: 55px;
-    font-family: 'NICE';
+    order: 1; 
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 10px; 
 }
 
-h2, h3, h4, h5, h6 {
-    font-size: 28px;
+.date {
+    order: 2; 
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0;
+    padding-bottom: 5px; 
+    text-align: left;
 }
 
-p, span, div {
-    font-family: Georgia, 'Times New Roman', serif; 
-    font-size: 18px; 
-    color: white;
+.tags {
+    order: 3; 
+    margin-bottom: 0;
+    padding-bottom: 15px; 
+    text-align: left;
+}
+
+header::after {
+    order: 4; 
+    content: "";
+    display: block;
+    width: 200%;
+    height: 4px;
+    background-color: black;
+    margin: 0; 
+    z-index: 20000;
+}
+
+
+article {
+    margin-top: 40px; 
+    padding-top: 0; 
+    padding-bottom: 100px; 
+}
+
+article p:first-of-type {
+    padding-top: 5px; 
+}
+
+
+article p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 4px solid black; 
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr; 
+    }
+    #themes { 
+        display: none; 
+        position: static; 
+        width: auto;
+    }
+    article, header {
+        margin-left: 0;
+        width: 100%;
+        grid-column: 1;
+    }
+    
+    a[href="index.php"] {
+        position: static;
+        margin: 20px;
+        padding: 5px 10px;
+        background-color: transparent;
+        color: black;
+        border: none;
+        border-radius: 0;
+    }
+    article, header {
+        padding: 0 20px;
+        align-items: flex-start; 
+    }
+    .title {
+        font-size: 3rem; 
+    }
 }

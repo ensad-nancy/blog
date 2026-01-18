@@ -1,3 +1,5 @@
+/*fonts*/
+
 @font-face {
   font-family: 'MedievalSharp-Regular';
   src: url('../../articles/emily/MedievalSharp-Regular.ttf');
@@ -8,18 +10,256 @@
   src: url('../../articles/emily/Aladin-Regular.ttf');
 }
 
+/*introduction*/
 
-body{
-    background-color: #5b6c06;
-    color: rgb(255, 229, 150);
-    text-align: center;
-    font-family: 'Aladin';
+h1 {
+  position: fixed;
+   z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  font-size: 30pt;
+
+  /* white bar behind the title */
+  margin: 0;
+  padding: 1.5rem 2rem 1.5rem 1.5rem; /* extra left padding to move text away from edge */
+  background: #fff;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+
+  white-space: nowrap;
+  word-break: keep-all;
+  text-align: left; /* ensure text is left-aligned inside the flex item */
+}
+
+body > p {
+    font-family: "Aladin";
+    font-size: 20pt;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-wrap: wrap;
+    display: block;
+    margin: 0; 
+    z-index: 4;
+    padding-top: 7rem !important;
+    position: relative;
+}
+
+p{
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  z-index: 4;
+}
+
+/*filters*/
+
+div#filtres {
+  position: absolute;
+  top: 32rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: visible;
+  z-index: 3;
+  height: 20rem;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Two columns below */
+#filtres #date,
+#filtres #auteurices {
+  flex: 1 1 0;
+}
+
+div#filtres > h2 {
+text-align: center;
+flex: 0 0 100%;
+margin: 10px 0 10px;
+}
+
+#filtres #date {
+  flex: 1;
+  top: 5rem;
+  align-items: center;
+  text-align: center;
+}
+
+#filtres #auteurices {
+  flex: 1;
+  top: 5rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* constrain common controls so they don't force wrapping */
+div#filtres input,
+div#filtres select,
+div#filters input,
+div#filters select {
+  max-width: 40%;
+  box-sizing: border-box;
+}
+
+div#themes {
+  position: relative;
+  top:  1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  min-height: 20rem;
+  height: 20rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* hide legacy legend elements (div won't have legend, but safe to include) */
+div#themes legend,
+#themes legend {
+  display: none;
+}
+
+
+/*body*/
+
+body {
+  position: relative; /* for ::before positioning */
+  padding-top: var(--header-height);
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #334313;
+  color: rgb(255, 229, 150);
+  font-family: 'Aladin';
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 14pt;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  width: 100%;
+  height: 1000px;
+  background: url('../../articles/emily/Images/P1090131.JPG') top center/cover no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/*blog posts*/
+
+:root {
+--box-size: 400px; /* change this once to resize all boxes */
+}
+
+a p {
+  margin: 0, 0, 0, -3rem !important;
+}
+
+p h3 {
+  margin: 0;
+  font-size: 50pt;
+  font-weight: bold;
+  text-align: center;
+  text-wrap: center;
+  white-space: normal;   /* allow wrapping */
+  text-overflow: unset;  /* no ellipsis */
+  overflow-wrap: break-word;
 
 }
 
-img {
-    max-width: 40%;
-  border-radius: 5%;
+/* place the grid of links (main) below the full-width image pseudo-element */
+/* make article tiles the same square size and align the grid to these sizes */
+main {
+
+  position: relative;
+  margin-top: 50%;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--box-size), var(--box-size)));
+  gap: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* make each anchor a clickable square that fills its grid cell */
+/* main a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;         
+  background: rgba(0,0,0,0.6); 
+  color: inherit;
+  text-decoration: none;
+  border-radius: 1000px;
+  padding: 0.75rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+  cursor: pointer;
+  width: var(--box-size);
+  height: var(--box-size);
+  min-width: var(--box-size);
+  min-height: var(--box-size);
+  box-sizing: border-box;
+} */
+
+main a {
+  width: var(--box-size);
+  height: var(--box-size);
+
+  background-image: url("../../articles/emily/Images/mug.png");
+  opacity: 0.6;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-right: 3rem;
+  gap: 3rem;
+
+  background-color: transparent;
+}
+
+
+main a:hover,
+main a:focus {
+  transform: translateY(-4px);
+  /* box-shadow: 0 6px 18px rgba(0,0,0,0.35); */
+  outline: none;
+}
+
+a div {
+  text-align: center;
+  font-size: 10pt !important;
+  text-align: center;
+  white-space: normal;   /* allow wrapping */
+  text-overflow: unset;  /* no ellipsis */
+  overflow-wrap: break-word;  /* break long words if needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem; /* adjust as needed */
+  font-weight: bold;
 }
 
 a {
@@ -27,13 +267,24 @@ a {
   background-color: transparent;
   font-weight: bold;
   font-family: 'MedievalSharp-Regular';
-  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+  display: grid;
+  margin: 0, 0, 0, -3rem !important;
 }
 
-fieldset {
-  text-align: left;
+main a img {
+  max-width: 25%;   /* try 20–30% depending on look */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
-legend {
-  text-align: left;
+img[alt=tea]{
+  max-width: 20px;  
+}
+
+img {
+  max-width: 40%;
+  border-radius: 5%;
+  align-items: center;
 }
