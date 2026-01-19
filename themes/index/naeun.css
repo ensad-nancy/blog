@@ -319,8 +319,8 @@ main {
     padding: 20px 40px 140px 40px;
     box-sizing: border-box;
 
-    overflow-y: scroll;
-    height: calc(100vh - 160px); /* footer 공간 확보 */
+     overflow: visible;     /* 또는 overflow-y: visible; */
+  height: auto;   
 }
 
 /* -----------------------------------
