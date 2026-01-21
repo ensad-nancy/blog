@@ -202,12 +202,12 @@ header .tag {
     padding: 2px 8px;
     border: 1px solid #bbb;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 6px;
 }
 
 header .date {
-    font-size: 12px;
+    font-size: 15px;
     color: #666;
     margin-bottom: 10px;
     font-style: italic;
@@ -231,7 +231,7 @@ article {
 article p {
     margin: 0 0 1.4em 0;
 
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
     line-height: 1.7;
 
@@ -257,15 +257,15 @@ article h3 {
 }
 
 article h1 {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 article h2 {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 article h3 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* 리스트 */
