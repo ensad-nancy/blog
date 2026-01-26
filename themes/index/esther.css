@@ -28,30 +28,32 @@ body{
  font-size: large;
 }
 
-
+body.page-scrollable_lineale{
+   margin:0;
+   padding:0;
+   height:auto;
+   }
 
 h1{
-   z-index:2;
+   z-index:1;
    font-family:"sinistreregular";
    font-size: 45px;
    margin: -1%;
-    bottom: auto;
     text-decoration-line: underline;
-    bottom: 0;
+   
     right: 0;
     color: #57070c;
-    align-content: left;
     text-align: left;
-    margin-bottom: -20px;
     margin-left: auto;
-    position: absolute;
-   
+    position: relative;
+   top: 580px;
+   left:12%;
   
   
 
    }
 h1::first-letter {
-   z-index:2;
+   z-index:1;
   font-family: "ruritaniaoutline ";
  font-size:530%;
   font-weight:100;
@@ -59,7 +61,7 @@ h1::first-letter {
 text-align: left;
   margin-bottom: -20px;
     margin-left: auto;
-    position:absolute;
+    position:fixed;
 
 }
 
@@ -75,6 +77,8 @@ body > p{
    background-color: #fff9f9;
    border-color:rgb(235, 191, 191);
    font-style: italic;
+   top:2%;
+   position: absolute;
    }
 
 #themes{
@@ -88,6 +92,8 @@ body > p{
     gap: 10px;
     color: #000;
     font-size: 91%;
+    top:20%;
+    position: absolute;
 
   
    }
@@ -121,17 +127,15 @@ body > p{
    }
 
 #filtres{
-z-index:auto;
+z-index:3;
 border-radius: 50%;
 border: 1px solid black;
-z-index:1;
 border-style:dotted;
 display:flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 padding: 10px;
-margin-right: 10%;
 padding: 5px;
 margin-top: -50px;
 float: right;
@@ -140,6 +144,9 @@ height: 200px;
 background-color: #fff9f9;
 transform: scale(2.OO);
 box-shadow: 0 0 9px #9d8a8a;
+position: absolute;
+top: 65%;
+left: 75%;
 }
 
 
@@ -159,7 +166,7 @@ justify-content: center;
 margin-top: 30%;
     padding: 0 5%;
     box-sizing: border-box;
-    margin-left: -3%;
+    margin-left: -150%;
   }
   
 
