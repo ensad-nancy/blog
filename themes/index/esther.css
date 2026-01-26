@@ -31,26 +31,36 @@ body{
 
 
 h1{
+   z-index:2;
    font-family:"sinistreregular";
    font-size: 45px;
-   margin: 2%;
-    position:absolute;
+   margin: -1%;
     bottom: auto;
     text-decoration-line: underline;
     bottom: 0;
     right: 0;
     color: #57070c;
-    
+    align-content: left;
+    text-align: left;
+    margin-bottom: -20px;
+    margin-left: auto;
+    position: absolute;
+   
+  
   
 
    }
 h1::first-letter {
+   z-index:2;
   font-family: "ruritaniaoutline ";
- font-size:230px;
+ font-size:530%;
   font-weight:100;
-  color: #57070c;
+ margin: -10%;
+text-align: left;
+  margin-bottom: -20px;
+    margin-left: auto;
+    position:absolute;
 
-  
 }
 
 body > p{
@@ -111,8 +121,10 @@ body > p{
    }
 
 #filtres{
+z-index:auto;
 border-radius: 50%;
 border: 1px solid black;
+z-index:1;
 border-style:dotted;
 display:flex;
 flex-direction: column;
@@ -120,12 +132,14 @@ align-items: center;
 justify-content: center;
 padding: 10px;
 margin-right: 10%;
+padding: 5px;
+margin-top: -50px;
 float: right;
 width: 200px;
 height: 200px;
 background-color: #fff9f9;
 transform: scale(2.OO);
- box-shadow: 0 0 9px #9d8a8a;
+box-shadow: 0 0 9px #9d8a8a;
 }
 
 

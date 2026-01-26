@@ -1,6 +1,7 @@
 ---
 title: lettre à vous 
 date: 2025-11-20
+tag: texte sur une personnalité inspirante
 ---
 
 # Lettre à vous. 
