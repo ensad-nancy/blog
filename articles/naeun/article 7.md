@@ -1,6 +1,6 @@
 ---
 title: Séoul 1988
-date: 2026-12-25
+date: 2025-12-25
 tags: illustraion d'actualité
 preview: images/88poster.jpg
 
@@ -61,7 +61,7 @@ preview: images/88poster.jpg
     J’ai pleuré avec elle.<br/>
     Ce nombre particulier, <strong>88</strong>.
   </p>
-  
+
 ![poster](images/88poster1.JPG)
 ![poster](images/88poster2.JPG)
 ![poster](images/88poster3.JPG)

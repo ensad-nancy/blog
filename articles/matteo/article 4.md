@@ -1,7 +1,7 @@
 ---
 title: Le détail graphique  
-date: 2025-12-3
-tags: tag1, tag2
+date: 2025-12-01
+tags: détail graphique
 preview: 
 ---
 

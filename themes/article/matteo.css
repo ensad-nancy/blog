@@ -17,7 +17,7 @@
 /*-----VARIABLE-----*/
 
 body{
-    --gutter-width: 10%;
+    --gutter-width: 4%;
 }
 
 /*-----ALL-----*/
@@ -36,29 +36,46 @@ body{
 
 body > a:any-link{
     text-decoration: none;
-    color: white;
-    background-color: rgba(0, 6, 22);  
-            backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);  
+    color: color(srgb 1 1 1);
+    background-color: rgb(1, 22, 126);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 40px;
     padding: 5px 12px 5px 12px;
-    margin: 7em 0em 0em 2em;
-    position: fixed;
+    margin: 8.5em 0em 0em 2em;
+    position: sticky;
     border: 1.5px solid;
-    border-color: rgb(0, 6, 22);
+    border-color: rgb(1, 22, 126);
     z-index: 10;
+    top: 7.5em;
+    cursor: pointer;
 }
 
 body > a:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);  
+    color: rgb(0, 255, 0);
+    background-color: rgb(65, 81, 160);
+        backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);  
     transition: all 0.3s;
     border: 1.5px solid;
-    border-color: rgb(0, 6, 22);
-
+    border-color: rgb(65, 81, 160);
+    cursor: pointer;
 }
+
+body::before{
+    content: "3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog 3c Blog";
+    font-family: "bianzhidai-Stitches";
+    font-size: 18em;
+    color: rgb(255, 255, 255);
+    top: -8%;
+    left: 0%;
+    position: fixed;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
 
 /*-----HEADER-----*/
 
@@ -91,13 +108,10 @@ header .tags{
     font-size: 16pt;
 }
 
-/* header{
-    position: sticky;
-    top: 0;
-} */
 
 
 /*-----ARTICLE-----*/
+
 
 article{
     font-family: "Baskervville-Regular";
@@ -113,7 +127,7 @@ article{
 
 article p a{
     /* color: rgb(176, 170, 26);   */
-    color: rgb(133, 126, 0);
+    color: rgb(72, 0, 248);
     text-decoration: none;
 }
 
@@ -130,25 +144,18 @@ article h1{
     font-family: "Baskervville-Regular";
     font-size: 13pt;
     display: flex;
-    background-color: rgb(0, 6, 22);    
+    background-color: rgb(1, 22, 126);
     gap: 20px;
     width: 100%;
     overflow-x: auto;
-    /* border-style: none; */
     align-items: baseline;
     padding: 1em;
-    margin: 0em 0em 0em 0em;
+    margin: 1em 0em 1em 0em;
+    box-sizing: border-box;
     position: sticky;
-    /* top: 1em; */
     top: 0;
-    border-top-color: #f7f7f7;    
-    border-bottom-color: #f7f7f7;
-    border-top-width: 1em;
-    border-bottom-width: 1em;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
     z-index: 5;
+    scrollbar-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
  #themes div /*label*/{ 
@@ -186,7 +193,7 @@ input[type="radio"]{
 }
 
 #themes legend{
-    color: color(srgb 0.7 0.8088 1);
+    color: rgb(0, 255, 0);    
     background-color: rgba(255, 255, 255, 0.25);
         backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -230,7 +237,7 @@ main a h3{
 
 a:hover{
     /* color: rgb(176, 170, 26);  */
-    color: color(srgb 0 0.3316 1);  
+    color: rgb(0, 255, 0);  
     transition: 0.3s;
 }
 
@@ -242,6 +249,5 @@ a:hover{
 } */
 
 img{
-    display: none;
+    width: 100%;
 }
-

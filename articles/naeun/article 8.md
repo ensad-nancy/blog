@@ -2,6 +2,8 @@
 title: On est tous des cercles déformés.
 date: 2026-01-03
 tags: entretien
+preview: images/circleimparfait.jpg
+
 ---
 
 
