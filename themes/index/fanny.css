@@ -36,6 +36,7 @@ h1 {
     color: #fff;
     z-index: 1000;
     text-shadow: 0 0 4px #b366ff, 0 0 8px #b366ff, 0 0 12px #b366ff; /* violet */
+    text-align: center;
 }
 
 /* ------------------------------ */
@@ -67,28 +68,20 @@ body > p:first-of-type {
 /* ------------------------------ */
 #themes {
     position: fixed;
-    top: 20px;
-    left: 0;
-    width: 18vw;
-    max-width: 180px;
-    min-width: 140px;
-    height: calc(100vh - 80px);
+    bottom: 80px;
+    left: 20px;
+    width: calc(65vw - 40px);
     background: rgba(0,0,0,0.25);
     backdrop-filter: blur(6px);
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     z-index: 500;
-    overflow-y: auto;  
-    overflow-x: hidden;
     outline: none;
     box-shadow: 0 0 20px 4px rgba(102, 224, 255, 0.7);
     border-radius: 12px;
     padding: 10px;
-
-    /* Cacher scrollbar */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: auto;
 }
 #themes::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
@@ -112,7 +105,6 @@ body > p:first-of-type {
     align-items: center;
     text-align: center;
     width: 120px;
-    height: 80px;
     background-color: #fff; 
     color: #000; 
     font-family: "Great Vibes", cursive;
@@ -122,6 +114,7 @@ body > p:first-of-type {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     box-shadow: 0 0 6px #66e0ff;
     outline: none;
+    flex-shrink: 0;
 }
 
 #themes div:hover {
@@ -148,19 +141,24 @@ body > p:first-of-type {
     color: #000 !important;
     box-shadow: 0 0 12px #66e0ff !important;
 }
+
+#themes div:has(> [type="radio"]:checked) {
+    background: #66e0ff !important;
+    color: #000 !important;
+    box-shadow: 0 0 12px #66e0ff !important;
+}
 /* ------------------------------ */
 /* BANDEAU FILTRES                 */
 /* ------------------------------ */
 #filtres {
     position: fixed;
-    top: 10px;
-    right: 0;
-    width: 200px;
+    bottom: 80px;
+    right: 20px;
+    width: calc(35vw - 40px);
     background: rgba(0,0,0,0.5); /* un peu plus opaque pour la lisibilité */
     padding: 12px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    gap: 20px;
     z-index: 800;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><polygon points="12,0 24,12 12,24 0,12" fill="purple"/></svg>') 12 12, pointer;
     box-shadow: 0 0 12px rgba(102, 224, 255, 0.6);
@@ -196,7 +194,6 @@ body > p:first-of-type {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 24px;
     overflow-x: auto;
@@ -239,7 +236,7 @@ main a > div {
     height: 220px;
     flex: 0 0 auto;
     transition: transform .18s ease, box-shadow .18s ease;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
 }
 
@@ -277,7 +274,8 @@ main a div img.thumb {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    opacity: 1;
+    opacity: 0.5;
+    filter: grayscale(100%);
 }
 
 /* IMAGE SORS AU HOVER */
@@ -293,7 +291,6 @@ main a > div:hover img.thumb {
     max-width: 130%;
     max-height: 150%;
     transform: translate(-50%, -50%) scale(1.3);
-    z-index: 100;
     opacity: 1;
 }
 
@@ -370,7 +367,6 @@ body::after {
 @media (max-width: 900px) {
     h1 { font-size: 40px; }
     main a > div { width: 240px; height: 180px; }
-    #filtres { width: 18vw; }
 }
 
 @media (max-width: 600px) {
