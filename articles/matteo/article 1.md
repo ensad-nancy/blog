@@ -1,7 +1,7 @@
 ---
 title: Un titre plutôt évocateur 
-date: 2025-11-12
-tags: tag1, tag2
+date: 2025-11-10
+tags: un objet culturel vu
 preview: 
 ---
 

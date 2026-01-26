@@ -1,6 +1,6 @@
 ---
 title: Adieu  
-date: 2025-12-10
+date: 2025-12-08
 tags: lettre à quelqu'un.e
 # preview: Images\mauvaisinternat.jpeg
 ---

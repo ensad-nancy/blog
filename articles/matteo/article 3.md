@@ -1,7 +1,7 @@
 ---
 title: Une figure incontournable  
-date: 2025-11-26
-tags: tag1, tag2
+date: 2025-11-24
+tags: une personnalitée inspirante
 preview: 
 ---
 
