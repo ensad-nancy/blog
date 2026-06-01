@@ -1,6 +1,6 @@
 ---
 title: Un article très interéssant!
-date: 2025-12-16
+date: 2025-12-18
 tags: Commentaire, Aménagement et décoration, Laine
 ---
 # Un article très interéssant!

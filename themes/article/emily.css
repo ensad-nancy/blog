@@ -1,77 +1,182 @@
-@font-face {
+/* @font-face {
   font-family: 'MedievalSharp-Regular';
   src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+} */
+
+     /* @font-face {
+    font-family: 'Helvetica';
+    font-size: 5%;
+    src: url('../../articles/emily/Helvetica.ttf') format('truetype');
+    } */
+
+@font-face {
+  font-family: "HelveticaGras";
+  src: url(../../articles/emily/Helvetica-Gras.ttf);
 }
 
-a {
-  color: rgb(255, 229, 150);
-  background-color: transparent;
-  font-weight: bold;
-  font-family: 'MedievalSharp-Regular';
-  src: url('../../articles/emily/MedievalSharp-Regular.ttf');
+@font-face {
+  font-family: "ArialRoundedBold";
+  src: url(../../articles/emily/ArialRoundedBold.ttf);
 }
 
 body{
-    background-color: #334313;
-    text-align: left;
-    font-family: 'MedievalSharp-Regular';
-    color: rgb(255, 229, 150);
-    margin: 5%;
-    border: 5%;  
+  background-image: url('../../articles/emily/Images/article-tea.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(170, 198, 139);
+  background-attachment: fixed;
+  background-size: 90%;
+  overflow-y: hidden;
+
+  /* text-shadow: 1px 1px 2px black; TEXT-SHADOW HERE */
+  font-family: "ArialRoundedBold", sans-serif;
+  /* font-family: 'Helvetica';
+  font-weight: normal; */
 }
 
 div#themes {
-  position: relative;
-  top:  1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  max-width: 100%;
-  min-height: 20rem;
-  height: 20rem;
-  padding: 0.5rem 1rem 0.5rem 3rem;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: auto;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 43%;
+  left: 10%;
+  right: 90%;
+  bottom: 57%;
+  width: 25%;
+  height: 27%;
+  padding-left: 90px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+  font-size: 12pt;
 }
 
-header{
-  background-image: (url(../../articles/emily/Images/P1090128.JPG));
-  height: 200px;
+
+/* input[type="radio"] {
+  accent-color: #AAC68B;
+} */
+
+input[name="theme"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #8ea86f;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
-/* hide legacy legend elements (div won't have legend, but safe to include) */
+input[name="theme"]:checked {
+  background-color: #AAC68B;
+}
+
 div#themes legend,
 #themes legend {
   display: none;
 }
 
+a {
+  font-size: 180%;
+  text-decoration: none;
+  scrollbar-width: none;
+  display: flex;
+  white-space: nowrap;
+  position: fixed;
+  top: 8%;
+  left: 10%;
+  right: 90%;
+  bottom: 90%;
+  height: 5%;
+  width: 10%;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  right: 95%;
+  bottom: 89%;
+  height: 21%;
+  width: 15%;
+  
+  /* padding: 15px; */
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 article{ 
-  text-align: center;
-  background-image: url("../../articles/emily/Images/mug.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+font-size: 16pt;
+position: fixed;
+  top: 17%;
+  left: 34%;
+  right: 40%;
+  bottom: 26%;
+  width: 40%;
+  height: 58%;
+  padding-left: 90px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+
+-webkit-mask: linear-gradient(to bottom, black 85%, transparent 100%);
+mask: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+article p{
+margin-left: 4%;
+margin-right: 4%;
+font-weight: 400;
 }
 
 .title{
     font-size: 30px;
+    font-weight: bold;
+}
+p.title{
+
+    margin:10px;
+}
+
+p.author{
+    margin:5px;
+  
+}
+
+P.date{
+    margin:5px;
 }
 
 .thumb {
   visibility: hidden;
 }
 
-img[alt=fenetre1]{
-    width: 300px; 
+img{
+    width: 100%; 
     align-items: center;
+    border-radius: 5%;
+
+
+  filter:
+    sepia(0.75)
+    contrast(0.9)
+    brightness(0.9)
+    saturate(0.8)
+    hue-rotate(-10deg);
+    
 }
 
-img[alt=fenetre]{
+
+/* img[alt=fenetre]{
     width: 600px; 
     align-items: center;
 }
@@ -81,6 +186,6 @@ img[alt=tea]{
     color:white;
     align-items: center;
     visibility: visible;
-}
+} */
 
 
