@@ -13,13 +13,28 @@ changeTheme = () => {
     link.rel = "stylesheet";
     link.href = "themes/index/" + theme + ".css";
     document.head.appendChild(link);
+
+    // Sauvegarder le thème sélectionné
+    localStorage.setItem('selectedTheme', theme);
 }
 
-var themesNumber = document.querySelectorAll('input[name="theme"]').length;
-var randomTheme = Math.floor(Math.random() * themesNumber);
+// var themesNumber = document.querySelectorAll('input[name="theme"]').length;
+// var randomTheme = Math.floor(Math.random() * themesNumber);
 
-document.querySelectorAll('input[name="theme"]')[randomTheme].checked = true;
-changeTheme();
+// document.querySelectorAll('input[name="theme"]')[randomTheme].checked = true;
+// changeTheme();
+
+// Charger le thème sauvegardé au rechargement de la page
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        const radio = document.querySelector(`input[name="theme"][value="${savedTheme}"]`);
+        if (radio) {
+            radio.checked = true;
+            changeTheme();
+        }
+    }
+});
 
 /* Changer la date */
 
@@ -31,10 +46,25 @@ document.querySelector('input[name="date"]').addEventListener('input', (event) =
     var currentDate = dates[value];
     document.querySelector('#date label').innerText = currentDate;
 
+    // Quand on sélectionne "Tout"
     if (value == dates.length - 1) {
         articles.forEach((article) => {
             article.style.display = "block";
         });
+    // Quand on est à la dernière date avant "Tout"
+    } else if (value == dates.length - 2){
+        var thresholdMin = new Date(currentDate);
+        var thresholdMax = new Date(2026, 12, 31);
+
+        articles.forEach((article) => {
+            var articleDate = new Date(article.getAttribute('data-date'));
+            if (articleDate >= thresholdMin && articleDate < thresholdMax){
+                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
+    // Quand on a sélectionné les autres dates
     } else {
         var nextDate = dates[Number(value)+1];
         var thresholdMin = new Date(currentDate);

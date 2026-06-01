@@ -1,7 +1,7 @@
 ---
 title: First Visit
 date: 2025-11-13
-tags: danse & culture
+tags: Un objet culturel
 preview: images/ballet.jpg
 ---
 

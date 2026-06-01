@@ -4,7 +4,6 @@ date: 2025-11-24
 # tags: tag&
 # preview: image
 ---
-<img src="Blog/articles/lohann/images/20251124_102241.jpg" alt="lowcost3000" width="300"/>
    
 # Le sombre trottoir de la biennale
 ##
@@ -28,5 +27,6 @@ Cette soirée, s'est donc finis là ; la frustration d'être maintenant bien fau
 Nous sommes arrivées au alentour de 7h, Quai Sainte Catherine à Nancy, à l'autre bout de la ville par rapport à l'école. Je me souviens, en sortant du bus, j'avais besoin de prendre un vélib : le vent à eu raison de moi, mon vélib est tombé, tout comme mon sac cassé, qui ne pouvait être porté sur mon dos. Et à 9h ce lundi même, mathilde et moi étions en cours, prête à démarrer une journée classique de cours, comme si rien de tout cela n'était arrivé. 
 Mais cette fin de soirée un peu cata me plaît avec le temps, Mathilde et moi sommes devenues coloc depuis, et ça c'est un beau souvenir de merde.
 
+lo'
 
 *1 [le zloty ?](https://lepetitjournal.com/varsovie/comprendre-pologne/qui-sont-les-rois-presents-sur-les-billets-de-banque-polonais-282939)

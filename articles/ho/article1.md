@@ -1,6 +1,6 @@
 ---
 title: la psychologie du pouvoir 
-date: 2025-13-11
+date: 2025-11-13
 ---
 
 # la psychologie du pouvoir 
