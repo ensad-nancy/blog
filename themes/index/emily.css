@@ -1,6 +1,6 @@
 /*fonts*/
 
-@font-face {
+/* @font-face {
   font-family: 'MedievalSharp-Regular';
   src: url('../../articles/emily/MedievalSharp-Regular.ttf');
 }
@@ -8,283 +8,410 @@
 @font-face {
   font-family: 'Aladin';
   src: url('../../articles/emily/Aladin-Regular.ttf');
+} */
+
+@font-face {
+  font-family: "HelveticaGras";
+  src: url(../../articles/emily/Helvetica-Gras.ttf);
+}
+
+@font-face {
+  font-family: "ArialRoundedBold";
+  src: url(../../articles/emily/ArialRoundedBold.ttf);
 }
 
 /*introduction*/
 
-h1 {
-  position: fixed;
-   z-index: 5;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  font-size: 30pt;
+@media (min-width: 1px) {
 
-  /* white bar behind the title */
-  margin: 0;
-  padding: 1.5rem 2rem 1.5rem 1.5rem; /* extra left padding to move text away from edge */
-  background: #fff;
-  color: #000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  h1 {
+      position: fixed;
+      top: 15%;
+      right: 13%;
+      font-size: 200%;
+      text-align: center;
+      height: 30%;
+      width: 30%;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
+  
+  
+  body{
+      background-image: url('../../articles/emily/Images/index tea_1.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgb(170, 198, 139);
+      background-attachment: fixed;
+      background-size: 90%;
+      overflow-y: hidden;
+      /* text-shadow: 1px 1px 1px black; TEXT-SHADOW HERE */
+      font-family: "ArialRoundedBold", sans-serif;
+      font-weight: 400;
+  }
+  
+  body > p{
+    text-align: center;
+    top: 45%;
+    left: 2%;
+    margin-left: 16%;
+    position: fixed;
+    width: 50%;
+    height: 20%;
+    box-sizing: border-box;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+  }
+  
+  p{
+    text-align: center;
+    font-size: 12pt;
+    margin: 0 0 0 20%;
+  }
+  
+  /*filters*/
+  
+  div#filtres {
+    font-size: 12pt;
+    text-align: center;
+    bottom: 84%;
+    left: 31%;
+    width: 25%;
+    height: 10%;
+    position: fixed;
+    color: rgb(255, 255, 255);
+  }
 
-  white-space: nowrap;
-  word-break: keep-all;
-  text-align: left; /* ensure text is left-aligned inside the flex item */
-}
+  /* input[name="theme"]:checked {
+  accent-color: #AAC68B;
+  } */
 
-body > p {
-    font-family: "Aladin";
-    font-size: 20pt;
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    width: 100%;
-    text-wrap: wrap;
-    display: block;
-    margin: 0; 
-    z-index: 4;
-    padding-top: 7rem !important;
-    position: relative;
-}
-
-p{
-  text-align: center;
-  font-size: 20pt;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  z-index: 4;
-}
-
-/*filters*/
-
-div#filtres {
-  position: absolute;
-  top: 32rem;
-  width: 100%;
-  max-width: 100%;
-  padding: 0.5rem 1rem;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  overflow: visible;
-  z-index: 3;
-  height: 20rem;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Two columns below */
-#filtres #date,
-#filtres #auteurices {
-  flex: 1 1 0;
-}
-
-div#filtres > h2 {
-text-align: center;
-flex: 0 0 100%;
-margin: 10px 0 10px;
-}
-
-#filtres #date {
-  flex: 1;
-  top: 5rem;
-  align-items: center;
-  text-align: center;
-}
-
-#filtres #auteurices {
-  flex: 1;
-  top: 5rem;
-  align-items: center;
-  text-align: center;
-}
-
-/* constrain common controls so they don't force wrapping */
-div#filtres input,
-div#filtres select,
-div#filters input,
-div#filters select {
-  max-width: 40%;
-  box-sizing: border-box;
-}
-
-div#themes {
-  position: relative;
-  top:  1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  max-width: 100%;
-  min-height: 20rem;
-  height: 20rem;
-  padding: 0.5rem 1rem 0.5rem 3rem;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: auto;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.55);
-}
-
-/* hide legacy legend elements (div won't have legend, but safe to include) */
-div#themes legend,
-#themes legend {
-  display: none;
-}
-
-
-/*body*/
-
-body {
-  position: relative; /* for ::before positioning */
-  padding-top: var(--header-height);
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #334313;
-  color: rgb(255, 229, 150);
-  font-family: 'Aladin';
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 14pt;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: -90px;
-  width: 100%;
-  height: 1000px;
-  background: url('../../articles/emily/Images/P1090131.JPG') top center/cover no-repeat;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/*blog posts*/
-
-:root {
---box-size: 400px; /* change this once to resize all boxes */
-}
-
-a p {
-  margin: 0, 0, 0, -3rem !important;
-}
-
-p h3 {
-  margin: 0;
-  font-size: 50pt;
-  font-weight: bold;
-  text-align: center;
-  text-wrap: center;
-  white-space: normal;   /* allow wrapping */
-  text-overflow: unset;  /* no ellipsis */
-  overflow-wrap: break-word;
-
-}
-
-/* place the grid of links (main) below the full-width image pseudo-element */
-/* make article tiles the same square size and align the grid to these sizes */
-main {
-
-  position: relative;
-  margin-top: 50%;
-  z-index: 3;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--box-size), var(--box-size)));
-  gap: 1rem;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-/* make each anchor a clickable square that fills its grid cell */
-/* main a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;         
-  background: rgba(0,0,0,0.6); 
-  color: inherit;
-  text-decoration: none;
-  border-radius: 1000px;
-  padding: 0.75rem;
-  transition: transform .15s ease, box-shadow .15s ease;
+  input[name="theme"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #8ea86f;
+  background-color: #ffffff;
   cursor: pointer;
-  width: var(--box-size);
-  height: var(--box-size);
-  min-width: var(--box-size);
-  min-height: var(--box-size);
-  box-sizing: border-box;
-} */
-
-main a {
-  width: var(--box-size);
-  height: var(--box-size);
-
-  background-image: url("../../articles/emily/Images/mug.png");
-  opacity: 0.6;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1 / 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-right: 3rem;
-  gap: 3rem;
-
-  background-color: transparent;
 }
 
-
-main a:hover,
-main a:focus {
-  transform: translateY(-4px);
-  /* box-shadow: 0 6px 18px rgba(0,0,0,0.35); */
-  outline: none;
+input[name="theme"]:checked {
+  background-color: #AAC68B;
 }
 
-a div {
-  text-align: center;
-  font-size: 10pt !important;
-  text-align: center;
-  white-space: normal;   /* allow wrapping */
-  text-overflow: unset;  /* no ellipsis */
-  overflow-wrap: break-word;  /* break long words if needed */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1rem; /* adjust as needed */
-  font-weight: bold;
+  div#date p {
+    width: 15%;
+    height: 10%;
+    padding-left: 23%;
+  }
+
+  div#auteurices p {
+    width: 15%;
+    height: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 18%;
+  }
+
+  select#authors {
+    background-color: #AAC68B;
+    color: #ffffff;
+    border-color: #8ea86f;
+    border-radius: 10vh;
+    width: 15%;
+    height: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 40%;
+    margin-left: 5%;
+  }
+
+  select#authors p {
+    color: white;
+  }
+
+  select#authors:hover {
+    color: #ffffff;
+    }
+
+  input[type="range"] {
+    appearance: none;
+    /* background: transparent; */
+    width: 50%;
+    cursor: pointer;
+    background: #AAC68B;
+    height: 0.2%;
+    border-radius: 10vh;
+    margin: 5% -20% 5% 28%;
+    display: flex;
+    }
+  
+  div#themes {
+    position: fixed;
+    top: 6%;
+    left: 10%;
+    right: 90%;
+    bottom: 84%;
+    width: 25%;
+    height: 27%;
+    padding-left: 90px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+  }
+  
+  /* hide legacy legend elements (div won't have legend, but safe to include) */
+  div#themes legend,
+  #themes legend {
+    display: none;
+  }
+  
+  
+  /*main + a */
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 114px;
+    margin-top: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 0px;
+    width: 60%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    mask: radial-gradient(circle,#000 , transparent 100%);
+  
+  }
+  
+  main::-webkit-scrollbar {
+      display: none;
+      scrollbar-width: none;
+      width: 0;
+      height: 0;
+      background-attachment: fixed;
+      scroll-behavior: horizontal;
+  }
+  
+  main a{
+      padding: 18px 16px;
+      min-width: 0px;
+      flex-shrink: 0;
+      text-decoration: none;
+      color: #ffffff;
+      height: 120px;
+      width: 200px;
+      border: 3px solid #8ea86f;
+      border-radius: 10%;
+      background-color: #9eb97f;
+  }
+  
+  main a img{
+      display: none;
+  }
+  
+  main a h3{
+      margin: 0;
+      border-radius: 10px;
+      height: 65px;
+      width: 100%;
+      font-weight: normal;
+      font-size: 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+  }
+  
+  main a div footer {
+    margin: 12px 8px;
+    padding-bottom: 16px;
+  }
+  
+  main a div footer p {
+    margin: 0;
+  }
+  
+  main a div footer {
+    opacity: 0;
+  }
+  
+  main a div footer:hover {
+    opacity: 1;
+    height: auto;
+  }
 }
 
-a {
-  color: rgb(255, 229, 150);
-  background-color: transparent;
-  font-weight: bold;
-  font-family: 'MedievalSharp-Regular';
-  display: grid;
-  margin: 0, 0, 0, -3rem !important;
-}
+@media (min-width: 1920px) {
 
-main a img {
-  max-width: 25%;   /* try 20–30% depending on look */
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-img[alt=tea]{
-  max-width: 20px;  
-}
-
-img {
-  max-width: 40%;
-  border-radius: 5%;
-  align-items: center;
+  h1 {
+      position: fixed;
+      top: 15%;
+      right: 13%;
+      font-size: 200%;
+      text-align: center;
+      height: 30%;
+      width: 30%;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #ffffff;
+  }
+  
+  
+  body{
+      background-image: url('../../articles/emily/Images/Index tea_1.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgb(170, 198, 139);
+      background-attachment: fixed;
+      background-size: 90%;
+      overflow-y: hidden;
+      text-shadow: 1px 1px 2px black; /* TEXT-SHADOW HERE */
+  }
+  
+  body > p{
+    text-align: center;
+    top: 45%;
+    left: 2%;
+    margin-left: 16%;
+    position: fixed;
+    width: 50%;
+    height: 20%;
+    box-sizing: border-box;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+  }
+  
+  p{
+    text-align: center;
+    font-size: 12pt;
+    margin: 0 0 0 20%;
+  }
+  
+  /*filters*/
+  
+  div#filtres {
+    font-size: 12pt;
+    text-align: center;
+    bottom: 86%;
+    left: 31%;
+    width: 25%;
+    height: 10%;
+    position: fixed;
+    color: rgb(255, 255, 255);
+  }
+  
+  div#themes {
+    position: fixed;
+    top: 4%;
+    left: 16%;
+    right: 90%;
+    bottom: 84%;
+    width: 25%;
+    height: 27%;
+    padding-left: 90px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+  }
+  
+  /* hide legacy legend elements (div won't have legend, but safe to include) */
+  div#themes legend,
+  #themes legend {
+    display: none;
+  }
+  
+  
+  /*main + a */
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 114px;
+    margin-top: 33%;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 0px;
+    width: 60%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    mask: radial-gradient(circle,#000 , transparent 100%);
+  
+  }
+  
+  main::-webkit-scrollbar {
+      display: none;
+      scrollbar-width: none;
+      width: 0;
+      height: 0;
+      background-attachment: fixed;
+      scroll-behavior: horizontal;
+  }
+  
+  main a{
+      padding: 18px 16px;
+      min-width: 0px;
+      flex-shrink: 0;
+      text-decoration: none;
+      color: #ffffff;
+      height: 120px;
+      width: 200px;
+      border: 3px solid #8ea86f;
+      border-radius: 10%;
+      background-color: #9eb97f;
+  }
+  
+  main a img{
+      display: none;
+  }
+  
+  main a h3{
+      margin: 0;
+      border-radius: 10px;
+      height: 65px;
+      width: 100%;
+      font-weight: normal;
+      font-size: 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-align: center;
+  }
+  
+  main a div footer {
+    margin: 12px 8px;
+    padding-bottom: 16px;
+  }
+  
+  main a div footer p {
+    margin: 0;
+  }
+  
+  main a div footer {
+    opacity: 0;
+  }
+  
+  main a div footer:hover {
+    opacity: 1;
+    height: auto;
+  }
 }
