@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Basteleur";
+    src: url(/blog/articles/naeun/images/Basteleur-Moonlight.ttf) format("truetype");
+}
+
 /* -----------------------------------
    전체 레이아웃 기본값
 ----------------------------------- */

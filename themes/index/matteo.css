@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'bianzhidai-Stitches';
-    src: url('/articles/matteo/images/bianzhidai-Stitches.otf') format('truetype');
+    src: url('/blog/articles/matteo/images/bianzhidai-Stitches.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Baskervville-Regular';
-    src: url('/articles/matteo/images/Baskervville-Regular.otf') format('truetype');
+    src: url('/blog/articles/matteo/images/Baskervville-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
