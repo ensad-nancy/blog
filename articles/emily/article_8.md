@@ -2,7 +2,7 @@
 title: BBT (Bloggers Boivent du Thé) et non BBC
 date: 2025-12-22
 tags: Interview, Dona Quichotte, FMLD
-preview: Images\Trop.png
+preview: Images/tea.png
 ---
 <br>
 Bonjour, et bienvenu.e,
