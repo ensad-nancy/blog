@@ -13,4 +13,6 @@ preview: Images/7.svg, Images/6.svg, Images/5.svg, Images/4.svg,Images/2.svg, Im
 ![livre](Images/1.svg)
 ![couette](Images/3.svg)
 ![text](Images/8.svg)
+
+La buveuse de thé.
 ![tea](Images/tea.png)

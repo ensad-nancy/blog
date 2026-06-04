@@ -14,6 +14,6 @@ Sebastian Michaelis et Ciel Phantomhive, les deux personnages principaux, sont d
 Personnellement c’est deux personnages m’inspirent, puisque je ne suis pas encore au point de boire du thé a tout moments. Mais vu comment ils se débrouillent je devrais pouvoir réussir tout autant qu'eux.
 
 Je vous redirais à l’occasion si je réussi.
-La buveuse de thé.
 
+La buveuse de thé.
 ![tea](images/tea.png)
