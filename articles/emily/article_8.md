@@ -1,6 +1,6 @@
 ---
 title: BBT (Bloggers Boivent du Thé) et non BBC
-date: 2025-12-22
+date: 2026-01-12
 tags: Interview, Dona Quichotte, FMLD
 preview: Images/tea.png
 ---
