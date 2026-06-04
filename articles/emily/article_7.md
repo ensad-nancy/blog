@@ -2,9 +2,11 @@
 title: Trop d'eau pour une tasse
 date: 2026-01-05
 tags: Illustration
-preview: Images/Trop.jpg , Images/tea.png
+preview: Images/trop.svg
+preview: Images/tea.png
 ---
 
-![eau](Images\Trop.jpg)
+![eau](Images/trop.svg)
+
 La buveuse de Thé.
 ![tea](images/tea.png)
